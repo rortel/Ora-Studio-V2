@@ -1,0 +1,60 @@
+
+
+
+Le problème est clair : callFalImage n'a pas d'AbortSignal. Si FAL ne répond pas, ça pend indéfiniment jusqu'au timeout externe de 45s dans server.ts. Et si FAL échoue, Replicate a 90s de polling — mais le MODEL_TIMEOUT du serveur est 45s, donc Replicate sera toujours coupé avant de finir, laissant des boucles orphelines qui tournent.
+
+Voici les deux fixes dans callFalImage et callReplicateImage :
+
+async function callFalImage(falModel: string, prompt: string): Promise<string> {
+  const key = Deno.env.get("FAL_API_KEY");
+  if (!key) throw new Error("FAL_API_KEY not configured");
+  console.log(`[FAL Image] model=${falModel}, prompt="${prompt.slice(0, 60)}..."`);
+  
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 20_000); // 20s max pour FAL
+  
+  try {
+    const res = await fetch(`https://fal.run/${falModel}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Key ${key}` },
+      body: JSON.stringify({ prompt, image_size: "landscape_4_3", num_images: 1, enable_safety_checker: true }),
+      signal: controller.signal,
+    });
+    if (!res.ok) { const errBody = await res.text(); throw new Error(`FAL ${res.status} for ${falModel}: ${errBody}`); }
+    const data = await res.json();
+    const imageUrl = data.images?.[0]?.url;
+    if (!imageUrl) throw new Error(`FAL returned no URL for ${falModel}`);
+    return imageUrl;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+Et pour Replicate, réduire le max poll de 90s → 20s (pour tenir sous le 45s MODEL_TIMEOUT) :
+
+// Poll (max 20s pour rester sous le MODEL_TIMEOUT de 45s du serveur)
+const maxWait = 20_000;  // était 90_000
+const pollInterval = 2_000;
+
+Et ajouter un timeout sur le create initial aussi :
+
+const controller = new AbortController();
+const timer = setTimeout(() => controller.abort(), 10_000);
+let createRes: Response;
+try {
+  createRes = await fetch("https://api.replicate.com/v1/predictions", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
+    body: JSON.stringify({ model: replicateModel, input: { prompt } }),
+    signal: controller.signal,
+  });
+} finally {
+  clearTimeout(timer);
+}
+
+Résumé des timings après fix :
+
+FAL : 20s max → succès ou throw
+Replicate create : 10s max → succès ou throw
+Replicate poll : 20s max → succès ou throw
+MODEL_TIMEOUT serveur : 45s (safety net si tout le reste lâche)
