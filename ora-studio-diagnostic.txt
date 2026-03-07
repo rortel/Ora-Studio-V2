@@ -1,0 +1,59 @@
+ORA
+Generate
+Remix
+Flows
+Studio
+Admin
+Admin
+R
+AI Hub
+Generate
+Library
+6
+Compare
+Open Studio
+4 models connected
+Generate anything
+
+Type what you need below. Select models to compare, then hit Enter. ORA generates from 1 model — you pick the best.
+
+Brand pattern
+Abstract header
+Social visual
+Ad creative
+Icon set
+Run image diagnostic
+Starting diagnostic...
+[1/4] Health check...
+  OK (682ms) — server: ora-studio-inline, ts: 2026-03-06T22:18:56.550Z
+[2/4] Checking API keys...
+  APIPOD: sk-3d4...7065 (67 chars)
+  FAL: 438a18...cf27 (69 chars)
+  Replicate: r8_Z9F...xiFI (40 chars)
+[3/4] Image test (FAL + Replicate)...
+  Calling /debug/image-steps (max 30s)...
+  Total: 2198ms
+  [0ms] START
+  [0ms] FAL_API_KEY: set (69 chars)
+  [0ms] REPLICATE_API_TOKEN: set (40 chars)
+  [0ms] FAL fetch starting...
+  [905ms] FAL response: status=200
+  [906ms] FAL body (256 chars): {"images":[{"url":"https://v3b.fal.media/files/b/0a9121e1/C3kERYA9lNX5W8NxMu7p8.jpg","width":1024,"height":1024,"content_type":"image/jpeg"}],"timings":{"inference":0.15467053000247688},"seed":192910798,"has_nsfw_concepts":[false],"prompt":"A blue circle"}
+  [906ms] FAL result: https://v3b.fal.media/files/b/0a9121e1/C3kERYA9lNX5W8NxMu7p8.jpg
+  [906ms] Replicate create starting...
+  [2198ms] Replicate create: status=201
+  [2198ms] Replicate body (1084 chars): {"id":"0acq6zm7csrnr0cwrmxv6ghgk4","model":"black-forest-labs/flux-schnell","version":"hidden","input":{"prompt":"A blue circle"},"logs":"running quantized prediction\nUsing seed: 1019839394\n  0%|          | 0/4 [00:00<?, ?it/s]\n 75%|███████▌  | 3/4 [00:00<00:00, 18.04it/s]\n100%|██████████| 4/4 [
+  [2198ms] Replicate result: prediction id=0acq6zm7csrnr0cwrmxv6ghgk4, status=succeeded
+  [2198ms] DONE
+  FAL result: https://v3b.fal.media/files/b/0a9121e1/C3kERYA9lNX5W8NxMu7p8.jpg
+  Replicate result: prediction id=0acq6zm7csrnr0cwrmxv6ghgk4, status=succeeded
+[4/4] Diagnostic complete (3.9s)
+Image
+Text
+Code
+Film
+Sound
+ORA Vision
+
+Press Enter — 1 AI model generate simultaneously, you pick the best
+Results auto-saved to your library
