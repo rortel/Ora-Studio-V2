@@ -4,11 +4,10 @@
 // TEXT:  APIPod (apipod.ai) — OpenAI-compatible gateway for LLMs
 //        One API key → OpenAI, Anthropic, Google models
 // IMAGE: Runware (primary) → FAL (secondary) → Replicate (tertiary)
-// VIDEO: Runware (primary) → FAL (secondary) → Replicate (tertiary)
+//        Runware + FAL lancés en parallèle — retourne le plus rapide
+// VIDEO: FAL queue (primary) → Replicate (secondary) — race parallèle
+//        Runware supprimé : taskType "videoInference" non supporté
 // AUDIO: Replicate only (MusicGen)
-//
-// Fallback chain: Runware → FAL → Replicate for images & video
-// APIPod is used only for text (LLM) generation.
 
 export interface GenerateTextRequest {
   prompt: string;
@@ -105,7 +104,7 @@ const textModelMap: Record<string, { apiModel: string; fallback?: string }> = {
   "gemini-code":     { apiModel: "gemini-2.5-flash-preview-05-20", fallback: "gemini-2.0-flash" },
 };
 
-// --- IMAGE — Runware primary, FAL secondary, Replicate tertiary ---
+// --- IMAGE — Runware + FAL en race parallèle, Replicate en fallback ---
 interface ImageStrategy {
   type: "runware" | "fal" | "replicate";
   model: string;
@@ -145,22 +144,23 @@ const imageModelStrategies: Record<string, ImageStrategy[]> = {
   ],
 };
 
-// --- VIDEO — Runware primary, FAL secondary, Replicate tertiary ---
+// --- VIDEO — FAL queue (primary) + Replicate (secondary), race parallèle ---
+// NOTE: Runware supprimé — taskType "videoInference" non supporté par leur API
 interface VideoStrategy {
-  type: "runware" | "fal" | "replicate";
+  type: "fal" | "replicate";
   model: string;
 }
 
 const videoModelStrategies: Record<string, VideoStrategy[]> = {
-  "ora-motion":       [{ type: "runware", model: "runware:100@1" }, { type: "fal", model: "fal-ai/minimax/video-01-live" }, { type: "replicate", model: "minimax/video-01-live" }],
-  "veo-3.1":          [{ type: "runware", model: "runware:100@1" }, { type: "fal", model: "fal-ai/minimax/video-01-live" }, { type: "replicate", model: "minimax/video-01-live" }],
-  "sora-2":           [{ type: "runware", model: "runware:100@1" }, { type: "fal", model: "fal-ai/luma-dream-machine" }, { type: "replicate", model: "luma/ray" }],
-  "seedance-2.0":     [{ type: "runware", model: "runware:100@1" }, { type: "fal", model: "fal-ai/minimax/video-01-live" }, { type: "replicate", model: "minimax/video-01-live" }],
-  "seedance-1.5-pro": [{ type: "runware", model: "runware:100@1" }, { type: "fal", model: "fal-ai/minimax/video-01-live" }, { type: "replicate", model: "minimax/video-01-live" }],
-  "seedance-1.0":     [{ type: "runware", model: "runware:100@1" }, { type: "fal", model: "fal-ai/minimax/video-01-live" }, { type: "replicate", model: "minimax/video-01-live" }],
-  "runway-gen3":      [{ type: "runware", model: "runware:100@1" }, { type: "fal", model: "fal-ai/minimax/video-01-live" }, { type: "replicate", model: "minimax/video-01-live" }],
-  "pika":             [{ type: "runware", model: "runware:100@1" }, { type: "fal", model: "fal-ai/ltx-video" }, { type: "replicate", model: "lightricks/ltx-video" }],
-  "sora":             [{ type: "runware", model: "runware:100@1" }, { type: "fal", model: "fal-ai/luma-dream-machine" }, { type: "replicate", model: "luma/ray" }],
+  "ora-motion":       [{ type: "fal", model: "fal-ai/minimax/video-01-live" }, { type: "replicate", model: "minimax/video-01-live" }],
+  "veo-3.1":          [{ type: "fal", model: "fal-ai/minimax/video-01-live" }, { type: "replicate", model: "minimax/video-01-live" }],
+  "sora-2":           [{ type: "fal", model: "fal-ai/luma-dream-machine" },    { type: "replicate", model: "luma/ray" }],
+  "seedance-2.0":     [{ type: "fal", model: "fal-ai/minimax/video-01-live" }, { type: "replicate", model: "minimax/video-01-live" }],
+  "seedance-1.5-pro": [{ type: "fal", model: "fal-ai/minimax/video-01-live" }, { type: "replicate", model: "minimax/video-01-live" }],
+  "seedance-1.0":     [{ type: "fal", model: "fal-ai/minimax/video-01-live" }, { type: "replicate", model: "minimax/video-01-live" }],
+  "runway-gen3":      [{ type: "fal", model: "fal-ai/minimax/video-01-live" }, { type: "replicate", model: "minimax/video-01-live" }],
+  "pika":             [{ type: "fal", model: "fal-ai/ltx-video" },             { type: "replicate", model: "lightricks/ltx-video" }],
+  "sora":             [{ type: "fal", model: "fal-ai/luma-dream-machine" },    { type: "replicate", model: "luma/ray" }],
 };
 
 // --- AUDIO — Replicate only (MusicGen) ---
@@ -238,7 +238,7 @@ export async function generateText(req: GenerateTextRequest): Promise<GenerateTe
 }
 
 // ══════════════════════════════════════════════
-// IMAGE GENERATION (Runware → FAL → Replicate)
+// IMAGE GENERATION (Runware + FAL en race, Replicate en fallback)
 // ══════════════════════════════════════════════
 
 // Runware image call (primary — ultra-fast inference)
@@ -246,7 +246,7 @@ async function callRunwareImage(rwModel: string, prompt: string): Promise<string
   const key = Deno.env.get("RUNWARE_IMAGE_API_KEY");
   if (!key) throw new Error("RUNWARE_IMAGE_API_KEY not configured");
 
-  console.log(`[Runware Image] model=${rwModel}, prompt="${prompt.slice(0, 60)}..."`);
+  console.log(`[Runware Image] model=${rwModel}`);
 
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 15_000);
@@ -269,180 +269,27 @@ async function callRunwareImage(rwModel: string, prompt: string): Promise<string
     if (!res.ok) { const b = await res.text(); throw new Error(`Runware ${res.status}: ${b}`); }
     const data = await res.json();
     const url = data.data?.[0]?.imageURL || data.data?.[0]?.imageUrl;
-    if (!url) throw new Error(`Runware returned no image URL: ${JSON.stringify(data).slice(0, 300)}`);
+    if (!url) throw new Error(`Runware returned no image URL: ${JSON.stringify(data).slice(0, 200)}`);
     return url;
   } finally {
     clearTimeout(timer);
   }
 }
 
-// FAL AI image call (secondary — synchronous)
+// FAL AI image call (secondary — synchronous with timeout)
 async function callFalImage(falModel: string, prompt: string): Promise<string> {
   const key = Deno.env.get("FAL_API_KEY");
   if (!key) throw new Error("FAL_API_KEY not configured");
 
-  console.log(`[FAL Image] model=${falModel}, prompt="${prompt.slice(0, 60)}..."`);
-
-  const res = await fetch(`https://fal.run/${falModel}`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Key ${key}`,
-    },
-    body: JSON.stringify({
-      prompt,
-      image_size: "landscape_4_3",
-      num_images: 1,
-      enable_safety_checker: true,
-    }),
-  });
-
-  if (!res.ok) {
-    const errBody = await res.text();
-    throw new Error(`FAL ${res.status} for ${falModel}: ${errBody}`);
-  }
-
-  const data = await res.json();
-  const imageUrl = data.images?.[0]?.url;
-  if (!imageUrl) throw new Error(`FAL returned no URL for ${falModel}`);
-  return imageUrl;
-}
-
-// Replicate image call (synchronous via Prefer: wait)
-async function callReplicateImage(replicateModel: string, prompt: string): Promise<string> {
-  const key = Deno.env.get("REPLICATE_API_TOKEN");
-  if (!key) throw new Error("REPLICATE_API_TOKEN not configured");
-
-  console.log(`[Replicate Image] model=${replicateModel}, prompt="${prompt.slice(0, 60)}..."`);
-
-  // Use /v1/models/{owner}/{name}/predictions with Prefer: wait (synchronous)
-  const url = `https://api.replicate.com/v1/models/${replicateModel}/predictions`;
-  const res = await fetch(url, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${key}`,
-      "Prefer": "wait",
-    },
-    body: JSON.stringify({
-      input: { prompt },
-    }),
-  });
-
-  if (!res.ok) {
-    const errBody = await res.text();
-    throw new Error(`Replicate ${res.status} for ${replicateModel}: ${errBody}`);
-  }
-
-  const data = await res.json();
-  console.log(`[Replicate Image] status=${data.status}, id=${data.id}`);
-
-  if (data.status === "succeeded") {
-    const imageUrl = typeof data.output === "string"
-      ? data.output
-      : Array.isArray(data.output)
-      ? data.output[0]
-      : null;
-    if (!imageUrl) throw new Error("Replicate image returned no output URL");
-    return imageUrl;
-  } else if (data.status === "failed" || data.status === "canceled") {
-    throw new Error(`Replicate image ${data.status}: ${data.error || "unknown"}`);
-  }
-
-  throw new Error(`Replicate image unexpected status: ${data.status}`);
-}
-
-// Main image generation with fallback chain
-export async function generateImage(req: GenerateImageRequest): Promise<GenerateImageResult> {
-  const strategies = imageModelStrategies[req.model];
-  if (!strategies) {
-    throw new Error(`Unknown image model: ${req.model}. Available: ${Object.keys(imageModelStrategies).join(", ")}`);
-  }
-
-  const start = Date.now();
-  let lastError: Error | null = null;
-
-  for (const strategy of strategies) {
-    try {
-      let imageUrl: string;
-
-      if (strategy.type === "runware") {
-        imageUrl = await callRunwareImage(strategy.model, req.prompt);
-      } else if (strategy.type === "fal") {
-        imageUrl = await callFalImage(strategy.model, req.prompt);
-      } else {
-        imageUrl = await callReplicateImage(strategy.model, req.prompt);
-      }
-
-      return {
-        model: req.model,
-        provider: `${strategy.type}/${strategy.model}`,
-        imageUrl,
-        latencyMs: Date.now() - start,
-      };
-    } catch (err) {
-      lastError = err instanceof Error ? err : new Error(String(err));
-      console.log(`[generateImage] ${strategy.type}/${strategy.model} failed: ${lastError.message}`);
-    }
-  }
-
-  throw lastError || new Error(`All image strategies failed for ${req.model}`);
-}
-
-// ══════════════════════════════════════════════
-// VIDEO GENERATION (Runware → FAL → Replicate)
-// ══════════════════════════════════════════════
-
-// Runware video call (primary — fast inference)
-async function callRunwareVideo(rwModel: string, prompt: string): Promise<string> {
-  const key = Deno.env.get("RUNWARE_VIDEO_API_KEY");
-  if (!key) throw new Error("RUNWARE_VIDEO_API_KEY not configured");
-
-  console.log(`[Runware Video] model=${rwModel}, prompt="${prompt.slice(0, 60)}..."`);
+  console.log(`[FAL Image] model=${falModel}`);
 
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 120_000); // 2min max for video
-  try {
-    const res = await fetch("https://api.runware.ai/v1", {
-      method: "POST",
-      headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
-      body: JSON.stringify([{
-        taskType: "videoInference",
-        taskUUID: crypto.randomUUID(),
-        positivePrompt: prompt,
-        model: rwModel,
-        width: 1280,
-        height: 720,
-        numberResults: 1,
-        outputFormat: "MP4",
-      }]),
-      signal: controller.signal,
-    });
-    if (!res.ok) { const b = await res.text(); throw new Error(`Runware ${res.status}: ${b}`); }
-    const data = await res.json();
-    const url = data.data?.[0]?.videoURL || data.data?.[0]?.videoUrl || data.data?.[0]?.imageURL;
-    if (!url) throw new Error(`Runware returned no video URL: ${JSON.stringify(data).slice(0, 300)}`);
-    return url;
-  } finally {
-    clearTimeout(timer);
-  }
-}
-
-// FAL AI video call (secondary provider for video)
-async function callFalVideo(falModel: string, prompt: string): Promise<string> {
-  const key = Deno.env.get("FAL_API_KEY");
-  if (!key) throw new Error("FAL_API_KEY not configured");
-
-  console.log(`[FAL Video] model=${falModel}, prompt="${prompt.slice(0, 60)}..."`);
-
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 120_000); // 2min max for video on FAL
-
+  const timer = setTimeout(() => controller.abort(), 20_000);
   try {
     const res = await fetch(`https://fal.run/${falModel}`, {
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Key ${key}` },
-      body: JSON.stringify({ prompt }),
+      body: JSON.stringify({ prompt, image_size: "landscape_4_3", num_images: 1, enable_safety_checker: true }),
       signal: controller.signal,
     });
 
@@ -452,12 +299,168 @@ async function callFalVideo(falModel: string, prompt: string): Promise<string> {
     }
 
     const data = await res.json();
-    const videoUrl = data.video?.url || data.data?.[0]?.url || data.videos?.[0]?.url || data.url;
-    if (!videoUrl) throw new Error(`FAL returned no video URL for ${falModel}: ${JSON.stringify(data).slice(0, 300)}`);
-    return videoUrl;
+    const imageUrl = data.images?.[0]?.url;
+    if (!imageUrl) throw new Error(`FAL returned no URL for ${falModel}`);
+    return imageUrl;
   } finally {
     clearTimeout(timer);
   }
+}
+
+// Replicate image call — Prefer: wait puis polling si "processing"
+async function callReplicateImage(replicateModel: string, prompt: string): Promise<string> {
+  const key = Deno.env.get("REPLICATE_API_TOKEN");
+  if (!key) throw new Error("REPLICATE_API_TOKEN not configured");
+
+  console.log(`[Replicate Image] model=${replicateModel}`);
+
+  const controller = new AbortController();
+  const createTimer = setTimeout(() => controller.abort(), 20_000);
+  let data: any;
+  try {
+    const res = await fetch(`https://api.replicate.com/v1/models/${replicateModel}/predictions`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}`, "Prefer": "wait" },
+      body: JSON.stringify({ input: { prompt } }),
+      signal: controller.signal,
+    });
+    if (!res.ok) { const b = await res.text(); throw new Error(`Replicate ${res.status}: ${b}`); }
+    data = await res.json();
+  } finally {
+    clearTimeout(createTimer);
+  }
+
+  console.log(`[Replicate Image] initial status=${data.status}, id=${data.id}`);
+
+  // Si succeeded immédiatement
+  if (data.status === "succeeded") {
+    const url = typeof data.output === "string" ? data.output : Array.isArray(data.output) ? data.output[0] : null;
+    if (url) return url;
+  }
+  if (data.status === "failed" || data.status === "canceled") {
+    throw new Error(`Replicate image ${data.status}: ${data.error || "unknown"}`);
+  }
+
+  // Polling si "processing" ou "starting" (Prefer: wait a expiré côté Replicate)
+  const predictionId = data.id;
+  if (!predictionId) throw new Error("Replicate: no prediction ID");
+
+  let elapsed = 0;
+  while (elapsed < 30_000) {
+    await new Promise((r) => setTimeout(r, 2_000));
+    elapsed += 2_000;
+
+    const pr = await fetch(`https://api.replicate.com/v1/predictions/${predictionId}`, {
+      headers: { Authorization: `Bearer ${key}` },
+    });
+    if (!pr.ok) continue;
+    const pd = await pr.json();
+
+    if (pd.status === "succeeded") {
+      const url = typeof pd.output === "string" ? pd.output : Array.isArray(pd.output) ? pd.output[0] : null;
+      if (!url) throw new Error("Replicate image: no output URL");
+      return url;
+    }
+    if (pd.status === "failed" || pd.status === "canceled") {
+      throw new Error(`Replicate image ${pd.status}: ${pd.error || "unknown"}`);
+    }
+  }
+
+  throw new Error("Replicate image timeout (30s polling)");
+}
+
+// Main image generation — Runware + FAL en race parallèle, Replicate en fallback
+export async function generateImage(req: GenerateImageRequest): Promise<GenerateImageResult> {
+  const strategies = imageModelStrategies[req.model];
+  if (!strategies) {
+    throw new Error(`Unknown image model: ${req.model}. Available: ${Object.keys(imageModelStrategies).join(", ")}`);
+  }
+
+  const start = Date.now();
+
+  const callStrat = async (s: ImageStrategy): Promise<GenerateImageResult> => {
+    let imageUrl: string;
+    if (s.type === "runware") imageUrl = await callRunwareImage(s.model, req.prompt);
+    else if (s.type === "fal") imageUrl = await callFalImage(s.model, req.prompt);
+    else imageUrl = await callReplicateImage(s.model, req.prompt);
+    return { model: req.model, provider: `${s.type}/${s.model}`, imageUrl, latencyMs: Date.now() - start };
+  };
+
+  // Race les 2 premiers (Runware + FAL) en parallèle
+  const [s0, s1, ...rest] = strategies;
+  try {
+    return await Promise.any([callStrat(s0), callStrat(s1)]);
+  } catch {
+    // Les 2 premiers ont échoué → fallbacks séquentiels
+    for (const s of rest) {
+      try { return await callStrat(s); } catch (e) {
+        console.log(`[generateImage] fallback ${s.type}/${s.model} failed: ${e}`);
+      }
+    }
+    throw new Error(`All image strategies failed for ${req.model}`);
+  }
+}
+
+// ══════════════════════════════════════════════
+// VIDEO GENERATION (FAL queue + Replicate en race parallèle)
+// NOTE: Runware supprimé — taskType "videoInference" non supporté
+// ══════════════════════════════════════════════
+
+// Params FAL adaptés par modèle
+function getFalVideoBody(falModel: string, prompt: string): Record<string, unknown> {
+  if (falModel.includes("minimax")) return { prompt, prompt_optimizer: true };
+  if (falModel.includes("luma"))    return { prompt, duration: "5s", aspect_ratio: "16:9" };
+  if (falModel.includes("ltx"))     return { prompt, negative_prompt: "low quality, blurry, distorted" };
+  return { prompt };
+}
+
+// FAL video via queue API (async — polling)
+async function callFalVideo(falModel: string, prompt: string): Promise<string> {
+  const key = Deno.env.get("FAL_API_KEY");
+  if (!key) throw new Error("FAL_API_KEY not configured");
+
+  console.log(`[FAL Video queue] model=${falModel}`);
+  const headers = { "Content-Type": "application/json", Authorization: `Key ${key}` };
+
+  // Soumission à la queue
+  const submitRes = await fetch(`https://queue.fal.run/${falModel}`, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(getFalVideoBody(falModel, prompt)),
+  });
+  if (!submitRes.ok) {
+    const b = await submitRes.text();
+    throw new Error(`FAL submit ${submitRes.status} for ${falModel}: ${b}`);
+  }
+  const { request_id } = await submitRes.json();
+  if (!request_id) throw new Error(`FAL: no request_id for ${falModel}`);
+
+  // Polling jusqu'à completion (max 120s)
+  const pollBase = `https://queue.fal.run/${falModel}/requests/${request_id}`;
+  let elapsed = 0;
+  while (elapsed < 120_000) {
+    await new Promise((r) => setTimeout(r, 3_000));
+    elapsed += 3_000;
+
+    const statusRes = await fetch(`${pollBase}/status`, { headers });
+    if (!statusRes.ok) continue;
+    const status = await statusRes.json();
+    console.log(`[FAL Video] ${falModel} status=${status.status} (${elapsed}ms)`);
+
+    if (status.status === "COMPLETED") {
+      const resultRes = await fetch(pollBase, { headers });
+      if (!resultRes.ok) throw new Error(`FAL result ${resultRes.status}`);
+      const result = await resultRes.json();
+      const url = result.video?.url || result.videos?.[0]?.url || result.data?.[0]?.url || result.url;
+      if (!url) throw new Error(`FAL: no video URL in result for ${falModel}`);
+      return url;
+    }
+    if (status.status === "FAILED") {
+      throw new Error(`FAL video failed for ${falModel}: ${status.error || "unknown"}`);
+    }
+  }
+
+  throw new Error(`FAL video timeout (120s) for ${falModel}`);
 }
 
 // Replicate video call (poll-based)
@@ -465,17 +468,12 @@ async function callReplicateVideo(replicateModel: string, prompt: string): Promi
   const key = Deno.env.get("REPLICATE_API_TOKEN");
   if (!key) throw new Error("REPLICATE_API_TOKEN not configured");
 
-  console.log(`[Replicate Video] model=${replicateModel}, prompt="${prompt.slice(0, 60)}..."`);
+  console.log(`[Replicate Video] model=${replicateModel}`);
 
   const createRes = await fetch(`https://api.replicate.com/v1/models/${replicateModel}/predictions`, {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${key}`,
-    },
-    body: JSON.stringify({
-      input: { prompt },
-    }),
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
+    body: JSON.stringify({ input: { prompt } }),
   });
 
   if (!createRes.ok) {
@@ -485,20 +483,16 @@ async function callReplicateVideo(replicateModel: string, prompt: string): Promi
 
   const prediction = await createRes.json();
   const predictionId = prediction.id;
-  if (!predictionId) throw new Error("Replicate returned no prediction ID");
+  if (!predictionId) throw new Error("Replicate: no prediction ID");
 
-  const maxWait = 180_000;
-  const pollInterval = 4_000;
   let elapsed = 0;
-
-  while (elapsed < maxWait) {
-    await new Promise((r) => setTimeout(r, pollInterval));
-    elapsed += pollInterval;
+  while (elapsed < 180_000) {
+    await new Promise((r) => setTimeout(r, 4_000));
+    elapsed += 4_000;
 
     const pollRes = await fetch(`https://api.replicate.com/v1/predictions/${predictionId}`, {
       headers: { Authorization: `Bearer ${key}` },
     });
-
     if (!pollRes.ok) continue;
     const pollData = await pollRes.json();
 
@@ -506,17 +500,18 @@ async function callReplicateVideo(replicateModel: string, prompt: string): Promi
       const url = typeof pollData.output === "string"
         ? pollData.output
         : Array.isArray(pollData.output) ? pollData.output[0] : null;
-      if (!url) throw new Error("Replicate video returned no output URL");
+      if (!url) throw new Error("Replicate video: no output URL");
       return url;
-    } else if (pollData.status === "failed" || pollData.status === "canceled") {
+    }
+    if (pollData.status === "failed" || pollData.status === "canceled") {
       throw new Error(`Replicate video ${pollData.status}: ${pollData.error || "unknown"}`);
     }
   }
 
-  throw new Error(`Replicate video timed out after ${maxWait / 1000}s`);
+  throw new Error(`Replicate video timed out (180s) for ${replicateModel}`);
 }
 
-// Main video generation with fallback
+// Main video generation — FAL + Replicate en race parallèle
 export async function generateVideo(req: GenerateVideoRequest): Promise<GenerateVideoResult> {
   const strategies = videoModelStrategies[req.model];
   if (!strategies) {
@@ -524,33 +519,16 @@ export async function generateVideo(req: GenerateVideoRequest): Promise<Generate
   }
 
   const start = Date.now();
-  let lastError: Error | null = null;
 
-  for (const strategy of strategies) {
-    try {
-      let videoUrl: string;
+  const callVidStrat = async (s: VideoStrategy): Promise<GenerateVideoResult> => {
+    const videoUrl = s.type === "fal"
+      ? await callFalVideo(s.model, req.prompt)
+      : await callReplicateVideo(s.model, req.prompt);
+    return { model: req.model, provider: `${s.type}/${s.model}`, videoUrl, latencyMs: Date.now() - start };
+  };
 
-      if (strategy.type === "runware") {
-        videoUrl = await callRunwareVideo(strategy.model, req.prompt);
-      } else if (strategy.type === "fal") {
-        videoUrl = await callFalVideo(strategy.model, req.prompt);
-      } else {
-        videoUrl = await callReplicateVideo(strategy.model, req.prompt);
-      }
-
-      return {
-        model: req.model,
-        provider: `${strategy.type}/${strategy.model}`,
-        videoUrl,
-        latencyMs: Date.now() - start,
-      };
-    } catch (err) {
-      lastError = err instanceof Error ? err : new Error(String(err));
-      console.log(`[generateVideo] ${strategy.type}/${strategy.model} failed: ${lastError.message}`);
-    }
-  }
-
-  throw lastError || new Error(`All video strategies failed for ${req.model}`);
+  // Race tous les providers en parallèle — retourne le plus rapide
+  return await Promise.any(strategies.map(callVidStrat));
 }
 
 // ══════════════════════════════════════════════
@@ -572,16 +550,9 @@ export async function generateAudio(req: GenerateAudioRequest): Promise<Generate
 
   const createRes = await fetch(`https://api.replicate.com/v1/models/${replicateModel}/predictions`, {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${key}`,
-    },
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
     body: JSON.stringify({
-      input: {
-        prompt: req.prompt,
-        duration: 8,
-        model_version: "stereo-melody-large",
-      },
+      input: { prompt: req.prompt, duration: 8, model_version: "stereo-melody-large" },
     }),
   });
 
@@ -592,20 +563,16 @@ export async function generateAudio(req: GenerateAudioRequest): Promise<Generate
 
   const prediction = await createRes.json();
   const predictionId = prediction.id;
-  if (!predictionId) throw new Error("Replicate returned no prediction ID");
+  if (!predictionId) throw new Error("Replicate: no prediction ID");
 
-  const maxWait = 120_000;
-  const pollInterval = 3_000;
   let elapsed = 0;
-
-  while (elapsed < maxWait) {
-    await new Promise((r) => setTimeout(r, pollInterval));
-    elapsed += pollInterval;
+  while (elapsed < 120_000) {
+    await new Promise((r) => setTimeout(r, 3_000));
+    elapsed += 3_000;
 
     const pollRes = await fetch(`https://api.replicate.com/v1/predictions/${predictionId}`, {
       headers: { Authorization: `Bearer ${key}` },
     });
-
     if (!pollRes.ok) continue;
     const pollData = await pollRes.json();
 
@@ -613,18 +580,13 @@ export async function generateAudio(req: GenerateAudioRequest): Promise<Generate
       const audioUrl = typeof pollData.output === "string"
         ? pollData.output
         : Array.isArray(pollData.output) ? pollData.output[0] : null;
-      if (!audioUrl) throw new Error("Replicate audio returned no output URL");
-
-      return {
-        model: req.model,
-        provider: `replicate/${replicateModel}`,
-        audioUrl,
-        latencyMs: Date.now() - start,
-      };
-    } else if (pollData.status === "failed" || pollData.status === "canceled") {
+      if (!audioUrl) throw new Error("Replicate audio: no output URL");
+      return { model: req.model, provider: `replicate/${replicateModel}`, audioUrl, latencyMs: Date.now() - start };
+    }
+    if (pollData.status === "failed" || pollData.status === "canceled") {
       throw new Error(`Replicate audio ${pollData.status}: ${pollData.error || "unknown"}`);
     }
   }
 
-  throw new Error(`Replicate audio timed out after ${maxWait / 1000}s`);
+  throw new Error(`Replicate audio timed out (120s)`);
 }

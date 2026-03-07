@@ -774,27 +774,40 @@ app.post("/generate/image-multi", async (c) => {
 
 app.post("/generate/video-multi", async (c) => {
   const t0 = Date.now();
+  const VIDEO_MODEL_TIMEOUT = 150_000;
+  const VIDEO_HANDLER_TIMEOUT = 200_000;
   try {
     let user: AuthUser | null = null;
     try { user = await getUser(c); console.log(`[video-multi] auth: ${user ? `user=${user.id}` : "guest"}`); } catch { }
     const { prompt, models } = await c.req.json();
     console.log(`[video-multi] prompt="${prompt?.slice(0, 60)}", models=${JSON.stringify(models)}`);
     if (!prompt || !models?.length) return c.json({ error: "prompt and models required" }, 400);
-    const results: any[] = [];
-    await Promise.all(
+
+    const work = Promise.all(
       models.map(async (model: string) => {
         if (user) deductCredit(user.id, 5).catch(() => {});
         try {
-          const result = await generateVideo({ prompt, model });
+          const result = await Promise.race([
+            generateVideo({ prompt, model }),
+            new Promise<never>((_, reject) => setTimeout(() => reject(new Error(`Model timeout: ${model}`)), VIDEO_MODEL_TIMEOUT)),
+          ]);
           if (user) logEvent("generation", { userId: user.id, type: "video", model }).catch(() => {});
           logCost({ type: "video", model, provider: result.provider, costUsd: getProviderCost(result.provider, "video"), revenueEur: REVENUE_PER_TYPE.video, latencyMs: result.latencyMs, userId: user?.id || "guest", success: true }).catch(() => {});
-          results.push({ success: true, result });
+          return { success: true, result };
         } catch (err) {
           logCost({ type: "video", model, provider: "unknown", costUsd: 0, revenueEur: 0, latencyMs: Date.now() - t0, userId: user?.id || "guest", success: false }).catch(() => {});
-          results.push({ success: false, error: String(err) });
+          return { success: false, error: String(err) };
         }
       })
     );
+
+    const results = await Promise.race([
+      work,
+      new Promise<typeof models extends string[] ? { success: boolean; error?: string }[] : never>((_, reject) =>
+        setTimeout(() => reject(new Error("Video handler timeout")), VIDEO_HANDLER_TIMEOUT)
+      ),
+    ]).catch((err) => models.map((m: string) => ({ success: false, error: `Timeout for ${m}: ${err}` })));
+
     console.log(`[video-multi] done in ${Date.now() - t0}ms`);
     return c.json({ success: true, results });
   } catch (err) {
@@ -805,27 +818,36 @@ app.post("/generate/video-multi", async (c) => {
 
 app.post("/generate/audio-multi", async (c) => {
   const t0 = Date.now();
+  const AUDIO_HANDLER_TIMEOUT = 150_000;
   try {
     let user: AuthUser | null = null;
     try { user = await getUser(c); console.log(`[audio-multi] auth: ${user ? `user=${user.id}` : "guest"}`); } catch { }
     const { prompt, models } = await c.req.json();
     console.log(`[audio-multi] prompt="${prompt?.slice(0, 60)}", models=${JSON.stringify(models)}`);
     if (!prompt || !models?.length) return c.json({ error: "prompt and models required" }, 400);
-    const results: any[] = [];
-    await Promise.all(
+
+    const work = Promise.all(
       models.map(async (model: string) => {
         if (user) deductCredit(user.id, 3).catch(() => {});
         try {
           const result = await generateAudio({ prompt, model });
           if (user) logEvent("generation", { userId: user.id, type: "audio", model }).catch(() => {});
           logCost({ type: "audio", model, provider: result.provider, costUsd: getProviderCost(result.provider, "audio"), revenueEur: REVENUE_PER_TYPE.audio, latencyMs: result.latencyMs, userId: user?.id || "guest", success: true }).catch(() => {});
-          results.push({ success: true, result });
+          return { success: true, result };
         } catch (err) {
           logCost({ type: "audio", model, provider: "unknown", costUsd: 0, revenueEur: 0, latencyMs: Date.now() - t0, userId: user?.id || "guest", success: false }).catch(() => {});
-          results.push({ success: false, error: String(err) });
+          return { success: false, error: String(err) };
         }
       })
     );
+
+    const results = await Promise.race([
+      work,
+      new Promise<never>((_, reject) =>
+        setTimeout(() => reject(new Error("Audio handler timeout")), AUDIO_HANDLER_TIMEOUT)
+      ),
+    ]).catch((err) => models.map((m: string) => ({ success: false, error: `Timeout for ${m}: ${err}` })));
+
     console.log(`[audio-multi] done in ${Date.now() - t0}ms`);
     return c.json({ success: true, results });
   } catch (err) {
