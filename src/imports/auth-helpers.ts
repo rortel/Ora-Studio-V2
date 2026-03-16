@@ -148,7 +148,7 @@ const textModelMap: Record<string, { apiModel: string; fallback?: string }> = {
   "gemini-code":   { apiModel: "gemini-2.5-flash-preview-05-20", fallback: "gemini-2.0-flash" },
 };
 
-interface ImgStrategy { type: "fal" | "replicate"; model: string; }
+interface ImgStrategy { type: "fal" | "replicate" | "firefly"; model: string; }
 const imageStrategies: Record<string, ImgStrategy[]> = {
   "ora-vision":     [{ type: "fal", model: "fal-ai/flux/schnell" }, { type: "replicate", model: "black-forest-labs/flux-schnell" }],
   "nano-banana":    [{ type: "fal", model: "fal-ai/flux/schnell" }, { type: "replicate", model: "black-forest-labs/flux-schnell" }],
@@ -156,6 +156,9 @@ const imageStrategies: Record<string, ImgStrategy[]> = {
   "seedream-5-lite":[{ type: "fal", model: "fal-ai/flux/schnell" }, { type: "replicate", model: "black-forest-labs/flux-schnell" }],
   "dall-e":         [{ type: "fal", model: "fal-ai/flux/schnell" }, { type: "replicate", model: "black-forest-labs/flux-schnell" }],
   "flux-pro":       [{ type: "fal", model: "fal-ai/flux-pro/v1.1" }, { type: "fal", model: "fal-ai/flux/schnell" }, { type: "replicate", model: "black-forest-labs/flux-schnell" }],
+  "firefly":        [{ type: "firefly", model: "firefly-image-3" }, { type: "fal", model: "fal-ai/flux/schnell" }],
+  "firefly-3":      [{ type: "firefly", model: "firefly-image-3" }, { type: "fal", model: "fal-ai/flux/schnell" }],
+  "firefly-fast":   [{ type: "firefly", model: "firefly-image-2" }, { type: "fal", model: "fal-ai/flux/schnell" }],
 };
 
 const videoStrategies: Record<string, string[]> = {
@@ -230,6 +233,49 @@ async function callFalImage(falModel: string, prompt: string): Promise<string> {
   return url;
 }
 
+// ── IMAGE: Adobe Firefly ──────────────────────────────────────
+async function callFireflyImage(fireflyModel: string, prompt: string): Promise<string> {
+  const clientId = Deno.env.get("FIREFLY_CLIENT_ID");
+  const clientSecret = Deno.env.get("FIREFLY_CLIENT_SECRET");
+  if (!clientId || !clientSecret) throw new Error("FIREFLY_CLIENT_ID or FIREFLY_CLIENT_SECRET not set");
+  console.log(`[firefly] ${fireflyModel}`);
+
+  // Step 1: Get access token
+  const tokenRes = await fetch("https://ims-na1.adobelogin.com/ims/token/v3", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams({
+      grant_type: "client_credentials",
+      client_id: clientId,
+      client_secret: clientSecret,
+      scope: "openid,AdobeID,firefly_api",
+    }),
+  });
+  if (!tokenRes.ok) { const b = await tokenRes.text(); throw new Error(`Firefly auth ${tokenRes.status}: ${b}`); }
+  const { access_token } = await tokenRes.json();
+  if (!access_token) throw new Error("Firefly: no access_token");
+
+  // Step 2: Generate image
+  const genRes = await fetch("https://firefly-api.adobe.io/v3/images/generate", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": `Bearer ${access_token}`,
+      "X-Api-Key": clientId,
+    },
+    body: JSON.stringify({
+      prompt,
+      size: { width: 1344, height: 768 },
+      n: 1,
+    }),
+  });
+  if (!genRes.ok) { const b = await genRes.text(); throw new Error(`Firefly gen ${genRes.status}: ${b}`); }
+  const data = await genRes.json();
+  const url = data.outputs?.[0]?.image?.url;
+  if (!url) throw new Error("Firefly: no URL returned");
+  return url;
+}
+
 // ── IMAGE: Replicate ─────────────────────────────────────────
 async function callReplicateImage(repModel: string, prompt: string): Promise<string> {
   const key = Deno.env.get("REPLICATE_API_TOKEN");
@@ -268,7 +314,9 @@ async function generateImage(req: { prompt: string; model: string }) {
   let lastErr: Error | null = null;
   for (const s of strats) {
     try {
-      const url = s.type === "fal" ? await callFalImage(s.model, req.prompt) : await callReplicateImage(s.model, req.prompt);
+      const url = s.type === "fal" ? await callFalImage(s.model, req.prompt)
+               : s.type === "firefly" ? await callFireflyImage(s.model, req.prompt)
+               : await callReplicateImage(s.model, req.prompt);
       return { model: req.model, provider: `${s.type}/${s.model}`, imageUrl: url, latencyMs: Date.now() - start };
     } catch (err) {
       lastErr = err instanceof Error ? err : new Error(String(err));
