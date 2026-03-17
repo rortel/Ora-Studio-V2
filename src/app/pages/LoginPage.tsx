@@ -162,7 +162,7 @@ export function LoginPage() {
       const { error: oauthError } = await supabase.auth.signInWithOAuth({
         provider: "google",
         options: {
-          redirectTo: `${window.location.origin}/profile`,
+          redirectTo: `https://www.ora-studio.app/profile`,
         },
       });
       if (oauthError) {
