@@ -2,7 +2,7 @@ import { supabase, API_BASE, publicAnonKey } from "../lib/supabase";
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { Link, useNavigate, useSearchParams } from "react-router";
-import { PulseIcon } from "../components/PulseMotif";
+import { OraLogo } from "../components/OraLogo";
 import { ArrowRight, Eye, EyeOff, Loader2, AlertTriangle, CheckCircle2 } from "lucide-react";
 import { useAuth } from "../lib/auth-context";
 
@@ -84,10 +84,10 @@ export function LoginPage() {
       const res = await fetch(`${API_BASE}/auth/signup`, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${publicAnonKey}`,
+          "Authorization": `Bearer ${publicAnonKey}`,
+          "Content-Type": "text/plain",
         },
-        body: JSON.stringify({ email, password, name }),
+        body: JSON.stringify({ email, password, name, _token: "" }),
         signal: controller.signal,
       });
       clearTimeout(timeoutId);
@@ -159,24 +159,54 @@ export function LoginPage() {
     setError("");
     setSuccess("");
     try {
-      const { error: oauthError } = await supabase.auth.signInWithOAuth({
+      console.log("[GoogleAuth] Starting signInWithOAuth...");
+      const { data, error: oauthError } = await supabase.auth.signInWithOAuth({
         provider: "google",
         options: {
           redirectTo: `${window.location.origin}/profile`,
+          skipBrowserRedirect: true,
         },
       });
+      console.log("[GoogleAuth] Response:", { url: data?.url, error: oauthError?.message });
       if (oauthError) {
         console.error("Google OAuth error:", oauthError.message);
         if (oauthError.message.includes("provider is not enabled")) {
-          setError("Google login is not yet configured. Please use email/password instead.");
+          setError(
+            "Google login is not yet configured on this Supabase project. Go to Supabase Dashboard → Authentication → Providers → Google and enable it."
+          );
         } else {
           setError(oauthError.message);
         }
+        setLoading(false);
+        return;
       }
+      if (data?.url) {
+        console.log("[GoogleAuth] Opening auth URL:", data.url);
+        // Try multiple redirect strategies — iframe sandboxing can block window.location
+        try {
+          // Strategy 1: top-level redirect (works if not deeply sandboxed)
+          const target = window.top || window.parent || window;
+          target.location.href = data.url;
+        } catch {
+          try {
+            // Strategy 2: open in new tab/popup
+            const popup = window.open(data.url, "_blank", "noopener,noreferrer");
+            if (!popup) {
+              // Strategy 3: direct location (fallback)
+              window.location.href = data.url;
+            }
+          } catch {
+            window.location.href = data.url;
+          }
+        }
+        return;
+      }
+      console.warn("[GoogleAuth] No URL returned and no error");
+      setError("Google sign-in did not return a redirect URL. Please try again.");
+      setLoading(false);
     } catch (err) {
       console.error("Google OAuth exception:", err);
       setError("Google sign-in failed. Please try again.");
-    } finally {
       setLoading(false);
     }
   };
@@ -211,24 +241,18 @@ export function LoginPage() {
       >
         {/* Logo */}
         <div className="flex items-center justify-center gap-2.5 mb-8">
-          <PulseIcon size={32} />
-          <span
-            className="text-foreground"
-            style={{ fontSize: '20px', fontWeight: 600, letterSpacing: '-0.02em' }}
-          >
-            ORA
-          </span>
+          <OraLogo size={40} animate={false} />
         </div>
 
         {/* Card */}
-        <div className="bg-card border border-border rounded-xl p-7" style={{ boxShadow: '0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.04)' }}>
+        <div className="rounded-2xl p-7" style={{ background: '#1a1918', border: '1px solid rgba(255,255,255,0.06)', boxShadow: '0 16px 48px rgba(0,0,0,0.5)' }}>
           <h1
-            className="text-foreground text-center mb-2"
-            style={{ fontSize: '22px', fontWeight: 500, letterSpacing: '-0.02em' }}
+            className="text-center mb-2"
+            style={{ fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', color: "#FAFAFA" }}
           >
             {titles[mode].heading}
           </h1>
-          <p className="text-muted-foreground text-center mb-7" style={{ fontSize: '14px' }}>
+          <p className="text-center mb-7" style={{ fontSize: '14px', color: "#71717A" }}>
             {titles[mode].sub}
           </p>
 
@@ -264,8 +288,8 @@ export function LoginPage() {
               <button
                 onClick={handleGoogleSignIn}
                 disabled={loading}
-                className="w-full flex items-center justify-center gap-2.5 border border-border py-2.5 rounded-lg text-foreground hover:bg-secondary transition-colors mb-5 cursor-pointer disabled:opacity-50"
-                style={{ fontSize: '14px', fontWeight: 450 }}
+                className="w-full flex items-center justify-center gap-2.5 border py-2.5 rounded-lg text-foreground hover:bg-secondary transition-colors mb-5 cursor-pointer disabled:opacity-50"
+                style={{ fontSize: '14px', fontWeight: 450, borderColor: 'rgba(255,255,255,0.06)' }}
               >
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844a4.14 4.14 0 01-1.796 2.716v2.259h2.908c1.702-1.567 2.684-3.875 2.684-6.615z" fill="#4285F4"/>
@@ -278,9 +302,9 @@ export function LoginPage() {
 
               {/* Divider */}
               <div className="flex items-center gap-3 mb-5">
-                <div className="flex-1 h-px bg-border" />
-                <span className="text-muted-foreground" style={{ fontSize: '12px' }}>or</span>
-                <div className="flex-1 h-px bg-border" />
+                <div className="flex-1 h-px" style={{ background: 'rgba(255,255,255,0.06)' }} />
+                <span style={{ fontSize: '12px', color: '#5C5856' }}>or</span>
+                <div className="flex-1 h-px" style={{ background: 'rgba(255,255,255,0.06)' }} />
               </div>
             </>
           )}
@@ -349,8 +373,8 @@ export function LoginPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground py-3 rounded-lg hover:opacity-90 transition-opacity cursor-pointer disabled:opacity-60"
-              style={{ fontSize: '14px', fontWeight: 500 }}
+              className="w-full flex items-center justify-center gap-2 py-3 rounded-xl hover:scale-[1.02] transition-all cursor-pointer disabled:opacity-60"
+              style={{ fontSize: '14px', fontWeight: 500, color: '#131211', background: '#E8E4DF' }}
             >
               {loading ? (
                 <>

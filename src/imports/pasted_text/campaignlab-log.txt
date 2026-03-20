@@ -1,0 +1,357 @@
+[Auth] onAuthStateChange event: SIGNED_IN
+ [DEBUG ECHO] Object
+ [fetchProfile] trying auth-header...
+ [fetchProfile] auth-header: status=200 authenticated=true (589ms)
+ [Auth] onAuthStateChange event: SIGNED_IN
+ [DEBUG ECHO] Object
+ [fetchProfile] trying auth-header...
+ [fetchProfile] auth-header: status=200 authenticated=true (894ms)
+ [Auth] onAuthStateChange event: SIGNED_IN
+ [DEBUG ECHO] Object
+ [fetchProfile] trying auth-header...
+ [fetchProfile] auth-header: status=200 authenticated=true (762ms)
+ [CampaignLab] Vault loaded: Relais Christine
+ [Auth] onAuthStateChange event: SIGNED_IN
+ [DEBUG ECHO] Object
+ [fetchProfile] trying auth-header...
+ [fetchProfile] auth-header: status=200 authenticated=true (704ms)
+ [CampaignLab] Fetching plan via POST (server-side brand context)...
+ [CampaignLab] Visual directive received: 594 chars
+ [CampaignLab] Brand ref images received: 5 images
+ [CampaignLab] Using brand ref image [0] (AI-suggested) for linkedin-post
+ [CampaignLab] image-start linkedin-post (16:9) ref=true brandVisual=594 chars
+ [CampaignLab] Using brand ref image [0] (AI-suggested) for instagram-post
+ [CampaignLab] image-start instagram-post (1:1) ref=true brandVisual=594 chars
+ [CampaignLab] Using brand ref image [0] (AI-suggested) for instagram-story
+ [CampaignLab] image-start instagram-story (9:16) ref=true brandVisual=594 chars
+ [CampaignLab] Using brand ref image [0] (AI-suggested) for facebook-post
+ [CampaignLab] image-start facebook-post (16:9) ref=true brandVisual=594 chars
+ [CampaignLab] Using brand ref image [0] (AI-suggested) for instagram-reel
+ [CampaignLab] Video instagram-reel: generating branded first frame...
+ [CampaignLab] Using brand ref image [0] (AI-suggested) for linkedin-video
+ [CampaignLab] Video linkedin-video: generating branded first frame...
+ [CampaignLab] image-start response: {"success":true,"generationId":"eb3f384e-8615-43d0-901c-3439fa4ccf1b","state":"queued"}
+ [CampaignLab] image-start response: {"success":true,"generationId":"d7e0330a-df4a-4109-9d05-f099466992bf","state":"queued"}
+ [CampaignLab] image-start response: {"success":true,"generationId":"c4da9c0e-7220-48bb-a989-50e2c10d39b3","state":"queued"}
+ [CampaignLab] Video linkedin-video: first frame submitted (genId=d050edb2-c220-4fea-a9bd-300be1e8605f), waiting...
+ [CampaignLab] image-start response: {"success":true,"generationId":"840f8c0c-4cd0-4b41-821d-9fb05ec78ad9","state":"queued"}
+ [CampaignLab] Video instagram-reel: first frame submitted (genId=91bed96b-a9c6-4b29-89cf-787d29af1f27), waiting...
+ [CampaignLab] Poll #1 image instagram-post: state=queued
+ [CampaignLab] Poll #1 image linkedin-post: state=queued
+ [CampaignLab] Poll #1 image instagram-story: state=queued
+ [CampaignLab] Poll #1 image facebook-post: state=queued
+ [CampaignLab] Poll #2 image instagram-post: state=queued
+ [CampaignLab] Poll #2 image instagram-story: state=queued
+ [CampaignLab] Poll #2 image linkedin-post: state=queued
+ [CampaignLab] Poll #2 image facebook-post: state=queued
+ [CampaignLab] Poll #3 image instagram-post: state=dreaming
+ [CampaignLab] Poll #3 image linkedin-post: state=dreaming
+ [CampaignLab] Poll #3 image facebook-post: state=dreaming
+ [CampaignLab] Poll #3 image instagram-story: state=dreaming
+ [CampaignLab] Video linkedin-video: first frame ready, proceeding to video generation
+ [CampaignLab] video-start linkedin-video (16:9) firstFrame=true brandVisual=594 chars
+ [CampaignLab] video-start response: {"success":true,"generationId":"b126cd61-731c-4d89-b8f9-4a5a121193f3","state":"queued","model":"ora-motion","lumaModel":"ray-2"}
+ [CampaignLab] Poll #4 image instagram-post: state=dreaming
+ [CampaignLab] Poll #4 image linkedin-post: state=completed
+ [CampaignLab] Video instagram-reel: first frame ready, proceeding to video generation
+ [CampaignLab] video-start instagram-reel (9:16) firstFrame=true brandVisual=594 chars
+ [CampaignLab] Poll #4 image facebook-post: state=dreaming
+ [CampaignLab] Poll #4 image instagram-story: state=completed
+ [CampaignLab] image instagram-story COMPLETED, url=yes
+ [CampaignLab] video-start response: {"success":true,"generationId":"14276495-0f90-4aac-b7d7-5778659a01dc","state":"queued","model":"ora-motion","lumaModel":"ray-2"}
+ [CampaignLab] Poll #5 image instagram-post: state=completed
+ [CampaignLab] Poll #1 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #5 image facebook-post: state=completed
+ [CampaignLab] image instagram-post COMPLETED, url=yes
+ [CampaignLab] image facebook-post COMPLETED, url=yes
+ [CampaignLab] image linkedin-post COMPLETED, url=yes
+ [CampaignLab] Poll #1 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #2 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #2 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #3 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #3 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #4 video linkedin-video: state=dreaming
+ [CampaignLab] Compliance check instagram-post: {"success":true,"score":90,"breakdown":{"overall":90,"text":100,"tone":85,"visual":88},"details":{"textIssues":[],"textStrengths":["No forbidden terms used","Good vocabulary alignment (3 approved terms used)"],"toneIssues":["Slightly more warmth than the brand tone allows"],"toneStrengths":["Profess
+ [CampaignLab] Compliance check linkedin-post: {"success":true,"score":84,"breakdown":{"overall":84,"text":100,"tone":85,"visual":75},"details":{"textIssues":[],"textStrengths":["No forbidden terms used","Good vocabulary alignment (3 approved terms used)","Key messages referenced (4/5)"],"toneIssues":["Slightly lacking in warmth"],"toneStrengths
+ [CampaignLab] Poll #4 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #5 video linkedin-video: state=dreaming
+ [CampaignLab] Compliance check facebook-post: {"success":true,"score":92,"breakdown":{"overall":92,"text":100,"tone":92,"visual":88},"details":{"textIssues":[],"textStrengths":["No forbidden terms used","Good vocabulary alignment (4 approved terms used)","Key messages referenced (1/5)"],"toneIssues":[],"toneStrengths":["Professional and confide
+ [CampaignLab] Poll #5 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #6 video linkedin-video: state=dreaming
+ [CampaignLab] Compliance check error for instagram-story: TimeoutError: signal timed out
+ [CampaignLab] Poll #6 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #7 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #7 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #8 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #8 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #9 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #9 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #10 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #10 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #11 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #11 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #12 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #12 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #13 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #13 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #14 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #14 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #15 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #15 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #16 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #16 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #17 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #17 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #18 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #18 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #19 video linkedin-video: state=completed
+ [CampaignLab] video linkedin-video COMPLETED, url=yes
+ [CampaignLab] Poll #19 video instagram-reel: state=dreaming
+ [CampaignLab] Compliance check linkedin-video: {"success":true,"score":92,"breakdown":{"overall":92,"text":100,"tone":85,"visual":92},"details":{"textIssues":[],"textStrengths":["No forbidden terms used","Good vocabulary alignment (3 approved terms used)","Key messages referenced (1/5)"],"toneIssues":["Limited warmth"],"toneStrengths":["High con
+ [CampaignLab] Poll #20 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #21 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #22 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #23 video instagram-reel: state=completed
+ [CampaignLab] video instagram-reel COMPLETED, url=yes
+ [CampaignLab] Compliance check instagram-reel: {"success":true,"score":86,"breakdown":{"overall":86,"text":100,"tone":75,"visual":85},"details":{"textIssues":[],"textStrengths":["No forbidden terms used"],"toneIssues":["Lack of formality","Use of emojis reduces professionalism"],"toneStrengths":["Confident messaging","Focus on innovation and sus
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/382cda89fff2bbb8d3123a7e11f08fe5c31b7bccb469ecddf88c7765b148aed4:1  Failed to load resource: the server responded with a status of 404 ()Understand this error
+vendor-core-ade2edecaf4781c7.min.js.br:54 Failed to fetch snapshot files: E: XHR for "/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/382cda89fff2bbb8d3123a7e11f08fe5c31b7bccb469ecddf88c7765b148aed4" failed with status 404
+    at C (1535-b5b5bbc16f7fd25b.min.js.br:1131:13965)
+    at async Object.k [as get] (1535-b5b5bbc16f7fd25b.min.js.br:1131:14348)
+    at async 3058-0a0b28f4f2c1fffa.min.js.br:3:24678
+    at async 3058-0a0b28f4f2c1fffa.min.js.br:34:30563
+    at async 3058-0a0b28f4f2c1fffa.min.js.br:3:25109
+    at async k (3058-0a0b28f4f2c1fffa.min.js.br:34:30071)
+    at async 3058-0a0b28f4f2c1fffa.min.js.br:33:104785
+(anonymous) @ vendor-core-ade2edecaf4781c7.min.js.br:54Understand this warning
+ [Auth] onAuthStateChange event: SIGNED_IN
+ [DEBUG ECHO] Object
+ [fetchProfile] trying auth-header...
+ [fetchProfile] auth-header: status=200 authenticated=true (1026ms)
+ [CampaignLab] Fetching plan via POST (server-side brand context)...
+ [CampaignLab] Visual directive received: 594 chars
+ [CampaignLab] Brand ref images received: 5 images
+ [CampaignLab] image-start linkedin-post (16:9) ref=true brandVisual=594 chars
+ [CampaignLab] image-start instagram-post (1:1) ref=true brandVisual=594 chars
+ [CampaignLab] image-start instagram-story (9:16) ref=true brandVisual=594 chars
+ [CampaignLab] image-start facebook-post (16:9) ref=true brandVisual=594 chars
+ [CampaignLab] Video instagram-reel: generating branded first frame...
+ [CampaignLab] image-start response: {"success":true,"generationId":"f68fe345-7dd3-4f18-921f-5254d5767e2b","state":"queued"}
+ [CampaignLab] Video linkedin-video: generating branded first frame...
+ [CampaignLab] image-start response: {"success":true,"generationId":"5a050673-fcdf-4b52-9cc5-0277df36234b","state":"queued"}
+ [CampaignLab] image-start response: {"success":true,"generationId":"e8ca7e78-b3cb-4714-8f08-ba8f8f385e32","state":"queued"}
+ [CampaignLab] image-start response: {"success":true,"generationId":"ab8c1516-1c3b-4f5c-b1fb-6c0573a8894b","state":"queued"}
+ [CampaignLab] Video linkedin-video: first frame submitted (genId=06e4872a-83dd-4177-8f74-cff7a7b2edcc), waiting...
+ [CampaignLab] Video instagram-reel: first frame submitted (genId=63281105-1c50-4b91-9fcb-983ba577ca00), waiting...
+ [CampaignLab] Poll #1 image linkedin-post: state=queued
+ [CampaignLab] Poll #1 image instagram-post: state=queued
+ [CampaignLab] Poll #1 image instagram-story: state=queued
+ [CampaignLab] Poll #1 image facebook-post: state=queued
+ [CampaignLab] Poll #2 image linkedin-post: state=dreaming
+ [CampaignLab] Poll #2 image instagram-post: state=queued
+ [CampaignLab] Poll #2 image instagram-story: state=queued
+ [CampaignLab] Poll #2 image facebook-post: state=dreaming
+ [CampaignLab] Poll #3 image linkedin-post: state=dreaming
+ [CampaignLab] Poll #3 image instagram-post: state=queued
+ [CampaignLab] Poll #3 image instagram-story: state=queued
+ [CampaignLab] Poll #3 image facebook-post: state=dreaming
+ [CampaignLab] Video linkedin-video: first frame ready, proceeding to video generation
+ [CampaignLab] video-start linkedin-video (16:9) firstFrame=true brandVisual=594 chars
+ [CampaignLab] video-start response: {"success":true,"generationId":"974ae4bf-2699-4be1-bb24-bd10b2c7e1d5","state":"queued","model":"ora-motion","lumaModel":"ray-2"}
+ [CampaignLab] Poll #4 image instagram-post: state=dreaming
+ [CampaignLab] Video instagram-reel: first frame ready, proceeding to video generation
+ [CampaignLab] video-start instagram-reel (9:16) firstFrame=true brandVisual=594 chars
+ [CampaignLab] Poll #4 image linkedin-post: state=completed
+ [CampaignLab] Poll #4 image instagram-story: state=dreaming
+ [CampaignLab] video-start response: {"success":true,"generationId":"d4f2acc0-6d30-4f07-bbd7-71ff0e948bb4","state":"queued","model":"ora-motion","lumaModel":"ray-2"}
+ [CampaignLab] Poll #4 image facebook-post: state=completed
+ [CampaignLab] image facebook-post COMPLETED, url=yes
+ [CampaignLab] Poll #5 image instagram-story: state=dreaming
+ [CampaignLab] Poll #5 image instagram-post: state=completed
+ [CampaignLab] Poll #1 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #1 video instagram-reel: state=dreaming
+ [CampaignLab] image linkedin-post COMPLETED, url=yes
+ [CampaignLab] Poll #2 video linkedin-video: state=failed
+ [CampaignLab] video linkedin-video FAILED: 400: Unknown error
+ [CampaignLab] Poll #6 image instagram-story: state=completed
+ [CampaignLab] image instagram-story COMPLETED, url=yes
+ [CampaignLab] Poll #2 video instagram-reel: state=dreaming
+ [CampaignLab] image instagram-post COMPLETED, url=yes
+ [CampaignLab] Compliance check facebook-post: {"success":true,"score":92,"breakdown":{"overall":92,"text":100,"tone":92,"visual":88},"details":{"textIssues":[],"textStrengths":["No forbidden terms used","Good vocabulary alignment (3 approved terms used)","Key messages referenced (2/5)"],"toneIssues":[],"toneStrengths":["Professional and confide
+ [CampaignLab] Poll #3 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #4 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #5 video instagram-reel: state=dreaming
+ [CampaignLab] Compliance check instagram-post: {"success":true,"score":91,"breakdown":{"overall":91,"text":100,"tone":85,"visual":90},"details":{"textIssues":[],"textStrengths":["No forbidden terms used","Key messages referenced (1/5)"],"toneIssues":["Slightly lacking in warmth"],"toneStrengths":["High confidence","Professional and formal tone"]
+ [CampaignLab] Compliance check linkedin-post: {"success":true,"score":91,"breakdown":{"overall":91,"text":100,"tone":85,"visual":90},"details":{"textIssues":[],"textStrengths":["No forbidden terms used","Good vocabulary alignment (3 approved terms used)","Key messages referenced (4/5)"],"toneIssues":[],"toneStrengths":["Professional and confide
+ [CampaignLab] Poll #6 video instagram-reel: state=dreaming
+ [CampaignLab] Compliance check instagram-story: {"success":true,"score":92,"breakdown":{"overall":92,"text":100,"tone":85,"visual":92},"details":{"textIssues":[],"textStrengths":["No forbidden terms used"],"toneIssues":["Légère manque de chaleur"],"toneStrengths":["Professionnel","Confiant"],"visualIssues":["Aucun problème majeur"],"visualStrengt
+ [CampaignLab] Poll #7 video instagram-reel: state=dreaming
+ [Auth] onAuthStateChange event: SIGNED_IN
+ [DEBUG ECHO] Object
+ [fetchProfile] trying auth-header...
+ [fetchProfile] auth-header: status=200 authenticated=true (1348ms)
+ [CampaignLab] Poll #8 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #9 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #10 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #11 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #12 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #13 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #14 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #15 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #16 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #17 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #18 video instagram-reel: state=completed
+ [CampaignLab] video instagram-reel COMPLETED, url=yes
+ [CampaignLab] Video linkedin-video: generating branded first frame...
+ [CampaignLab] Video linkedin-video: first frame submitted (genId=dd073ba9-f310-45b7-8d2c-577041775982), waiting...
+ [CampaignLab] Compliance check instagram-reel: {"success":true,"score":92,"breakdown":{"overall":92,"text":100,"tone":85,"visual":92},"details":{"textIssues":[],"textStrengths":["No forbidden terms used","Good vocabulary alignment (2 approved terms used)"],"toneIssues":["Limited warmth"],"toneStrengths":["High confidence","Professional tone"],"v
+ [CampaignLab] Video linkedin-video: first frame ready, proceeding to video generation
+ [CampaignLab] video-start linkedin-video (16:9) firstFrame=true brandVisual=594 chars
+ [CampaignLab] video-start response: {"success":true,"generationId":"65af6eff-e244-4c5b-8c1c-81b8b8553243","state":"queued","model":"ora-motion","lumaModel":"ray-2"}
+ [CampaignLab] Poll #1 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #2 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #3 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #4 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #5 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #6 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #7 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #8 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #9 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #10 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #11 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #12 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #13 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #14 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #15 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #16 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #17 video linkedin-video: state=completed
+ [CampaignLab] video linkedin-video COMPLETED, url=yes
+ [CampaignLab] Compliance check linkedin-video: {"success":true,"score":89,"breakdown":{"overall":89,"text":90,"tone":85,"visual":92},"details":{"textIssues":["Low brand vocabulary usage (0/15 approved terms)"],"textStrengths":["No forbidden terms used"],"toneIssues":["Slightly lacking in warmth"],"toneStrengths":["Professional and confident lang
+ [Auth] onAuthStateChange event: SIGNED_IN
+ [DEBUG ECHO] Object
+ [fetchProfile] trying auth-header...
+ [fetchProfile] auth-header: status=200 authenticated=true (1149ms)
+ [Auth] onAuthStateChange event: SIGNED_IN
+ [DEBUG ECHO] Object
+ [fetchProfile] trying auth-header...
+ [fetchProfile] auth-header: status=200 authenticated=true (621ms)
+ [CampaignLab] Fetching plan via POST (server-side brand context)...
+ [CampaignLab] Visual directive received: 594 chars
+ [CampaignLab] Brand ref images received: 5 images
+ [CampaignLab] image-start linkedin-post (16:9) ref=true brandVisual=594 chars
+ [CampaignLab] image-start instagram-post (1:1) ref=true brandVisual=594 chars
+ [CampaignLab] image-start instagram-story (9:16) ref=true brandVisual=594 chars
+ [CampaignLab] image-start facebook-post (16:9) ref=true brandVisual=594 chars
+ [CampaignLab] Video instagram-reel: generating branded first frame...
+ [CampaignLab] image-start response: {"success":true,"generationId":"a7ec11eb-7f39-41dd-bf5f-85bb57984d06","state":"queued"}
+ [CampaignLab] Video linkedin-video: generating branded first frame...
+ [CampaignLab] image-start response: {"success":true,"generationId":"98a6bc02-2200-46f0-8a98-0156f93ee118","state":"queued"}
+ [CampaignLab] image-start response: {"success":true,"generationId":"f2a79ae1-9d30-49ff-9e6a-c65c5ef988ca","state":"queued"}
+ [CampaignLab] image-start response: {"success":true,"generationId":"f4d680a9-cb50-4d97-bd07-b71a809fb97e","state":"queued"}
+ [CampaignLab] Video instagram-reel: first frame submitted (genId=a6ec633a-7eb7-4f81-a0fd-a4eeef156159), waiting...
+ [CampaignLab] Video linkedin-video: first frame submitted (genId=7e9ec0a2-68eb-4c0a-8240-6e30c0d7f0b3), waiting...
+ [CampaignLab] Poll #1 image linkedin-post: state=queued
+ [CampaignLab] Poll #1 image instagram-post: state=queued
+ [CampaignLab] Poll #1 image instagram-story: state=queued
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [Auth] onAuthStateChange event: SIGNED_IN
+ [Auth] onAuthStateChange event: SIGNED_IN
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [Auth] onAuthStateChange event: INITIAL_SESSION
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [DEBUG ECHO] {ok: true, method: 'POST', url: 'http://kbvkjafkztbsewtaijuh.supabase.co/make-serve…Y4OX0.ty1aiV63wnINUkViZNzlNAHFzL0mdvSRjzRDd-lB-sk', headers: {…}, bodyLength: 91, …}
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [fetchProfile] trying auth-header...
+ [CampaignLab] Poll #1 image facebook-post: state=queued
+ [DEBUG ECHO] {ok: true, method: 'POST', url: 'http://kbvkjafkztbsewtaijuh.supabase.co/make-serve…Y4OX0.ty1aiV63wnINUkViZNzlNAHFzL0mdvSRjzRDd-lB-sk', headers: {…}, bodyLength: 91, …}
+ [fetchProfile] trying auth-header...
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [DEBUG ECHO] {ok: true, method: 'POST', url: 'http://kbvkjafkztbsewtaijuh.supabase.co/make-serve…Y4OX0.ty1aiV63wnINUkViZNzlNAHFzL0mdvSRjzRDd-lB-sk', headers: {…}, bodyLength: 91, …}
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [fetchProfile] trying auth-header...
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [DEBUG ECHO] {ok: true, method: 'POST', url: 'http://kbvkjafkztbsewtaijuh.supabase.co/make-serve…Y4OX0.ty1aiV63wnINUkViZNzlNAHFzL0mdvSRjzRDd-lB-sk', headers: {…}, bodyLength: 91, …}
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [fetchProfile] trying auth-header...
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [fetchProfile] auth-header: status=200 authenticated=true (497ms)
+ [fetchProfile] auth-header: status=200 authenticated=true (582ms)
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [fetchProfile] auth-header: status=200 authenticated=true (634ms)
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [fetchProfile] auth-header: status=200 authenticated=true (589ms)
+ [CampaignLab] Poll #2 image linkedin-post: state=dreaming
+ [CampaignLab] Poll #2 image instagram-post: state=queued
+ [CampaignLab] Poll #2 image instagram-story: state=queued
+ [CampaignLab] Poll #2 image facebook-post: state=dreaming
+ [CampaignLab] Video linkedin-video: first frame ready, proceeding to video generation
+ [CampaignLab] video-start linkedin-video (16:9) firstFrame=true brandVisual=594 chars
+ [CampaignLab] video-start response: {"success":true,"generationId":"7f57b480-0074-49d1-bae9-c8fc1114ee55","state":"queued","model":"ora-motion","lumaModel":"ray-2"}
+ [CampaignLab] Poll #3 image linkedin-post: state=dreaming
+ [CampaignLab] Poll #3 image instagram-post: state=queued
+ [CampaignLab] Poll #3 image instagram-story: state=dreaming
+ [CampaignLab] Poll #3 image facebook-post: state=dreaming
+ [CampaignLab] Video instagram-reel: first frame ready, proceeding to video generation
+ [CampaignLab] video-start instagram-reel (9:16) firstFrame=true brandVisual=594 chars
+ [CampaignLab] video-start response: {"success":true,"generationId":"b9896eb3-b96f-4793-a616-3f126fab340d","state":"queued","model":"ora-motion","lumaModel":"ray-2"}
+ [CampaignLab] Poll #4 image linkedin-post: state=completed
+ [CampaignLab] Poll #1 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #4 image instagram-post: state=dreaming
+ [CampaignLab] image linkedin-post COMPLETED, url=yes
+ [CampaignLab] Poll #4 image instagram-story: state=completed
+ [CampaignLab] Poll #4 image facebook-post: state=completed
+ [CampaignLab] image instagram-story COMPLETED, url=yes
+ [CampaignLab] image facebook-post COMPLETED, url=yes
+ [CampaignLab] Poll #2 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #5 image instagram-post: state=completed
+ [CampaignLab] Poll #1 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #3 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #2 video instagram-reel: state=dreaming
+ [CampaignLab] Compliance check facebook-post: {"success":true,"score":92,"breakdown":{"overall":92,"text":100,"tone":85,"visual":92},"details":{"textIssues":[],"textStrengths":["No forbidden terms used","Good vocabulary alignment (5 approved terms used)","Key messages referenced (3/5)"],"toneIssues":["Slightly lacking in warmth"],"toneStrengths
+ [CampaignLab] Compliance check instagram-story: {"success":true,"score":92,"breakdown":{"overall":92,"text":100,"tone":85,"visual":92},"details":{"textIssues":[],"textStrengths":["No forbidden terms used"],"toneIssues":["Lack of warmth"],"toneStrengths":["High confidence","Professional tone"],"visualIssues":["Slightly lacks natural lighting"],"vi
+ [CampaignLab] image instagram-post COMPLETED, url=yes
+ [CampaignLab] Compliance check linkedin-post: {"success":true,"score":92,"breakdown":{"overall":92,"text":100,"tone":92,"visual":88},"details":{"textIssues":[],"textStrengths":["No forbidden terms used","Good vocabulary alignment (5 approved terms used)","Key messages referenced (4/5)"],"toneIssues":[],"toneStrengths":["Professional and confide
+ [CampaignLab] Poll #4 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #3 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #5 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #4 video instagram-reel: state=dreaming
+ [CampaignLab] Compliance check instagram-post: {"success":true,"score":92,"breakdown":{"overall":92,"text":100,"tone":85,"visual":92},"details":{"textIssues":[],"textStrengths":["No forbidden terms used","Good vocabulary alignment (3 approved terms used)","Key messages referenced (2/5)"],"toneIssues":["Slightly lacking in warmth"],"toneStrengths
+ [CampaignLab] Poll #6 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #5 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #7 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #6 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #8 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #7 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #9 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #8 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #10 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #9 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #11 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #10 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #12 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #11 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #13 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #12 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #14 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #13 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #15 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #14 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #16 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #15 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #17 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #16 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #18 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #17 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #19 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #18 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #20 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #19 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #21 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #20 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #22 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #21 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #23 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #22 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #24 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #23 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #25 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #24 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #26 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #25 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #27 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #26 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #28 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #27 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #29 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #28 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #30 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #29 video instagram-reel: state=dreaming

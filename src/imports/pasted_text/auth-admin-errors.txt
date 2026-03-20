@@ -1,0 +1,45 @@
+sites-runtime.5fd7f14a7607f942d4ac001a8e59a1f298f13ccd58b6725e98070fe5777b608d.js:127 [Hydrated]
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:22844 [Auth] onAuthStateChange event: INITIAL_SESSION
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:22844 [Auth] onAuthStateChange event: SIGNED_IN
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:22780 [fetchProfile] trying apikey-textplain...
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:31646 Signed in: 6d216f2e-292a-4319-8181-0ea92b638c47
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/auth/me?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtidmtqYWZrenRic2V3dGFpanVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5MTk2ODksImV4cCI6MjA4NzQ5NTY4OX0.ty1aiV63wnINUkViZNzlNAHFzL0mdvSRjzRDd-lB-sk:1  Failed to load resource: the server responded with a status of 401 ()
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:22789 [fetchProfile] apikey-textplain: status=401 authenticated=undefined (132ms)
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:22799 [fetchProfile] all strategies failed after 132ms
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:22818 fetchProfile: using JWT fallback profile
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:32508 [Admin] Fetching all admin data via POST /admin/data...
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:32465 [Admin] try1 POST /admin/data
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/admin/data?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtidmtqYWZrenRic2V3dGFpanVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5MTk2ODksImV4cCI6MjA4NzQ5NTY4OX0.ty1aiV63wnINUkViZNzlNAHFzL0mdvSRjzRDd-lB-sk:1  Failed to load resource: the server responded with a status of 401 ()
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:32484 [Admin] /admin/data attempt 1 failed: Error: Unauthorized
+    at q (4155841c6024508f3d37269a85eb7bc16405fc3e.js:32475:38)
+    at async 4155841c6024508f3d37269a85eb7bc16405fc3e.js:32482:14
+    at async 4155841c6024508f3d37269a85eb7bc16405fc3e.js:32509:18
+(anonymous) @ 4155841c6024508f3d37269a85eb7bc16405fc3e.js:32484
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:32465 [Admin] try2 POST /admin/data
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/admin/data?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtidmtqYWZrenRic2V3dGFpanVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5MTk2ODksImV4cCI6MjA4NzQ5NTY4OX0.ty1aiV63wnINUkViZNzlNAHFzL0mdvSRjzRDd-lB-sk:1  Failed to load resource: the server responded with a status of 401 ()
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:32512 [Admin] Fetch error: Error: Unauthorized
+    at q (4155841c6024508f3d37269a85eb7bc16405fc3e.js:32475:38)
+    at async 4155841c6024508f3d37269a85eb7bc16405fc3e.js:32484:115
+    at async 4155841c6024508f3d37269a85eb7bc16405fc3e.js:32509:18
+(anonymous) @ 4155841c6024508f3d37269a85eb7bc16405fc3e.js:32512
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:22844 [Auth] onAuthStateChange event: SIGNED_IN
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:22780 [fetchProfile] trying apikey-textplain...
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/auth/me?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtidmtqYWZrenRic2V3dGFpanVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5MTk2ODksImV4cCI6MjA4NzQ5NTY4OX0.ty1aiV63wnINUkViZNzlNAHFzL0mdvSRjzRDd-lB-sk:1  Failed to load resource: the server responded with a status of 401 ()
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:22789 [fetchProfile] apikey-textplain: status=401 authenticated=undefined (175ms)
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:22799 [fetchProfile] all strategies failed after 175ms
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:22818 fetchProfile: using JWT fallback profile
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:22844 [Auth] onAuthStateChange event: SIGNED_IN
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:22780 [fetchProfile] trying apikey-textplain...
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:22781  POST https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/auth/me?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtidmtqYWZrenRic2V3dGFpanVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5MTk2ODksImV4cCI6MjA4NzQ5NTY4OX0.ty1aiV63wnINUkViZNzlNAHFzL0mdvSRjzRDd-lB-sk 401 (Unauthorized)
+(anonymous) @ 4155841c6024508f3d37269a85eb7bc16405fc3e.js:22781
+(anonymous) @ 4155841c6024508f3d37269a85eb7bc16405fc3e.js:22854
+(anonymous) @ 4155841c6024508f3d37269a85eb7bc16405fc3e.js:21699
+_notifyAllSubscribers @ 4155841c6024508f3d37269a85eb7bc16405fc3e.js:21697
+_recoverAndRefresh @ 4155841c6024508f3d37269a85eb7bc16405fc3e.js:21656
+await in _recoverAndRefresh
+(anonymous) @ 4155841c6024508f3d37269a85eb7bc16405fc3e.js:21875
+(anonymous) @ 4155841c6024508f3d37269a85eb7bc16405fc3e.js:21113
+(anonymous) @ 4155841c6024508f3d37269a85eb7bc16405fc3e.js:19466
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:22789 [fetchProfile] apikey-textplain: status=401 authenticated=undefined (171ms)
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:22799 [fetchProfile] all strategies failed after 171ms
+4155841c6024508f3d37269a85eb7bc16405fc3e.js:22818 fetchProfile: using JWT fallback profile

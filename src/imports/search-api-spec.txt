@@ -1,0 +1,585 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://docs.firecrawl.dev/llms.txt
+> Use this file to discover all available pages before exploring further.
+
+# Recherche
+
+> Remarque : une nouvelle [version v2 de cette API](/fr/api-reference/endpoint/search) est désormais disponible avec des fonctionnalités et des performances améliorées.
+
+Le point de terminaison /search combine la recherche web avec les capacités de scraping de Firecrawl pour renvoyer le contenu complet des pages pour n’importe quelle requête.
+
+Incluez `scrapeOptions` avec `formats: ["markdown"]` pour obtenir le contenu Markdown complet pour chaque résultat de recherche ; sinon, par défaut, vous recevrez uniquement les résultats (URL, title, description).
+
+<div id="supported-query-operators">
+  ## Opérateurs de requête pris en charge
+</div>
+
+Nous prenons en charge divers opérateurs de requête pour affiner vos recherches.
+
+| Opérateur     | Fonctionnalité                                                                        | Exemples                          |
+| ------------- | ------------------------------------------------------------------------------------- | --------------------------------- |
+| `""`          | Correspondance exacte d’une chaîne de texte (non floue)                               | `"Firecrawl"`                     |
+| `-`           | Exclut certains mots‑clés ou inverse d’autres opérateurs                              | `-bad`, `-site:firecrawl.dev`     |
+| `site:`       | Renvoie uniquement des résultats d’un site web spécifié                               | `site:firecrawl.dev`              |
+| `inurl:`      | Renvoie uniquement des résultats qui incluent un mot dans l’URL                       | `inurl:firecrawl`                 |
+| `allinurl:`   | Renvoie uniquement des résultats qui incluent plusieurs mots dans l’URL               | `allinurl:git firecrawl`          |
+| `intitle:`    | Renvoie uniquement des résultats qui incluent un mot dans le titre de la page         | `intitle:Firecrawl`               |
+| `allintitle:` | Renvoie uniquement des résultats qui incluent plusieurs mots dans le titre de la page | `allintitle:firecrawl playground` |
+| `related:`    | Renvoie uniquement des résultats liés à un domaine spécifique                         | `related:firecrawl.dev`           |
+
+<div id="location-parameter">
+  ## Paramètre location
+</div>
+
+Utilisez le paramètre `location` pour obtenir des résultats de recherche géociblés. Format : `"string"`. Exemples : `"Germany"`, `"San Francisco,California,United States"`.
+
+Consultez la [liste complète des lieux pris en charge](https://firecrawl.dev/search_locations.json) pour tous les pays et langues disponibles.
+
+<div id="time-based-search">
+  ## Recherche par période
+</div>
+
+Utilisez le paramètre `tbs` pour filtrer les résultats par période, y compris selon des plages de dates personnalisées. Consultez la [documentation de la fonction de recherche](https://docs.firecrawl.dev/features/search#time-based-search) pour des exemples détaillés et les formats pris en charge.
+
+
+## OpenAPI
+
+````yaml fr/api-reference/v1-openapi.json post /search
+openapi: 3.0.0
+info:
+  title: Firecrawl API
+  version: v1
+  description: >-
+    API permettant d’interagir avec les services Firecrawl pour réaliser des
+    tâches de scraping et de crawling web.
+  contact:
+    name: Firecrawl Support
+    url: https://firecrawl.dev/support
+    email: support@firecrawl.dev
+servers:
+  - url: https://api.firecrawl.dev/v1
+security:
+  - bearerAuth: []
+paths:
+  /search:
+    post:
+      tags:
+        - Search
+      summary: Rechercher et éventuellement scraper les résultats de recherche
+      operationId: searchAndScrape
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                query:
+                  type: string
+                  description: La requête de recherche
+                limit:
+                  type: integer
+                  description: Nombre maximal de résultats à retourner
+                  default: 5
+                  maximum: 100
+                  minimum: 1
+                tbs:
+                  type: string
+                  description: >-
+                    Paramètre de recherche temporel. Prend en charge les
+                    intervalles de temps prédéfinis (`qdr:h`, `qdr:d`, `qdr:w`,
+                    `qdr:m`, `qdr:y`) et les plages de dates personnalisées
+                    (`cdr:1,cd_min:MM/DD/YYYY,cd_max:MM/DD/YYYY`).
+                location:
+                  type: string
+                  description: Paramètre de localisation des résultats de recherche
+                timeout:
+                  type: integer
+                  description: Délai d’expiration en millisecondes
+                  default: 60000
+                ignoreInvalidURLs:
+                  type: boolean
+                  description: >-
+                    Exclut des résultats de recherche les URL qui ne sont pas
+                    valides pour d’autres endpoints de Firecrawl. Cela permet de
+                    réduire les erreurs si vous transférez les données issues de
+                    la recherche vers d’autres endpoints de l’API Firecrawl.
+                  default: false
+                scrapeOptions:
+                  allOf:
+                    - $ref: '#/components/schemas/BaseScrapeOptions'
+                    - type: object
+                      properties:
+                        formats:
+                          type: array
+                          items:
+                            type: string
+                            enum:
+                              - markdown
+                              - html
+                              - rawHtml
+                              - links
+                              - screenshot
+                              - screenshot@fullPage
+                              - json
+                              - extract
+                          default: []
+                  description: Options de scraping des résultats de recherche
+                  default: {}
+              required:
+                - query
+      responses:
+        '200':
+          description: Réponse en cas de succès
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        title:
+                          type: string
+                          description: Titre du résultat de la recherche
+                        description:
+                          type: string
+                          description: Description du résultat de la recherche
+                        url:
+                          type: string
+                          description: URL du résultat de la recherche
+                        markdown:
+                          type: string
+                          nullable: true
+                          description: Contenu en Markdown si le scraping a été demandé
+                        html:
+                          type: string
+                          nullable: true
+                          description: Contenu HTML si ce format est demandé dans formats
+                        rawHtml:
+                          type: string
+                          nullable: true
+                          description: >-
+                            Contenu HTML brut lorsqu’il est demandé dans les
+                            formats
+                        links:
+                          type: array
+                          items:
+                            type: string
+                          description: Liens trouvés si demandé dans les formats de sortie
+                        screenshot:
+                          type: string
+                          nullable: true
+                          description: >-
+                            URL de la capture d’écran si elle est demandée dans
+                            les formats. Les captures d’écran expirent après 24
+                            heures et ne peuvent plus être téléchargées.
+                        metadata:
+                          type: object
+                          properties:
+                            title:
+                              oneOf:
+                                - type: string
+                                - type: array
+                                  items:
+                                    type: string
+                              description: >-
+                                Titre extrait de la page, peut être une chaîne
+                                de caractères ou un tableau de chaînes de
+                                caractères
+                            description:
+                              oneOf:
+                                - type: string
+                                - type: array
+                                  items:
+                                    type: string
+                              description: >-
+                                Description extraite de la page, peut être une
+                                chaîne de caractères ou un tableau de chaînes de
+                                caractères
+                            sourceURL:
+                              type: string
+                            statusCode:
+                              type: integer
+                            error:
+                              type: string
+                              nullable: true
+                  warning:
+                    type: string
+                    nullable: true
+                    description: Message d’avertissement en cas de problèmes
+                  id:
+                    type: string
+                    description: L’identifiant de la tâche de recherche
+        '408':
+          description: Dépassement du délai d’attente de la requête
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: false
+                  error:
+                    type: string
+                    example: Request timed out
+        '500':
+          description: Erreur du serveur
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: false
+                  error:
+                    type: string
+                    example: An unexpected error occurred on the server.
+      security:
+        - bearerAuth: []
+components:
+  schemas:
+    BaseScrapeOptions:
+      type: object
+      properties:
+        onlyMainContent:
+          type: boolean
+          description: >-
+            Renvoyer uniquement le contenu principal de la page, en excluant les
+            en-têtes, éléments de navigation, pieds de page, etc.
+          default: true
+        includeTags:
+          type: array
+          items:
+            type: string
+          description: Balises à inclure dans la sortie.
+        excludeTags:
+          type: array
+          items:
+            type: string
+          description: Balises à exclure du résultat.
+        maxAge:
+          type: integer
+          description: >-
+            Renvoie une version mise en cache de la page si elle a moins que
+            cette ancienneté (en millisecondes). Si une version mise en cache de
+            la page est plus ancienne que cette valeur, la page sera à nouveau
+            scrapée. Si vous n’avez pas besoin de données extrêmement récentes,
+            activer cette option peut accélérer vos opérations de scraping
+            jusqu’à 500 %. La valeur par défaut est 0, ce qui désactive la mise
+            en cache.
+          default: 0
+        headers:
+          type: object
+          description: >-
+            En-têtes à envoyer avec la requête. Peuvent servir à envoyer des
+            cookies, l’en-tête User-Agent, etc.
+        waitFor:
+          type: integer
+          description: >-
+            Spécifiez un délai, en millisecondes, avant de récupérer le contenu,
+            afin de laisser à la page suffisamment de temps pour se charger.
+          default: 0
+        mobile:
+          type: boolean
+          description: >-
+            Mettez cette option à true si vous souhaitez simuler le scraping
+            depuis un appareil mobile. Utile pour tester les pages responsive et
+            prendre des captures d’écran mobiles.
+          default: false
+        skipTlsVerification:
+          type: boolean
+          description: >-
+            Ignorer la vérification des certificats TLS lors de l’envoi de
+            requêtes
+          default: false
+        timeout:
+          type: integer
+          description: Délai d'attente de la requête en millisecondes
+          default: 30000
+        parsePDF:
+          type: boolean
+          description: >-
+            Contrôle la façon dont les fichiers PDF sont traités lors du
+            scraping. Lorsque cette option est activée (true), le contenu du PDF
+            est extrait et converti au format markdown, avec une facturation
+            basée sur le nombre de pages (1 crédit par page). Lorsque cette
+            option est désactivée (false), le fichier PDF est renvoyé sous forme
+            de base64 avec un tarif forfaitaire de 1 crédit au total.
+          default: true
+        jsonOptions:
+          type: object
+          description: Objet JSON d’options
+          properties:
+            schema:
+              type: object
+              description: >-
+                Le schéma d’extraction à utiliser (facultatif). Doit être
+                conforme à la spécification [JSON
+                Schema](https://json-schema.org/).
+            systemPrompt:
+              type: string
+              description: Le prompt système à utiliser pour l'extraction (optionnel)
+            prompt:
+              type: string
+              description: Le prompt à utiliser pour l’extraction sans schéma (optionnel)
+        actions:
+          type: array
+          description: Actions à effectuer sur la page avant de récupérer le contenu
+          items:
+            oneOf:
+              - type: object
+                title: Wait
+                properties:
+                  type:
+                    type: string
+                    enum:
+                      - wait
+                    description: Attendre un nombre donné de millisecondes
+                  milliseconds:
+                    type: integer
+                    minimum: 1
+                    description: Nombre de millisecondes d'attente
+                  selector:
+                    type: string
+                    description: Sélecteur de requête permettant de trouver l’élément par
+                    example: '#my-element'
+                required:
+                  - type
+              - type: object
+                title: Screenshot
+                properties:
+                  type:
+                    type: string
+                    enum:
+                      - screenshot
+                    description: >-
+                      Prenez une capture d’écran. Les liens seront disponibles
+                      dans le tableau `actions.screenshots` de la réponse.
+                  fullPage:
+                    type: boolean
+                    description: >-
+                      Indique s’il faut effectuer une capture d’écran de la page
+                      entière ou la limiter à la zone d’affichage actuelle
+                      (viewport).
+                    default: false
+                  quality:
+                    type: integer
+                    description: >-
+                      La qualité de la capture d’écran, allant de 1 à 100. 100
+                      correspond à la qualité la plus élevée.
+                required:
+                  - type
+              - type: object
+                title: Click
+                properties:
+                  type:
+                    type: string
+                    enum:
+                      - click
+                    description: Cliquez sur un élément
+                  selector:
+                    type: string
+                    description: Sélecteur CSS pour trouver l’élément par
+                    example: '#load-more-button'
+                  all:
+                    type: boolean
+                    description: >-
+                      Clique sur tous les éléments correspondant au sélecteur,
+                      et pas uniquement le premier. Ne génère pas d’erreur si
+                      aucun élément ne correspond au sélecteur.
+                    default: false
+                required:
+                  - type
+                  - selector
+              - type: object
+                title: Write text
+                properties:
+                  type:
+                    type: string
+                    enum:
+                      - write
+                    description: >-
+                      Saisir du texte dans un champ de saisie, une zone de texte
+                      ou un élément contenteditable. Remarque : vous devez
+                      d’abord placer le focus sur l’élément à l’aide d’une
+                      action de « clic » avant de saisir le texte. Le texte sera
+                      entré caractère par caractère pour simuler une saisie au
+                      clavier.
+                  text:
+                    type: string
+                    description: Texte à saisir
+                    example: Hello, world!
+                required:
+                  - type
+                  - text
+              - type: object
+                title: Press a key
+                description: >-
+                  Appuyez sur une touche sur cette page. Voir
+                  https://asawicki.info/nosense/doc/devices/keyboard/key_codes.html
+                  pour la liste des codes de touches.
+                properties:
+                  type:
+                    type: string
+                    enum:
+                      - press
+                    description: Appuyez sur une touche du clavier
+                  key:
+                    type: string
+                    description: Touche à presser
+                    example: Enter
+                required:
+                  - type
+                  - key
+              - type: object
+                title: Scroll
+                properties:
+                  type:
+                    type: string
+                    enum:
+                      - scroll
+                    description: Faire défiler la page ou un élément spécifique
+                  direction:
+                    type: string
+                    enum:
+                      - up
+                      - down
+                    description: Sens de défilement
+                    default: down
+                  selector:
+                    type: string
+                    description: Sélecteur CSS de l’élément à faire défiler
+                    example: '#my-element'
+                required:
+                  - type
+              - type: object
+                title: Scrape
+                properties:
+                  type:
+                    type: string
+                    enum:
+                      - scrape
+                    description: >-
+                      Extrait le contenu de la page actuelle et renvoie l’URL et
+                      le HTML.
+                required:
+                  - type
+              - type: object
+                title: Execute JavaScript
+                properties:
+                  type:
+                    type: string
+                    enum:
+                      - executeJavascript
+                    description: Exécuter du code JavaScript sur la page
+                  script:
+                    type: string
+                    description: Code JavaScript à exécuter
+                    example: document.querySelector('.button').click();
+                required:
+                  - type
+                  - script
+              - type: object
+                title: Generate PDF
+                properties:
+                  type:
+                    type: string
+                    enum:
+                      - pdf
+                    description: >-
+                      Générer un PDF de la page actuelle. Le PDF sera renvoyé
+                      dans le tableau `actions.pdfs` de la réponse.
+                  format:
+                    type: string
+                    enum:
+                      - A0
+                      - A1
+                      - A2
+                      - A3
+                      - A4
+                      - A5
+                      - A6
+                      - Letter
+                      - Legal
+                      - Tabloid
+                      - Ledger
+                    description: Le format de page du PDF généré
+                    default: Letter
+                  landscape:
+                    type: boolean
+                    description: Indique s’il faut générer le PDF au format paysage
+                    default: false
+                  scale:
+                    type: number
+                    description: Le facteur d’échelle du PDF généré
+                    default: 1
+                required:
+                  - type
+        location:
+          type: object
+          description: >-
+            Paramètre de localisation de la requête. Lorsqu’il est spécifié, un
+            proxy approprié est utilisé si disponible et la langue ainsi que le
+            fuseau horaire correspondants sont émulés. Par défaut, « US » est
+            utilisé si aucun paramètre n’est spécifié.
+          properties:
+            country:
+              type: string
+              description: >-
+                Code de pays ISO 3166-1 alpha-2 (par ex. « US », « AU », « DE »,
+                « JP »)
+              pattern: ^[A-Z]{2}$
+              default: US
+            languages:
+              type: array
+              description: >-
+                Langues et paramètres régionaux préférés pour la requête, par
+                ordre de priorité. Par défaut, la langue de l’emplacement
+                spécifié est utilisée. Voir
+                https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language
+              items:
+                type: string
+                example: en-US
+        removeBase64Images:
+          type: boolean
+          description: >-
+            Supprime toutes les images encodées en base64 de la sortie, qui
+            peuvent être extrêmement longues. Le texte alternatif de l’image est
+            conservé dans la sortie, mais l’URL est remplacée par un
+            placeholder.
+          default: true
+        blockAds:
+          type: boolean
+          description: Active le blocage des publicités et des bannières de cookies.
+          default: true
+        proxy:
+          type: string
+          enum:
+            - basic
+            - enhanced
+            - auto
+          description: "Spécifie le type de proxy à utiliser.\n\n - **basic**\0a0: Proxys pour le scraping de sites sans protection anti-bot ou avec des protections basiques. Rapide et généralement fiable.\n - **enhanced**\0a0: Proxys avancés pour le scraping de sites avec des solutions anti-bot sophistiquées. Plus lents, mais plus fiables sur certains sites. Coût pouvant aller jusqu’à 5 crédits par requête.\n - **auto**\0a0: Firecrawl réessaie automatiquement le scraping avec des proxys enhanced si le proxy basic échoue. Si le nouvel essai avec enhanced réussit, 5 crédits seront facturés pour l’opération de scraping. Si la première tentative avec basic réussit, seul le coût normal sera facturé.\n\nSi vous ne spécifiez pas de proxy, Firecrawl utilisera basic par défaut."
+        storeInCache:
+          type: boolean
+          description: >-
+            Si ce paramètre est défini sur true, la page sera stockée dans
+            l’index et le cache de Firecrawl. Le définir sur false est utile si
+            votre activité de scraping peut soulever des enjeux de protection
+            des données. L’utilisation de certains paramètres associés à un
+            scraping sensible (actions, en-têtes) forcera ce paramètre à false.
+          default: true
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+
+````
+
+Built with [Mintlify](https://mintlify.com).

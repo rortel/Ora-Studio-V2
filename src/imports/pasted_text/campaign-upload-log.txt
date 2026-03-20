@@ -1,0 +1,43 @@
+[Auth] onAuthStateChange event: TOKEN_REFRESHED
+2code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [fetchProfile] trying auth-header...
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [Auth] onAuthStateChange event: INITIAL_SESSION
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [fetchProfile] trying auth-header...
+2code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [fetchProfile] auth-header: status=200 authenticated=true (2600ms)
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [fetchProfile] auth-header: status=200 authenticated=true (3831ms)
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [Auth] onAuthStateChange event: SIGNED_IN
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [fetchProfile] trying auth-header...
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [fetchProfile] auth-header: status=200 authenticated=true (864ms)
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [HubPage] handleGenerate called Object
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [HubPage] Generate: Object
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [HubPage] Token type: user-jwt (eyJhbGciOiJFUzI1NiIs...)
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [HubPage] API_BASE: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [HubPage] Start time: 2026-03-13T13:28:29.270Z
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [HubPage] Image generation starting: Object
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [HubPage] Image GET -> https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=un%20chien%20qui%20sourit&models=ora-vision%2 (4 models) 2026-03-13T13:28:29.271Z
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [HubPage] Server health: Object
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [HubPage] Image response: 200 (35372ms total)
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [HubPage] Image raw response: {"success":true,"results":[{"success":true,"result":{"model":"ora-vision","provider":"luma/photon-1","imageUrl":"https://storage.cdn-luma.com/dream_machine/9ddb45be-218f-4ed7-bb2f-ad18ca4b9f01/2a3b0308-1e5f-449d-a7ad-cd210ff5d464_result6f204d0df5840bf7.jpg","latencyMs":10423}},{"success":true,"result":{"model":"photon-1","provider":"luma/photon-1","imageUrl":"https://storage.cdn-luma.com/dream_machine/a2141c15-75b2-4eaf-a257-84860a491ef2/5f373aee-da3f-441c-b534-1c4ce3302ecb_result010971bad4a18ea
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [HubPage] Image results: true 4 undefined
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [CampaignLab] Vault loaded: Relais Christine
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [CampaignLab] Upload starting: man_etgx_ils_teaser-4x3.webp (42KB, image/webp)
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [CampaignLab] Upload starting: man-etrucks-transporter-solutions-4x3.webp (450KB, image/webp)
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [CampaignLab] Upload starting: man-lkw-etgx-battery-4x3.webp (120KB, image/webp)
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [CampaignLab] Upload starting: man-lkw-etgx-maintenance-4x3.webp (198KB, image/webp)
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [CampaignLab] Upload starting: man-elektro-lkw-stage-16x9.webp (276KB, image/webp)
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [CampaignLab] Upload starting: man-lkw-etgx-teaser.webp (202KB, image/webp)
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [CampaignLab] Upload OK: man-lkw-etgx-battery-4x3.webp → signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (432 chars)
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [CampaignLab] Upload OK: man_etgx_ils_teaser-4x3.webp → signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (432 chars)
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [CampaignLab] Upload OK: man-lkw-etgx-maintenance-4x3.webp → signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (432 chars)
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [CampaignLab] Upload OK: man-elektro-lkw-stage-16x9.webp → signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (432 chars)
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [CampaignLab] Upload OK: man-etrucks-transporter-solutions-4x3.webp → signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (432 chars)
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [CampaignLab] Upload OK: man-lkw-etgx-teaser.webp → signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (432 chars)
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [CampaignLab] Generate: 5 total uploads, 5 ready, 0 still uploading, 0 errored
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [CampaignLab] Ready upload URLs: [0] https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s..., [1] https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s..., [2] https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s..., [3] https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s..., [4] https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s...
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [CampaignLab] Fetching plan via POST (server-side brand context)...
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [CampaignLab] Plan error: TimeoutError: signal timed out
+(anonymous) @ code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90Understand this error
+vendor-core-ade2edecaf4781c7.min.js.br:54 [MultiplayerSession] connecting to wss://www.figma.com/api/multiplayer/Cpu4nGRSqlaZeBhE1wINKa?role=editor&tracking_session_id=Z4r0dYnYKQ8rVQr7&version=151&recentReload=0&file-load-streaming-compression=&user-id=1483479003784692390&client_release=b76162e144d1cea981c7927daa8501b7f3f696f6&reconnect-key=5644560fb98cf13707a6c0f2ed8b0f1226090507&reconnect-sequence-number=3725&initialFileVersion=106&previousLoadMode=full&incremental-loading-validation=0
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [Auth] onAuthStateChange event: SIGNED_IN
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [fetchProfile] trying auth-header...
+code_components_preview_iframe-94f0c6d3bc79708f.min.js.br:90 [fetchProfile] auth-header: status=200 authenticated=true (579ms)
+vendor-core-ade2edecaf4781c7.min.js.br:54 [MultiplayerSession] Joining file version 106 (skip_reload reconnect)

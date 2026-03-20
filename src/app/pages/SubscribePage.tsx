@@ -32,28 +32,30 @@ const plans: PlanOption[] = [
     price: "0",
     period: "",
     credits: "50 credits",
-    description: "Discover ORA with no commitment.",
+    description: "Explore ORA with no commitment.",
     features: [
       "50 credits included",
-      "Multi-AI comparator (GPT-4o, Claude, Gemini)",
-      "Text, image, code generation",
-      "Unlimited credit rollover",
+      "3 AI models (GPT-4o, Claude, Gemini)",
+      "Text and image generation",
+      "Basic Arena (2 models)",
+      "Credits never expire",
     ],
     icon: Zap,
     highlighted: false,
   },
   {
     id: "generate",
-    name: "Generate",
-    price: "\u20AC19",
+    name: "Pro",
+    price: "\u20AC39",
     period: "/month",
-    credits: "200 credits",
-    description: "For creators who generate regularly.",
+    credits: "500 credits/month",
+    description: "Every model, every format.",
     features: [
-      "200 credits at activation",
-      "Unlimited multi-AI comparator",
+      "500 credits/month included",
+      "All AI models (10+)",
       "Text, image, code, audio, video",
-      "Arena (side-by-side comparison)",
+      "Full Arena (unlimited models)",
+      "Priority generation queue",
       "Credit packs available",
     ],
     icon: Sparkles,
@@ -61,18 +63,19 @@ const plans: PlanOption[] = [
   },
   {
     id: "studio",
-    name: "Studio",
-    price: "\u20AC49",
+    name: "Business",
+    price: "\u20AC149",
     period: "/month",
-    credits: "500 credits/month",
-    description: "For brands that want aligned content.",
+    credits: "2,500 credits/month",
+    description: "On-brand content at scale.",
     features: [
-      "500 credits/month included",
-      "Everything in Generate +",
+      "2,500 credits/month included",
+      "Everything in Pro +",
       "Brand Vault (brand identity)",
-      "Canvas editor",
-      "Brand Score analysis",
-      "Content Calendar",
+      "Campaign Lab (multi-platform)",
+      "Canvas editor & Asset Builder",
+      "Brand Score & Content Calendar",
+      "Priority support",
     ],
     icon: Crown,
     highlighted: false,
@@ -99,7 +102,6 @@ export function SubscribePage() {
     setError("");
 
     try {
-      // FIX: Use same pattern as HubPage/AdminPage — publicAnonKey in Authorization, user token in X-User-Token
       const headers: Record<string, string> = {
         "Content-Type": "application/json",
         Authorization: `Bearer ${publicAnonKey}`,
@@ -133,14 +135,14 @@ export function SubscribePage() {
 
   if (authLoading) {
     return (
-      <div className="min-h-[calc(100vh-56px)] flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <Loader2 size={24} className="animate-spin text-muted-foreground" />
       </div>
     );
   }
 
   return (
-    <div className="min-h-[calc(100vh-56px)] bg-background">
+    <div className="min-h-screen bg-background">
       <div className="max-w-[960px] mx-auto px-6 py-16">
         {/* Header */}
         <motion.div

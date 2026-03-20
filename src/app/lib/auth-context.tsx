@@ -1,8 +1,30 @@
 import { createContext, useContext, useState, useEffect, useCallback, useRef, type ReactNode } from "react";
 import { supabase, API_BASE, publicAnonKey } from "./supabase";
 
-export type PlanTier = "free" | "generate" | "studio";
+/* ═══════════════════════════════════
+   TYPES — Frontend plan naming
+   Server stores: free | generate | studio
+   Frontend displays: free | pro | business
+   ═══════════════════════════════════ */
+
+export type PlanTier = "free" | "pro" | "business";
 export type UserRole = "user" | "admin";
+
+/** Map server plan names to frontend plan names */
+function mapServerPlan(serverPlan: string): PlanTier {
+  if (serverPlan === "generate") return "pro";
+  if (serverPlan === "studio") return "business";
+  if (serverPlan === "pro") return "pro";
+  if (serverPlan === "business") return "business";
+  return "free";
+}
+
+/** Map frontend plan names back to server plan names (for API calls) */
+export function mapToServerPlan(plan: PlanTier): string {
+  if (plan === "pro") return "generate";
+  if (plan === "business") return "studio";
+  return "free";
+}
 
 export interface UserProfile {
   userId: string;
@@ -18,16 +40,47 @@ export interface UserProfile {
   lastLoginAt: string;
 }
 
+/* ═══════════════════════════════════
+   ACCESS CONTROL HELPERS
+   ═══════════════════════════════════ */
+
+/** What each plan tier can access */
+const PLAN_ACCESS = {
+  free:     { hub: true, vault: true, analytics: false, campaignLab: false },
+  pro:      { hub: true, vault: true, analytics: false, campaignLab: false },
+  business: { hub: true, vault: true,  analytics: true,  campaignLab: true },
+} as const;
+
+export type Feature = keyof (typeof PLAN_ACCESS)["free"];
+
+export function canAccess(plan: PlanTier, feature: Feature, isAdmin: boolean): boolean {
+  if (isAdmin) return true;
+  return PLAN_ACCESS[plan]?.[feature] ?? false;
+}
+
+/** Get the minimum plan required for a feature */
+export function requiredPlan(feature: Feature): PlanTier {
+  if (PLAN_ACCESS.free[feature]) return "free";
+  if (PLAN_ACCESS.pro[feature]) return "pro";
+  return "business";
+}
+
+/* ═══════════════════════════════════
+   AUTH CONTEXT
+   ═══════════════════════════════════ */
+
 interface AuthState {
   user: { id: string; email: string; name?: string } | null;
   profile: UserProfile | null;
   isLoading: boolean;
   isAdmin: boolean;
+  plan: PlanTier;
   remainingCredits: number;
   accessToken: string | null;
   signOut: () => Promise<void>;
   refreshProfile: () => Promise<void>;
   getAuthHeader: () => string;
+  can: (feature: Feature) => boolean;
 }
 
 const AuthContext = createContext<AuthState>({
@@ -35,11 +88,13 @@ const AuthContext = createContext<AuthState>({
   profile: null,
   isLoading: true,
   isAdmin: false,
+  plan: "free",
   remainingCredits: 0,
   accessToken: null,
   signOut: async () => {},
   refreshProfile: async () => {},
   getAuthHeader: () => "",
+  can: () => false,
 });
 
 export function AuthProvider({ children }: { children: ReactNode }) {
@@ -57,68 +112,74 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setAccessToken(null);
   }, []);
 
+  const normalizeProfile = useCallback((raw: any): UserProfile => {
+    return {
+      ...raw,
+      plan: mapServerPlan(raw.plan || "free"),
+    };
+  }, []);
+
   const fetchProfile = useCallback(async (token: string): Promise<UserProfile | null> => {
-    // Don't fetch profile if we're in the process of signing out
     if (signingOut.current) return null;
 
-    // Single attempt with short timeout — server now decodes JWT locally, should be fast
     const t0 = Date.now();
+
     try {
       const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 8_000); // 8s timeout
-      
-      // FIX: Use same pattern as HubPage — publicAnonKey in Authorization, user token in X-User-Token
-      const headers: Record<string, string> = {
-        Authorization: `Bearer ${publicAnonKey}`,
-      };
-      if (token) headers["X-User-Token"] = token;
-      
+      const timeout = setTimeout(() => controller.abort(), 8_000);
+      console.log("[fetchProfile] trying POST /auth/me with text/plain (CORS-safe)...");
       const res = await fetch(`${API_BASE}/auth/me`, {
-        headers,
+        method: "POST",
+        headers: {
+          "Authorization": `Bearer ${publicAnonKey}`,
+          "Content-Type": "text/plain",
+        },
+        body: JSON.stringify({ _token: token }),
         signal: controller.signal,
       });
       clearTimeout(timeout);
       const data = await res.json();
-      console.log(`fetchProfile OK in ${Date.now() - t0}ms, authenticated=${data.authenticated}`);
+      console.log(`[fetchProfile] status=${res.status} authenticated=${data.authenticated} (${Date.now() - t0}ms)`);
       if (data.authenticated && data.profile) {
         if (!signingOut.current) {
-          setProfile(data.profile);
-          return data.profile;
+          const normalized = normalizeProfile(data.profile);
+          setProfile(normalized);
+          return normalized;
         }
-      } else {
-        console.log("fetchProfile: not authenticated", data?.error);
       }
-      return null;
     } catch (err) {
-      console.log(`fetchProfile failed after ${Date.now() - t0}ms:`, err instanceof Error ? err.message : err);
-      // On failure, create a minimal profile from the JWT token itself
-      try {
-        const parts = token.split(".");
-        if (parts.length === 3) {
-          const payload = JSON.parse(atob(parts[1].replace(/-/g, "+").replace(/_/g, "/")));
-          if (payload?.sub && payload?.email && !signingOut.current) {
-            const fallbackProfile: UserProfile = {
-              userId: payload.sub,
-              email: payload.email,
-              name: payload.user_metadata?.name || payload.email.split("@")[0],
-              role: payload.email.toLowerCase() === "romainortel@gmail.com" ? "admin" : "user",
-              plan: payload.email.toLowerCase() === "romainortel@gmail.com" ? "studio" : "free",
-              credits: payload.email.toLowerCase() === "romainortel@gmail.com" ? 999999 : 10,
-              creditsUsed: 0,
-              company: "",
-              jobTitle: "",
-              createdAt: new Date().toISOString(),
-              lastLoginAt: new Date().toISOString(),
-            };
-            console.log("fetchProfile: using JWT fallback profile");
-            setProfile(fallbackProfile);
-            return fallbackProfile;
-          }
-        }
-      } catch (e2) { /* ignore JWT decode failure */ }
-      return null;
+      console.log(`[fetchProfile] fetch failed: ${err instanceof Error ? err.message : err}`);
     }
-  }, []);
+
+    console.log(`[fetchProfile] server fetch failed after ${Date.now() - t0}ms, using JWT fallback`);
+    // Last resort: decode JWT locally to create a minimal profile
+    try {
+      const parts = token.split(".");
+      if (parts.length === 3) {
+        const payload = JSON.parse(atob(parts[1].replace(/-/g, "+").replace(/_/g, "/")));
+        if (payload?.sub && payload?.email && !signingOut.current) {
+          const isAdminEmail = payload.email.toLowerCase() === "romainortel@gmail.com";
+          const fallbackProfile: UserProfile = {
+            userId: payload.sub,
+            email: payload.email,
+            name: payload.user_metadata?.name || payload.email.split("@")[0],
+            role: isAdminEmail ? "admin" : "user",
+            plan: isAdminEmail ? "business" : "free",
+            credits: isAdminEmail ? 999999 : 50,
+            creditsUsed: 0,
+            company: "",
+            jobTitle: "",
+            createdAt: new Date().toISOString(),
+            lastLoginAt: new Date().toISOString(),
+          };
+          console.log("fetchProfile: using JWT fallback profile");
+          setProfile(fallbackProfile);
+          return fallbackProfile;
+        }
+      }
+    } catch (e2) { /* ignore JWT decode failure */ }
+    return null;
+  }, [normalizeProfile]);
 
   const refreshProfile = useCallback(async () => {
     if (accessToken && !signingOut.current) await fetchProfile(accessToken);
@@ -127,8 +188,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     let mounted = true;
 
-    // Get initial session
-    supabase.auth.getSession().then(({ data }) => {
+    supabase.auth.getSession().then(async ({ data }) => {
       if (!mounted || signingOut.current) return;
       if (data.session?.user) {
         const u = data.session.user;
@@ -139,18 +199,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           name: (u.user_metadata as any)?.name ?? (u.user_metadata as any)?.full_name ?? "",
         });
         setAccessToken(data.session.access_token);
-        // Fetch profile in background — don't block isLoading
-        fetchProfile(data.session.access_token);
+        // Wait for profile before marking loading as done
+        await fetchProfile(data.session.access_token);
       }
       if (mounted) setIsLoading(false);
     });
 
-    // Listen for auth changes (login, logout, Google OAuth redirect)
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
       if (!mounted) return;
       console.log("[Auth] onAuthStateChange event:", event);
 
-      // If signing out, always clear and ignore any session data
       if (event === "SIGNED_OUT" || signingOut.current) {
         clearAuthState();
         if (mounted) setIsLoading(false);
@@ -162,9 +220,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         const previousUserId = currentUserIdRef.current;
         const userChanged = previousUserId !== null && previousUserId !== u.id;
         
-        // Only clear profile if the user actually changed (prevents race with INITIAL_SESSION)
         if (userChanged) {
-          console.log("[Auth] User changed from", previousUserId, "to", u.id, "— clearing stale profile");
+          console.log("[Auth] User changed from", previousUserId, "to", u.id, "-- clearing stale profile");
           setProfile(null);
         }
         
@@ -175,7 +232,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           name: (u.user_metadata as any)?.name ?? (u.user_metadata as any)?.full_name ?? "",
         });
         setAccessToken(session.access_token);
-        // Fetch profile in background — don't block UI
         fetchProfile(session.access_token);
       } else {
         clearAuthState();
@@ -192,8 +248,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const signOut = useCallback(async () => {
     console.log("[Auth] signOut called");
     signingOut.current = true;
-    
-    // Immediately clear UI state
     clearAuthState();
 
     try {
@@ -202,7 +256,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       console.error("[Auth] signOut error:", err);
     }
 
-    // Manually clear Supabase localStorage tokens as fallback
     try {
       Object.keys(localStorage).forEach((key) => {
         if (key.startsWith("sb-")) {
@@ -223,7 +276,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, [accessToken]);
 
   const isAdmin = profile?.role === "admin";
+  const plan: PlanTier = profile?.plan || "free";
   const remainingCredits = isAdmin ? 999999 : Math.max(0, (profile?.credits || 0) - (profile?.creditsUsed || 0));
+  const can = useCallback((feature: Feature) => canAccess(plan, feature, isAdmin), [plan, isAdmin]);
 
   return (
     <AuthContext.Provider value={{
@@ -231,11 +286,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       profile,
       isLoading,
       isAdmin,
+      plan,
       remainingCredits,
       accessToken,
       signOut,
       refreshProfile,
       getAuthHeader,
+      can,
     }}>
       {children}
     </AuthContext.Provider>

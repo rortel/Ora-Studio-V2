@@ -1,0 +1,469 @@
+Failed to load resource: net::ERR_FAILEDUnderstand this error
+/api/make/fetch_ds_code_gen_status:1  Failed to load resource: the server responded with a status of 400 ()Understand this error
+figma_app-726b2563eb8cdce8.min.js.br:41 Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently
+S @ figma_app-726b2563eb8cdce8.min.js.br:41Understand this warning
+hub:1 Access to fetch at 'https://storage.cdn-luma.com/dream_machine/a75ed533-c46d-4b39-ab73-4cbff46a2f77/deb7a840-a24e-4591-b5f8-c8e45599b60e_resultf583733bbca9c802.mp4' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://storage.cdn-luma.com/dream_machine/a75ed533-c46d-4b39-ab73-4cbff46a2f77/deb7a840-a24e-4591-b5f8-c8e45599b60e_resultf583733bbca9c802.mp4' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://storage.cdn-luma.com/dream_machine/a75ed533-c46d-4b39-ab73-4cbff46a2f77/deb7a840-a24e-4591-b5f8-c8e45599b60e_resultf583733bbca9c802.mp4' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+storage.cdn-luma.com/dream_machine/a75ed533-c46d-4b39-ab73-4cbff46a2f77/deb7a840-a24e-4591-b5f8-c8e45599b60e_resultf583733bbca9c802.mp4:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+storage.cdn-luma.com/dream_machine/a75ed533-c46d-4b39-ab73-4cbff46a2f77/deb7a840-a24e-4591-b5f8-c8e45599b60e_resultf583733bbca9c802.mp4:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+storage.cdn-luma.com/dream_machine/a75ed533-c46d-4b39-ab73-4cbff46a2f77/deb7a840-a24e-4591-b5f8-c8e45599b60e_resultf583733bbca9c802.mp4:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+/api/cortex/foundry/keep-alive:1  Failed to load resource: net::ERR_CONNECTION_CLOSEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs:1  Failed to load resource: net::ERR_NETWORK_CHANGEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs:1  Failed to load resource: net::ERR_NETWORK_CHANGEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs:1  Failed to load resource: net::ERR_NETWORK_CHANGEDUnderstand this error
+/api/cortex/foundry/keep-alive:1  Failed to load resource: net::ERR_NETWORK_CHANGEDUnderstand this error
+logs:1  Failed to load resource: net::ERR_NETWORK_CHANGEDUnderstand this error
+metrics_batched:1  Failed to load resource: net::ERR_NETWORK_CHANGEDUnderstand this error
+682-1669b10bdb5ae40f.min.js.br:70 WebSocket connection to 'wss://www.figma.com/api/livegraph?pv=1&pr=2000a0b5c94c4520&pt=1773659022&ph=D4XLcOQO3p7tF9knI7RznXChdeqk2wR-gzGl2_5_ss4&userId=1483479003784692390&anonUserId=f2ef8d14-3c56-478c-b542-44ae2158b160&clientType=web&commitHash=107bbd51e86fce9a104f472597b3e63a6aa8ffa6&clientUrl=https%3A%2F%2Fwww.figma.com%2Fmake%2FCpu4nGRSqlaZeBhE1wINKa%2FBrand-compliant-messaging-system%3Fp%3Df%26t%3DFnZJBRvrwAAATC6l-0&connectionType=reconnect&reconnect=1' failed: 
+(anonymous) @ 682-1669b10bdb5ae40f.min.js.br:70Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-ref-via-get?prompt=Change%20le%20d%C3%A9cors%20pour%20que%20l%27action%20se%20passe%20au%20bord%20d%27un%20grand%20lac%20canadien&models=ora-vision%2Cphoton-1%2Cphoton-flash-1%2Csoul&imageRefUrl=https%3A%2F%2Fkbvkjafkztbsewtaijuh.supabase.co%2Fstorage%2Fv1%2Fobject%2Fsign%2Fmake-cad57f79-media%2Fhub-refs%2Fref-1773662830145-kc3y1i.webp%3Ftoken%3DeyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hOTc1Y2EyNy05NjhhLTQ5YjQtOWQ4ZC00NmRlMmEzYTUzYjciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJtYWtlLWNhZDU3Zjc5LW1lZGlhL2h1Yi1yZWZzL3JlZi0xNzczNjYyODMwMTQ1LWtjM3kxaS53ZWJwIiwiaWF0IjoxNzczNjYyODMwLCJleHAiOjE3NzM2NzAwMzB9.w7Bxtddz8D7IZoaxX9SWi2nbPolFR951Ltc_ZOnawlc&strength=0.75&mode=content&aspectRatio=4%3A3:1  Failed to load resource: net::ERR_INTERNET_DISCONNECTEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-ref-via-get?prompt=Change%20le%20d%C3%A9cors%20pour%20que%20l%27action%20se%20passe%20au%20bord%20d%27un%20grand%20lac%20canadien&models=ora-vision%2Cphoton-1%2Cphoton-flash-1%2Csoul&imageRefUrl=https%3A%2F%2Fkbvkjafkztbsewtaijuh.supabase.co%2Fstorage%2Fv1%2Fobject%2Fsign%2Fmake-cad57f79-media%2Fhub-refs%2Fref-1773662830145-kc3y1i.webp%3Ftoken%3DeyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hOTc1Y2EyNy05NjhhLTQ5YjQtOWQ4ZC00NmRlMmEzYTUzYjciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJtYWtlLWNhZDU3Zjc5LW1lZGlhL2h1Yi1yZWZzL3JlZi0xNzczNjYyODMwMTQ1LWtjM3kxaS53ZWJwIiwiaWF0IjoxNzczNjYyODMwLCJleHAiOjE3NzM2NzAwMzB9.w7Bxtddz8D7IZoaxX9SWi2nbPolFR951Ltc_ZOnawlc&strength=0.75&mode=content&aspectRatio=4%3A3:1  Failed to load resource: net::ERR_INTERNET_DISCONNECTEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-ref-via-get?prompt=Change%20le%20d%C3%A9cors%20pour%20que%20l%27action%20se%20passe%20au%20bord%20d%27un%20grand%20lac%20canadien&models=ora-vision%2Cphoton-1%2Cphoton-flash-1%2Csoul&imageRefUrl=https%3A%2F%2Fkbvkjafkztbsewtaijuh.supabase.co%2Fstorage%2Fv1%2Fobject%2Fsign%2Fmake-cad57f79-media%2Fhub-refs%2Fref-1773662830145-kc3y1i.webp%3Ftoken%3DeyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hOTc1Y2EyNy05NjhhLTQ5YjQtOWQ4ZC00NmRlMmEzYTUzYjciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJtYWtlLWNhZDU3Zjc5LW1lZGlhL2h1Yi1yZWZzL3JlZi0xNzczNjYyODMwMTQ1LWtjM3kxaS53ZWJwIiwiaWF0IjoxNzczNjYyODMwLCJleHAiOjE3NzM2NzAwMzB9.w7Bxtddz8D7IZoaxX9SWi2nbPolFR951Ltc_ZOnawlc&strength=0.75&mode=content&aspectRatio=4%3A3:1  Failed to load resource: net::ERR_INTERNET_DISCONNECTEDUnderstand this error
+metrics_batched:1  Failed to load resource: net::ERR_INTERNET_DISCONNECTEDUnderstand this error
+/api/web_logger/metrics/web.cortex.error:1  Failed to load resource: net::ERR_INTERNET_DISCONNECTEDUnderstand this error
+/api/web_logger/metrics/web.cortex.error:1  Failed to load resource: net::ERR_INTERNET_DISCONNECTEDUnderstand this error
+metrics_batched:1  Failed to load resource: net::ERR_INTERNET_DISCONNECTEDUnderstand this error
+logs:1  Failed to load resource: net::ERR_INTERNET_DISCONNECTEDUnderstand this error
+metrics_batched:1  Failed to load resource: net::ERR_INTERNET_DISCONNECTEDUnderstand this error
+682-1669b10bdb5ae40f.min.js.br:70 WebSocket connection to 'wss://www.figma.com/api/livegraph?pv=1&pr=2000a0b5c94c4520&pt=1773659022&ph=D4XLcOQO3p7tF9knI7RznXChdeqk2wR-gzGl2_5_ss4&userId=1483479003784692390&anonUserId=f2ef8d14-3c56-478c-b542-44ae2158b160&clientType=web&commitHash=107bbd51e86fce9a104f472597b3e63a6aa8ffa6&clientUrl=https%3A%2F%2Fwww.figma.com%2Fmake%2FCpu4nGRSqlaZeBhE1wINKa%2FBrand-compliant-messaging-system%3Fp%3Df%26t%3DFnZJBRvrwAAATC6l-0&connectionType=reconnect&reconnect=2' failed: 
+(anonymous) @ 682-1669b10bdb5ae40f.min.js.br:70Understand this error
+logs:1  Failed to load resource: net::ERR_INTERNET_DISCONNECTEDUnderstand this error
+682-1669b10bdb5ae40f.min.js.br:70 WebSocket connection to 'wss://www.figma.com/api/livegraph?pv=1&pr=2000a0b5c94c4520&pt=1773659022&ph=D4XLcOQO3p7tF9knI7RznXChdeqk2wR-gzGl2_5_ss4&userId=1483479003784692390&anonUserId=f2ef8d14-3c56-478c-b542-44ae2158b160&clientType=web&commitHash=107bbd51e86fce9a104f472597b3e63a6aa8ffa6&clientUrl=https%3A%2F%2Fwww.figma.com%2Fmake%2FCpu4nGRSqlaZeBhE1wINKa%2FBrand-compliant-messaging-system%3Fp%3Df%26t%3DFnZJBRvrwAAATC6l-0&connectionType=reconnect&reconnect=3' failed: 
+(anonymous) @ 682-1669b10bdb5ae40f.min.js.br:70Understand this error
+browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&dd-api-key=pub3f6fa9c94d5ff85890f30fdc10b09c61&dd-evp-origin-version=6.25.2&dd-evp-origin=browser&dd-request-id=b206b1bf-9c59-4058-bb6c-07090540738b&dd-evp-encoding=deflate&batch_time=1773662844852&_dd.api=fetch-keepalive:1  Failed to load resource: net::ERR_ADDRESS_UNREACHABLEUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/082d423af99237fcbfebc162891edc90b86bded38f4be9f2ce53e46134a2b62b:1  Failed to load resource: the server responded with a status of 404 ()Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/19620a89afac748166f4c4af68e48206a39793646088ceca8c1e3f1d6e602654:1  Failed to load resource: the server responded with a status of 404 ()Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/analyze-refs:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/build-prompt:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-image:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/5e415dd39800525fe8aca22e96a5636ce6a0841714e1f3d2ecb1d67ba2c34296:1  Failed to load resource: the server responded with a status of 404 ()Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-b7qj6ye46u2lpx3mtztmlw3dqxns7ckf7zt224zmnd535g7laa4a.makeproxy-c.figma.site/' failed: 
+ping @ app-b7qj6ye46u2lpx3m…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+/api/cortex/foundry/keep-alive:1  Failed to load resource: net::ERR_TIMED_OUTUnderstand this error
+/api/integrations/supabase/Cpu4nGRSqlaZeBhE1wINKa/edge_functions/make-server/logs:1  Failed to load resource: net::ERR_TIMED_OUTUnderstand this error
+/api/web_logger/metrics_batched:1  Failed to load resource: net::ERR_TIMED_OUTUnderstand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-3jjbg4vc6hedwao27xs2yejzni2lfvq5dwij3b6iv7h4gc7viqlq.makeproxy-c.figma.site/' failed: 
+ping @ app-3jjbg4vc6hedwao2…e/@vite/client:1035Understand this error
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/ed05cc3bce0ae396d1a576f21d22c9a311d8febf9e3870073819f56f6ee900f1:1  Failed to load resource: the server responded with a status of 404 ()Understand this error
+Brand-compliant-messaging-system?p=f&t=l63beTkw9xNnCyU7-0&preview-route=%2Fhub:1 Form submission canceled because the form is not connectedUnderstand this warning
+ [Auth] onAuthStateChange event: SIGNED_IN
+ [fetchProfile] trying auth-header...
+ [HubPage] Loading library from server...
+ [fetchProfile] trying auth-header...
+ [Auth] onAuthStateChange event: INITIAL_SESSION
+ [fetchProfile] trying auth-header...
+ [Auth] onAuthStateChange event: SIGNED_IN
+ [fetchProfile] trying auth-header...
+ [fetchProfile] auth-header: status=200 authenticated=true (2611ms)
+ [fetchProfile] auth-header: status=200 authenticated=true (2584ms)
+ [CampaignLab] Loading vault (authenticated)...
+ [HubPage] Loaded 25 library items from server
+ [CampaignLab] Vault loaded: Relais Christine
+ [fetchProfile] auth-header: status=200 authenticated=true (3791ms)
+ [fetchProfile] auth-header: status=200 authenticated=true (5223ms)
+ [Auth] onAuthStateChange event: SIGNED_IN
+ [fetchProfile] trying auth-header...
+ [fetchProfile] auth-header: status=200 authenticated=true (554ms)
+ [Auth] onAuthStateChange event: SIGNED_IN
+ [fetchProfile] trying auth-header...
+ [fetchProfile] auth-header: status=200 authenticated=true (441ms)
+ [CampaignLab] Uploading 10 ref photos to Storage...
+ [CampaignLab] Uploaded 10 refs OK
+ [CampaignLab] 10 ref URLs obtained
+ [CampaignLab] Pipeline: V2 (high-fidelity)
+ [CampaignLab] Analyzing 10 ref images (Vision)...
+ [CampaignLab] Trying text model: gpt-4o
+ [CampaignLab] Visual DNA extracted: Array(10)
+ [CampaignLab] Text [gpt-4o] response: 200, raw={"success":true,"results":[{"success":true,"result":{"model":"gpt-4o","provider":"openai-direct/gpt-4o","text":"Je suis désolé, mais je ne peux pas créer de contenu contenant des informations spécifiques sur le MAN eTGX car les URL fournies étaient incorrectes et il manque un peu de détails sur le p
+ [CampaignLab] Visual DNA keys: Array(10)
+ [CampaignLab] copyMap keys: Array(8)
+ [CampaignLab] Image generation: 4 formats, v2=true
+ [CampaignLab] V2 Image [linkedin-post]: ref=#1/10, prompt=A cinematic shot of a futuristic MAN eTGX truck crossing a bridge at sunset, sym...
+ [CampaignLab] Hub img2img: models=photon-1, ar=16:9, strength=0.25, ref=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v
+ [CampaignLab] V2 Image [instagram-post]: ref=#2/10, prompt=A MAN eTGX truck parked in a scenic location, with open roads and solar panels i...
+ [CampaignLab] Hub img2img: models=photon-1, ar=1:1, strength=0.25, ref=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v
+ [CampaignLab] V2 Image [instagram-story]: ref=#3/10, prompt=The bold front view of a MAN eTGX in motion, capturing the essence of power and ...
+ [CampaignLab] Hub img2img: models=photon-1, ar=9:16, strength=0.25, ref=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v
+ [CampaignLab] V2 Image [facebook-post]: ref=#4/10, prompt=A MAN eTGX truck charging at a futuristic charging station, with a driver lookin...
+ [CampaignLab] Hub img2img: models=photon-1, ar=1:1, strength=0.25, ref=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v
+ [CampaignLab] V2 Image [linkedin-post] OK: https://v3b.fal.media/files/b/0a9267f7/UBweW_-5AEI3eWYOJmyAX
+ [CampaignLab] V2 Image [instagram-story] OK: https://v3b.fal.media/files/b/0a9267f7/4vXuooNKdLQWdGroNVbZI
+ [CampaignLab] V2 Image [instagram-post] OK: https://v3b.fal.media/files/b/0a9267f7/0ATPj6ifZVmM7XxaMeKo2
+ [CampaignLab] V2 Image [facebook-post] OK: https://v3b.fal.media/files/b/0a9267f7/YIbaNBM0Ri4igJRE2KJcy
+ [CampaignLab] Video generation: 2 formats (background)
+ [CampaignLab] Video [instagram-reel]: using same-platform image as keyframe
+ [CampaignLab] Video START [instagram-reel]: hasKeyframe=true https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=Dynamic+shots+of+the+MAN+eTGX+on+the+road%2C+fo
+ [CampaignLab] Video [linkedin-video]: using same-platform image as keyframe
+ [CampaignLab] Video START [linkedin-video]: hasKeyframe=true https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=An+overview+of+the+MAN+eTGX%2C+highlighting+its
+ [CampaignLab] Video [instagram-reel] error: signal timed out
+(anonymous) @ code_components_prev…153e7b.min.js.br:90Understand this error
+ [CampaignLab] Video [linkedin-video] error: signal timed out
+(anonymous) @ code_components_prev…153e7b.min.js.br:90Understand this error
+vendor-191557b646cc979f.min.js.br:3 Datadog Browser SDK: The data provided has been discarded as it is over the limit of 225280 characters: IMG[src="data:image/png;base64,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
+g @ vendor-191557b646cc979f.min.js.br:3Understand this warning

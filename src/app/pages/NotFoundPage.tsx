@@ -16,7 +16,7 @@ export function NotFoundPage() {
       >
         <p
           className="text-ora-signal mb-4"
-          style={{ fontSize: '14px', fontWeight: 500, letterSpacing: '0.05em' }}
+          style={{ fontSize: '14px', fontWeight: 700, letterSpacing: '0.05em' }}
         >
           404
         </p>
@@ -24,9 +24,10 @@ export function NotFoundPage() {
           className="text-foreground mb-3"
           style={{
             fontSize: 'clamp(2rem, 4vw, 3rem)',
-            fontWeight: 500,
+            fontWeight: 800,
             letterSpacing: '-0.035em',
             lineHeight: 1.12,
+            color: '#FFFFFF',
           }}
         >
           Page not found
@@ -44,11 +45,11 @@ export function NotFoundPage() {
             Back to home
           </Link>
           <Link
-            to="/studio"
+            to="/hub"
             className="inline-flex items-center gap-2 border border-border-strong text-foreground px-6 py-3 rounded-lg hover:bg-secondary transition-colors"
             style={{ fontSize: '15px', fontWeight: 500 }}
           >
-            Open Studio
+            Open Hub
           </Link>
         </div>
       </motion.div>

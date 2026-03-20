@@ -1,0 +1,113 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://docs.firecrawl.dev/llms.txt
+> Use this file to discover all available pages before exploring further.
+
+# Utilisation des jetons
+
+> Remarque : une nouvelle [version v2 de cette API](/fr/api-reference/endpoint/token-usage) est désormais disponible avec des fonctionnalités et des performances améliorées.
+
+
+## OpenAPI
+
+````yaml fr/api-reference/v1-openapi.json get /team/token-usage
+openapi: 3.0.0
+info:
+  title: Firecrawl API
+  version: v1
+  description: >-
+    API permettant d’interagir avec les services Firecrawl pour réaliser des
+    tâches de scraping et de crawling web.
+  contact:
+    name: Firecrawl Support
+    url: https://firecrawl.dev/support
+    email: support@firecrawl.dev
+servers:
+  - url: https://api.firecrawl.dev/v1
+security:
+  - bearerAuth: []
+paths:
+  /team/token-usage:
+    get:
+      tags:
+        - Billing
+      summary: >-
+        Récupérer le nombre de jetons restants pour l’équipe authentifiée
+        (extraction uniquement)
+      operationId: getTokenUsage
+      responses:
+        '200':
+          description: Réponse en cas de succès
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  data:
+                    type: object
+                    properties:
+                      remaining_tokens:
+                        type: number
+                        description: Nombre de jetons restants pour l’équipe
+                        example: 1000
+                      plan_tokens:
+                        type: number
+                        description: >-
+                          Nombre de jetons inclus dans le forfait. Les jetons
+                          issus de coupons ne sont pas comptabilisés.
+                        example: 500000
+                      billing_period_start:
+                        type: string
+                        format: date-time
+                        description: >-
+                          Date de début de la période de facturation. null si
+                          vous utilisez l’offre gratuite
+                        example: '2025-01-01T00:00:00Z'
+                        nullable: true
+                      billing_period_end:
+                        type: string
+                        format: date-time
+                        description: >-
+                          Date de fin de la période de facturation. null si vous
+                          utilisez le plan gratuit
+                        example: '2025-01-31T23:59:59Z'
+                        nullable: true
+        '404':
+          description: Informations sur l’utilisation des jetons introuvables
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: false
+                  error:
+                    type: string
+                    example: Could not find token usage information
+        '500':
+          description: Erreur du serveur
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: false
+                  error:
+                    type: string
+                    example: Internal server error while fetching token usage
+      security:
+        - bearerAuth: []
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+
+````
+
+Built with [Mintlify](https://mintlify.com).

@@ -1,0 +1,1078 @@
+(index):1  Failed to load resource: net::ERR_FAILED
+/api/make/fetch_ds_code_gen_status:1  Failed to load resource: the server responded with a status of 400 ()
+ Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently
+S @ figma_app-06d0392974a6c1b2.min.js.br:41
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/6346a2d0c88d78f62aad8c4e61759fceb1367a6743fa53fba3dfb024df78dfc4:1  Failed to load resource: the server responded with a status of 404 ()
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/748b2e62d46b79fc5a5d3762a417f486a21d9549d7aae59a1adecfa5953bcc38:1  Failed to load resource: the server responded with a status of 404 ()
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+hub:1  Failed to load resource: the server responded with a status of 408 ()
+hub:1  Failed to load resource: the server responded with a status of 408 ()
+hub:1  Failed to load resource: the server responded with a status of 408 ()
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack:1  Failed to load resource: net::ERR_FAILED
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/95d80e513db78273245320ff6d3294e547350ecd8ec529cceaccb9e14fa762cc:1  Failed to load resource: the server responded with a status of 404 ()
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+/api/plans/05a9a779-1469-4085-8134-9666366a3501/ai_credits/request_credits?usage_alert_id=081f6a0f-2357-423c-97d2-febbbd23395f:1  Failed to load resource: the server responded with a status of 400 ()
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/calendar:1  Failed to load resource: net::ERR_FAILED
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/b5fc31f2c624b76986de21081c4cc3d5e039b118d3872d97202a67d947fb8594:1  Failed to load resource: the server responded with a status of 404 ()
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/5e3a6ec5c054db9070ed517063f06f65b958d8120016789d7add87356d7da24e:1  Failed to load resource: the server responded with a status of 404 ()
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/src/app/components/RouteGuard.tsx:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/src/app/components/RouteGuard.tsx:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/src/app/components/RouteGuard.tsx:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/src/app/components/CampaignLab.tsx?t=1773912145218:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/src/app/components/CampaignLab.tsx?t=1773912145218:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/src/app/components/CampaignLab.tsx?t=1773912145218:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&dd-api-key=pub3f6fa9c94d5ff85890f30fdc10b09c61&dd-evp-origin-version=6.25.2&dd-evp-origin=browser&dd-request-id=a15bdec1-0280-4111-a021-304792c068a5&dd-evp-encoding=deflate&batch_time=1773914006018&_dd.api=fetch:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+/api/cortex/shared/generation_error_log:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/auth/me:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/auth/me:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/auth/me:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: the server responded with a status of 429 ()
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: the server responded with a status of 429 ()
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: the server responded with a status of 429 ()
+/api/cortex/shared/figmake:1  Failed to load resource: net::ERR_QUIC_PROTOCOL_ERROR.QUIC_TOO_MANY_RTOS
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+ WebSocket connection to 'wss://app-za74em6mdf3phtb7tnwge67uv7co7qyobaj5gfozaxdojlx7qtxa.makeproxy-c.figma.site/' failed: 
+ping @ app-za74em6mdf3phtb7…e/@vite/client:1035
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/connect/tiktok?redirectUrl=https%3A%2F%2F260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site%2Fhub' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/connect/tiktok?redirectUrl=https%3A%2F%2F260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site%2Fhub' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/connect/tiktok?redirectUrl=https%3A%2F%2F260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site%2Fhub' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/connect/tiktok?redirectUrl=https%3A%2F%2F260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site%2Fhub:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/connect/tiktok?redirectUrl=https%3A%2F%2F260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site%2Fhub:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/connect/tiktok?redirectUrl=https%3A%2F%2F260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site%2Fhub:1  Failed to load resource: net::ERR_FAILED
+/api/cortex/shared/figmake:1  Failed to load resource: the server responded with a status of 413 ()
+/api/cortex/shared/figmake:1  Failed to load resource: the server responded with a status of 413 ()
+/api/cortex/shared/figmake:1  Failed to load resource: the server responded with a status of 413 ()
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/07fd0708e30fe9b3a1a5f844dff3738fb11e883d5a2ff44234918c2ecbec6a73:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Hero.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Hero.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Hero.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/ThreeSteps.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/ThreeSteps.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/ThreeSteps.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/CTASection.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/CTASection.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/CTASection.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/StudioExperience.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/StudioExperience.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/StudioExperience.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/SocialProof.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/SocialProof.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/SocialProof.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/FAQ.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/FAQ.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/FAQ.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Pricing.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Pricing.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Pricing.tsx:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/CTASection.tsx?t=1773916167080:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/CTASection.tsx?t=1773916167080:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/CTASection.tsx?t=1773916167080:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/FAQ.tsx?t=1773916167080:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/FAQ.tsx?t=1773916167080:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/FAQ.tsx?t=1773916167080:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Footer.tsx?t=1773916167080:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Footer.tsx?t=1773916167080:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Footer.tsx?t=1773916167080:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Hero.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Hero.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Hero.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Navbar.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Navbar.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Navbar.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Pricing.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Pricing.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Pricing.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/SocialProof.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/SocialProof.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/SocialProof.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/ThreeSteps.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/ThreeSteps.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/ThreeSteps.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/StudioExperience.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/StudioExperience.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/StudioExperience.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/pages/LandingPage.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/pages/LandingPage.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/pages/LandingPage.tsx?t=1773916167081:1  Failed to load resource: the server responded with a status of 404 ()
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/soundtrack-start:1  Failed to load resource: net::ERR_FAILED
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/6dee5cbc9f737c65f2d80230fa17dccf66f2da5f826ce9fb2885aae448b47420:1  Failed to load resource: the server responded with a status of 404 ()
+/api/cortex/shared/figmake:1  Failed to load resource: the server responded with a status of 413 ()
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/9a6e12328d33833385f2b089997f2d7590f23527a7e88f1a83715c964584a20f:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Footer.tsx?t=1773917770870:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Footer.tsx?t=1773917770870:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Footer.tsx?t=1773917770870:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Footer.tsx?t=1773917770870:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Footer.tsx?t=1773917770870:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Footer.tsx?t=1773917770870:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Footer.tsx?t=1773917770870:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Footer.tsx?t=1773917770870:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Footer.tsx?t=1773917770870:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Footer.tsx?t=1773917770870:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Footer.tsx?t=1773917770870:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Footer.tsx?t=1773917770870:1  Failed to load resource: the server responded with a status of 404 ()
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/359a040636366d9054d6b4f870f7acfa9d7db37ab8e24000e3aa0903f7368997:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Footer.tsx?t=1773917770870:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Footer.tsx?t=1773917770870:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/Footer.tsx?t=1773917770870:1  Failed to load resource: the server responded with a status of 404 ()
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/99ac63d2deca8b5075c6a71050a4827f8076d4f122cd4dbb08a1699edebaee1d:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/pages/LandingPage.tsx?t=1773919181790:1  Failed to load resource: the server responded with a status of 500 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/pages/LandingPage.tsx?t=1773919181790:1  Failed to load resource: the server responded with a status of 500 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/pages/LandingPage.tsx?t=1773919181790:1  Failed to load resource: the server responded with a status of 500 ()
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/6a03c30c113acd6100a543f6a30666a10c8610868045755998c5d5d3e0efeaf3:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/pages/LandingPage.tsx?t=1773919181790:1  Failed to load resource: the server responded with a status of 500 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/pages/LandingPage.tsx?t=1773919181790:1  Failed to load resource: the server responded with a status of 500 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/pages/LandingPage.tsx?t=1773919181790:1  Failed to load resource: the server responded with a status of 500 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/PulseRadar.tsx?t=1773919353877:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/PulseRadar.tsx?t=1773919353877:1  Failed to load resource: the server responded with a status of 404 ()
+app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/src/app/components/PulseRadar.tsx?t=1773919353877:1  Failed to load resource: the server responded with a status of 404 ()
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/61add61000fba75098169927b6505861cf4fe3e0604e850754a23c156c50c70c:1  Failed to load resource: the server responded with a status of 404 ()
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+/api/plans/05a9a779-1469-4085-8134-9666366a3501/ai_credits/request_credits?usage_alert_id=081f6a0f-2357-423c-97d2-febbbd23395f:1  Failed to load resource: the server responded with a status of 400 ()
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+/api/cortex/shared/figmake:1  Failed to load resource: the server responded with a status of 413 ()
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/e8222198c7bb1d8de05fbcc5c0060aac71707b29567c89f80f8d87a97a02b1ef:1  Failed to load resource: the server responded with a status of 404 ()
+ Failed to fetch snapshot files: 
+(anonymous) @ vendor-core-83c17265…588e9e.min.js.br:54
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+ WebSocket connection to 'wss://app-yl6tflfjl4cudmm56fmq5gisnzjwatji3hgjrd65ytldbv2vi3ra.makeproxy-c.figma.site/' failed: 
+ping @ app-yl6tflfjl4cudmm5…e/@vite/client:1035
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/f89c605fe7f50e4b6c375cae8ede3dfda9e84db88ec2b9c87f4a509a244c4ef0:1  Failed to load resource: the server responded with a status of 404 ()
+ Failed to fetch snapshot files: 
+(anonymous) @ vendor-core-83c17265…588e9e.min.js.br:54
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/09fc8ebc9558b186c8293a6333c9b015374b44eb0d8b542de13ac73a33a102b8:1  Failed to load resource: the server responded with a status of 404 ()
+ Failed to fetch snapshot files: 
+(anonymous) @ vendor-core-83c17265…588e9e.min.js.br:54
+ [fetchProfile] trying POST /auth/me with Authorization header...
+ [Auth] onAuthStateChange event: INITIAL_SESSION
+ [fetchProfile] trying POST /auth/me with Authorization header...
+ [fetchProfile] status=200 authenticated=true (429ms)
+ [fetchProfile] status=200 authenticated=true (432ms)
+ [HubPage] Loading library from server...
+ [HubPage] Loaded 34 library items from server
+ [CampaignLab] Loading vault via POST /user/init...
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Vault fetch error (attempt 1): 
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Vault fetch error (attempt 2): 
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+ [Auth] onAuthStateChange event: SIGNED_IN
+ [fetchProfile] trying POST /auth/me with Authorization header...
+ [fetchProfile] status=200 authenticated=true (1046ms)
+ [Auth] onAuthStateChange event: SIGNED_IN
+ [fetchProfile] trying POST /auth/me with Authorization header...
+ [fetchProfile] status=200 authenticated=true (711ms)
+ [CampaignLab] Uploading 10 ref photos to Storage (one-by-one with resize)...
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 1 upload attempt 1 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 1 upload attempt 2 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 2 upload attempt 1 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 2 upload attempt 2 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 3 upload attempt 1 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 3 upload attempt 2 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 4 upload attempt 1 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 4 upload attempt 2 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 5 upload attempt 1 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 5 upload attempt 2 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 6 upload attempt 1 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 6 upload attempt 2 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 7 upload attempt 1 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 7 upload attempt 2 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 8 upload attempt 1 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 8 upload attempt 2 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 9 upload attempt 1 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 9 upload attempt 2 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 10 upload attempt 1 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Ref 10 upload attempt 2 failed: Failed to fetch
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+ [CampaignLab] Upload complete: 0/10 refs uploaded
+ [CampaignLab] 0 ref URLs obtained
+ [CampaignLab] Pipeline: CLASSIC (text-only)
+ [CampaignLab] POST texts: 10 formats, brief=2000c, body=3334c
+ [CampaignLab] Text response: HTTP 200, 5918c, body={"success":true,"copyMap":{"linkedin-post":{"subject":"","headline":"","caption":"Foncez droit au cœur de la passion avec le MAN eTGX ! 🚛✨ Découvrez un camion électrique révolutionnaire conçu pour le transport long-courrier. Profitez d'une autonomie impressionnante, d'une charge rapide et d'un confort incomparable pour les chauffeurs. Rendez-vous aux 24 Heures Camions pour vivre une expérience un
+ [CampaignLab] Text OK: 7 formats, provider=apipod/gpt-4o, 27192ms, keys=[linkedin-post,linkedin-video,instagram-post,instagram-story,instagram-reel,facebook-post,facebook-video]
+ [CampaignLab] copyMap keys: Array(7)
+ [CampaignLab] Image generation: 6 formats, v2=false
+ [CampaignLab] Image GET [linkedin-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Un%20moderne%20camion%20europ%C3%A9en%20%C3%A
+ [CampaignLab] Image GET [instagram-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Un%20camion%20moderne%20%C3%A9lectrique%20ave
+ [CampaignLab] Image GET [instagram-story]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Un%20camion%20%C3%A9lectrique%20moderne%20ave
+ [CampaignLab] Image GET [facebook-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Un%20camion%20%C3%A9lectrique%20moderne%20ave
+ [CampaignLab] Image GET [facebook-ad]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20Facebook%20post.%20Campagne%20
+ [CampaignLab] Image GET [tiktok-image]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20TikTok%20post.%20Campagne%20la
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20Facebook%20post.%20Campagne%20lancement%2024h%20du%20MAns%20camion.%20Camion%20star%20eTGX.%20Info%20%3A%20MAN%20Logo%0AMAN%20Belgique%0ACamions%0ABus%20%2F%20Cars%0AUtilitaires%0A%C3%89le.%20Cinematic%20brand%20photography%2C%20no%20text.%20Wide%20landscape%201.91%3A1%2C%20high-contrast%20hero%20shot%2C%20clean%20background%2C%20product%20front-and-center%20with%20CTA%20space..%20Photorealistic%20commercial%20photography.%20CRITICAL%20ANTI-HALLUCINATION%20RULES%3A%20(1)%20Preserve%20the%20EXACT%20origina&models=photon-1&aspectRatio=16:9:1  Failed to load resource: the server responded with a status of 503 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20Facebook%20post.%20Campagne%20lancement%2024h%20du%20MAns%20camion.%20Camion%20star%20eTGX.%20Info%20%3A%20MAN%20Logo%0AMAN%20Belgique%0ACamions%0ABus%20%2F%20Cars%0AUtilitaires%0A%C3%89le.%20Cinematic%20brand%20photography%2C%20no%20text.%20Wide%20landscape%201.91%3A1%2C%20high-contrast%20hero%20shot%2C%20clean%20background%2C%20product%20front-and-center%20with%20CTA%20space..%20Photorealistic%20commercial%20photography.%20CRITICAL%20ANTI-HALLUCINATION%20RULES%3A%20(1)%20Preserve%20the%20EXACT%20origina&models=photon-1&aspectRatio=16:9:1  Failed to load resource: the server responded with a status of 503 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20Facebook%20post.%20Campagne%20lancement%2024h%20du%20MAns%20camion.%20Camion%20star%20eTGX.%20Info%20%3A%20MAN%20Logo%0AMAN%20Belgique%0ACamions%0ABus%20%2F%20Cars%0AUtilitaires%0A%C3%89le.%20Cinematic%20brand%20photography%2C%20no%20text.%20Wide%20landscape%201.91%3A1%2C%20high-contrast%20hero%20shot%2C%20clean%20background%2C%20product%20front-and-center%20with%20CTA%20space..%20Photorealistic%20commercial%20photography.%20CRITICAL%20ANTI-HALLUCINATION%20RULES%3A%20(1)%20Preserve%20the%20EXACT%20origina&models=photon-1&aspectRatio=16:9:1  Failed to load resource: the server responded with a status of 503 ()
+ [CampaignLab] Image [facebook-ad] error: Image generation failed
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+ [CampaignLab] Classic Image [linkedin-post] OK: https://storage.cdn-luma.com/dream_machine/fb28bcc0-41f0-4e9
+ [CampaignLab] Classic Image [instagram-story] OK: https://storage.cdn-luma.com/dream_machine/890a2a16-9cfd-4e1
+ [CampaignLab] Classic Image [facebook-post] OK: https://storage.cdn-luma.com/dream_machine/d169d43c-4bc0-4e2
+ [CampaignLab] Classic Image [tiktok-image] OK: https://storage.cdn-luma.com/dream_machine/81c2ee3b-010a-414
+ [CampaignLab] Classic Image [instagram-post] OK: https://storage.cdn-luma.com/dream_machine/b5d14f98-9b28-407
+ [CampaignLab] Video generation: 4 formats (background)
+ [CampaignLab] Video [linkedin-video]: using same-platform image as keyframe
+ [CampaignLab] Video START [linkedin-video]: hasKeyframe=true https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=Un+moderne+camion+europ%C3%A9en+%C3%A9lectrique
+ [CampaignLab] Video [instagram-reel]: using same-platform image as keyframe
+ [CampaignLab] Video START [instagram-reel]: hasKeyframe=true https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=Un+moderne+camion+%C3%A9lectrique+europ%C3%A9en
+ [CampaignLab] Video [facebook-video]: using same-platform image as keyframe
+ [CampaignLab] Video START [facebook-video]: hasKeyframe=true https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=Un+camion+%C3%A9lectrique+moderne+roulant+sur+u
+ [CampaignLab] Video [youtube-short]: using first available image as keyframe
+ [CampaignLab] Video START [youtube-short]: hasKeyframe=true https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=Cinematic+video.+Campagne+lancement+24h+du+MAns
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://260f4d82-6578-4d6e-9e34-4f10b77c24a3-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+  GET https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts net::ERR_FAILED 400 (Bad Request)
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+(anonymous) @ CampaignLab.tsx:1248
+TN @ code_components_prev…889db9.min.js.br:37
+T8 @ code_components_prev…889db9.min.js.br:37
+T7 @ code_components_prev…889db9.min.js.br:37
+T6 @ code_components_prev…889db9.min.js.br:37
+T4 @ code_components_prev…889db9.min.js.br:37
+S1 @ code_components_prev…889db9.min.js.br:37
+SQ @ code_components_prev…889db9.min.js.br:37
+(anonymous) @ code_components_prev…889db9.min.js.br:37
+(anonymous) @ code_components_prev…889db9.min.js.br:65
+V @ code_components_prev…889db9.min.js.br:61
+B @ code_components_prev…889db9.min.js.br:61
+eo @ code_components_prev…889db9.min.js.br:61
+ [CampaignLab] Zernio accounts fetch: TypeError: Failed to fetch
+    at code_components_prev…9.min.js.br:90:9794
+    at CampaignLab.tsx:1248:5
+    at TN (code_components_prev…min.js.br:37:138396)
+    at T8 (code_components_prev…min.js.br:37:151856)
+    at T7 (code_components_prev…min.js.br:37:151634)
+    at T6 (code_components_prev…min.js.br:37:151542)
+    at T4 (code_components_prev…min.js.br:37:151420)
+    at S1 (code_components_prev…min.js.br:37:163585)
+    at SQ (code_components_prev…min.js.br:37:163247)
+    at code_components_prev…min.js.br:37:162379
+    at code_components_prev….min.js.br:65:74721
+    at V (code_components_prev…9.min.js.br:61:1842)
+    at B (code_components_prev…9.min.js.br:61:1559)
+    at MessagePort.eo (code_components_prev…9.min.js.br:61:3433)
+ [CampaignLab] Video [linkedin-video] submitted: 7ae697ec-6966-4004-92c3-2f45c4139a83
+ [CampaignLab] Video [facebook-video] submitted: c250ccff-5d67-4465-9a1b-44f3332a394b
+ [CampaignLab] Video [youtube-short] submitted: ac0da69a-5bdc-452e-8655-73a7d0cef947
+ [CampaignLab] Video [instagram-reel] submitted: 05101833-fd22-4eff-820a-356b39e6e541
+ [CampaignLab] Video [linkedin-video] poll #1: state=dreaming
+ [CampaignLab] Video [facebook-video] poll #1: state=dreaming
+ [CampaignLab] Video [youtube-short] poll #1: state=dreaming
+ [CampaignLab] Video [instagram-reel] poll #1: state=dreaming
+ [CampaignLab] Video [linkedin-video] poll #2: state=dreaming
+hub:1  Failed to load resource: the server responded with a status of 408 ()
+ [CampaignLab] Video [facebook-video] poll #2: state=dreaming
+ [CampaignLab] Video [youtube-short] poll #2: state=dreaming
+ [CampaignLab] Video [instagram-reel] poll #2: state=dreaming
+ [CampaignLab] Video [linkedin-video] poll #3: state=dreaming

@@ -1,0 +1,193 @@
+
+Missing tax ID
+·
+Registered businesses must add a tax ID to their billing details
+
+Supabase
+Sowego
+PRO
+
+StudioOra
+
+main
+PRODUCTION
+
+
+Connect
+Feedback
+
+Search...
+K
+
+
+
+
+
+
+Edge Functions
+MANAGE
+Functions
+Secrets
+Edge Functions
+make-server-cad57f79
+make-server-cad57f79
+Docs
+
+Download
+
+Test
+Overview
+Invocations
+Logs
+Details
+Code
+
+
+138
+
+Last hour
+
+Severity
+
+Chart
+
+Explore via query
+Mar 18, 2026, 11:50am
+Mar 18, 2026, 12:46pm
+[RES] GET /make-server-cad57f79/health -> 200 (1ms)
+[REQ] GET /make-server-cad57f79/health at 2026-03-18T11:46:52.671Z
+[boot] ORA server ready (APIPod text + text-multi-get + campaign-texts-get, Luma image+video+campaign-lab, secondary image+video, Kling video, Replicate audio, storage, auto-campaign, studio actions, library, campaign-v2-pipeline) — deploy 2026-03-17T11:00Z
+[boot] ORA server starting (inline AI) — deploy 2026-03-12T09:00Z
+booted (time: 40ms)
+[RES] GET /make-server-cad57f79/suno/credits -> 200 (186ms)
+[REQ] GET /make-server-cad57f79/suno/credits at 2026-03-18T11:46:45.155Z
+[boot] ORA server ready (APIPod text + text-multi-get + campaign-texts-get, Luma image+video+campaign-lab, secondary image+video, Kling video, Replicate audio, storage, auto-campaign, studio actions, library, campaign-v2-pipeline) — deploy 2026-03-17T11:00Z
+[boot] ORA server starting (inline AI) — deploy 2026-03-12T09:00Z
+booted (time: 40ms)
+[RES] POST /make-server-cad57f79/auth/me -> 200 (75ms)
+[getOrCreateProfile] kv.get took 74ms
+[RES] POST /make-server-cad57f79/auth/me -> 200 (75ms)
+[getOrCreateProfile] kv.get took 73ms
+[/auth/me POST] ctxToken=eyJhbGciOiJFUzI1NiIs... ctxBodyKeys=_token authHeader=Bearer eyJhbGciOiJIUzI1NiIsInR
+[/auth/me POST] auth OK (0ms), fetching profile...
+[body-parser] OK: textLen=32916, _token found (eyJhbGciOiJFUzI1NiIs...)
+[REQ] POST /make-server-cad57f79/auth/me at 2026-03-18T11:46:44.662Z
+[getUser] JWT decoded locally, user: 6d216f2e-292a-4319-8181-0ea92b638c47
+[/auth/me POST] ctxToken=eyJhbGciOiJFUzI1NiIs... ctxBodyKeys=_token authHeader=Bearer eyJhbGciOiJIUzI1NiIsInR
+[/auth/me POST] auth OK (0ms), fetching profile...
+[getUser] JWT decoded locally, user: 6d216f2e-292a-4319-8181-0ea92b638c47
+[body-parser] OK: textLen=32916, _token found (eyJhbGciOiJFUzI1NiIs...)
+[REQ] POST /make-server-cad57f79/auth/me at 2026-03-18T11:46:44.652Z
+[boot] ORA server ready (APIPod text + text-multi-get + campaign-texts-get, Luma image+video+campaign-lab, secondary image+video, Kling video, Replicate audio, storage, auto-campaign, studio actions, library, campaign-v2-pipeline) — deploy 2026-03-17T11:00Z
+[boot] ORA server starting (inline AI) — deploy 2026-03-12T09:00Z
+[boot] ORA server ready (APIPod text + text-multi-get + campaign-texts-get, Luma image+video+campaign-lab, secondary image+video, Kling video, Replicate audio, storage, auto-campaign, studio actions, library, campaign-v2-pipeline) — deploy 2026-03-17T11:00Z
+[boot] ORA server starting (inline AI) — deploy 2026-03-12T09:00Z
+booted (time: 42ms)
+booted (time: 42ms)
+[RES] POST /make-server-cad57f79/auth/me -> 200 (80ms)
+[getOrCreateProfile] kv.get took 78ms
+[getUser] JWT decoded locally, user: 6d216f2e-292a-4319-8181-0ea92b638c47
+[/auth/me POST] auth OK (1ms), fetching profile...
+[REQ] POST /make-server-cad57f79/auth/me at 2026-03-18T11:46:43.506Z
+[/auth/me POST] ctxToken=eyJhbGciOiJFUzI1NiIs... ctxBodyKeys=_token authHeader=Bearer eyJhbGciOiJIUzI1NiIsInR
+[body-parser] OK: textLen=32916, _token found (eyJhbGciOiJFUzI1NiIs...)
+[boot] ORA server ready (APIPod text + text-multi-get + campaign-texts-get, Luma image+video+campaign-lab, secondary image+video, Kling video, Replicate audio, storage, auto-campaign, studio actions, library, campaign-v2-pipeline) — deploy 2026-03-17T11:00Z
+[boot] ORA server starting (inline AI) — deploy 2026-03-12T09:00Z
+booted (time: 42ms)
+[RES] POST /make-server-cad57f79/auth/me -> 200 (111ms)
+[getOrCreateProfile] kv.get took 110ms
+[/auth/me POST] ctxToken=eyJhbGciOiJFUzI1NiIs... ctxBodyKeys=_token authHeader=Bearer eyJhbGciOiJIUzI1NiIsInR
+[REQ] POST /make-server-cad57f79/auth/me at 2026-03-18T11:46:42.812Z
+[/auth/me POST] auth OK (0ms), fetching profile...
+[getUser] JWT decoded locally, user: 6d216f2e-292a-4319-8181-0ea92b638c47
+[body-parser] OK: textLen=32916, _token found (eyJhbGciOiJFUzI1NiIs...)
+[boot] ORA server ready (APIPod text + text-multi-get + campaign-texts-get, Luma image+video+campaign-lab, secondary image+video, Kling video, Replicate audio, storage, auto-campaign, studio actions, library, campaign-v2-pipeline) — deploy 2026-03-17T11:00Z
+[boot] ORA server starting (inline AI) — deploy 2026-03-12T09:00Z
+[RES] POST /make-server-cad57f79/auth/me -> 200 (58ms)
+[getOrCreateProfile] kv.get took 57ms
+booted (time: 41ms)
+[REQ] POST /make-server-cad57f79/auth/me at 2026-03-18T11:46:42.707Z
+[/auth/me POST] auth OK (0ms), fetching profile...
+[/auth/me POST] ctxToken=eyJhbGciOiJFUzI1NiIs... ctxBodyKeys=_token authHeader=Bearer eyJhbGciOiJIUzI1NiIsInR
+[body-parser] OK: textLen=32916, _token found (eyJhbGciOiJFUzI1NiIs...)
+[getUser] JWT decoded locally, user: 6d216f2e-292a-4319-8181-0ea92b638c47
+[RES] POST /make-server-cad57f79/auth/me -> 200 (140ms)
+[getOrCreateProfile] kv.get took 137ms
+[RES] POST /make-server-cad57f79/auth/me -> 200 (109ms)
+[getOrCreateProfile] kv.get took 107ms
+[getUser] JWT decoded locally, user: 6d216f2e-292a-4319-8181-0ea92b638c47
+[REQ] POST /make-server-cad57f79/auth/me at 2026-03-18T11:46:38.966Z
+[/auth/me POST] auth OK (0ms), fetching profile...
+[/auth/me POST] ctxToken=eyJhbGciOiJFUzI1NiIs... ctxBodyKeys=_token authHeader=Bearer eyJhbGciOiJIUzI1NiIsInR
+[/auth/me POST] auth OK (0ms), fetching profile...
+[body-parser] OK: textLen=32916, _token found (eyJhbGciOiJFUzI1NiIs...)
+[getUser] JWT decoded locally, user: 6d216f2e-292a-4319-8181-0ea92b638c47
+[/auth/me POST] ctxToken=eyJhbGciOiJFUzI1NiIs... ctxBodyKeys=_token authHeader=Bearer eyJhbGciOiJIUzI1NiIsInR
+[body-parser] OK: textLen=32916, _token found (eyJhbGciOiJFUzI1NiIs...)
+[REQ] POST /make-server-cad57f79/auth/me at 2026-03-18T11:46:38.965Z
+[boot] ORA server ready (APIPod text + text-multi-get + campaign-texts-get, Luma image+video+campaign-lab, secondary image+video, Kling video, Replicate audio, storage, auto-campaign, studio actions, library, campaign-v2-pipeline) — deploy 2026-03-17T11:00Z
+[boot] ORA server starting (inline AI) — deploy 2026-03-12T09:00Z
+[boot] ORA server ready (APIPod text + text-multi-get + campaign-texts-get, Luma image+video+campaign-lab, secondary image+video, Kling video, Replicate audio, storage, auto-campaign, studio actions, library, campaign-v2-pipeline) — deploy 2026-03-17T11:00Z
+[boot] ORA server starting (inline AI) — deploy 2026-03-12T09:00Z
+booted (time: 40ms)
+booted (time: 45ms)
+[RES] POST /make-server-cad57f79/auth/me -> 200 (112ms)
+[getOrCreateProfile] kv.get took 110ms
+[/auth/me POST] auth OK (1ms), fetching profile...
+[getUser] JWT decoded locally, user: 6d216f2e-292a-4319-8181-0ea92b638c47
+[REQ] POST /make-server-cad57f79/auth/me at 2026-03-18T11:46:37.787Z
+[/auth/me POST] ctxToken=eyJhbGciOiJFUzI1NiIs... ctxBodyKeys=_token authHeader=Bearer eyJhbGciOiJIUzI1NiIsInR
+[body-parser] OK: textLen=32916, _token found (eyJhbGciOiJFUzI1NiIs...)
+[boot] ORA server ready (APIPod text + text-multi-get + campaign-texts-get, Luma image+video+campaign-lab, secondary image+video, Kling video, Replicate audio, storage, auto-campaign, studio actions, library, campaign-v2-pipeline) — deploy 2026-03-17T11:00Z
+[boot] ORA server starting (inline AI) — deploy 2026-03-12T09:00Z
+booted (time: 40ms)
+[RES] POST /make-server-cad57f79/auth/me -> 200 (156ms)
+[getOrCreateProfile] kv.get took 154ms
+[getUser] JWT decoded locally, user: 6d216f2e-292a-4319-8181-0ea92b638c47
+[/auth/me POST] ctxToken=eyJhbGciOiJFUzI1NiIs... ctxBodyKeys=_token authHeader=Bearer eyJhbGciOiJIUzI1NiIsInR
+[REQ] POST /make-server-cad57f79/auth/me at 2026-03-18T11:46:35.123Z
+[/auth/me POST] auth OK (0ms), fetching profile...
+[body-parser] OK: textLen=32916, _token found (eyJhbGciOiJFUzI1NiIs...)
+[boot] ORA server ready (APIPod text + text-multi-get + campaign-texts-get, Luma image+video+campaign-lab, secondary image+video, Kling video, Replicate audio, storage, auto-campaign, studio actions, library, campaign-v2-pipeline) — deploy 2026-03-17T11:00Z
+[boot] ORA server starting (inline AI) — deploy 2026-03-12T09:00Z
+booted (time: 44ms)
+[RES] POST /make-server-cad57f79/auth/me -> 200 (126ms)
+[getOrCreateProfile] kv.get took 124ms
+[/auth/me POST] auth OK (0ms), fetching profile...
+Details
+Raw
+
+
+
+id
+a8e17c47-f5f6-413e-9066-c3e1f81396b0
+
+timestamp
+18 Mar 26 12:46:52
+event_message
+booted (time: 40ms)
+metadata
+[
+  {
+    "boot_time": 40,
+    "cpu_time_used": null,
+    "deployment_id": "kbvkjafkztbsewtaijuh_653507d1-b0de-4457-a545-9e5442c69100_309",
+    "event_type": "Boot",
+    "execution_id": "8a0eb3f6-cc2c-4eb0-abf7-0a0cb7650a4d",
+    "function_id": "653507d1-b0de-4457-a545-9e5442c69100",
+    "level": "log",
+    "memory_used": [],
+    "project_ref": "kbvkjafkztbsewtaijuh",
+    "reason": null,
+    "region": "eu-west-3",
+    "served_by": "supabase-edge-runtime-1.71.1 (compatible with Deno v2.1.4)",
+    "timestamp": "2026-03-18T11:46:52.617Z",
+    "version": "309"
+  }
+]
+
+Collapse
+
+Load older
+Showing 100 results
+make-server-cad57f79 | Logs | Edge Functions | StudioOra | Sowego | Supabase

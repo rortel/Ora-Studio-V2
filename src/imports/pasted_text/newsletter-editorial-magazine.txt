@@ -1,0 +1,1500 @@
+
+
+
+1. newsletter-editorial-magazine.mjml
+Catégorie : Newsletter — Usage : Contenu long, rubriques multiples, audience fidèle
+
+<mjml>
+  <mj-head>
+    <mj-preview>{{PREHEADER_TEXT}}</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="Georgia, serif" />
+      <mj-text font-size="15px" line-height="1.7" color="#111111" />
+    </mj-attributes>
+    <mj-style>
+      .label { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #00c47d; }
+      .divider-line { border-top: 1px solid #e0e0e0; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f9f9f9">
+
+    <!-- HEADER -->
+    <mj-section background-color="#00c47d" padding="16px 24px">
+      <mj-column>
+        <mj-image src="{{LOGO_URL}}" alt="{{BRAND_NAME}}" width="140px" align="left" />
+      </mj-column>
+      <mj-column>
+        <mj-text align="right" font-size="11px" color="#ffffff">
+          <a href="{{VIEW_ONLINE_URL}}" style="color:#ffffff;">View online</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- HERO EDITORIAL -->
+    <mj-section background-color="#ffffff" padding="32px 24px 0">
+      <mj-column>
+        <mj-text css-class="label" padding-bottom="8px">{{RUBRIQUE_LABEL}}</mj-text>
+        <mj-text font-size="32px" font-weight="700" line-height="1.2" padding-bottom="12px">
+          {{HERO_TITLE}}
+        </mj-text>
+        <mj-text font-size="15px" color="#444444" padding-bottom="20px">
+          {{HERO_INTRO}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="0">
+      <mj-column>
+        <mj-image src="{{HERO_IMAGE_URL}}" alt="{{HERO_IMAGE_ALT}}" width="600px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- RUBRIQUE : NOTES FROM THE EDITOR -->
+    <mj-section background-color="#ffffff" padding="32px 24px">
+      <mj-column>
+        <mj-text css-class="label" padding-bottom="8px">Notes from the editor</mj-text>
+        <mj-text font-size="15px" color="#444444" padding-bottom="16px">{{EDITOR_NOTE}}</mj-text>
+        <mj-divider border-color="#e0e0e0" border-width="1px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- RUBRIQUE : POPULAR -->
+    <mj-section background-color="#ffffff" padding="0 24px 24px">
+      <mj-column>
+        <mj-text css-class="label" padding-bottom="16px">Popular</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="0 24px 8px">
+      <mj-column width="40%">
+        <mj-image src="{{ARTICLE_1_IMAGE_URL}}" alt="{{ARTICLE_1_TITLE}}" border-radius="4px" />
+      </mj-column>
+      <mj-column width="60%">
+        <mj-text font-size="13px" font-weight="700" padding-bottom="4px">{{ARTICLE_1_TITLE}}</mj-text>
+        <mj-text font-size="12px" color="#666666">{{ARTICLE_1_EXCERPT}}</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="0 24px 24px">
+      <mj-column width="40%">
+        <mj-image src="{{ARTICLE_2_IMAGE_URL}}" alt="{{ARTICLE_2_TITLE}}" border-radius="4px" />
+      </mj-column>
+      <mj-column width="60%">
+        <mj-text font-size="13px" font-weight="700" padding-bottom="4px">{{ARTICLE_2_TITLE}}</mj-text>
+        <mj-text font-size="12px" color="#666666">{{ARTICLE_2_EXCERPT}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- RUBRIQUE : INSPIRATIONS -->
+    <mj-section background-color="#111111" padding="24px">
+      <mj-column>
+        <mj-text css-class="label" color="#00c47d" padding-bottom="12px">Inspirations</mj-text>
+        <mj-text font-size="22px" font-weight="700" color="#ffffff" padding-bottom="12px">{{INSPI_TITLE}}</mj-text>
+        <mj-text font-size="13px" color="#cccccc" padding-bottom="16px">{{INSPI_BODY}}</mj-text>
+        <mj-button background-color="#00c47d" color="#000000" font-size="12px" font-weight="700" href="{{INSPI_CTA_URL}}" border-radius="2px">
+          {{INSPI_CTA_LABEL}}
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- RUBRIQUE : HOTSPOTS -->
+    <mj-section background-color="#ffffff" padding="24px">
+      <mj-column>
+        <mj-text css-class="label" padding-bottom="16px">Hotspots</mj-text>
+        <mj-image src="{{HOTSPOT_IMAGE_URL}}" alt="{{HOTSPOT_TITLE}}" width="552px" border-radius="4px" />
+        <mj-text font-size="18px" font-weight="700" padding-top="12px" padding-bottom="8px">{{HOTSPOT_TITLE}}</mj-text>
+        <mj-text font-size="13px" color="#555555">{{HOTSPOT_BODY}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER -->
+    <mj-section background-color="#ffffff" padding="16px 24px" border-top="1px solid #e0e0e0">
+      <mj-column>
+        <mj-image src="{{LOGO_URL}}" alt="{{BRAND_NAME}}" width="100px" align="left" />
+      </mj-column>
+      <mj-column>
+        <mj-social font-size="0" icon-size="22px" mode="horizontal" align="right">
+          <mj-social-element name="facebook" src="{{SOCIAL_ICON_FB}}" href="{{SOCIAL_LINK_FB}}" background-color="transparent" />
+          <mj-social-element name="twitter" src="{{SOCIAL_ICON_X}}" href="{{SOCIAL_LINK_X}}" background-color="transparent" />
+          <mj-social-element name="instagram" src="{{SOCIAL_ICON_IG}}" href="{{SOCIAL_LINK_IG}}" background-color="transparent" />
+          <mj-social-element name="youtube" src="{{SOCIAL_ICON_YT}}" href="{{SOCIAL_LINK_YT}}" background-color="transparent" />
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="0 24px 24px">
+      <mj-column>
+        <mj-text font-size="11px" color="#999999">
+          <a href="{{UNSUBSCRIBE_URL}}" style="color:#999999;">Unsubscribe</a> · {{COMPANY_NAME}}, {{COMPANY_ADDRESS}} · © {{CURRENT_YEAR}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
+
+2. newsletter-brand-editorial.mjml
+Catégorie : Newsletter — Usage : Brand storytelling, nouveautés produits, ton éditorial
+
+<mjml>
+  <mj-head>
+    <mj-preview>{{PREHEADER_TEXT}}</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" />
+      <mj-text font-size="14px" line-height="1.7" color="#111111" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#f5f0e8">
+
+    <!-- HEADER -->
+    <mj-section background-color="#f5f0e8" padding="24px 24px 0">
+      <mj-column>
+        <mj-image src="{{LOGO_URL}}" alt="{{BRAND_NAME}}" width="80px" align="center" />
+      </mj-column>
+    </mj-section>
+
+    <!-- HERO TEXTE ÉDITORIAL -->
+    <mj-section background-color="#f5f0e8" padding="32px 32px 0">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" letter-spacing="2px" color="#888888" text-transform="uppercase" padding-bottom="12px">
+          {{ISSUE_LABEL}}
+        </mj-text>
+        <mj-text font-size="28px" font-weight="300" line-height="1.3" color="#111111" padding-bottom="20px">
+          {{HERO_HEADLINE}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- IMAGE HERO -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image src="{{HERO_IMAGE_URL}}" alt="{{HERO_IMAGE_ALT}}" width="600px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- STORY BLOCK 1 -->
+    <mj-section background-color="#ffffff" padding="32px">
+      <mj-column>
+        <mj-text font-size="22px" font-weight="700" letter-spacing="-0.5px" padding-bottom="12px">{{STORY_1_TITLE}}</mj-text>
+        <mj-text font-size="14px" color="#444444" padding-bottom="20px">{{STORY_1_BODY}}</mj-text>
+        <mj-button background-color="#111111" color="#ffffff" font-size="12px" font-weight="700" letter-spacing="1px" border-radius="0" href="{{STORY_1_CTA_URL}}">
+          {{STORY_1_CTA_LABEL}}
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- PRODUITS 2 COLONNES -->
+    <mj-section background-color="#f5f0e8" padding="32px 24px">
+      <mj-column>
+        <mj-image src="{{PRODUCT_1_IMAGE_URL}}" alt="{{PRODUCT_1_NAME}}" border-radius="4px" />
+        <mj-text font-size="13px" font-weight="700" padding-top="12px" padding-bottom="4px">{{PRODUCT_1_NAME}}</mj-text>
+        <mj-text font-size="13px" color="#666666" padding-bottom="8px">{{PRODUCT_1_SUBTITLE}}</mj-text>
+        <mj-text font-size="13px"><a href="{{PRODUCT_1_URL}}" style="color:#111111; text-decoration:underline;">{{PRODUCT_1_CTA}}</a></mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="{{PRODUCT_2_IMAGE_URL}}" alt="{{PRODUCT_2_NAME}}" border-radius="4px" />
+        <mj-text font-size="13px" font-weight="700" padding-top="12px" padding-bottom="4px">{{PRODUCT_2_NAME}}</mj-text>
+        <mj-text font-size="13px" color="#666666" padding-bottom="8px">{{PRODUCT_2_SUBTITLE}}</mj-text>
+        <mj-text font-size="13px"><a href="{{PRODUCT_2_URL}}" style="color:#111111; text-decoration:underline;">{{PRODUCT_2_CTA}}</a></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- GALLERY -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-text font-size="18px" font-weight="700" letter-spacing="1px" text-transform="uppercase" align="center" padding="24px">
+          {{GALLERY_TITLE}}
+        </mj-text>
+        <mj-image src="{{GALLERY_IMAGE_URL}}" alt="{{GALLERY_IMAGE_ALT}}" width="600px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- TESTIMONIAL -->
+    <mj-section background-color="#f5f0e8" padding="32px">
+      <mj-column>
+        <mj-text font-size="18px" font-style="italic" color="#333333" padding-bottom="12px">
+          "{{TESTIMONIAL_QUOTE}}"
+        </mj-text>
+        <mj-text font-size="12px" font-weight="700" color="#888888">— {{TESTIMONIAL_AUTHOR}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER -->
+    <mj-section background-color="#111111" padding="24px">
+      <mj-column>
+        <mj-image src="{{LOGO_WHITE_URL}}" alt="{{BRAND_NAME}}" width="80px" align="center" padding-bottom="16px" />
+        <mj-social font-size="0" icon-size="22px" mode="horizontal" align="center" padding-bottom="16px">
+          <mj-social-element name="instagram" src="{{SOCIAL_ICON_IG}}" href="{{SOCIAL_LINK_IG}}" background-color="transparent" />
+          <mj-social-element name="facebook" src="{{SOCIAL_ICON_FB}}" href="{{SOCIAL_LINK_FB}}" background-color="transparent" />
+          <mj-social-element name="twitter" src="{{SOCIAL_ICON_X}}" href="{{SOCIAL_LINK_X}}" background-color="transparent" />
+        </mj-social>
+        <mj-text font-size="11px" color="#888888" align="center">
+          <a href="{{UNSUBSCRIBE_URL}}" style="color:#888888;">Unsubscribe</a> · {{COMPANY_NAME}} · {{COMPANY_ADDRESS}} · © {{CURRENT_YEAR}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
+
+3. event-announcement-concert.mjml
+Catégorie : Événement — Usage : Annonce date/lieu, artiste, CTA billet
+
+<mjml>
+  <mj-head>
+    <mj-preview>{{PREHEADER_TEXT}}</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" />
+      <mj-text font-size="14px" line-height="1.6" color="#ffffff" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#0a0a0a">
+
+    <!-- HEADER -->
+    <mj-section background-color="#0a0a0a" padding="20px 24px">
+      <mj-column>
+        <mj-image src="{{LOGO_URL}}" alt="{{BRAND_NAME}}" width="100px" align="left" />
+      </mj-column>
+    </mj-section>
+
+    <!-- ARTIST HERO IMAGE -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image src="{{ARTIST_IMAGE_URL}}" alt="{{ARTIST_NAME}}" width="600px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- EVENT TITLE BLOCK -->
+    <mj-section background-color="#0a0a0a" padding="32px 24px 16px">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" letter-spacing="3px" color="#ff4500" text-transform="uppercase" padding-bottom="12px">
+          {{EVENT_TYPE_LABEL}}
+        </mj-text>
+        <mj-text font-size="42px" font-weight="900" letter-spacing="-1px" line-height="1.1" padding-bottom="8px">
+          {{EVENT_TITLE_LINE_1}}
+        </mj-text>
+        <mj-text font-size="42px" font-weight="900" letter-spacing="-1px" line-height="1.1" color="#ff4500" padding-bottom="24px">
+          {{EVENT_TITLE_LINE_2}}
+        </mj-text>
+        <mj-text font-size="16px" color="#cccccc" padding-bottom="8px">
+          📅 {{EVENT_DATE}}
+        </mj-text>
+        <mj-text font-size="16px" color="#cccccc" padding-bottom="24px">
+          📍 {{EVENT_VENUE}}, {{EVENT_CITY}}
+        </mj-text>
+        <mj-button background-color="#ff4500" color="#ffffff" font-size="14px" font-weight="700" letter-spacing="1px" border-radius="2px" href="{{TICKET_URL}}" width="200px">
+          {{TICKET_CTA_LABEL}}
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- DISCOVER MORE BLOCK -->
+    <mj-section background-color="#111111" padding="32px 24px">
+      <mj-column>
+        <mj-text font-size="13px" font-weight="700" letter-spacing="2px" color="#888888" text-transform="uppercase" padding-bottom="12px">
+          {{DISCOVER_LABEL}}
+        </mj-text>
+        <mj-text font-size="20px" font-weight="700" padding-bottom="12px">{{DISCOVER_TITLE}}</mj-text>
+        <mj-text font-size="14px" color="#cccccc" padding-bottom="20px">{{DISCOVER_BODY}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- LINE UP / ARTISTS -->
+    <mj-section background-color="#0a0a0a" padding="24px">
+      <mj-column width="50%">
+        <mj-image src="{{LINEUP_IMAGE_1_URL}}" alt="{{LINEUP_ARTIST_1}}" border-radius="4px" />
+        <mj-text font-size="14px" font-weight="700" padding-top="10px" padding-bottom="4px">{{LINEUP_ARTIST_1}}</mj-text>
+        <mj-text font-size="12px" color="#888888">{{LINEUP_ARTIST_1_DESC}}</mj-text>
+      </mj-column>
+      <mj-column width="50%">
+        <mj-image src="{{LINEUP_IMAGE_2_URL}}" alt="{{LINEUP_ARTIST_2}}" border-radius="4px" />
+        <mj-text font-size="14px" font-weight="700" padding-top="10px" padding-bottom="4px">{{LINEUP_ARTIST_2}}</mj-text>
+        <mj-text font-size="12px" color="#888888">{{LINEUP_ARTIST_2_DESC}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- QUOTE -->
+    <mj-section background-color="#111111" padding="32px 24px">
+      <mj-column>
+        <mj-text font-size="24px" font-style="italic" font-weight="700" line-height="1.3" padding-bottom="16px">
+          "{{ARTIST_QUOTE}}"
+        </mj-text>
+        <mj-text font-size="12px" color="#888888">— {{ARTIST_NAME}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- SOCIAL + FOOTER -->
+    <mj-section background-color="#0a0a0a" padding="24px">
+      <mj-column>
+        <mj-social font-size="0" icon-size="24px" mode="horizontal" align="center" padding-bottom="16px">
+          <mj-social-element name="instagram" src="{{SOCIAL_ICON_IG}}" href="{{SOCIAL_LINK_IG}}" background-color="transparent" />
+          <mj-social-element name="youtube" src="{{SOCIAL_ICON_YT}}" href="{{SOCIAL_LINK_YT}}" background-color="transparent" />
+          <mj-social-element name="twitter" src="{{SOCIAL_ICON_X}}" href="{{SOCIAL_LINK_X}}" background-color="transparent" />
+        </mj-social>
+        <mj-text font-size="11px" color="#555555" align="center">
+          <a href="{{UNSUBSCRIBE_URL}}" style="color:#555555;">Unsubscribe</a> · {{COMPANY_NAME}} · {{COMPANY_ADDRESS}} · © {{CURRENT_YEAR}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
+
+4. product-launch-beauty.mjml
+Catégorie : Lancement produit — Usage : Nouveaux produits, articles blog associés
+
+<mjml>
+  <mj-head>
+    <mj-preview>{{PREHEADER_TEXT}}</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" />
+      <mj-text font-size="14px" line-height="1.7" color="#111111" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#fafaf8">
+
+    <!-- HEADER -->
+    <mj-section background-color="#ffffff" padding="20px 24px">
+      <mj-column>
+        <mj-image src="{{LOGO_URL}}" alt="{{BRAND_NAME}}" width="120px" align="center" />
+      </mj-column>
+    </mj-section>
+
+    <!-- HERO MESSAGE -->
+    <mj-section background-color="#f0ede6" padding="40px 32px">
+      <mj-column>
+        <mj-text font-size="13px" font-weight="700" letter-spacing="2px" color="#888888" text-transform="uppercase" padding-bottom="12px">
+          {{NEW_LABEL}}
+        </mj-text>
+        <mj-text font-size="30px" font-weight="300" line-height="1.3" padding-bottom="12px">{{HERO_HEADLINE}}</mj-text>
+        <mj-text font-size="14px" color="#666666" padding-bottom="24px">{{HERO_BODY}}</mj-text>
+        <mj-button background-color="#2d2d2d" color="#ffffff" font-size="12px" font-weight="700" letter-spacing="1px" border-radius="2px" href="{{HERO_CTA_URL}}">
+          {{HERO_CTA_LABEL}}
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- HERO IMAGE PRODUIT -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image src="{{PRODUCT_HERO_IMAGE_URL}}" alt="{{PRODUCT_NAME}}" width="600px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- GRILLE PRODUITS 3 COLONNES -->
+    <mj-section background-color="#ffffff" padding="32px 16px">
+      <mj-column>
+        <mj-image src="{{PRODUCT_1_IMAGE_URL}}" alt="{{PRODUCT_1_NAME}}" border-radius="4px" />
+        <mj-text font-size="13px" font-weight="700" padding-top="12px" padding-bottom="4px">{{PRODUCT_1_NAME}}</mj-text>
+        <mj-text font-size="12px" color="#888888" padding-bottom="8px">{{PRODUCT_1_PRICE}}</mj-text>
+        <mj-button background-color="#2d2d2d" color="#ffffff" font-size="11px" border-radius="2px" href="{{PRODUCT_1_URL}}">Shop</mj-button>
+      </mj-column>
+      <mj-column>
+        <mj-image src="{{PRODUCT_2_IMAGE_URL}}" alt="{{PRODUCT_2_NAME}}" border-radius="4px" />
+        <mj-text font-size="13px" font-weight="700" padding-top="12px" padding-bottom="4px">{{PRODUCT_2_NAME}}</mj-text>
+        <mj-text font-size="12px" color="#888888" padding-bottom="8px">{{PRODUCT_2_PRICE}}</mj-text>
+        <mj-button background-color="#2d2d2d" color="#ffffff" font-size="11px" border-radius="2px" href="{{PRODUCT_2_URL}}">Shop</mj-button>
+      </mj-column>
+      <mj-column>
+        <mj-image src="{{PRODUCT_3_IMAGE_URL}}" alt="{{PRODUCT_3_NAME}}" border-radius="4px" />
+        <mj-text font-size="13px" font-weight="700" padding-top="12px" padding-bottom="4px">{{PRODUCT_3_NAME}}</mj-text>
+        <mj-text font-size="12px" color="#888888" padding-bottom="8px">{{PRODUCT_3_PRICE}}</mj-text>
+        <mj-button background-color="#2d2d2d" color="#ffffff" font-size="11px" border-radius="2px" href="{{PRODUCT_3_URL}}">Shop</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- ARTICLES BLOG -->
+    <mj-section background-color="#fafaf8" padding="32px 24px 8px">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" letter-spacing="2px" color="#888888" text-transform="uppercase" padding-bottom="16px">
+          Latest Articles
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fafaf8" padding="0 24px 8px">
+      <mj-column width="40%">
+        <mj-image src="{{ARTICLE_1_IMAGE_URL}}" alt="{{ARTICLE_1_TITLE}}" border-radius="4px" />
+      </mj-column>
+      <mj-column width="60%">
+        <mj-text font-size="13px" font-weight="700" padding-bottom="6px">{{ARTICLE_1_TITLE}}</mj-text>
+        <mj-text font-size="12px" color="#666666" padding-bottom="8px">{{ARTICLE_1_EXCERPT}}</mj-text>
+        <mj-text font-size="12px"><a href="{{ARTICLE_1_URL}}" style="color:#111111; text-decoration:underline;">Read more →</a></mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fafaf8" padding="0 24px 32px">
+      <mj-column width="40%">
+        <mj-image src="{{ARTICLE_2_IMAGE_URL}}" alt="{{ARTICLE_2_TITLE}}" border-radius="4px" />
+      </mj-column>
+      <mj-column width="60%">
+        <mj-text font-size="13px" font-weight="700" padding-bottom="6px">{{ARTICLE_2_TITLE}}</mj-text>
+        <mj-text font-size="12px" color="#666666" padding-bottom="8px">{{ARTICLE_2_EXCERPT}}</mj-text>
+        <mj-text font-size="12px"><a href="{{ARTICLE_2_URL}}" style="color:#111111; text-decoration:underline;">Read more →</a></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER -->
+    <mj-section background-color="#2d2d2d" padding="24px">
+      <mj-column>
+        <mj-image src="{{LOGO_WHITE_URL}}" alt="{{BRAND_NAME}}" width="100px" align="center" padding-bottom="16px" />
+        <mj-social font-size="0" icon-size="22px" mode="horizontal" align="center" padding-bottom="16px">
+          <mj-social-element name="instagram" src="{{SOCIAL_ICON_IG}}" href="{{SOCIAL_LINK_IG}}" background-color="transparent" />
+          <mj-social-element name="pinterest" src="{{SOCIAL_ICON_PT}}" href="{{SOCIAL_LINK_PT}}" background-color="transparent" />
+        </mj-social>
+        <mj-text font-size="11px" color="#888888" align="center">
+          <a href="{{UNSUBSCRIBE_URL}}" style="color:#888888;">Unsubscribe</a> · {{COMPANY_NAME}}, {{COMPANY_ADDRESS}} · © {{CURRENT_YEAR}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
+
+5. app-onboarding-feature.mjml
+Catégorie : Onboarding — Usage : Présentation app, features clés, téléchargement
+
+<mjml>
+  <mj-head>
+    <mj-preview>{{PREHEADER_TEXT}}</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" />
+      <mj-text font-size="14px" line-height="1.7" color="#ffffff" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#0d1b4b">
+
+    <!-- HEADER -->
+    <mj-section background-color="#0d1b4b" padding="24px">
+      <mj-column>
+        <mj-image src="{{APP_LOGO_URL}}" alt="{{APP_NAME}}" width="120px" align="center" />
+      </mj-column>
+    </mj-section>
+
+    <!-- HERO MESSAGE -->
+    <mj-section background-color="#0d1b4b" padding="0 32px 32px">
+      <mj-column>
+        <mj-text font-size="32px" font-weight="700" line-height="1.2" align="center" padding-bottom="16px">
+          {{HERO_HEADLINE}}
+        </mj-text>
+        <mj-text font-size="15px" color="#aabbdd" align="center" padding-bottom="24px">
+          {{HERO_SUBHEADLINE}}
+        </mj-text>
+        <mj-button background-color="#4a7ff7" color="#ffffff" font-size="14px" font-weight="700" border-radius="4px" href="{{CTA_PRIMARY_URL}}" align="center">
+          {{CTA_PRIMARY_LABEL}}
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- APP SCREENSHOT -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image src="{{APP_SCREENSHOT_URL}}" alt="{{APP_NAME}} App" width="600px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- FEATURES LIST -->
+    <mj-section background-color="#111e3d" padding="32px 24px 8px">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" letter-spacing="2px" color="#4a7ff7" text-transform="uppercase" padding-bottom="20px" align="center">
+          Key Features
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#111e3d" padding="0 24px 8px">
+      <mj-column width="15%">
+        <mj-image src="{{FEATURE_1_ICON_URL}}" alt="" width="32px" align="center" />
+      </mj-column>
+      <mj-column width="85%">
+        <mj-text font-size="15px" font-weight="700" padding-bottom="4px">{{FEATURE_1_TITLE}}</mj-text>
+        <mj-text font-size="13px" color="#aabbdd">{{FEATURE_1_DESC}}</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#111e3d" padding="0 24px 8px">
+      <mj-column width="15%">
+        <mj-image src="{{FEATURE_2_ICON_URL}}" alt="" width="32px" align="center" />
+      </mj-column>
+      <mj-column width="85%">
+        <mj-text font-size="15px" font-weight="700" padding-bottom="4px">{{FEATURE_2_TITLE}}</mj-text>
+        <mj-text font-size="13px" color="#aabbdd">{{FEATURE_2_DESC}}</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#111e3d" padding="0 24px 32px">
+      <mj-column width="15%">
+        <mj-image src="{{FEATURE_3_ICON_URL}}" alt="" width="32px" align="center" />
+      </mj-column>
+      <mj-column width="85%">
+        <mj-text font-size="15px" font-weight="700" padding-bottom="4px">{{FEATURE_3_TITLE}}</mj-text>
+        <mj-text font-size="13px" color="#aabbdd">{{FEATURE_3_DESC}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- DOWNLOAD CTA -->
+    <mj-section background-color="#0d1b4b" padding="32px 24px">
+      <mj-column>
+        <mj-text font-size="20px" font-weight="700" align="center" padding-bottom="20px">{{DOWNLOAD_HEADLINE}}</mj-text>
+        <mj-image src="{{APPSTORE_BADGE_URL}}" alt="App Store" width="140px" align="center" href="{{APPSTORE_URL}}" padding-bottom="12px" />
+        <mj-image src="{{PLAYSTORE_BADGE_URL}}" alt="Google Play" width="140px" align="center" href="{{PLAYSTORE_URL}}" />
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER -->
+    <mj-section background-color="#0a1530" padding="24px">
+      <mj-column>
+        <mj-social font-size="0" icon-size="22px" mode="horizontal" align="center" padding-bottom="16px">
+          <mj-social-element name="twitter" src="{{SOCIAL_ICON_X}}" href="{{SOCIAL_LINK_X}}" background-color="transparent" />
+          <mj-social-element name="instagram" src="{{SOCIAL_ICON_IG}}" href="{{SOCIAL_LINK_IG}}" background-color="transparent" />
+        </mj-social>
+        <mj-text font-size="11px" color="#555577" align="center">
+          <a href="{{UNSUBSCRIBE_URL}}" style="color:#555577;">Unsubscribe</a> · {{COMPANY_NAME}}, {{COMPANY_ADDRESS}} · © {{CURRENT_YEAR}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
+
+6. newsletter-content-travel.mjml
+Catégorie : Newsletter — Usage : Contenu curatéd, articles, recettes, lifestyle
+
+<mjml>
+  <mj-head>
+    <mj-preview>{{PREHEADER_TEXT}}</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="Georgia, 'Times New Roman', serif" />
+      <mj-text font-size="15px" line-height="1.8" color="#111111" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#f7f3ee">
+
+    <!-- HEADER -->
+    <mj-section background-color="#2c4a3e" padding="20px 24px">
+      <mj-column>
+        <mj-image src="{{LOGO_URL}}" alt="{{BRAND_NAME}}" width="140px" align="center" />
+      </mj-column>
+    </mj-section>
+
+    <!-- HERO ARTICLE -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image src="{{HERO_IMAGE_URL}}" alt="{{HERO_ARTICLE_TITLE}}" width="600px" href="{{HERO_ARTICLE_URL}}" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="28px 32px">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" letter-spacing="2px" color="#2c4a3e" text-transform="uppercase" padding-bottom="10px">
+          {{HERO_CATEGORY_LABEL}}
+        </mj-text>
+        <mj-text font-size="26px" font-weight="700" line-height="1.3" padding-bottom="12px">{{HERO_ARTICLE_TITLE}}</mj-text>
+        <mj-text font-size="14px" color="#555555" padding-bottom="20px">{{HERO_ARTICLE_EXCERPT}}</mj-text>
+        <mj-button background-color="#2c4a3e" color="#ffffff" font-size="12px" font-weight="700" border-radius="2px" href="{{HERO_ARTICLE_URL}}">
+          Read More →
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- ARTICLES GRID 2 COL -->
+    <mj-section background-color="#f7f3ee" padding="24px 16px 8px">
+      <mj-column>
+        <mj-image src="{{ARTICLE_1_IMAGE_URL}}" alt="{{ARTICLE_1_TITLE}}" border-radius="4px" href="{{ARTICLE_1_URL}}" />
+        <mj-text font-size="11px" font-weight="700" letter-spacing="1.5px" color="#2c4a3e" text-transform="uppercase" padding-top="12px" padding-bottom="4px">{{ARTICLE_1_CATEGORY}}</mj-text>
+        <mj-text font-size="16px" font-weight="700" line-height="1.3" padding-bottom="8px">{{ARTICLE_1_TITLE}}</mj-text>
+        <mj-text font-size="13px" color="#666666">{{ARTICLE_1_EXCERPT}}</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="{{ARTICLE_2_IMAGE_URL}}" alt="{{ARTICLE_2_TITLE}}" border-radius="4px" href="{{ARTICLE_2_URL}}" />
+        <mj-text font-size="11px" font-weight="700" letter-spacing="1.5px" color="#2c4a3e" text-transform="uppercase" padding-top="12px" padding-bottom="4px">{{ARTICLE_2_CATEGORY}}</mj-text>
+        <mj-text font-size="16px" font-weight="700" line-height="1.3" padding-bottom="8px">{{ARTICLE_2_TITLE}}</mj-text>
+        <mj-text font-size="13px" color="#666666">{{ARTICLE_2_EXCERPT}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- RECETTE / LIFESTYLE BLOCK -->
+    <mj-section background-color="#2c4a3e" padding="32px 24px">
+      <mj-column width="50%">
+        <mj-text font-size="11px" font-weight="700" letter-spacing="2px" color="#a8c5a0" text-transform="uppercase" padding-bottom="12px">{{RECIPE_CATEGORY}}</mj-text>
+        <mj-text font-size="22px" font-weight="700" color="#ffffff" padding-bottom="12px">{{RECIPE_TITLE}}</mj-text>
+        <mj-text font-size="13px" color="#ccddcc" padding-bottom="20px">{{RECIPE_EXCERPT}}</mj-text>
+        <mj-button background-color="#a8c5a0" color="#1a2e1a" font-size="12px" font-weight="700" border-radius="2px" href="{{RECIPE_URL}}">
+          {{RECIPE_CTA}}
+        </mj-button>
+      </mj-column>
+      <mj-column width="50%">
+        <mj-image src="{{RECIPE_IMAGE_URL}}" alt="{{RECIPE_TITLE}}" border-radius="4px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- ARTICLE SUPPLÉMENTAIRE -->
+    <mj-section background-color="#f7f3ee" padding="24px 16px">
+      <mj-column width="40%">
+        <mj-image src="{{ARTICLE_3_IMAGE_URL}}" alt="{{ARTICLE_3_TITLE}}" border-radius="4px" />
+      </mj-column>
+      <mj-column width="60%">
+        <mj-text font-size="11px" font-weight="700" letter-spacing="1.5px" color="#2c4a3e" text-transform="uppercase" padding-bottom="6px">{{ARTICLE_3_CATEGORY}}</mj-text>
+        <mj-text font-size="18px" font-weight="700" line-height="1.3" padding-bottom="8px">{{ARTICLE_3_TITLE}}</mj-text>
+        <mj-text font-size="13px" color="#666666" padding-bottom="12px">{{ARTICLE_3_EXCERPT}}</mj-text>
+        <mj-text font-size="13px"><a href="{{ARTICLE_3_URL}}" style="color:#2c4a3e; text-decoration:underline;">Read more →</a></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER -->
+    <mj-section background-color="#1a2e1a" padding="24px">
+      <mj-column>
+        <mj-image src="{{LOGO_WHITE_URL}}" alt="{{BRAND_NAME}}" width="120px" align="center" padding-bottom="16px" />
+        <mj-social font-size="0" icon-size="22px" mode="horizontal" align="center" padding-bottom="16px">
+          <mj-social-element name="instagram" src="{{SOCIAL_ICON_IG}}" href="{{SOCIAL_LINK_IG}}" background-color="transparent" />
+          <mj-social-element name="pinterest" src="{{SOCIAL_ICON_PT}}" href="{{SOCIAL_LINK_PT}}" background-color="transparent" />
+          <mj-social-element name="twitter" src="{{SOCIAL_ICON_X}}" href="{{SOCIAL_LINK_X}}" background-color="transparent" />
+        </mj-social>
+        <mj-text font-size="11px" color="#556655" align="center">
+          <a href="{{UNSUBSCRIBE_URL}}" style="color:#556655;">Unsubscribe</a> · {{COMPANY_NAME}}, {{COMPANY_ADDRESS}} · © {{CURRENT_YEAR}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
+
+7. promo-sale-bold.mjml
+Catégorie : Promotionnel — Usage : Black Friday, soldes, discount fort, urgence
+
+<mjml>
+  <mj-head>
+    <mj-preview>{{PREHEADER_TEXT}}</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" />
+      <mj-text font-size="14px" line-height="1.6" color="#ffffff" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#ff1a6b">
+
+    <!-- HEADER -->
+    <mj-section background-color="#ff1a6b" padding="20px 24px">
+      <mj-column>
+        <mj-image src="{{LOGO_URL}}" alt="{{BRAND_NAME}}" width="120px" align="center" />
+      </mj-column>
+    </mj-section>
+
+    <!-- HERO DISCOUNT BLOCK -->
+    <mj-section background-color="#ff1a6b" padding="32px 24px">
+      <mj-column>
+        <mj-text font-size="16px" font-weight="700" letter-spacing="2px" text-transform="uppercase" align="center" padding-bottom="8px">
+          {{PROMO_EVENT_LABEL}}
+        </mj-text>
+        <mj-text font-size="80px" font-weight="900" line-height="1" align="center" padding-bottom="4px">
+          {{DISCOUNT_PERCENT}}%
+        </mj-text>
+        <mj-text font-size="24px" font-weight="900" letter-spacing="2px" text-transform="uppercase" align="center" padding-bottom="16px">
+          {{DISCOUNT_LABEL}}
+        </mj-text>
+        <mj-text font-size="13px" color="#ffcce0" align="center" padding-bottom="24px">
+          {{PROMO_VALIDITY}}
+        </mj-text>
+        <mj-button background-color="#000000" color="#ff1a6b" font-size="14px" font-weight="900" letter-spacing="1px" border-radius="2px" href="{{SHOP_NOW_URL}}" align="center" width="220px">
+          {{SHOP_NOW_LABEL}}
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- HERO IMAGE -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image src="{{HERO_IMAGE_URL}}" alt="{{PROMO_EVENT_LABEL}}" width="600px" href="{{SHOP_NOW_URL}}" />
+      </mj-column>
+    </mj-section>
+
+    <!-- WHAT'S NEW THIS YEAR -->
+    <mj-section background-color="#000000" padding="32px 24px 16px">
+      <mj-column>
+        <mj-text font-size="22px" font-weight="900" letter-spacing="-0.5px" padding-bottom="16px">{{WHATS_NEW_TITLE}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- PRODUITS PROMO 2 COL -->
+    <mj-section background-color="#000000" padding="0 16px 16px">
+      <mj-column>
+        <mj-image src="{{PROMO_PRODUCT_1_IMAGE_URL}}" alt="{{PROMO_PRODUCT_1_NAME}}" border-radius="4px" href="{{PROMO_PRODUCT_1_URL}}" />
+        <mj-text font-size="13px" font-weight="700" padding-top="10px" padding-bottom="4px">{{PROMO_PRODUCT_1_NAME}}</mj-text>
+        <mj-text font-size="13px" color="#ff1a6b" font-weight="900" padding-bottom="4px">{{PROMO_PRODUCT_1_PRICE_NEW}}</mj-text>
+        <mj-text font-size="12px" color="#888888" text-decoration="line-through">{{PROMO_PRODUCT_1_PRICE_OLD}}</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="{{PROMO_PRODUCT_2_IMAGE_URL}}" alt="{{PROMO_PRODUCT_2_NAME}}" border-radius="4px" href="{{PROMO_PRODUCT_2_URL}}" />
+        <mj-text font-size="13px" font-weight="700" padding-top="10px" padding-bottom="4px">{{PROMO_PRODUCT_2_NAME}}</mj-text>
+        <mj-text font-size="13px" color="#ff1a6b" font-weight="900" padding-bottom="4px">{{PROMO_PRODUCT_2_PRICE_NEW}}</mj-text>
+        <mj-text font-size="12px" color="#888888" text-decoration="line-through">{{PROMO_PRODUCT_2_PRICE_OLD}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- NEWS & UPDATES BLOCK -->
+    <mj-section background-color="#000000" padding="24px">
+      <mj-column>
+        <mj-text font-size="13px" font-weight="700" letter-spacing="2px" color="#ff1a6b" text-transform="uppercase" padding-bottom="12px">News & Updates</mj-text>
+        <mj-text font-size="14px" color="#cccccc" padding-bottom="16px">{{NEWS_BODY}}</mj-text>
+        <mj-button background-color="#ff1a6b" color="#ffffff" font-size="12px" font-weight="700" border-radius="2px" href="{{NEWS_URL}}">
+          {{NEWS_CTA}}
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- URGENCY FOOTER -->
+    <mj-section background-color="#ff1a6b" padding="16px 24px">
+      <mj-column>
+        <mj-text font-size="13px" font-weight="700" align="center">
+          {{URGENCY_MESSAGE}} — {{PROMO_END_DATE}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER LÉGAL -->
+    <mj-section background-color="#0a0a0a" padding="20px 24px">
+      <mj-column>
+        <mj-text font-size="11px" color="#555555" align="center">
+          <a href="{{UNSUBSCRIBE_URL}}" style="color:#555555;">Unsubscribe</a> · {{COMPANY_NAME}}, {{COMPANY_ADDRESS}}<br/>
+          {{LEGAL_DISCLAIMER}} · © {{CURRENT_YEAR}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
+
+8. newsletter-community-recap.mjml
+Catégorie : Newsletter communautaire — Usage : Récap événements, dates importantes, message fondateur
+
+<mjml>
+  <mj-head>
+    <mj-preview>{{PREHEADER_TEXT}}</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" />
+      <mj-text font-size="14px" line-height="1.8" color="#111111" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#ffffff">
+
+    <!-- HEADER -->
+    <mj-section background-color="#ffffff" padding="24px" border-bottom="2px solid #eeeeee">
+      <mj-column width="50%">
+        <mj-image src="{{LOGO_URL}}" alt="{{BRAND_NAME}}" width="130px" align="left" />
+      </mj-column>
+      <mj-column width="50%">
+        <mj-text font-size="12px" color="#888888" align="right">{{NEWSLETTER_DATE}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- HERO MESSAGE FONDATEUR -->
+    <mj-section background-color="#f8f8f8" padding="40px 32px">
+      <mj-column>
+        <mj-text font-size="13px" font-weight="700" letter-spacing="2px" color="#888888" text-transform="uppercase" padding-bottom="12px">
+          {{INTRO_LABEL}}
+        </mj-text>
+        <mj-text font-size="26px" font-weight="700" line-height="1.3" padding-bottom="16px">
+          {{HERO_HEADLINE}}
+        </mj-text>
+        <mj-text font-size="15px" color="#444444" padding-bottom="16px">{{FOUNDER_MESSAGE_PARA_1}}</mj-text>
+        <mj-text font-size="15px" color="#444444">{{FOUNDER_MESSAGE_PARA_2}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- DATES IMPORTANTES -->
+    <mj-section background-color="#ffffff" padding="32px 24px 8px">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" letter-spacing="2px" color="#888888" text-transform="uppercase" padding-bottom="16px">
+          Important Dates
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="0 24px 8px">
+      <mj-column width="20%">
+        <mj-text font-size="28px" font-weight="900" color="#111111" align="center">{{DATE_1_DAY}}</mj-text>
+        <mj-text font-size="11px" font-weight="700" color="#888888" text-transform="uppercase" align="center">{{DATE_1_MONTH}}</mj-text>
+      </mj-column>
+      <mj-column width="80%">
+        <mj-text font-size="15px" font-weight="700" padding-bottom="4px">{{DATE_1_TITLE}}</mj-text>
+        <mj-text font-size="13px" color="#666666">{{DATE_1_DESC}}</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="0 24px 8px">
+      <mj-column width="20%">
+        <mj-text font-size="28px" font-weight="900" color="#111111" align="center">{{DATE_2_DAY}}</mj-text>
+        <mj-text font-size="11px" font-weight="700" color="#888888" text-transform="uppercase" align="center">{{DATE_2_MONTH}}</mj-text>
+      </mj-column>
+      <mj-column width="80%">
+        <mj-text font-size="15px" font-weight="700" padding-bottom="4px">{{DATE_2_TITLE}}</mj-text>
+        <mj-text font-size="13px" color="#666666">{{DATE_2_DESC}}</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="0 24px 32px">
+      <mj-column width="20%">
+        <mj-text font-size="28px" font-weight="900" color="#111111" align="center">{{DATE_3_DAY}}</mj-text>
+        <mj-text font-size="11px" font-weight="700" color="#888888" text-transform="uppercase" align="center">{{DATE_3_MONTH}}</mj-text>
+      </mj-column>
+      <mj-column width="80%">
+        <mj-text font-size="15px" font-weight="700" padding-bottom="4px">{{DATE_3_TITLE}}</mj-text>
+        <mj-text font-size="13px" color="#666666">{{DATE_3_DESC}}</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="0 24px 32px">
+      <mj-column>
+        <mj-button background-color="#111111" color="#ffffff" font-size="12px" font-weight="700" border-radius="2px" href="{{ALL_EVENTS_URL}}" align="center">
+          {{ALL_EVENTS_CTA}}
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- PREPARATION TIPS -->
+    <mj-section background-color="#f8f8f8" padding="32px 24px">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" letter-spacing="2px" color="#888888" text-transform="uppercase" padding-bottom="12px">Preparation Tips</mj-text>
+        <mj-text font-size="15px" font-weight="700" padding-bottom="8px">✓ {{TIP_1}}</mj-text>
+        <mj-text font-size="15px" font-weight="700" padding-bottom="8px">✓ {{TIP_2}}</mj-text>
+        <mj-text font-size="15px" font-weight="700">✓ {{TIP_3}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- MESSAGE COMMUNAUTÉ -->
+    <mj-section background-color="#ffffff" padding="32px 24px">
+      <mj-column width="20%">
+        <mj-image src="{{FOUNDER_AVATAR_URL}}" alt="{{FOUNDER_NAME}}" width="60px" border-radius="50%" />
+      </mj-column>
+      <mj-column width="80%">
+        <mj-text font-size="15px" font-style="italic" color="#444444" padding-bottom="8px">"{{FOUNDER_QUOTE}}"</mj-text>
+        <mj-text font-size="12px" font-weight="700">{{FOUNDER_NAME}}, {{FOUNDER_TITLE}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER -->
+    <mj-section background-color="#111111" padding="24px">
+      <mj-column>
+        <mj-social font-size="0" icon-size="22px" mode="horizontal" align="center" padding-bottom="16px">
+          <mj-social-element name="instagram" src="{{SOCIAL_ICON_IG}}" href="{{SOCIAL_LINK_IG}}" background-color="transparent" />
+          <mj-social-element name="facebook" src="{{SOCIAL_ICON_FB}}" href="{{SOCIAL_LINK_FB}}" background-color="transparent" />
+          <mj-social-element name="twitter" src="{{SOCIAL_ICON_X}}" href="{{SOCIAL_LINK_X}}" background-color="transparent" />
+        </mj-social>
+        <mj-text font-size="11px" color="#666666" align="center">
+          <a href="{{UNSUBSCRIBE_URL}}" style="color:#666666;">Unsubscribe</a> · {{COMPANY_NAME}}, {{COMPANY_ADDRESS}} · © {{CURRENT_YEAR}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
+
+9. newsletter-seasonal-lifestyle.mjml
+Catégorie : Saisonnier — Usage : Campagne saison, produits contextuels, ambiance
+
+<mjml>
+  <mj-head>
+    <mj-preview>{{PREHEADER_TEXT}}</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="Georgia, serif" />
+      <mj-text font-size="15px" line-height="1.7" color="#1a2e1a" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#e8ede0">
+
+    <!-- HEADER -->
+    <mj-section background-color="#1a3020" padding="20px 24px">
+      <mj-column>
+        <mj-image src="{{LOGO_URL}}" alt="{{BRAND_NAME}}" width="120px" align="center" />
+      </mj-column>
+    </mj-section>
+
+    <!-- SEASONAL HERO -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image src="{{SEASON_HERO_IMAGE_URL}}" alt="{{SEASON_NAME}}" width="600px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- SEASONAL HEADLINE -->
+    <mj-section background-color="#1a3020" padding="32px 24px">
+      <mj-column>
+        <mj-text font-size="36px" font-weight="700" color="#e8ede0" line-height="1.2" align="center" padding-bottom="12px">
+          {{SEASON_HEADLINE}}
+        </mj-text>
+        <mj-text font-size="15px" color="#a8c5a0" align="center">{{SEASON_SUBHEADLINE}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- PRODUITS SAISONNIERS -->
+    <mj-section background-color="#e8ede0" padding="32px 16px 8px">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" letter-spacing="2px" color="#5a7a50" text-transform="uppercase" align="center" padding-bottom="20px">
+          {{SEASON_PRODUCTS_LABEL}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#e8ede0" padding="0 16px 16px">
+      <mj-column>
+        <mj-image src="{{SEASON_PRODUCT_1_IMAGE_URL}}" alt="{{SEASON_PRODUCT_1_NAME}}" border-radius="4px" href="{{SEASON_PRODUCT_1_URL}}" />
+        <mj-text font-size="14px" font-weight="700" padding-top="12px" padding-bottom="4px">{{SEASON_PRODUCT_1_NAME}}</mj-text>
+        <mj-text font-size="13px" color="#5a7a50" padding-bottom="8px">{{SEASON_PRODUCT_1_DESC}}</mj-text>
+        <mj-text font-size="13px" font-weight="700">{{SEASON_PRODUCT_1_PRICE}}</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-image src="{{SEASON_PRODUCT_2_IMAGE_URL}}" alt="{{SEASON_PRODUCT_2_NAME}}" border-radius="4px" href="{{SEASON_PRODUCT_2_URL}}" />
+        <mj-text font-size="14px" font-weight="700" padding-top="12px" padding-bottom="4px">{{SEASON_PRODUCT_2_NAME}}</mj-text>
+        <mj-text font-size="13px" color="#5a7a50" padding-bottom="8px">{{SEASON_PRODUCT_2_DESC}}</mj-text>
+        <mj-text font-size="13px" font-weight="700">{{SEASON_PRODUCT_2_PRICE}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- SEASONAL TIPS / LIFESTYLE -->
+    <mj-section background-color="#ffffff" padding="32px 24px">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" letter-spacing="2px" color="#5a7a50" text-transform="uppercase" padding-bottom="12px">
+          {{SEASON_TIPS_LABEL}}
+        </mj-text>
+        <mj-text font-size="18px" font-weight="700" padding-bottom="12px">{{SEASON_TIPS_TITLE}}</mj-text>
+        <mj-text font-size="14px" color="#444444" padding-bottom="8px">• {{TIP_1}}</mj-text>
+        <mj-text font-size="14px" color="#444444" padding-bottom="8px">• {{TIP_2}}</mj-text>
+        <mj-text font-size="14px" color="#444444" padding-bottom="8px">• {{TIP_3}}</mj-text>
+        <mj-text font-size="14px" color="#444444">• {{TIP_4}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- GIFTS / HOST GIFTS -->
+    <mj-section background-color="#1a3020" padding="32px 24px">
+      <mj-column>
+        <mj-text font-size="20px" font-weight="700" color="#e8ede0" padding-bottom="12px">{{GIFT_SECTION_TITLE}}</mj-text>
+        <mj-text font-size="14px" color="#a8c5a0" padding-bottom="20px">{{GIFT_SECTION_BODY}}</mj-text>
+        <mj-button background-color="#e8ede0" color="#1a3020" font-size="12px" font-weight="700" border-radius="2px" href="{{GIFT_CTA_URL}}">
+          {{GIFT_CTA_LABEL}}
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER -->
+    <mj-section background-color="#0d1a0d" padding="24px">
+      <mj-column>
+        <mj-social font-size="0" icon-size="22px" mode="horizontal" align="center" padding-bottom="16px">
+          <mj-social-element name="instagram" src="{{SOCIAL_ICON_IG}}" href="{{SOCIAL_LINK_IG}}" background-color="transparent" />
+          <mj-social-element name="pinterest" src="{{SOCIAL_ICON_PT}}" href="{{SOCIAL_LINK_PT}}" background-color="transparent" />
+          <mj-social-element name="facebook" src="{{SOCIAL_ICON_FB}}" href="{{SOCIAL_LINK_FB}}" background-color="transparent" />
+        </mj-social>
+        <mj-text font-size="11px" color="#445544" align="center">
+          <a href="{{UNSUBSCRIBE_URL}}" style="color:#445544;">Unsubscribe</a> · {{COMPANY_NAME}}, {{COMPANY_ADDRESS}} · © {{CURRENT_YEAR}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
+
+10. saas-onboarding-trial.mjml
+Catégorie : Onboarding SaaS — Usage : Trial gratuit, activation, upgrade to pro
+
+<mjml>
+  <mj-head>
+    <mj-preview>{{PREHEADER_TEXT}}</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" />
+      <mj-text font-size="14px" line-height="1.7" color="#ffffff" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#6b4ff7">
+
+    <!-- HEADER -->
+    <mj-section background-color="#6b4ff7" padding="24px">
+      <mj-column>
+        <mj-image src="{{PRODUCT_LOGO_URL}}" alt="{{PRODUCT_NAME}}" width="110px" align="center" />
+      </mj-column>
+    </mj-section>
+
+    <!-- TRIAL START HERO -->
+    <mj-section background-color="#6b4ff7" padding="0 32px 32px">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" letter-spacing="3px" color="#c4b5fd" text-transform="uppercase" align="center" padding-bottom="12px">
+          {{TRIAL_LABEL}}
+        </mj-text>
+        <mj-text font-size="34px" font-weight="700" line-height="1.2" align="center" padding-bottom="16px">
+          {{TRIAL_HEADLINE}}
+        </mj-text>
+        <mj-text font-size="15px" color="#c4b5fd" align="center" padding-bottom="24px">
+          {{TRIAL_SUBHEADLINE}}
+        </mj-text>
+        <mj-button background-color="#ffffff" color="#6b4ff7" font-size="14px" font-weight="700" border-radius="4px" href="{{ACTIVATE_URL}}" align="center" width="220px">
+          {{ACTIVATE_CTA_LABEL}}
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- SCREENSHOT / PRODUCT VIEW -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image src="{{PRODUCT_SCREENSHOT_URL}}" alt="{{PRODUCT_NAME}}" width="600px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- USER INFO BLOCK -->
+    <mj-section background-color="#1a0a40" padding="24px 32px">
+      <mj-column width="30%">
+        <mj-text font-size="12px" color="#c4b5fd" padding-bottom="4px">Email</mj-text>
+        <mj-text font-size="14px" font-weight="700">{{USER_EMAIL}}</mj-text>
+      </mj-column>
+      <mj-column width="40%">
+        <mj-text font-size="12px" color="#c4b5fd" padding-bottom="4px">Plan</mj-text>
+        <mj-text font-size="14px" font-weight="700">{{TRIAL_PLAN_NAME}}</mj-text>
+      </mj-column>
+      <mj-column width="30%">
+        <mj-text font-size="12px" color="#c4b5fd" padding-bottom="4px">Trial ends</mj-text>
+        <mj-text font-size="14px" font-weight="700">{{TRIAL_END_DATE}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- FEATURES INCLUSES DANS LE TRIAL -->
+    <mj-section background-color="#2d1a6b" padding="32px 24px 8px">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" letter-spacing="2px" color="#c4b5fd" text-transform="uppercase" padding-bottom="16px">
+          Included in your trial
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#2d1a6b" padding="0 24px 8px">
+      <mj-column width="10%">
+        <mj-text font-size="20px" align="center">✦</mj-text>
+      </mj-column>
+      <mj-column width="90%">
+        <mj-text font-size="14px" font-weight="700" padding-bottom="4px">{{FEATURE_1_TITLE}}</mj-text>
+        <mj-text font-size="13px" color="#c4b5fd">{{FEATURE_1_DESC}}</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#2d1a6b" padding="0 24px 8px">
+      <mj-column width="10%">
+        <mj-text font-size="20px" align="center">✦</mj-text>
+      </mj-column>
+      <mj-column width="90%">
+        <mj-text font-size="14px" font-weight="700" padding-bottom="4px">{{FEATURE_2_TITLE}}</mj-text>
+        <mj-text font-size="13px" color="#c4b5fd">{{FEATURE_2_DESC}}</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#2d1a6b" padding="0 24px 32px">
+      <mj-column width="10%">
+        <mj-text font-size="20px" align="center">✦</mj-text>
+      </mj-column>
+      <mj-column width="90%">
+        <mj-text font-size="14px" font-weight="700" padding-bottom="4px">{{FEATURE_3_TITLE}}</mj-text>
+        <mj-text font-size="13px" color="#c4b5fd">{{FEATURE_3_DESC}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- UPGRADE TO PRO CTA -->
+    <mj-section background-color="#ffffff" padding="32px 24px">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" letter-spacing="2px" color="#888888" text-transform="uppercase" padding-bottom="8px">
+          {{UPGRADE_LABEL}}
+        </mj-text>
+        <mj-text font-size="22px" font-weight="700" color="#111111" padding-bottom="12px">{{UPGRADE_HEADLINE}}</mj-text>
+        <mj-text font-size="14px" color="#555555" padding-bottom="20px">{{UPGRADE_BODY}}</mj-text>
+        <mj-button background-color="#6b4ff7" color="#ffffff" font-size="13px" font-weight="700" border-radius="4px" href="{{UPGRADE_URL}}">
+          {{UPGRADE_CTA_LABEL}}
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER -->
+    <mj-section background-color="#0d0520" padding="24px">
+      <mj-column>
+        <mj-social font-size="0" icon-size="20px" mode="horizontal" align="center" padding-bottom="16px">
+          <mj-social-element name="twitter" src="{{SOCIAL_ICON_X}}" href="{{SOCIAL_LINK_X}}" background-color="transparent" />
+          <mj-social-element name="instagram" src="{{SOCIAL_ICON_IG}}" href="{{SOCIAL_LINK_IG}}" background-color="transparent" />
+        </mj-social>
+        <mj-text font-size="11px" color="#443366" align="center">
+          <a href="{{UNSUBSCRIBE_URL}}" style="color:#443366;">Unsubscribe</a> · {{COMPANY_NAME}}, {{COMPANY_ADDRESS}} · © {{CURRENT_YEAR}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
+
+11. transactional-cart-upsell.mjml
+Catégorie : Transactionnel — Usage : Panier abandonné, rappel commande, upsell
+
+<mjml>
+  <mj-head>
+    <mj-preview>{{PREHEADER_TEXT}}</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" />
+      <mj-text font-size="14px" line-height="1.7" color="#111111" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#f5f5f5">
+
+    <!-- HEADER -->
+    <mj-section background-color="#1a3a2a" padding="20px 24px">
+      <mj-column>
+        <mj-image src="{{LOGO_URL}}" alt="{{BRAND_NAME}}" width="110px" align="center" />
+      </mj-column>
+    </mj-section>
+
+    <!-- ALERT HEADLINE -->
+    <mj-section background-color="#ffffff" padding="32px 24px 16px" border-top="4px solid #ff4500">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" letter-spacing="3px" color="#ff4500" text-transform="uppercase" padding-bottom="8px">
+          {{ALERT_LABEL}}
+        </mj-text>
+        <mj-text font-size="28px" font-weight="700" line-height="1.2" padding-bottom="12px">
+          {{ALERT_HEADLINE}}
+        </mj-text>
+        <mj-text font-size="14px" color="#555555" padding-bottom="20px">{{ALERT_BODY}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CART ITEMS -->
+    <mj-section background-color="#ffffff" padding="0 24px 8px">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" letter-spacing="2px" color="#888888" text-transform="uppercase" padding-bottom="16px">
+          In your cart
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#f8f8f8" padding="12px 24px" border-radius="4px">
+      <mj-column width="25%">
+        <mj-image src="{{CART_ITEM_1_IMAGE_URL}}" alt="{{CART_ITEM_1_NAME}}" width="80px" border-radius="4px" />
+      </mj-column>
+      <mj-column width="55%">
+        <mj-text font-size="14px" font-weight="700" padding-bottom="4px">{{CART_ITEM_1_NAME}}</mj-text>
+        <mj-text font-size="13px" color="#666666">{{CART_ITEM_1_VARIANT}}</mj-text>
+      </mj-column>
+      <mj-column width="20%">
+        <mj-text font-size="14px" font-weight="700" align="right">{{CART_ITEM_1_PRICE}}</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#f8f8f8" padding="12px 24px" border-radius="4px">
+      <mj-column width="25%">
+        <mj-image src="{{CART_ITEM_2_IMAGE_URL}}" alt="{{CART_ITEM_2_NAME}}" width="80px" border-radius="4px" />
+      </mj-column>
+      <mj-column width="55%">
+        <mj-text font-size="14px" font-weight="700" padding-bottom="4px">{{CART_ITEM_2_NAME}}</mj-text>
+        <mj-text font-size="13px" color="#666666">{{CART_ITEM_2_VARIANT}}</mj-text>
+      </mj-column>
+      <mj-column width="20%">
+        <mj-text font-size="14px" font-weight="700" align="right">{{CART_ITEM_2_PRICE}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- TOTAL + CTA -->
+    <mj-section background-color="#ffffff" padding="16px 24px">
+      <mj-column width="60%">
+        <mj-text font-size="16px" font-weight="700">Total</mj-text>
+      </mj-column>
+      <mj-column width="40%">
+        <mj-text font-size="16px" font-weight="700" align="right">{{CART_TOTAL}}</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="0 24px 32px">
+      <mj-column>
+        <mj-button background-color="#1a3a2a" color="#ffffff" font-size="14px" font-weight="700" border-radius="2px" href="{{CHECKOUT_URL}}" align="center" width="250px">
+          {{CHECKOUT_CTA_LABEL}}
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- UPSELL BLOCK -->
+    <mj-section background-color="#f5f5f5" padding="32px 24px 8px">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" letter-spacing="2px" color="#888888" text-transform="uppercase" padding-bottom="16px">
+          {{UPSELL_LABEL}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#f5f5f5" padding="0 16px 16px">
+      <mj-column>
+        <mj-image src="{{UPSELL_1_IMAGE_URL}}" alt="{{UPSELL_1_NAME}}" border-radius="4px" />
+        <mj-text font-size="13px" font-weight="700" padding-top="10px" padding-bottom="4px">{{UPSELL_1_NAME}}</mj-text>
+        <mj-text font-size="13px" color="#888888" padding-bottom="8px">{{UPSELL_1_PRICE}}</mj-text>
+        <mj-button background-color="#111111" color="#ffffff" font-size="11px" border-radius="2px" href="{{UPSELL_1_URL}}">Add to cart</mj-button>
+      </mj-column>
+      <mj-column>
+        <mj-image src="{{UPSELL_2_IMAGE_URL}}" alt="{{UPSELL_2_NAME}}" border-radius="4px" />
+        <mj-text font-size="13px" font-weight="700" padding-top="10px" padding-bottom="4px">{{UPSELL_2_NAME}}</mj-text>
+        <mj-text font-size="13px" color="#888888" padding-bottom="8px">{{UPSELL_2_PRICE}}</mj-text>
+        <mj-button background-color="#111111" color="#ffffff" font-size="11px" border-radius="2px" href="{{UPSELL_2_URL}}">Add to cart</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER -->
+    <mj-section background-color="#1a3a2a" padding="24px">
+      <mj-column>
+        <mj-text font-size="11px" color="#556655" align="center">
+          <a href="{{UNSUBSCRIBE_URL}}" style="color:#556655;">Unsubscribe</a> · {{COMPANY_NAME}}, {{COMPANY_ADDRESS}}<br/>
+          {{LEGAL_DISCLAIMER}} · © {{CURRENT_YEAR}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
+
+12. promo-discount-exclusive.mjml
+Catégorie : Promotionnel — Usage : Offre exclusive, code promo personnalisé
+
+<mjml>
+  <mj-head>
+    <mj-preview>{{PREHEADER_TEXT}}</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" />
+      <mj-text font-size="14px" line-height="1.7" color="#111111" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#f0faf0">
+
+    <!-- HEADER -->
+    <mj-section background-color="#ffffff" padding="20px 24px">
+      <mj-column>
+        <mj-image src="{{LOGO_URL}}" alt="{{BRAND_NAME}}" width="120px" align="center" />
+      </mj-column>
+    </mj-section>
+
+    <!-- EXCLUSIVE OFFER HERO -->
+    <mj-section background-color="#1a4a2a" padding="40px 32px">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" letter-spacing="3px" color="#a8e6c0" text-transform="uppercase" align="center" padding-bottom="12px">
+          {{EXCLUSIVE_LABEL}}
+        </mj-text>
+        <mj-text font-size="14px" color="#e0f5e8" align="center" padding-bottom="8px">{{RECIPIENT_FIRSTNAME}},</mj-text>
+        <mj-text font-size="32px" font-weight="700" color="#ffffff" line-height="1.2" align="center" padding-bottom="16px">
+          {{OFFER_HEADLINE}}
+        </mj-text>
+        <mj-text font-size="15px" color="#a8e6c0" align="center" padding-bottom="24px">{{OFFER_BODY}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CODE PROMO BLOC -->
+    <mj-section background-color="#ffffff" padding="32px 24px">
+      <mj-column>
+        <mj-text font-size="13px" color="#666666" align="center" padding-bottom="12px">Use this code at checkout:</mj-text>
+        <mj-text font-size="32px" font-weight="900" letter-spacing="6px" color="#1a4a2a" align="center" padding-bottom="8px">
+          {{PROMO_CODE}}
+        </mj-text>
+        <mj-text font-size="12px" color="#888888" align="center" padding-bottom="24px">{{PROMO_CODE_VALIDITY}}</mj-text>
+        <mj-button background-color="#1a4a2a" color="#ffffff" font-size="14px" font-weight="700" border-radius="2px" href="{{SHOP_URL}}" align="center" width="220px">
+          {{SHOP_CTA_LABEL}}
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- HERO IMAGE -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image src="{{OFFER_IMAGE_URL}}" alt="{{OFFER_HEADLINE}}" width="600px" href="{{SHOP_URL}}" />
+      </mj-column>
+    </mj-section>
+
+    <!-- HOW IT WORKS -->
+    <mj-section background-color="#f0faf0" padding="32px 24px">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" letter-spacing="2px" color="#5a8a6a" text-transform="uppercase" align="center" padding-bottom="20px">
+          How it works
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#f0faf0" padding="0 24px 32px">
+      <mj-column>
+        <mj-text font-size="28px" align="center" padding-bottom="8px">1️⃣</mj-text>
+        <mj-text font-size="13px" font-weight="700" align="center" padding-bottom="4px">{{STEP_1_TITLE}}</mj-text>
+        <mj-text font-size="12px" color="#666666" align="center">{{STEP_1_DESC}}</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="28px" align="center" padding-bottom="8px">2️⃣</mj-text>
+        <mj-text font-size="13px" font-weight="700" align="center" padding-bottom="4px">{{STEP_2_TITLE}}</mj-text>
+        <mj-text font-size="12px" color="#666666" align="center">{{STEP_2_DESC}}</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="28px" align="center" padding-bottom="8px">3️⃣</mj-text>
+        <mj-text font-size="13px" font-weight="700" align="center" padding-bottom="4px">{{STEP_3_TITLE}}</mj-text>
+        <mj-text font-size="12px" color="#666666" align="center">{{STEP_3_DESC}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- QUESTIONS BLOCK -->
+    <mj-section background-color="#ffffff" padding="24px 32px">
+      <mj-column>
+        <mj-text font-size="16px" font-weight="700" padding-bottom="8px">{{FAQ_TITLE}}</mj-text>
+        <mj-text font-size="14px" color="#555555" padding-bottom="12px">{{FAQ_BODY}}</mj-text>
+        <mj-text font-size="14px"><a href="{{SUPPORT_URL}}" style="color:#1a4a2a; text-decoration:underline;">{{SUPPORT_CTA}}</a></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER -->
+    <mj-section background-color="#0d2a1a" padding="24px">
+      <mj-column>
+        <mj-social font-size="0" icon-size="22px" mode="horizontal" align="center" padding-bottom="16px">
+          <mj-social-element name="instagram" src="{{SOCIAL_ICON_IG}}" href="{{SOCIAL_LINK_IG}}" background-color="transparent" />
+          <mj-social-element name="twitter" src="{{SOCIAL_ICON_X}}" href="{{SOCIAL_LINK_X}}" background-color="transparent" />
+          <mj-social-element name="facebook" src="{{SOCIAL_ICON_FB}}" href="{{SOCIAL_LINK_FB}}" background-color="transparent" />
+        </mj-social>
+        <mj-text font-size="11px" color="#334433" align="center">
+          <a href="{{UNSUBSCRIBE_URL}}" style="color:#334433;">Unsubscribe</a> · {{COMPANY_NAME}}, {{COMPANY_ADDRESS}}<br/>
+          {{LEGAL_DISCLAIMER}} · © {{CURRENT_YEAR}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
+
+13. event-invitation-personal.mjml
+Catégorie : Invitation personnelle — Usage : Mariage, événement privé, RSVP
+
+<mjml>
+  <mj-head>
+    <mj-preview>{{PREHEADER_TEXT}}</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="Georgia, 'Times New Roman', serif" />
+      <mj-text font-size="15px" line-height="1.8" color="#333333" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#faf8f5">
+
+    <!-- HEADER DÉCORATIF -->
+    <mj-section background-color="#faf8f5" padding="40px 24px 0">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" letter-spacing="4px" color="#b8a090" text-transform="uppercase" align="center" padding-bottom="8px">
+          {{EVENT_CATEGORY_LABEL}}
+        </mj-text>
+        <mj-divider border-color="#e0d5c5" border-width="1px" width="40%" />
+      </mj-column>
+    </mj-section>
+
+    <!-- HERO NAMES / TITLE -->
+    <mj-section background-color="#faf8f5" padding="32px 32px 0">
+      <mj-column>
+        <mj-text font-size="42px" font-weight="300" line-height="1.1" align="center" padding-bottom="8px" color="#2a1a0a">
+          {{PERSON_1_NAME}}
+        </mj-text>
+        <mj-text font-size="20px" font-weight="300" color="#b8a090" align="center" padding-bottom="8px">
+          {{CONJUNCTION_LABEL}}
+        </mj-text>
+        <mj-text font-size="42px" font-weight="300" line-height="1.1" align="center" padding-bottom="24px" color="#2a1a0a">
+          {{PERSON_2_NAME}}
+        </mj-text>
+        <mj-divider border-color="#e0d5c5" border-width="1px" width="40%" />
+      </mj-column>
+    </mj-section>
+
+    <!-- HERO IMAGE -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image src="{{HERO_IMAGE_URL}}" alt="{{PERSON_1_NAME}} & {{PERSON_2_NAME}}" width="600px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- INVITATION TEXT -->
+    <mj-section background-color="#ffffff" padding="40px 48px">
+      <mj-column>
+        <mj-text font-size="14px" color="#888888" font-style="italic" align="center" padding-bottom="16px">
+          {{INVITATION_PREAMBLE}}
+        </mj-text>
+        <mj-text font-size="22px" font-weight="300" line-height="1.5" align="center" color="#2a1a0a" padding-bottom="24px">
+          {{INVITATION_MAIN_TEXT}}
+        </mj-text>
+        <mj-divider border-color="#e0d5c5" border-width="1px" width="60%" padding-bottom="24px" />
+
+        <!-- DATE & LIEU -->
+        <mj-text font-size="18px" font-weight="700" align="center" color="#2a1a0a" padding-bottom="8px">
+          {{EVENT_DATE_FULL}}
+        </mj-text>
+        <mj-text font-size="15px" color="#888888" align="center" padding-bottom="4px">{{EVENT_TIME}}</mj-text>
+        <mj-text font-size="15px" color="#888888" align="center" padding-bottom="4px">{{EVENT_VENUE}}</mj-text>
+        <mj-text font-size="15px" color="#888888" align="center" padding-bottom="28px">{{EVENT_ADDRESS}}</mj-text>
+
+        <!-- RSVP CTA -->
+        <mj-button background-color="#2a1a0a" color="#faf8f5" font-size="13px" font-weight="700" letter-spacing="2px" border-radius="0" href="{{RSVP_URL}}" align="center" width="220px">
+          {{RSVP_CTA_LABEL}}
+        </mj-button>
+        <mj-text font-size="12px" color="#b8a090" align="center" padding-top="12px">{{RSVP_DEADLINE}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- DÉTAILS PRATIQUES -->
+    <mj-section background-color="#faf8f5" padding="32px 32px 16px">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" letter-spacing="3px" color="#b8a090" text-transform="uppercase" align="center" padding-bottom="20px">
+          {{DETAILS_SECTION_LABEL}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#faf8f5" padding="0 24px 8px">
+      <mj-column width="50%">
+        <mj-text font-size="12px" font-weight="700" letter-spacing="1px" text-transform="uppercase" color="#888888" padding-bottom="6px">{{DETAIL_1_LABEL}}</mj-text>
+        <mj-text font-size="14px" color="#333333">{{DETAIL_1_VALUE}}</mj-text>
+      </mj-column>
+      <mj-column width="50%">
+        <mj-text font-size="12px" font-weight="700" letter-spacing="1px" text-transform="uppercase" color="#888888" padding-bottom="6px">{{DETAIL_2_LABEL}}</mj-text>
+        <mj-text font-size="14px" color="#333333">{{DETAIL_2_VALUE}}</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#faf8f5" padding="0 24px 32px">
+      <mj-column width="50%">
+        <mj-text font-size="12px" font-weight="700" letter-spacing="1px" text-transform="uppercase" color="#888888" padding-bottom="6px">{{DETAIL_3_LABEL}}</mj-text>
+        <mj-text font-size="14px" color="#333333">{{DETAIL_3_VALUE}}</mj-text>
+      </mj-column>
+      <mj-column width="50%">
+        <mj-text font-size="12px" font-weight="700" letter-spacing="1px" text-transform="uppercase" color="#888888" padding-bottom="6px">{{DETAIL_4_LABEL}}</mj-text>
+        <mj-text font-size="14px" color="#333333">{{DETAIL_4_VALUE}}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- PHOTO GALLERY 3 COL -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image src="{{GALLERY_IMAGE_1_URL}}" alt="" width="200px" />
+      </mj-column>
+      <mj-column>
+        <mj-image src="{{GALLERY_IMAGE_2_URL}}" alt="" width="200px" />
+      </mj-column>
+      <mj-column>
+        <mj-image src="{{GALLERY_IMAGE_3_URL}}" alt="" width="200px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- MESSAGE FINAL -->
+    <mj-section background-color="#ffffff" padding="40px 48px">
+      <mj-column>
+        <mj-text font-size="15px" font-style="italic" color="#666666" align="center" padding-bottom="20px">
+          "{{CLOSING_QUOTE}}"
+        </mj-text>
+        <mj-text font-size="18px" font-weight="300" color="#2a1a0a" align="center">
+          {{PERSON_1_NAME}} & {{PERSON_2_NAME}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER -->
+    <mj-section background-color="#2a1a0a" padding="24px">
+      <mj-column>
+        <mj-text font-size="11px" color="#665544" align="center">
+          {{LEGAL_CONTACT}} · <a href="{{UNSUBSCRIBE_URL}}" style="color:#665544;">Unsubscribe</a> · © {{CURRENT_YEAR}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
+
+Récapitulatif des 13 fichiers
+#	Fichier	Catégorie
+1	newsletter-editorial-magazine.mjml	Newsletter
+2	newsletter-brand-editorial.mjml	Newsletter
+3	event-announcement-concert.mjml	Événement
+4	product-launch-beauty.mjml	Lancement produit
+5	app-onboarding-feature.mjml	Onboarding
+6	newsletter-content-travel.mjml	Newsletter
+7	promo-sale-bold.mjml	Promotionnel
+8	newsletter-community-recap.mjml	Newsletter communautaire
+9	newsletter-seasonal-lifestyle.mjml	Saisonnier
+10	saas-onboarding-trial.mjml	Onboarding SaaS
+11	transactional-cart-upsell.mjml	Transactionnel
+12	promo-discount-exclusive.mjml	Promotionnel
+13	event-invitation-personal.mjml	Invitation personnelle
+Compiler en HTML : mjml <fichier>.mjml -o <fichier>.html

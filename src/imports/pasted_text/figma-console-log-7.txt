@@ -1,0 +1,187 @@
+ Running frontend commit 3962ae99b3d44ec0029d3ba76d25f09ef339248f
+ Statsig is not ready to log exposures, will retry in 1 seconds
+(anonymous) @ vendor-core-83c17265…588e9e.min.js.br:54
+ Loaded 34 scripts (5974464b), 34 from cache (5974464b)
+ [bootstrap_waiting_on_user_state] You appear to be logging a relative timestamp and not an epoch timestamp. Try adding performance.timeOrigin to the timestamp.
+(anonymous) @ vendor-core-83c17265…588e9e.min.js.br:54
+ [import] git: 795ca6f1ee9882dfe1a8301c1dd929a1216cbc73, stamp: 9F7B891A935AF638
+(index):1  Failed to load resource: net::ERR_FAILED
+ Autosave Changes not available or already claimed by another tab undefined
+ [Fullscreen] Booting... (emscripten version 4.0.21)
+ [GPU] graphicsAPI:"WebGPU", vendor:"Google Inc. (Apple)" renderer:"ANGLE (Apple, ANGLE Metal Renderer: Apple M3, Unspecified Version)" deviceArchitecture:"metal-3" deviceDescription:"" webGPUDevice:"" webGPUVendor:"apple" bindings:"emdawnwebgpu"
+ [Fullscreen] Ready in 44.5ms
+ [FullscreenApp] calling setEditorTheme and setting preference dark
+ [MultiplayerSession] connecting to wss://www.figma.com/api/multiplayer/Cpu4nGRSqlaZeBhE1wINKa?role=editor&tracking_session_id=iKgrWl1fyzLZalF2&version=151&recentReload=0&file-load-streaming-compression&user-id=1483479003784692390&client_release=3962ae99b3d44ec0029d3ba76d25f09ef339248f
+ [FullscreenApp] calling setEditorTheme and setting preference dark
+ [MultiplayerSession] Joining file version 106 (initial load)
+ Migration succeeded: context: fullscreen_migrate_SceneGraphManager, version: 106, duration: 0ms.
+ [Fullscreen] loadtime=4.78s maxmem=283337912
+ [devtools] Initialized LS
+/api/make/fetch_ds_code_gen_status:1  Failed to load resource: the server responded with a status of 400 ()
+ [devtools] Initialized LS
+ Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently
+S @ figma_app-06d0392974a6c1b2.min.js.br:41
+ [Auth] onAuthStateChange event: INITIAL_SESSION
+ [Auth] onAuthStateChange event: SIGNED_IN
+ [fetchProfile] trying POST /auth/me with Authorization header...
+ Signed in: 6d216f2e-292a-4319-8181-0ea92b638c47
+ [fetchProfile] status=200 authenticated=true (651ms)
+ [Admin] accessToken present, length: 32903 preview: eyJhbGciOiJFUzI1NiIs...
+ [Admin] Fetching all admin data via POST /admin/data...
+ [Admin] adminPost token length: 32903 preview: eyJhbGciOiJFUzI1NiIs...
+ [Admin] try1 POST /admin/data
+ [Admin] All data loaded: 2 users
+ [HubPage] Loading library from server...
+ [HubPage] Loading library from server...
+ [HubPage] Loaded 38 library items from server
+ [HubPage] Loaded 38 library items from server
+ [CampaignLab] Loading vault...
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://99a865a9-031b-4a16-8d89-0f318ffa3fec-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://99a865a9-031b-4a16-8d89-0f318ffa3fec-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Vault fetch error (attempt 1): 
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+ [CampaignLab] Server health: Object
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://99a865a9-031b-4a16-8d89-0f318ffa3fec-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://99a865a9-031b-4a16-8d89-0f318ffa3fec-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Vault fetch error (attempt 2): 
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+ [Auth] onAuthStateChange event: SIGNED_IN
+ [fetchProfile] trying POST /auth/me with Authorization header...
+ [Auth] onAuthStateChange event: SIGNED_IN
+ [fetchProfile] trying POST /auth/me with Authorization header...
+ [fetchProfile] status=200 authenticated=true (388ms)
+ [fetchProfile] status=200 authenticated=true (434ms)
+ [CampaignLab] Uploading 6 ref photos...
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: the server responded with a status of 401 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: the server responded with a status of 401 ()
+ [CampaignLab] Ref 1: Unauthorized
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: the server responded with a status of 401 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: the server responded with a status of 401 ()
+ [CampaignLab] Ref 2: Unauthorized
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: the server responded with a status of 401 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: the server responded with a status of 401 ()
+ [CampaignLab] Ref 3: Unauthorized
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: the server responded with a status of 401 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: the server responded with a status of 401 ()
+ [CampaignLab] Ref 4: Unauthorized
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: the server responded with a status of 401 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: the server responded with a status of 401 ()
+ [CampaignLab] Ref 5: Unauthorized
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: the server responded with a status of 401 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: the server responded with a status of 401 ()
+ [CampaignLab] Ref 6: Unauthorized
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+ [CampaignLab] Upload: 0/6 refs ready
+ [CampaignLab] 0 ref URLs obtained
+ [CampaignLab] Pipeline: CLASSIC (text-only), 0 refs
+ [CampaignLab] POST texts: 10 formats, brief=23c, body=33303c
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-texts' from origin 'https://99a865a9-031b-4a16-8d89-0f318ffa3fec-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-texts' from origin 'https://99a865a9-031b-4a16-8d89-0f318ffa3fec-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-texts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/generate-texts:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Text FAILED: TypeError Failed to fetch TypeError: Failed to fetch
+    at code_components_preview_iframe-aee2937bf6889db9.min.js.br:90:9794
+    at Je (index.js?Expires=1774828800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=aV4PvwFiM6oGb-ZaeHb3GFu8NshGyH2Im1v1I6WJHAFRJJ5gSYBV~3bKCv~CzM-4BmhjrALagOcG4cqPweWCk3E-D1ZlCd~aFUY~Q3PzNIQft1~s2rkssS95AKjsct-Lo1oqoD-LGTl7vd4mCGL5DYZjnlVRPYC0dq8qtueKlLKNV8Nc2tdRgsqWAef1yX0lW1O2jgrGIqme6E5WsIh1jafqpHkpn2pyeSvtjas7L~BKquemSkNphsUW0WePL-~I9lQKsEe69gkAnD-z9mZb~FhFGESmXz4enUUEH8Wbkl~Wgj8ObeMOVmq~0GhbLe8wHzMAZWq3LoVWGtHk4hXJWQ__:23999:24)
+    at E (index.js?Expires=1774828800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=aV4PvwFiM6oGb-ZaeHb3GFu8NshGyH2Im1v1I6WJHAFRJJ5gSYBV~3bKCv~CzM-4BmhjrALagOcG4cqPweWCk3E-D1ZlCd~aFUY~Q3PzNIQft1~s2rkssS95AKjsct-Lo1oqoD-LGTl7vd4mCGL5DYZjnlVRPYC0dq8qtueKlLKNV8Nc2tdRgsqWAef1yX0lW1O2jgrGIqme6E5WsIh1jafqpHkpn2pyeSvtjas7L~BKquemSkNphsUW0WePL-~I9lQKsEe69gkAnD-z9mZb~FhFGESmXz4enUUEH8Wbkl~Wgj8ObeMOVmq~0GhbLe8wHzMAZWq3LoVWGtHk4hXJWQ__:24093:9)
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+ [CampaignLab] DIAGNOSTIC: {
+  "steps": [
+    {
+      "step": "apipod_key",
+      "ok": true,
+      "elapsed": 0
+    },
+    {
+      "step": "apipod_call",
+      "ok": true,
+      "status": 200,
+      "bodyLen": 311,
+      "body": "{\"id\":\"chatcmpl-DL7P390U2LfLA5G1AablRZWvnSLcg\",\"object\":\"chat.completion\",\"created\":1773925717,\"model\":\"gpt-4o\",\"choices\":[{\"index\":0,\"message\":{\"content\":\"{\\\"test\\\": \\\"ok\\\"}\",\"role\":\"assistant\"},\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":17,\"completion_tokens\":7,\"total_tokens\":24,\"reasoning_",
+      "elapsed": 2432
+    },
+    {
+      "step": "openai_key",
+      "ok": true,
+      "elapsed": 2432
+    }
+  ],
+  "errors": [],
+  "totalMs": 2432
+}
+ [CampaignLab] Text generation failed — returning empty copyMap
+(anonymous) @ code_components_prev…889db9.min.js.br:90
+ [CampaignLab] copyMap keys: Array(0)
+ [CampaignLab] Image generation: 8 formats, v2=false
+ [CampaignLab] Image GET [linkedin-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20LinkedIn%20post.%20campagne%20
+ [CampaignLab] Image GET [instagram-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20Instagram%20post.%20campagne%2
+ [CampaignLab] Image GET [instagram-story]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20Instagram%20post.%20campagne%2
+ [CampaignLab] Image GET [facebook-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20Facebook%20post.%20campagne%20
+ [CampaignLab] Image GET [facebook-story]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20Facebook%20post.%20campagne%20
+ [CampaignLab] Image GET [tiktok-image]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20TikTok%20post.%20campagne%20au
+ [CampaignLab] Image GET [twitter-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20Twitter%2FX%20post.%20campagne
+ [CampaignLab] Image GET [youtube-thumbnail]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20YouTube%20post.%20campagne%20a
+ [Auth] onAuthStateChange event: SIGNED_IN
+ [fetchProfile] trying POST /auth/me with Authorization header...
+ [fetchProfile] status=200 authenticated=true (421ms)
+code_components_preview_iframe-aee2937bf6889db9.min.js.br:90 [fetchProfile] trying POST /auth/me with Authorization header...
+code_components_preview_iframe-aee2937bf6889db9.min.js.br:90 [Auth] onAuthStateChange event: INITIAL_SESSION
+code_components_preview_iframe-aee2937bf6889db9.min.js.br:90 [fetchProfile] trying POST /auth/me with Authorization header...
+code_components_preview_iframe-aee2937bf6889db9.min.js.br:90 [fetchProfile] status=200 authenticated=true (355ms)
+code_components_preview_iframe-aee2937bf6889db9.min.js.br:90 [fetchProfile] status=200 authenticated=true (381ms)
+ [CampaignLab] Classic Image [twitter-post] OK: https://storage.cdn-luma.com/dream_machine/d345c79e-7bb8-408
+ [CampaignLab] Classic Image [facebook-story] OK: https://storage.cdn-luma.com/dream_machine/39a83740-cb1d-43d
+ [CampaignLab] Classic Image [instagram-post] OK: https://storage.cdn-luma.com/dream_machine/b595aeb2-32d2-4a9
+ [CampaignLab] Classic Image [linkedin-post] OK: https://storage.cdn-luma.com/dream_machine/fc88d27e-6dec-488
+ [CampaignLab] Classic Image [instagram-story] OK: https://storage.cdn-luma.com/dream_machine/2c6fe5c2-01a1-4de
+ [CampaignLab] Classic Image [facebook-post] OK: https://storage.cdn-luma.com/dream_machine/7cdde9da-e8ee-426
+ [CampaignLab] Classic Image [tiktok-image] OK: https://storage.cdn-luma.com/dream_machine/3a1fbab7-cb0c-48c
+ [CampaignLab] Classic Image [youtube-thumbnail] OK: https://storage.cdn-luma.com/dream_machine/37421e10-221d-402
+ [CampaignLab] Video generation: 2 formats (background)
+ [CampaignLab] Video [linkedin-video]: using same-platform image as keyframe
+ [CampaignLab] Video START [linkedin-video]: hasKeyframe=true https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=Cinematic+video.+campagne+autonomie+eTGX.+Smoot
+ [CampaignLab] Video [instagram-reel]: using same-platform image as keyframe
+ [CampaignLab] Video START [instagram-reel]: hasKeyframe=true https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=Cinematic+video.+campagne+autonomie+eTGX.+Smoot
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://99a865a9-031b-4a16-8d89-0f318ffa3fec-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://99a865a9-031b-4a16-8d89-0f318ffa3fec-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+ [CampaignLab] Zernio accounts fetch: TypeError: Failed to fetch
+    at code_components_preview_iframe-aee2937bf6889db9.min.js.br:90:9794
+    at index.js?Expires=1774828800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=aV4PvwFiM6oGb-ZaeHb3GFu8NshGyH2Im1v1I6WJHAFRJJ5gSYBV~3bKCv~CzM-4BmhjrALagOcG4cqPweWCk3E-D1ZlCd~aFUY~Q3PzNIQft1~s2rkssS95AKjsct-Lo1oqoD-LGTl7vd4mCGL5DYZjnlVRPYC0dq8qtueKlLKNV8Nc2tdRgsqWAef1yX0lW1O2jgrGIqme6E5WsIh1jafqpHkpn2pyeSvtjas7L~BKquemSkNphsUW0WePL-~I9lQKsEe69gkAnD-z9mZb~FhFGESmXz4enUUEH8Wbkl~Wgj8ObeMOVmq~0GhbLe8wHzMAZWq3LoVWGtHk4hXJWQ__:24394:64
+    at TN (code_components_preview_iframe-aee2937bf6889db9.min.js.br:37:138396)
+    at T8 (code_components_preview_iframe-aee2937bf6889db9.min.js.br:37:151856)
+    at T7 (code_components_preview_iframe-aee2937bf6889db9.min.js.br:37:151634)
+    at T6 (code_components_preview_iframe-aee2937bf6889db9.min.js.br:37:151542)
+    at T4 (code_components_preview_iframe-aee2937bf6889db9.min.js.br:37:151420)
+    at S1 (code_components_preview_iframe-aee2937bf6889db9.min.js.br:37:163585)
+    at SQ (code_components_preview_iframe-aee2937bf6889db9.min.js.br:37:163247)
+    at code_components_preview_iframe-aee2937bf6889db9.min.js.br:37:162379
+    at code_components_preview_iframe-aee2937bf6889db9.min.js.br:65:74721
+    at V (code_components_preview_iframe-aee2937bf6889db9.min.js.br:61:1842)
+    at B (code_components_preview_iframe-aee2937bf6889db9.min.js.br:61:1559)
+    at MessagePort.eo (code_components_preview_iframe-aee2937bf6889db9.min.js.br:61:3433)
+ [CampaignLab] Video [instagram-reel] submitted: 589673c8-4b27-4801-ad2c-a329af4f422c
+ [CampaignLab] Video [linkedin-video] submitted: 254028d4-f129-421b-adbf-687198ecaa7d
+ [CampaignLab] Video [instagram-reel] poll #1: state=dreaming
+ [CampaignLab] Video [linkedin-video] poll #1: state=dreaming
+ [CampaignLab] Video [instagram-reel] poll #2: state=dreaming
+ [CampaignLab] Video [linkedin-video] poll #2: state=dreaming
+ [CampaignLab] Video [instagram-reel] poll #3: state=dreaming
+ [CampaignLab] Video [linkedin-video] poll #3: state=dreaming
+ [CampaignLab] Video [instagram-reel] poll #4: state=dreaming
+ [CampaignLab] Video [linkedin-video] poll #4: state=dreaming
+ [CampaignLab] Video [instagram-reel] poll #5: state=dreaming
+ [CampaignLab] Video [linkedin-video] poll #5: state=dreaming
+ [CampaignLab] Video [instagram-reel] poll #6: state=dreaming
+ [CampaignLab] Video [linkedin-video] poll #6: state=dreaming
+ [CampaignLab] Video [instagram-reel] poll #7: state=completed
+ [CampaignLab] Video [linkedin-video] poll #7: state=completed

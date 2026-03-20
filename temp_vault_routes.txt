@@ -1,0 +1,252 @@
+// ══════════════════════════════════════════════════════════════
+// VAULT ROUTES — Clean Restart
+// ══════════════════════════════════════════════════════════════
+
+// ─── GET /vault — Retrieve user's vault data ──
+app.get("/vault", async (c) => {
+  try {
+    const user = await requireAuth(c);
+    const vault = await kv.get(`vault:${user.id}`);
+    return c.json({ success: true, vault: vault || null });
+  } catch (err) {
+    console.error("[vault GET] Error:", err);
+    return c.json({ success: false, error: String(err) }, 500);
+  }
+});
+
+// ─── PUT /vault — Save/update vault data ──
+app.put("/vault", async (c) => {
+  try {
+    const user = await requireAuth(c);
+    const body = await c.req.json();
+    const existing = (await kv.get(`vault:${user.id}`)) || {};
+    const updated = {
+      ...existing,
+      ...body,
+      userId: user.id,
+      updatedAt: new Date().toISOString(),
+    };
+    await kv.set(`vault:${user.id}`, updated);
+    return c.json({ success: true, vault: updated });
+  } catch (err) {
+    console.error("[vault PUT] Error:", err);
+    return c.json({ success: false, error: String(err) }, 500);
+  }
+});
+
+// ─── POST /vault/scan-url — Scrape + analyze brand (monolithic) ──
+app.post("/vault/scan-url", async (c) => {
+  const t0 = Date.now();
+  console.log("[vault/scan-url] ✅ Request received");
+
+  try {
+    // 1. Auth
+    const user = await requireAuth(c);
+    console.log("[vault/scan-url] Auth OK:", user.id);
+
+    // 2. Parse body
+    const body = await c.req.json();
+    const rawUrl = body.url;
+    console.log("[vault/scan-url] URL from body:", rawUrl);
+
+    if (!rawUrl) {
+      return c.json({ success: false, error: "URL required" }, 400);
+    }
+
+    // 3. Normalize URL
+    const url = rawUrl.startsWith("http") ? rawUrl : `https://${rawUrl}`;
+    console.log("[vault/scan-url] Normalized URL:", url);
+
+    // 4. Basic URL validation
+    try {
+      new URL(url);
+    } catch {
+      return c.json({ success: false, error: "Invalid URL format" }, 400);
+    }
+
+    // 5. Deduct credit
+    const canDeduct = await deductCredit(user.id, 1);
+    if (!canDeduct) {
+      return c.json({ success: false, error: "Insufficient credits" }, 403);
+    }
+
+    // ─── STEP 1: SCRAPE WITH JINA ──────────────────────────────
+    console.log("[vault/scan-url] Starting Jina scrape...");
+    let markdown = "";
+
+    const jinaKey = Deno.env.get("JINA_API_KEY");
+    if (!jinaKey) {
+      console.warn("[vault/scan-url] ⚠️  JINA_API_KEY not set");
+      return c.json(
+        { success: false, error: "JINA_API_KEY not configured" },
+        500
+      );
+    }
+
+    try {
+      const jinaRes = await fetch(`https://r.jina.ai/${url}`, {
+        headers: {
+          Authorization: `Bearer ${jinaKey}`,
+          Accept: "text/plain",
+          "X-No-Cache": "true",
+          "X-With-Generated-Alt": "true",
+        },
+        signal: AbortSignal.timeout(15000),
+      });
+
+      console.log("[vault/scan-url] Jina status:", jinaRes.status);
+
+      if (jinaRes.ok) {
+        markdown = await jinaRes.text();
+        console.log("[vault/scan-url] Jina OK —", markdown.length, "chars");
+      } else {
+        const errText = await jinaRes.text();
+        console.error("[vault/scan-url] Jina error:", jinaRes.status, errText.slice(0, 200));
+        return c.json(
+          { success: false, error: `Jina scrape failed: ${jinaRes.status}` },
+          500
+        );
+      }
+    } catch (e: any) {
+      console.error("[vault/scan-url] Jina fetch error:", e.message);
+      return c.json(
+        { success: false, error: `Scrape failed: ${e.message}` },
+        500
+      );
+    }
+
+    if (!markdown || markdown.length < 50) {
+      return c.json(
+        { success: false, error: "Scraped content too short" },
+        422
+      );
+    }
+
+    // ─── STEP 2: ANALYZE WITH MISTRAL ──────────────────────────
+    console.log("[vault/scan-url] Starting Mistral analysis...");
+
+    const mistralKey = Deno.env.get("MISTRAL_API_KEY");
+    if (!mistralKey) {
+      console.warn("[vault/scan-url] ⚠️  MISTRAL_API_KEY not set");
+      return c.json(
+        { success: false, error: "MISTRAL_API_KEY not configured" },
+        500
+      );
+    }
+
+    const systemPrompt = `You are an expert brand analyst.
+Analyze the website content and extract a complete brand profile.
+Return ONLY valid JSON with this structure:
+
+{
+  "brandName": "string",
+  "industry": "string",
+  "tagline": "string or null",
+  "tone": {
+    "formality": 7,
+    "confidence": 8,
+    "warmth": 5,
+    "humor": 3
+  },
+  "keyMessages": ["message1", "message2", "message3"],
+  "vocabulary": {
+    "approvedTerms": ["word1", "word2"],
+    "forbiddenTerms": ["word1"]
+  },
+  "audiences": {
+    "primary": "description",
+    "secondary": "description or null"
+  },
+  "colors": ["#FF0000", "#00FF00"],
+  "typography": ["Font1", "Font2"]
+}
+
+Rules:
+- Tone values are integers 1-10
+- Colors are hex codes
+- Return ONLY the JSON object, no markdown, no explanation`;
+
+    const userPrompt = `Analyze this brand website:
+
+URL: ${url}
+
+CONTENT:
+${markdown.slice(0, 8000)}`;
+
+    try {
+      const mistralRes = await fetch("https://api.mistral.ai/v1/chat/completions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${mistralKey}`,
+        },
+        body: JSON.stringify({
+          model: "mistral-small-latest",
+          messages: [
+            { role: "system", content: systemPrompt },
+            { role: "user", content: userPrompt },
+          ],
+          max_tokens: 1500,
+          temperature: 0.3,
+          response_format: { type: "json_object" },
+        }),
+        signal: AbortSignal.timeout(30000),
+      });
+
+      console.log("[vault/scan-url] Mistral status:", mistralRes.status);
+
+      if (!mistralRes.ok) {
+        const errText = await mistralRes.text();
+        console.error("[vault/scan-url] Mistral error:", mistralRes.status, errText.slice(0, 200));
+        return c.json(
+          { success: false, error: `AI analysis failed: ${mistralRes.status}` },
+          500
+        );
+      }
+
+      const aiData = await mistralRes.json();
+      const rawContent = aiData.choices?.[0]?.message?.content || "";
+
+      if (!rawContent) {
+        return c.json({ success: false, error: "Empty AI response" }, 500);
+      }
+
+      // Parse JSON
+      let scan: any = {};
+      try {
+        const cleanJson = rawContent
+          .replace(/^```json?\s*/i, "")
+          .replace(/\s*```$/i, "")
+          .trim();
+        scan = JSON.parse(cleanJson);
+      } catch (e) {
+        console.error("[vault/scan-url] JSON parse error:", e);
+        return c.json(
+          { success: false, error: "Failed to parse AI response" },
+          500
+        );
+      }
+
+      // Add metadata
+      scan.sourceUrl = url;
+      scan.scannedAt = new Date().toISOString();
+      scan.wordCount = markdown.split(/\s+/).filter(Boolean).length;
+
+      console.log(`[vault/scan-url] ✅ Done in ${Date.now() - t0}ms — brand: ${scan.brandName}`);
+
+      return c.json({ success: true, scan });
+    } catch (e: any) {
+      console.error("[vault/scan-url] Mistral fetch error:", e.message);
+      return c.json(
+        { success: false, error: `AI analysis failed: ${e.message}` },
+        500
+      );
+    }
+  } catch (err: any) {
+    console.error("[vault/scan-url] Fatal error:", err);
+    return c.json(
+      { success: false, error: `Scan error: ${err.message || String(err)}` },
+      500
+    );
+  }
+});

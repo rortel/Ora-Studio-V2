@@ -1,0 +1,56 @@
+[vite] hot updated: /src/app/pages/VaultOnboardingPage.tsx
+[vite] hot updated: /src/styles/index.css
+11:10:50 PM [vite] (client) hmr update /src/app/pages/VaultOnboardingPage.tsx, /src/styles/index.css
+❌ ReferenceError: useState is not defined
+    at VaultOnboardingPage (https://ta-01kkfc6z2wvpw9rrgdkqthta9e-1380-3q81e8vzpi7qy9g9vgm0ny0o0.makeproxy-m.figma.site/src/app/pages/VaultOnboardingPage.tsx?t=1773270650201:112:35)
+    at ms (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:68027)
+    at _c (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:110700)
+    at _4 (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:127859)
+    at HTMLUnknownElement.y (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:77:54006)
+    at HTMLUnknownElement.i (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:28:4861)
+    at Object.ik (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:77:54331)
+    at ij (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:77:55284)
+    at ep (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:166948)
+    at SX (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:160942)
+    at Sz (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:160557)
+    at Sj (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:160323)
+    at SO (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:158164)
+    at pC (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:36290)
+    at SL (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:158998)
+    at IO (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:169939)
+    at r.scheduleRefresh (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:69:53181)
+    at https://ta-01kkfc6z2wvpw9rrgdkqthta9e-1380-3q81e8vzpi7qy9g9vgm0ny0o0.makeproxy-m.figma.site/@react-refresh:228:17
+    at Set.forEach (<anonymous>)
+    at performReactRefresh (https://ta-01kkfc6z2wvpw9rrgdkqthta9e-1380-3q81e8vzpi7qy9g9vgm0ny0o0.makeproxy-m.figma.site/@react-refresh:217:26)
+    at https://ta-01kkfc6z2wvpw9rrgdkqthta9e-1380-3q81e8vzpi7qy9g9vgm0ny0o0.makeproxy-m.figma.site/@react-refresh:608:3
+    at i (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:28:4861)
+❌ Error handled by React Router default ErrorBoundary: ReferenceError: useState is not defined
+❌ ReferenceError: useState is not defined
+    at VaultOnboardingPage (https://ta-01kkfc6z2wvpw9rrgdkqthta9e-1380-3q81e8vzpi7qy9g9vgm0ny0o0.makeproxy-m.figma.site/src/app/pages/VaultOnboardingPage.tsx?t=1773270650201:112:35)
+    at ms (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:68027)
+    at _c (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:110700)
+    at _4 (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:127859)
+    at HTMLUnknownElement.y (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:77:54006)
+    at HTMLUnknownElement.i (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:28:4861)
+    at Object.ik (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:77:54331)
+    at ij (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:77:55284)
+    at ep (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:166948)
+    at SX (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:160942)
+    at Sz (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:160557)
+    at Sj (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:160323)
+    at SI (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:156868)
+    at SO (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:158222)
+    at pC (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:36290)
+    at SL (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:158998)
+    at IO (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:89:169939)
+    at r.scheduleRefresh (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:69:53181)
+    at https://ta-01kkfc6z2wvpw9rrgdkqthta9e-1380-3q81e8vzpi7qy9g9vgm0ny0o0.makeproxy-m.figma.site/@react-refresh:228:17
+    at Set.forEach (<anonymous>)
+    at performReactRefresh (https://ta-01kkfc6z2wvpw9rrgdkqthta9e-1380-3q81e8vzpi7qy9g9vgm0ny0o0.makeproxy-m.figma.site/@react-refresh:217:26)
+    at https://ta-01kkfc6z2wvpw9rrgdkqthta9e-1380-3q81e8vzpi7qy9g9vgm0ny0o0.makeproxy-m.figma.site/@react-refresh:608:3
+    at i (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-7412fd47a5113f44.min.js.br:28:4861)
+❌ Error handled by React Router default ErrorBoundary: ReferenceError: useState is not defined
+❌ React Router caught the following error during render ReferenceError: useState is not defined
+[Auth] onAuthStateChange event: SIGNED_IN
+fetchProfile OK in 178ms, authenticated=undefined
+fetchProfile: not authenticated 

@@ -1,0 +1,84 @@
+
+ [CampaignLab] Upload starting: man-elektro-lkw-stage-16x9.webp (276KB, image/webp)
+ [CampaignLab] Upload starting: man-lkw-etgx-teaser.webp (202KB, image/webp)
+ [CampaignLab] Upload OK: man-lkw-etgx-battery-4x3.webp → signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (432 chars)
+ [CampaignLab] Upload OK: man_etgx_ils_teaser-4x3.webp → signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (432 chars)
+ [CampaignLab] Upload OK: man-lkw-etgx-maintenance-4x3.webp → signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (432 chars)
+ [CampaignLab] Upload OK: man-lkw-etgx-teaser.webp → signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (432 chars)
+ [CampaignLab] Upload OK: man-etrucks-transporter-solutions-4x3.webp → signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (432 chars)
+ [CampaignLab] Upload OK: man-elektro-lkw-stage-16x9.webp → signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (432 chars)
+ [CampaignLab] Generate: 6 total uploads, 6 ready, 0 still uploading, 0 errored
+ [CampaignLab] Ready upload URLs: [0] https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s..., [1] https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s..., [2] https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s..., [3] https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s..., [4] https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s..., [5] https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s...
+ [CampaignLab] Fetching plan via POST (server-side brand context)...
+ [CampaignLab] Visual directive received: 594 chars
+ [CampaignLab] Brand ref images received: 5 images
+ [CampaignLab] Server confirmed 6 uploaded ref URLs received
+ [CampaignLab] Starting generation: 6 assets, 6 uploaded refs
+ [CampaignLab] Asset [0] linkedin-post: userRef=YES (https://kbvkjafkztbsewtaijuh.supabase.co/storage/v...)
+ [CampaignLab] Using USER UPLOADED photo for linkedin-post: https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s...
+ [CampaignLab] image-start linkedin-post (16:9) ref=true refUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s brandVisual=594 chars, URL length=1883
+ [CampaignLab] Asset [1] instagram-post: userRef=YES (https://kbvkjafkztbsewtaijuh.supabase.co/storage/v...)
+ [CampaignLab] Using USER UPLOADED photo for instagram-post: https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s...
+ [CampaignLab] image-start instagram-post (1:1) ref=true refUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s brandVisual=594 chars, URL length=1832
+ [CampaignLab] Asset [2] instagram-story: userRef=YES (https://kbvkjafkztbsewtaijuh.supabase.co/storage/v...)
+ [CampaignLab] Using USER UPLOADED photo for instagram-story: https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s...
+ [CampaignLab] image-start instagram-story (9:16) ref=true refUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s brandVisual=594 chars, URL length=1831
+ [CampaignLab] Asset [3] facebook-post: userRef=YES (https://kbvkjafkztbsewtaijuh.supabase.co/storage/v...)
+ [CampaignLab] Using USER UPLOADED photo for facebook-post: https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s...
+ [CampaignLab] image-start facebook-post (16:9) ref=true refUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s brandVisual=594 chars, URL length=1846
+ [CampaignLab] Asset [4] instagram-reel: userRef=YES (https://kbvkjafkztbsewtaijuh.supabase.co/storage/v...)
+ [CampaignLab] Using USER UPLOADED photo for instagram-reel: https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s...
+ [CampaignLab] Video instagram-reel: generating branded first frame...
+ [CampaignLab] image-start response: {"success":true,"generationId":"bf7bd343-b4c7-4cf8-9280-23a3cf1c79a8","state":"queued","_debug":{"imageRefUsed":true,"imageRefSource":"frontend-query-param","imageRefUrlLen":432,"imageRefUrlStart":"https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s","promptLen":1173,"fullUrlLen":1818,"model":"photon-1"}}
+ [CampaignLab] IMAGE-REF DIAGNOSTIC: {"imageRefUsed":true,"imageRefSource":"frontend-query-param","imageRefUrlLen":432,"imageRefUrlStart":"https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s","promptLen":1173,"fullUrlLen":1818,"model":"photon-1"}
+ [CampaignLab] Asset [5] linkedin-video: userRef=YES (https://kbvkjafkztbsewtaijuh.supabase.co/storage/v...)
+ [CampaignLab] Using USER UPLOADED photo for linkedin-video: https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s...
+ [CampaignLab] Video linkedin-video: generating branded first frame...
+ [CampaignLab] image-start response: {"success":true,"generationId":"60852afc-7ce6-416f-9e0c-653c20d3bce2","state":"queued","_debug":{"imageRefUsed":true,"imageRefSource":"frontend-query-param","imageRefUrlLen":432,"imageRefUrlStart":"https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s","promptLen":1190,"fullUrlLen":1832,"model":"photon-1"}}
+ [CampaignLab] IMAGE-REF DIAGNOSTIC: {"imageRefUsed":true,"imageRefSource":"frontend-query-param","imageRefUrlLen":432,"imageRefUrlStart":"https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s","promptLen":1190,"fullUrlLen":1832,"model":"photon-1"}
+ [CampaignLab] image-start response: {"success":true,"generationId":"10d1e7a0-ee10-4d1c-93fa-3d5a4c451c3c","state":"queued","_debug":{"imageRefUsed":true,"imageRefSource":"frontend-query-param","imageRefUrlLen":432,"imageRefUrlStart":"https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s","promptLen":1177,"fullUrlLen":1817,"model":"photon-1"}}
+ [CampaignLab] IMAGE-REF DIAGNOSTIC: {"imageRefUsed":true,"imageRefSource":"frontend-query-param","imageRefUrlLen":432,"imageRefUrlStart":"https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s","promptLen":1177,"fullUrlLen":1817,"model":"photon-1"}
+ [CampaignLab] Video instagram-reel: first frame submitted (genId=290a1df5-1fb1-4a04-b119-2ee2535993c4), waiting...
+ [CampaignLab] Video linkedin-video: first frame submitted (genId=5e638ced-1c7f-44bc-8572-2a0b3a781404), waiting...
+ [CampaignLab] image-start response: {"success":true,"generationId":"b10d7180-9a0e-43ae-b79a-6415c33c76ec","state":"queued","_debug":{"imageRefUsed":true,"imageRefSource":"frontend-query-param","imageRefUrlLen":432,"imageRefUrlStart":"https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s","promptLen":1223,"fullUrlLen":1869,"model":"photon-1"}}
+ [CampaignLab] IMAGE-REF DIAGNOSTIC: {"imageRefUsed":true,"imageRefSource":"frontend-query-param","imageRefUrlLen":432,"imageRefUrlStart":"https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s","promptLen":1223,"fullUrlLen":1869,"model":"photon-1"}
+ [CampaignLab] Poll #1 image instagram-post: state=queued
+ [CampaignLab] Poll #1 image facebook-post: state=queued
+ [CampaignLab] Poll #1 image instagram-story: state=queued
+ [CampaignLab] Poll #1 image linkedin-post: state=queued
+ [CampaignLab] Poll #2 image instagram-post: state=queued
+ [CampaignLab] Poll #2 image facebook-post: state=queued
+ [CampaignLab] Poll #2 image instagram-story: state=queued
+ [CampaignLab] Poll #2 image linkedin-post: state=queued
+ [CampaignLab] Poll #3 image instagram-post: state=queued
+ [CampaignLab] Poll #3 image facebook-post: state=dreaming
+ [CampaignLab] Poll #3 image instagram-story: state=dreaming
+ [CampaignLab] Poll #3 image linkedin-post: state=dreaming
+ [CampaignLab] Video linkedin-video: first frame ready, proceeding to video generation
+ [CampaignLab] video-start linkedin-video (16:9) firstFrame=true brandVisual=594 chars
+ [CampaignLab] video-start response: {"success":true,"generationId":"3785fbbc-e4da-4709-b40b-5808a653e9e7","state":"queued","model":"ora-motion","lumaModel":"ray-2"}
+ [CampaignLab] Poll #4 image instagram-post: state=dreaming
+ [CampaignLab] Poll #4 image facebook-post: state=dreaming
+ [CampaignLab] Poll #4 image instagram-story: state=dreaming
+ [CampaignLab] Poll #4 image linkedin-post: state=completed
+ [CampaignLab] Poll #5 image instagram-post: state=dreaming
+ [CampaignLab] Poll #5 image instagram-story: state=completed
+ [CampaignLab] Poll #1 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #5 image facebook-post: state=completed
+ [CampaignLab] image instagram-story COMPLETED, url=yes
+ [CampaignLab] image linkedin-post COMPLETED, url=yes
+ [CampaignLab] Video instagram-reel: first frame ready, proceeding to video generation
+ [CampaignLab] video-start instagram-reel (9:16) firstFrame=true brandVisual=594 chars
+ [CampaignLab] Poll #6 image instagram-post: state=completed
+ [CampaignLab] Poll #2 video linkedin-video: state=failed
+ [CampaignLab] video linkedin-video FAILED: 400: Unknown error
+ [CampaignLab] video-start response: {"success":true,"generationId":"f71a750d-d9cc-4c89-ab42-6440f6379605","state":"queued","model":"ora-motion","lumaModel":"ray-2"}
+ [CampaignLab] image facebook-post COMPLETED, url=yes
+ [CampaignLab] Poll #1 video instagram-reel: state=dreaming
+ [CampaignLab] image instagram-post COMPLETED, url=yes
+ [CampaignLab] Compliance check instagram-story: {"success":true,"score":89,"breakdown":{"overall":89,"text":90,"tone":85,"visual":92},"details":{"textIssues":["Low brand vocabulary usage (0/15 approved terms)"],"textStrengths":["No forbidden terms used"],"toneIssues":["Slightly lacking in warmth"],"toneStrengths":["High confidence","Professional 
+ [CampaignLab] Compliance check linkedin-post: {"success":true,"score":82,"breakdown":{"overall":82,"text":100,"tone":85,"visual":70},"details":{"textIssues":[],"textStrengths":["No forbidden terms used","Key messages referenced (2/5)"],"toneIssues":["Slightly more warmth could enhance engagement"],"toneStrengths":["Professional and confident to
+ [CampaignLab] Poll #2 video instagram-reel: state=failed
+ [CampaignLab] video instagram-reel FAILED: 400: Unknown error
+ [CampaignLab] Compliance check facebook-post: {"success":true,"score":89,"breakdown":{"overall":89,"text":90,"tone":85,"visual":92},"details":{"textIssues":["Low brand vocabulary usage (0/15 approved terms)"],"textStrengths":["No forbidden terms used","Key messages referenced (3/5)"],"toneIssues":["Slightly lacking in warmth"],"toneStrengths":[
+ [CampaignLab] Compliance check instagram-post: {"success":true,"score":92,"breakdown":{"overall":92,"text":100,"tone":85,"visual":92},"details":{"textIssues":[],"textStrengths":["No forbidden terms used","Good vocabulary alignment (3 approved terms used)","Key messages referenced (1/5)"],"toneIssues":["Slightly informal with emoji use"],"toneStr

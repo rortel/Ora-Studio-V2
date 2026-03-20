@@ -1,0 +1,862 @@
+(index):1  Failed to load resource: net::ERR_FAILED
+/api/make/fetch_ds_code_gen_status:1  Failed to load resource: the server responded with a status of 400 ()
+/api/make/Cpu4nGRSqlaZeBhE1wINKa/cached_preview_urls?source_code_hash=8f006c46daeef3314b552b397df2f6df6a8b8d53:1  Failed to load resource: the server responded with a status of 404 ()
+ Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently
+S @ figma_app-970c79351b85b521.min.js.br:41
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/dd6a91878269760adf5010bcf258323c11580d9000f9b4603729e587b14c4e6a:1  Failed to load resource: the server responded with a status of 404 ()
+/api/cortex/shared/figmake:1  Failed to load resource: the server responded with a status of 413 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/start:1  Failed to load resource: the server responded with a status of 404 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/start:1  Failed to load resource: the server responded with a status of 404 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/start:1  Failed to load resource: the server responded with a status of 404 ()
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/13476d6f34cbab16e7dc1b129149aa7ca9e8353b593ddc8401d995fafdc926fd:1  Failed to load resource: the server responded with a status of 404 ()
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/14329f09e6bab0b1eae161cb30d25b403d65a5d1f4f0638977274aae5b0f2a62:1  Failed to load resource: the server responded with a status of 404 ()
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/b9f140aff998177ab0c6fd1649421086a83c2f01cda8297dca1dcc0f723052ae:1  Failed to load resource: the server responded with a status of 404 ()
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/f7790c8d1db6d5d8e2d220f9afd60355426b4cb1e62ad05285762b423e7c772d:1  Failed to load resource: the server responded with a status of 404 ()
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/e4de2fea5e0b24d56a6393e935f0a14b0187aa95d824d3e5e1a96c538c1e2ebd:1  Failed to load resource: the server responded with a status of 404 ()
+/api/cortex/shared/figmake:1  Failed to load resource: the server responded with a status of 413 ()
+/api/cortex/shared/figmake:1  Failed to load resource: the server responded with a status of 413 ()
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/9cbb4e7b2599052374b51c671389d36812da2f5b146c8778746e946e78152554:1  Failed to load resource: the server responded with a status of 404 ()
+ Datadog Browser SDK: The data provided has been discarded as it is over the limit of 225280 characters: 
+g @ vendor-fe7483da6da244f1.min.js.br:3
+ Datadog Browser SDK: The data provided has been discarded as it is over the limit of 225280 characters: 
+g @ vendor-fe7483da6da244f1.min.js.br:3
+ Datadog Browser SDK: The data provided has been discarded as it is over the limit of 225280 characters: 
+g @ vendor-fe7483da6da244f1.min.js.br:3
+ Datadog Browser SDK: The data provided has been discarded as it is over the limit of 225280 characters: 
+g @ vendor-fe7483da6da244f1.min.js.br:3
+ Datadog Browser SDK: The data provided has been discarded as it is over the limit of 225280 characters: 
+g @ vendor-fe7483da6da244f1.min.js.br:3
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/c7cea6146ab75a8383e9ada7424a1a2754878cb93bf9b319b84c5a03d92797dd:1  Failed to load resource: the server responded with a status of 404 ()
+ Failed to fetch snapshot files: 
+(anonymous) @ vendor-core-83c17265…588e9e.min.js.br:54
+metrics_batched:1  Failed to load resource: the server responded with a status of 400 ()
+metrics_batched:1  Failed to load resource: the server responded with a status of 400 ()
+ [Livegraph] Connection closed. Code: 4001, reason: connection_lifetime
+ [Livegraph] Connection closed. Code: 1006, reason: 
+ [MultiplayerSession] connecting to wss://www.figma.com/api/multiplayer/Cpu4nGRSqlaZeBhE1wINKa?role=editor&tracking_session_id=l0VWKxjWeb0mowi5&version=151&recentReload=0&file-load-streaming-compression=&user-id=1483479003784692390&client_release=c8cf25fd40ec23e6d4f43316412edea9dd392484&reconnect-key=d82715f37bc1384df06afc2f18be3932af56073d&reconnect-sequence-number=5980&initialFileVersion=106&previousLoadMode=full&incremental-loading-validation=0
+ [MultiplayerSession] Joining file version 106 (skip_reload reconnect)
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/auth/me:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/auth/me:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/auth/me:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/auth/me:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/auth/me:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/auth/me:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+ [Livegraph] Connection closed. Code: 1006, reason: 
+ [MultiplayerSession] connecting to wss://www.figma.com/api/multiplayer/Cpu4nGRSqlaZeBhE1wINKa?role=editor&tracking_session_id=l0VWKxjWeb0mowi5&version=151&recentReload=0&file-load-streaming-compression=&user-id=1483479003784692390&client_release=c8cf25fd40ec23e6d4f43316412edea9dd392484&reconnect-key=d82715f37bc1384df06afc2f18be3932af56073d&reconnect-sequence-number=5980&initialFileVersion=106&previousLoadMode=full&incremental-loading-validation=0
+ [MultiplayerSession] Joining file version 106 (skip_reload reconnect)
+ [Livegraph] Connection closed. Code: 1006, reason: 
+metrics_batched:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+histogram_batched:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+logs:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+metrics_batched:1  Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-2cznzju2lbiehjv2p3nqyyl3rdilk3pdmzvruiqgs7rykeoyfanq.makeproxy-c.figma.site/' failed: 
+ping @ app-2cznzju2lbiehjv2…e/@vite/client:1035
+app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/@id/__x00__figma:react-jsx-runtime:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/@id/__x00__figma:react-jsx-runtime:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/@id/__x00__figma:react-jsx-runtime:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+logs:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/node_modules/.vite/deps/@supabase_supabase-js.js?v=66fc23ff:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/node_modules/.vite/deps/@supabase_supabase-js.js?v=66fc23ff:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/node_modules/.vite/deps/@supabase_supabase-js.js?v=66fc23ff:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+logs:1  Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+/api/cortex/shared/generation_error_log:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+/api/ai_chat/Cpu4nGRSqlaZeBhE1wINKa/overlapping_message/64a2bb8b-cbf4-4691-9a99-519db5af3731:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+/api/ai_chat/Cpu4nGRSqlaZeBhE1wINKa/messages/64a2bb8b-cbf4-4691-9a99-519db5af3731?file_key=Cpu4nGRSqlaZeBhE1wINKa&thread_id=64a2bb8b-cbf4-4691-9a99-519db5af3731&page_size=1&sort_order=desc:1  Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+/api/web_logger/metrics/web.cortex.error:1  Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+5606-1de0d45022ae32b0.min.js.br:1318 Uncaught (in promise) 
+ [MultiplayerSession] connecting to wss://www.figma.com/api/multiplayer/Cpu4nGRSqlaZeBhE1wINKa?role=editor&tracking_session_id=l0VWKxjWeb0mowi5&version=151&recentReload=0&file-load-streaming-compression=&user-id=1483479003784692390&client_release=c8cf25fd40ec23e6d4f43316412edea9dd392484&reconnect-key=d82715f37bc1384df06afc2f18be3932af56073d&reconnect-sequence-number=5980&initialFileVersion=106&previousLoadMode=full&incremental-loading-validation=0
+ [Livegraph] Connection closed. Code: 1006, reason: 
+/api/integrations/supabase/Cpu4nGRSqlaZeBhE1wINKa/connection:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+keep-alive:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+metrics_batched:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+histogram_batched:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+/api/integrations/supabase/Cpu4nGRSqlaZeBhE1wINKa/connection:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+/api/web_logger/metrics/web.cortex.error:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+metrics_batched:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+histogram_batched:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+ 
+(anonymous) @ vendor-core-83c17265…588e9e.min.js.br:54
+ WebSocket connection to 'wss://www.figma.com/api/livegraph?pv=1&pr=1dcaefad77f7c049&pt=1773835376&ph=RvaZskdggKOO3nlWfLbxg815mFC02_c8HCwBxk24Mco&userId=1483479003784692390&anonUserId=95e8e6cc-7b8f-4d2a-915a-632e6acdde2e&clientType=web&commitHash=c8cf25fd40ec23e6d4f43316412edea9dd392484&clientUrl=https%3A%2F%2Fwww.figma.com%2Fmake%2FCpu4nGRSqlaZeBhE1wINKa%2FBrand-compliant-messaging-system%3Fp%3Df%26t%3DjnlM6ZnVNO4G49mJ-0%26preview-route%3D%252Fhub&connectionType=reconnect&reconnect=1' failed: 
+(anonymous) @ 1565-5c17cee17a9a15d3.min.js.br:70
+5606-1de0d45022ae32b0.min.js.br:1318 Uncaught (in promise) 
+ [Livegraph] Connection closed. Code: 1006, reason: 
+ [MultiplayerSession] Joining file version 106 (skip_reload reconnect)
+ [Livegraph] Connection closed. Code: 1006, reason: 
+logs:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+/api/integrations/supabase/Cpu4nGRSqlaZeBhE1wINKa/existing_projects:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+logs:1  Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+/api/integrations/supabase/Cpu4nGRSqlaZeBhE1wINKa/existing_projects:1  Failed to load resource: net::ERR_NETWORK_CHANGED
+ WebSocket connection to 'wss://www.figma.com/api/livegraph?pv=1&pr=1dcaefad77f7c049&pt=1773835376&ph=RvaZskdggKOO3nlWfLbxg815mFC02_c8HCwBxk24Mco&userId=1483479003784692390&anonUserId=95e8e6cc-7b8f-4d2a-915a-632e6acdde2e&clientType=web&commitHash=c8cf25fd40ec23e6d4f43316412edea9dd392484&clientUrl=https%3A%2F%2Fwww.figma.com%2Fmake%2FCpu4nGRSqlaZeBhE1wINKa%2FBrand-compliant-messaging-system%3Fp%3Df%26t%3DjnlM6ZnVNO4G49mJ-0%26preview-route%3D%252Fhub&connectionType=reconnect&reconnect=1' failed: 
+(anonymous) @ 1565-5c17cee17a9a15d3.min.js.br:70
+ [Livegraph] Connection closed. Code: 1006, reason: 
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ [MultiplayerSession] connecting to wss://www.figma.com/api/multiplayer/Cpu4nGRSqlaZeBhE1wINKa?role=editor&tracking_session_id=l0VWKxjWeb0mowi5&version=151&recentReload=0&file-load-streaming-compression=&user-id=1483479003784692390&client_release=c8cf25fd40ec23e6d4f43316412edea9dd392484&reconnect-key=d82715f37bc1384df06afc2f18be3932af56073d&reconnect-sequence-number=5980&initialFileVersion=106&previousLoadMode=full&incremental-loading-validation=0
+ [MultiplayerSession] Joining file version 106 (full reconnect)
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+ WebSocket connection to 'wss://app-y4qotrjky3yxvil2nd3u4neu2atspzwcoeplzkpxz6xydlqqtiza.makeproxy-c.figma.site/' failed: 
+ping @ app-y4qotrjky3yxvil2…e/@vite/client:1035
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/81bf2c72de470b2610ce19cefeabb60c7779aa0ba513c872a7c1e4cc1536ccf4:1  Failed to load resource: the server responded with a status of 404 ()
+ Failed to fetch snapshot files: 
+(anonymous) @ vendor-core-83c17265…588e9e.min.js.br:54
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/6bb5f8c272a4defa3ea67158a68c529be8862b6e90c5142d1b81e495bca322ad:1  Failed to load resource: the server responded with a status of 404 ()
+ Failed to fetch snapshot files: 
+(anonymous) @ vendor-core-83c17265…588e9e.min.js.br:54
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 400 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 400 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 400 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 400 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 400 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 400 ()
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/28251325731f100161d33ed86c9c5c90a4dbb2e7e49405c7a8257049ae04983c:1  Failed to load resource: the server responded with a status of 404 ()
+ Failed to fetch snapshot files: 
+(anonymous) @ vendor-core-83c17265…588e9e.min.js.br:54
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/0b85eb55b8a93bf2fe0bf0822071e4e35b4a08747d98ff66d3556db8742fa324:1  Failed to load resource: the server responded with a status of 404 ()
+ Failed to fetch snapshot files: 
+(anonymous) @ vendor-core-83c17265…588e9e.min.js.br:54
+ [MultiplayerSession] connecting to wss://www.figma.com/api/multiplayer/Cpu4nGRSqlaZeBhE1wINKa?role=editor&tracking_session_id=l0VWKxjWeb0mowi5&version=151&recentReload=0&file-load-streaming-compression=&user-id=1483479003784692390&client_release=c8cf25fd40ec23e6d4f43316412edea9dd392484&reconnect-key=d82715f37bc1384df06afc2f18be3932af56073d&reconnect-sequence-number=6028&initialFileVersion=106&previousLoadMode=full&incremental-loading-validation=0
+ [MultiplayerSession] Joining file version 106 (skip_reload reconnect)
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 400 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 400 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 400 ()
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/a8fe58cfc1aa3f2d1119ab0c1c255f16b586cccb06297a9c1a28b01787faa3a5:1  Failed to load resource: the server responded with a status of 404 ()
+ Failed to fetch snapshot files: 
+(anonymous) @ vendor-core-83c17265…588e9e.min.js.br:54
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 500 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 500 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 500 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 500 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 500 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 500 ()
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/1bc106f6534f61ffb4fc8b47ead721bf541a3a8f64dac7eb34472ea7f925d7b5:1  Failed to load resource: the server responded with a status of 404 ()
+ Failed to fetch snapshot files: 
+(anonymous) @ vendor-core-83c17265…588e9e.min.js.br:54
+ [MultiplayerSession] connecting to wss://www.figma.com/api/multiplayer/Cpu4nGRSqlaZeBhE1wINKa?role=editor&tracking_session_id=l0VWKxjWeb0mowi5&version=151&recentReload=0&file-load-streaming-compression=&user-id=1483479003784692390&client_release=c8cf25fd40ec23e6d4f43316412edea9dd392484&reconnect-key=d82715f37bc1384df06afc2f18be3932af56073d&reconnect-sequence-number=6047&initialFileVersion=106&previousLoadMode=full&incremental-loading-validation=0
+ [MultiplayerSession] Joining file version 106 (journaled reconnect)
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 500 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 500 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 500 ()
+ [Livegraph] Connection closed. Code: 4001, reason: connection_lifetime
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/593b1d445323d6790e8b21811da118bfd190ac1c1ed3417554af99ad14d05500:1  Failed to load resource: the server responded with a status of 404 ()
+ Failed to fetch snapshot files: 
+(anonymous) @ vendor-core-83c17265…588e9e.min.js.br:54
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 500 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 500 ()
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/suno/lyrics:1  Failed to load resource: the server responded with a status of 500 ()
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/40560701b416bc411fb166658343ff99bb47609ef0a2da5892257eb78c465a72:1  Failed to load resource: the server responded with a status of 404 ()
+ Failed to fetch snapshot files: 
+(anonymous) @ vendor-core-83c17265…588e9e.min.js.br:54
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/871731dc9490699f6d56a2a54c06cd3787a94768b604bfc2e0a01093546fb230:1  Failed to load resource: the server responded with a status of 404 ()
+ Failed to fetch snapshot files: 
+(anonymous) @ vendor-core-83c17265…588e9e.min.js.br:54
+Brand-compliant-messaging-system?p=f&t=2WoiskvOPHSFZzhd-0&preview-route=%2Fhub:1 WebGL: CONTEXT_LOST_WEBGL: loseContext: context lost
+Brand-compliant-messaging-system?p=f&t=2WoiskvOPHSFZzhd-0&preview-route=%2Fhub:1 A valid external Instance reference no longer exists.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/0e1f97f46379cc7f8878d270aba49906fa92bc873264c79e193b865a587d89c6:1  Failed to load resource: the server responded with a status of 404 ()
+ Failed to fetch snapshot files: 
+(anonymous) @ vendor-core-83c17265…588e9e.min.js.br:54
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/4195f66b2132a6109815521f95a3df42b510f66319e8d73cd29a89bd58419b63:1  Failed to load resource: the server responded with a status of 404 ()
+ Failed to fetch snapshot files: 
+(anonymous) @ vendor-core-83c17265…588e9e.min.js.br:54
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack:1  Failed to load resource: net::ERR_FAILED
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack:1  Failed to load resource: net::ERR_FAILED
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/bf6f9a718e0d185ad38d765873e8b8155359fb59de979acb5fe10c30158ce9ba:1  Failed to load resource: the server responded with a status of 404 ()
+ Failed to fetch snapshot files: 
+(anonymous) @ vendor-core-83c17265…588e9e.min.js.br:54
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+ WebSocket connection to 'wss://app-7c4xfi74rdfw2tsv2objtcqmmtk77i6a3tnbkn7etziii3j7dzja.makeproxy-c.figma.site/' failed: 
+ping @ app-7c4xfi74rdfw2tsv…e/@vite/client:1035
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [fetchProfile] trying POST /auth/me with Authorization header...
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [Auth] onAuthStateChange event: INITIAL_SESSION
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [fetchProfile] trying POST /auth/me with Authorization header...
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [fetchProfile] status=200 authenticated=true (373ms)
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [fetchProfile] status=200 authenticated=true (384ms)
+vendor-core-83c17265f2588e9e.min.js.br:54 [MultiplayerSession] connecting to wss://www.figma.com/api/multiplayer/Cpu4nGRSqlaZeBhE1wINKa?role=editor&tracking_session_id=l0VWKxjWeb0mowi5&version=151&recentReload=0&file-load-streaming-compression=&user-id=1483479003784692390&client_release=c8cf25fd40ec23e6d4f43316412edea9dd392484&reconnect-key=d82715f37bc1384df06afc2f18be3932af56073d&reconnect-sequence-number=6113&initialFileVersion=106&previousLoadMode=full&incremental-loading-validation=0
+vendor-core-83c17265f2588e9e.min.js.br:54 [MultiplayerSession] Joining file version 106 (skip_reload reconnect)
+vendor-core-83c17265f2588e9e.min.js.br:54 [Livegraph] Connection closed. Code: 4001, reason: connection_lifetime
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 Warning: Internal React error: Expected static flag was missing. Please notify the React team. Component Stack
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/main
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/div
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at RootLayout (RootLayout.tsx:19:20)
+    at RenderedRoute (react-router.js?v=efddf66a:6296:26)
+    at RenderErrorBoundary (react-router.js?v=efddf66a:6206:5)
+    at DataRoutes (react-router.js?v=efddf66a:6994:3)
+    at Router (react-router.js?v=efddf66a:7086:13)
+    at RouterProvider (react-router.js?v=efddf66a:6760:3)
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at AuthProvider (auth-context.tsx:100:32)
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/App
+    at sI (code_components_preview_iframe-38049e48d7f0a436.min.js.br:117:4420)
+    at O (code_components_preview_iframe-38049e48d7f0a436.min.js.br:572:13398)
+    at ri (code_components_preview_iframe-38049e48d7f0a436.min.js.br:626:13959)
+    at bQ (code_components_preview_iframe-38049e48d7f0a436.min.js.br:643:10321)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/div
+    at sP (code_components_preview_iframe-38049e48d7f0a436.min.js.br:117:13985)
+    at T1 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:633:234835)
+    at yO (code_components_preview_iframe-38049e48d7f0a436.min.js.br:633:246097)
+    at o1 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:102:157136)
+    at ho (code_components_preview_iframe-38049e48d7f0a436.min.js.br:436:8433)
+(anonymous) @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:90
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 Warning: Internal React error: Expected static flag was missing. Please notify the React team. Component Stack
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/main
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/div
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at RootLayout (RootLayout.tsx:19:20)
+    at RenderedRoute (react-router.js?v=efddf66a:6296:26)
+    at RenderErrorBoundary (react-router.js?v=efddf66a:6206:5)
+    at DataRoutes (react-router.js?v=efddf66a:6994:3)
+    at Router (react-router.js?v=efddf66a:7086:13)
+    at RouterProvider (react-router.js?v=efddf66a:6760:3)
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at AuthProvider (auth-context.tsx:100:32)
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/App
+    at sI (code_components_preview_iframe-38049e48d7f0a436.min.js.br:117:4420)
+    at O (code_components_preview_iframe-38049e48d7f0a436.min.js.br:572:13398)
+    at ri (code_components_preview_iframe-38049e48d7f0a436.min.js.br:626:13959)
+    at bQ (code_components_preview_iframe-38049e48d7f0a436.min.js.br:643:10321)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/div
+    at sP (code_components_preview_iframe-38049e48d7f0a436.min.js.br:117:13985)
+    at T1 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:633:234835)
+    at yO (code_components_preview_iframe-38049e48d7f0a436.min.js.br:633:246097)
+    at o1 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:102:157136)
+    at ho (code_components_preview_iframe-38049e48d7f0a436.min.js.br:436:8433)
+(anonymous) @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:90
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 Warning: Internal React error: Expected static flag was missing. Please notify the React team. Component Stack
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/main
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/div
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at RootLayout (RootLayout.tsx:19:20)
+    at RenderedRoute (react-router.js?v=efddf66a:6296:26)
+    at RenderErrorBoundary (react-router.js?v=efddf66a:6206:5)
+    at DataRoutes (react-router.js?v=efddf66a:6994:3)
+    at Router (react-router.js?v=efddf66a:7086:13)
+    at RouterProvider (react-router.js?v=efddf66a:6760:3)
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at AuthProvider (auth-context.tsx:100:32)
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/App
+    at sI (code_components_preview_iframe-38049e48d7f0a436.min.js.br:117:4420)
+    at O (code_components_preview_iframe-38049e48d7f0a436.min.js.br:572:13398)
+    at ri (code_components_preview_iframe-38049e48d7f0a436.min.js.br:626:13959)
+    at bQ (code_components_preview_iframe-38049e48d7f0a436.min.js.br:643:10321)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/div
+    at sP (code_components_preview_iframe-38049e48d7f0a436.min.js.br:117:13985)
+    at T1 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:633:234835)
+    at yO (code_components_preview_iframe-38049e48d7f0a436.min.js.br:633:246097)
+    at o1 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:102:157136)
+    at ho (code_components_preview_iframe-38049e48d7f0a436.min.js.br:436:8433)
+(anonymous) @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:90
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 Warning: Internal React error: Expected static flag was missing. Please notify the React team. Component Stack
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/main
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/div
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at RootLayout (RootLayout.tsx:19:20)
+    at RenderedRoute (react-router.js?v=efddf66a:6296:26)
+    at RenderErrorBoundary (react-router.js?v=efddf66a:6206:5)
+    at DataRoutes (react-router.js?v=efddf66a:6994:3)
+    at Router (react-router.js?v=efddf66a:7086:13)
+    at RouterProvider (react-router.js?v=efddf66a:6760:3)
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at AuthProvider (auth-context.tsx:100:32)
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/App
+    at sI (code_components_preview_iframe-38049e48d7f0a436.min.js.br:117:4420)
+    at O (code_components_preview_iframe-38049e48d7f0a436.min.js.br:572:13398)
+    at ri (code_components_preview_iframe-38049e48d7f0a436.min.js.br:626:13959)
+    at bQ (code_components_preview_iframe-38049e48d7f0a436.min.js.br:643:10321)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/div
+    at sP (code_components_preview_iframe-38049e48d7f0a436.min.js.br:117:13985)
+    at T1 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:633:234835)
+    at yO (code_components_preview_iframe-38049e48d7f0a436.min.js.br:633:246097)
+    at o1 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:102:157136)
+    at ho (code_components_preview_iframe-38049e48d7f0a436.min.js.br:436:8433)
+(anonymous) @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:90
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 Warning: Internal React error: Expected static flag was missing. Please notify the React team. Component Stack
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/main
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/div
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at RootLayout (RootLayout.tsx:19:20)
+    at RenderedRoute (react-router.js?v=efddf66a:6296:26)
+    at RenderErrorBoundary (react-router.js?v=efddf66a:6206:5)
+    at DataRoutes (react-router.js?v=efddf66a:6994:3)
+    at Router (react-router.js?v=efddf66a:7086:13)
+    at RouterProvider (react-router.js?v=efddf66a:6760:3)
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at AuthProvider (auth-context.tsx:100:32)
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/App
+    at sI (code_components_preview_iframe-38049e48d7f0a436.min.js.br:117:4420)
+    at O (code_components_preview_iframe-38049e48d7f0a436.min.js.br:572:13398)
+    at ri (code_components_preview_iframe-38049e48d7f0a436.min.js.br:626:13959)
+    at bQ (code_components_preview_iframe-38049e48d7f0a436.min.js.br:643:10321)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/div
+    at sP (code_components_preview_iframe-38049e48d7f0a436.min.js.br:117:13985)
+    at T1 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:633:234835)
+    at yO (code_components_preview_iframe-38049e48d7f0a436.min.js.br:633:246097)
+    at o1 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:102:157136)
+    at ho (code_components_preview_iframe-38049e48d7f0a436.min.js.br:436:8433)
+(anonymous) @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:90
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 Warning: Internal React error: Expected static flag was missing. Please notify the React team. Component Stack
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/main
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/div
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at RootLayout (RootLayout.tsx:19:20)
+    at RenderedRoute (react-router.js?v=efddf66a:6296:26)
+    at RenderErrorBoundary (react-router.js?v=efddf66a:6206:5)
+    at DataRoutes (react-router.js?v=efddf66a:6994:3)
+    at Router (react-router.js?v=efddf66a:7086:13)
+    at RouterProvider (react-router.js?v=efddf66a:6760:3)
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at AuthProvider (auth-context.tsx:100:32)
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:290:12522
+    at FGCmp (fginspector:3:55)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/App
+    at sI (code_components_preview_iframe-38049e48d7f0a436.min.js.br:117:4420)
+    at O (code_components_preview_iframe-38049e48d7f0a436.min.js.br:572:13398)
+    at ri (code_components_preview_iframe-38049e48d7f0a436.min.js.br:626:13959)
+    at bQ (code_components_preview_iframe-38049e48d7f0a436.min.js.br:643:10321)
+    at 7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site/div
+    at sP (code_components_preview_iframe-38049e48d7f0a436.min.js.br:117:13985)
+    at T1 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:633:234835)
+    at yO (code_components_preview_iframe-38049e48d7f0a436.min.js.br:633:246097)
+    at o1 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:102:157136)
+    at ho (code_components_preview_iframe-38049e48d7f0a436.min.js.br:436:8433)
+(anonymous) @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:90
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [HubPage] Loading library from server...
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [HubPage] Loaded 32 library items from server
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Loading vault via POST /user/init...
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/user/init:1  Failed to load resource: net::ERR_FAILED
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Vault fetch error: TypeError: Failed to fetch
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:90:9794
+    at CampaignLab.tsx:235:5
+    at TN (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:138396)
+    at T8 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:151856)
+    at T7 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:151634)
+    at T6 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:151542)
+    at T4 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:151420)
+    at S1 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:163585)
+    at SQ (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:163247)
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:162379
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:65:74721
+    at V (code_components_preview_iframe-38049e48d7f0a436.min.js.br:61:1842)
+    at B (code_components_preview_iframe-38049e48d7f0a436.min.js.br:61:1559)
+    at MessagePort.eo (code_components_preview_iframe-38049e48d7f0a436.min.js.br:61:3433)
+(anonymous) @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:90
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [Auth] onAuthStateChange event: SIGNED_IN
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [fetchProfile] trying POST /auth/me with Authorization header...
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [fetchProfile] status=200 authenticated=true (575ms)
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [Auth] onAuthStateChange event: SIGNED_IN
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [fetchProfile] trying POST /auth/me with Authorization header...
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [fetchProfile] status=200 authenticated=true (5117ms)
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [Auth] onAuthStateChange event: SIGNED_IN
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [fetchProfile] trying POST /auth/me with Authorization header...
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [fetchProfile] status=200 authenticated=true (621ms)
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Uploading 10 ref photos to Storage...
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign/upload-refs:1  Failed to load resource: net::ERR_FAILED
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Upload refs failed: Failed to fetch
+(anonymous) @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:90
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] 0 ref URLs obtained
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Pipeline: CLASSIC (text-only)
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] POST texts: 6 formats, brief=800c, body=1057c
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Text response: HTTP 200, 4972c, body={"success":true,"copyMap":{"linkedin-carousel":{"subject":"","headline":"","caption":"Slide 1: Le MAN eTGX révolutionne le transport long-courrier électrique.\nSlide 2: Capacité de charge mégawatt : 750 kW en 45 minutes.\nSlide 3: Autonomie optimisée : jusqu'à 350 km après une pause.\nSlide 4: Confort amélioré pour le chauffeur avec des équipements modernes.\nSlide 5: Découvrez une solution durabl
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Text OK: 8 formats, provider=apipod/gpt-4o, 26904ms, keys=[linkedin-carousel,instagram-post,facebook-ad,tiktok-video,twitter-post,youtube-short,pinterest-pin,email-campaign]
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] copyMap keys: (8) ['linkedin-carousel', 'instagram-post', 'facebook-ad', 'tiktok-video', 'twitter-post', 'youtube-short', 'pinterest-pin', 'email-campaign']
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Image generation: 4 formats, v2=false
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Image GET [instagram-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=cinematic%20photo%20of%20MAN%20eTGX%20truck%2
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Image GET [facebook-ad]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=cinematic%20photo%20of%20MAN%20eTGX%20truck%2
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Image GET [twitter-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=cinematic%20photo%20of%20MAN%20eTGX%20truck%2
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Carousel [linkedin-carousel]: 7 slides to illustrate
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Image GET [linkedin-carousel]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Slide%201%20for%20LinkedIn%20carousel%3A%20Le
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Image GET [linkedin-carousel]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Slide%202%20for%20LinkedIn%20carousel%3A%20Ca
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Image GET [linkedin-carousel]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Slide%203%20for%20LinkedIn%20carousel%3A%20Au
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Carousel [linkedin-carousel] slide 1/7 OK
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Classic Image [twitter-post] OK: https://storage.cdn-luma.com/dream_machine/5eecabfa-9818-47a
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Carousel [linkedin-carousel] slide 2/7 OK
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Classic Image [instagram-post] OK: https://storage.cdn-luma.com/dream_machine/8f95981f-27de-460
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Carousel [linkedin-carousel] slide 3/7 OK
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Image GET [linkedin-carousel]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Slide%204%20for%20LinkedIn%20carousel%3A%20Co
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Image GET [linkedin-carousel]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Slide%205%20for%20LinkedIn%20carousel%3A%20D%
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Image GET [linkedin-carousel]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Slide%206%20for%20LinkedIn%20carousel%3A%20MA
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Classic Image [facebook-ad] OK: https://storage.cdn-luma.com/dream_machine/0dd67913-3619-4fd
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Carousel [linkedin-carousel] slide 5/7 OK
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Carousel [linkedin-carousel] slide 6/7 OK
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Carousel [linkedin-carousel] slide 4/7 OK
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Image GET [linkedin-carousel]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Slide%207%20for%20LinkedIn%20carousel%3A%20Pr
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Carousel [linkedin-carousel] slide 7/7 OK
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Carousel [linkedin-carousel] complete: 7/7 slides
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Video generation: 2 formats (background)
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Video [tiktok-video]: using first available image as keyframe
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Video START [tiktok-video]: hasKeyframe=true https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=dynamic+shot+of+MAN+eTGX+truck+charging+and+dri
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Video [youtube-short]: using first available image as keyframe
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Video START [youtube-short]: hasKeyframe=true https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=motion+shot+of+MAN+eTGX+truck+charging+at+a+hig
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90  GET https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/zernio/accounts net::ERR_FAILED 400 (Bad Request)
+(anonymous) @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:90
+(anonymous) @ CampaignLab.tsx:1032
+TN @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:37
+T8 @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:37
+T7 @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:37
+T6 @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:37
+T4 @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:37
+S1 @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:37
+SQ @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:37
+(anonymous) @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:37
+(anonymous) @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:65
+V @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:61
+B @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:61
+eo @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:61
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Zernio accounts fetch: TypeError: Failed to fetch
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:90:9794
+    at CampaignLab.tsx:1032:5
+    at TN (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:138396)
+    at T8 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:151856)
+    at T7 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:151634)
+    at T6 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:151542)
+    at T4 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:151420)
+    at S1 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:163585)
+    at SQ (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:163247)
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:162379
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:65:74721
+    at V (code_components_preview_iframe-38049e48d7f0a436.min.js.br:61:1842)
+    at B (code_components_preview_iframe-38049e48d7f0a436.min.js.br:61:1559)
+    at MessagePort.eo (code_components_preview_iframe-38049e48d7f0a436.min.js.br:61:3433)
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Video [youtube-short] submitted: cca9e6df-9645-4952-9a7a-c9c808a7e360
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Video [tiktok-video] error: signal timed out
+(anonymous) @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:90
+r @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:17
+error @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:90
+(anonymous) @ CampaignLab.tsx:905
+await in (anonymous)
+handleGenerate @ CampaignLab.tsx:827
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Video [youtube-short] poll #1: state=dreaming
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Video [youtube-short] poll #2: state=dreaming
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Video [youtube-short] poll #3: state=dreaming
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Video [youtube-short] poll #4: state=dreaming
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Video [youtube-short] poll #5: state=dreaming
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Video [youtube-short] poll #6: state=dreaming
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Video [youtube-short] poll #7: state=completed
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Soundtrack [youtube-short]: generating instrumental...
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack' from origin 'https://7abb589c-11f7-499d-9ace-a65148cb3140-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90  POST https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/campaign-lab/generate-soundtrack net::ERR_FAILED 400 (Bad Request)
+(anonymous) @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:90
+(anonymous) @ CampaignLab.tsx:181
+(anonymous) @ CampaignLab.tsx:864
+await in (anonymous)
+handleGenerate @ CampaignLab.tsx:827
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [CampaignLab] Soundtrack/Merge [youtube-short] error: Failed to fetch
+(anonymous) @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:90
+r @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:17
+error @ code_components_preview_iframe-38049e48d7f0a436.min.js.br:90
+(anonymous) @ CampaignLab.tsx:899
+await in (anonymous)
+handleGenerate @ CampaignLab.tsx:827

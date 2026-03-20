@@ -1,0 +1,947 @@
+/* 8. Re-engagement Email */
+
+width: 600px;
+height: 3353px;
+
+background: #FFFFFF;
+
+/* À l'intérieur de l'auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Background */
+
+position: absolute;
+width: 600px;
+height: 3353px;
+left: 0px;
+top: -0.11px;
+
+
+
+/* BG */
+
+position: absolute;
+width: 600px;
+height: 3353px;
+left: 0px;
+top: -0.11px;
+
+background: #FCFAF0;
+
+
+/* Footer */
+
+position: absolute;
+width: 600px;
+height: 475px;
+left: 0px;
+top: 2877.89px;
+
+
+
+/* Footer Blue BG */
+
+position: absolute;
+width: 600px;
+height: 475px;
+left: 0px;
+top: 2877.89px;
+
+background: #366170;
+
+
+/* Unsub Info */
+
+position: absolute;
+width: 520px;
+height: 40px;
+left: calc(50% - 520px/2 + 0px);
+top: 3253.89px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 300;
+font-size: 15.87px;
+line-height: 20px;
+/* ou 126% */
+text-align: center;
+
+color: #FCFAF0;
+
+
+
+/* Icons */
+
+position: absolute;
+width: 136.69px;
+height: 32px;
+left: calc(50% - 136.69px/2 + 0.35px);
+top: 3192.89px;
+
+
+
+/* Instagram */
+
+position: absolute;
+width: 31.98px;
+height: 31.98px;
+left: 232px;
+top: 3192.89px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 38.67%;
+right: 56%;
+top: 95.23%;
+bottom: 3.82%;
+
+background: #99C4D4;
+
+
+/* Vector */
+
+position: absolute;
+left: 40.11%;
+right: 57.3%;
+top: 95.47%;
+bottom: 4.07%;
+
+background: #99C4D4;
+
+
+/* Vector */
+
+position: absolute;
+left: 40.93%;
+right: 58.08%;
+top: 95.61%;
+bottom: 4.21%;
+
+background: #99C4D4;
+
+
+/* Facebook */
+
+position: absolute;
+left: 47.28%;
+right: 47.22%;
+top: 95.23%;
+bottom: 3.82%;
+
+background: #99C4D4;
+
+
+/* Pinterest */
+
+position: absolute;
+left: 56.11%;
+right: 38.55%;
+top: 95.23%;
+bottom: 3.82%;
+
+background: #99C4D4;
+
+
+/* Links of Interest/Phone */
+
+position: absolute;
+width: 600px;
+height: 249px;
+left: calc(50% - 600px/2);
+top: 2919.89px;
+
+
+
+/* Phone */
+
+position: absolute;
+width: 136px;
+height: 28px;
+left: 213px;
+top: 3140.89px;
+
+
+
+/* (XXX) XXX-XXX */
+
+position: absolute;
+width: 98px;
+height: 26px;
+left: calc(50% - 98px/2);
+top: 3141.89px;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 300;
+font-size: 15.87px;
+line-height: 26px;
+/* identique à la hauteur de la zone de texte, ou 161% */
+text-align: center;
+
+color: #FCFAF0;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 35.5%;
+right: 59.83%;
+top: 93.67%;
+bottom: 5.49%;
+
+background: #99C4D4;
+
+
+/* Link of interest 4 */
+
+position: absolute;
+width: 202px;
+height: 25.61px;
+left: calc(50% - 202px/2);
+top: 3081.89px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 300;
+font-size: 15.87px;
+line-height: 26px;
+/* identique à la hauteur de la zone de texte, ou 161% */
+text-align: center;
+
+color: #FCFAF0;
+
+
+
+/* Line */
+
+position: absolute;
+width: 600px;
+height: 0px;
+left: calc(50% - 600px/2);
+top: 3067.89px;
+
+background: #000000;
+border: 1px solid #FCFAF0;
+
+
+/* Line */
+
+position: absolute;
+width: 600px;
+height: 0px;
+left: calc(50% - 600px/2);
+top: 3121.89px;
+
+background: #000000;
+border: 1px solid #FCFAF0;
+
+
+/* Link of interest 3 */
+
+position: absolute;
+width: 202px;
+height: 25.61px;
+left: calc(50% - 202px/2);
+top: 3027.89px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 300;
+font-size: 15.87px;
+line-height: 26px;
+/* identique à la hauteur de la zone de texte, ou 161% */
+text-align: center;
+
+color: #FCFAF0;
+
+
+
+/* Line */
+
+position: absolute;
+width: 600px;
+height: 0px;
+left: calc(50% - 600px/2);
+top: 3013.89px;
+
+background: #000000;
+border: 1px solid #FCFAF0;
+
+
+/* Link of interest 2 */
+
+position: absolute;
+width: 267px;
+height: 26px;
+left: calc(50% - 267px/2 - 0.5px);
+top: 2973.89px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 300;
+font-size: 15.87px;
+line-height: 26px;
+/* identique à la hauteur de la zone de texte, ou 161% */
+text-align: center;
+
+color: #FCFAF0;
+
+
+
+/* Line */
+
+position: absolute;
+width: 600px;
+height: 0px;
+left: calc(50% - 600px/2);
+top: 2959.89px;
+
+background: #000000;
+border: 1px solid #FCFAF0;
+
+
+/* Link of interest 1 */
+
+position: absolute;
+width: 202px;
+height: 25.61px;
+left: calc(50% - 202px/2);
+top: 2919.89px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 300;
+font-size: 15.87px;
+line-height: 26px;
+/* identique à la hauteur de la zone de texte, ou 161% */
+text-align: center;
+
+color: #FCFAF0;
+
+
+
+/* Gallery */
+
+position: absolute;
+width: 600px;
+height: 1599px;
+left: 0px;
+top: 1200.89px;
+
+
+
+/* Call To Action */
+
+position: absolute;
+width: 236px;
+height: 43px;
+left: 182px;
+top: 2756.89px;
+
+
+
+/* Rectangle 12673 */
+
+position: absolute;
+width: 236px;
+height: 43px;
+left: calc(50% - 236px/2 - 0px);
+top: 2756.89px;
+
+background: #366170;
+
+
+/* Call to Action */
+
+position: absolute;
+width: 131px;
+height: 17px;
+left: calc(50% - 131px/2 + 0.5px);
+top: 2769.89px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 400;
+font-size: 15.873px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #FCFAF0;
+
+
+
+/* Product Gallery */
+
+position: absolute;
+width: 600px;
+height: 1306px;
+left: 0px;
+top: 1383.89px;
+
+
+
+/* Product 4 */
+
+position: absolute;
+width: 291.69px;
+height: 623px;
+left: 0px;
+top: 2066.89px;
+
+
+
+/* Rectangle 12673 */
+
+position: absolute;
+width: 291.69px;
+height: 394.32px;
+left: calc(50% - 291.69px/2 - 154.16px);
+top: 2066.89px;
+
+background: #99C4D4;
+
+
+/* Gallery Copy */
+
+position: absolute;
+width: 239px;
+height: 222px;
+left: calc(50% - 239px/2 - 153.5px);
+top: 2467.89px;
+
+
+
+/* PRODUCT #3 Display images of the abandoned products with product names, prices, and a button linking back to the cart. */
+
+position: absolute;
+width: 238.79px;
+height: 163.29px;
+left: calc(50% - 238.79px/2 - 153.4px);
+top: 2467.89px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+text-align: justify;
+
+color: #366170;
+
+
+
+/* Gallery Copy */
+
+position: absolute;
+width: 23px;
+height: 14px;
+left: calc(50% - 23px/2 - 261.5px);
+top: 2675.89px;
+
+
+
+/* Gallery Copy */
+
+position: absolute;
+width: 23px;
+height: 14px;
+left: calc(50% - 23px/2 - 261.5px);
+top: 2675.89px;
+
+
+
+/* $XX */
+
+position: absolute;
+width: 23px;
+height: 14px;
+left: calc(50% - 23px/2 - 261.5px);
+top: 2675.89px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+/* identique à la hauteur de la zone de texte */
+display: flex;
+align-items: center;
+text-align: justify;
+
+color: #366170;
+
+
+
+/* Product 3 */
+
+position: absolute;
+width: 293.2px;
+height: 622.5px;
+left: 306.8px;
+top: 2066.89px;
+
+
+
+/* PRODUCT #4 Display images of the abandoned products with product names, prices, and a button linking back to the cart. */
+
+position: absolute;
+width: 238.79px;
+height: 163.29px;
+left: calc(50% - 238.79px/2 + 153.4px);
+top: 2469.89px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+text-align: justify;
+
+color: #366170;
+
+
+
+/* Gallery Copy */
+
+position: absolute;
+width: 23px;
+height: 14px;
+left: calc(50% - 23px/2 + 45.5px);
+top: 2675.4px;
+
+
+
+/* Gallery Copy */
+
+position: absolute;
+width: 23px;
+height: 14px;
+left: calc(50% - 23px/2 + 45.5px);
+top: 2675.4px;
+
+
+
+/* Gallery Copy */
+
+position: absolute;
+width: 23px;
+height: 14px;
+left: calc(50% - 23px/2 + 45.5px);
+top: 2675.4px;
+
+
+
+/* $XX */
+
+position: absolute;
+width: 23px;
+height: 14px;
+left: calc(50% - 23px/2 + 45.5px);
+top: 2675.4px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+/* identique à la hauteur de la zone de texte */
+display: flex;
+align-items: center;
+text-align: justify;
+
+color: #366170;
+
+
+
+/* Rectangle 12674 */
+
+position: absolute;
+width: 293.2px;
+height: 394.32px;
+left: calc(50% - 293.2px/2 + 153.4px);
+top: 2066.89px;
+
+background: #99C4D4;
+
+
+/* Product 2 */
+
+position: absolute;
+width: 293.2px;
+height: 622.5px;
+left: 306.8px;
+top: 1383.89px;
+
+
+
+/* PRODUCT #2 Display images of the abandoned products with product names, prices, and a button linking back to the cart. */
+
+position: absolute;
+width: 238.79px;
+height: 163.29px;
+left: calc(50% - 238.79px/2 + 153.4px);
+top: 1786.89px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+text-align: justify;
+
+color: #366170;
+
+
+
+/* Gallery Copy */
+
+position: absolute;
+width: 23px;
+height: 14px;
+left: calc(50% - 23px/2 + 45.5px);
+top: 1992.4px;
+
+
+
+/* Gallery Copy */
+
+position: absolute;
+width: 23px;
+height: 14px;
+left: calc(50% - 23px/2 + 45.5px);
+top: 1992.4px;
+
+
+
+/* $XX */
+
+position: absolute;
+width: 23px;
+height: 14px;
+left: calc(50% - 23px/2 + 45.5px);
+top: 1992.4px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+/* identique à la hauteur de la zone de texte */
+display: flex;
+align-items: center;
+text-align: justify;
+
+color: #366170;
+
+
+
+/* Rectangle 12674 */
+
+position: absolute;
+width: 293.2px;
+height: 394.32px;
+left: calc(50% - 293.2px/2 + 153.4px);
+top: 1383.89px;
+
+background: #99C4D4;
+
+
+/* Product 1 */
+
+position: absolute;
+width: 291.69px;
+height: 620.5px;
+left: 0px;
+top: 1383.89px;
+
+
+
+/* Rectangle 12673 */
+
+position: absolute;
+width: 291.69px;
+height: 394.32px;
+left: calc(50% - 291.69px/2 - 154.16px);
+top: 1383.89px;
+
+background: #99C4D4;
+
+
+/* Gallery Copy */
+
+position: absolute;
+width: 238.79px;
+height: 163.29px;
+left: calc(50% - 238.79px/2 - 153.4px);
+top: 1784.89px;
+
+
+
+/* PRODUCT #1 Display images of the abandoned products with product names, prices, and a button linking back to the cart. */
+
+position: absolute;
+width: 238.79px;
+height: 163.29px;
+left: calc(50% - 238.79px/2 - 153.4px);
+top: 1784.89px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+text-align: justify;
+
+color: #366170;
+
+
+
+/* Gallery Copy */
+
+position: absolute;
+width: 23px;
+height: 14px;
+left: calc(50% - 23px/2 - 261.5px);
+top: 1990.4px;
+
+
+
+/* $XX */
+
+position: absolute;
+width: 23px;
+height: 14px;
+left: calc(50% - 23px/2 - 261.5px);
+top: 1990.4px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+/* identique à la hauteur de la zone de texte */
+display: flex;
+align-items: center;
+text-align: justify;
+
+color: #366170;
+
+
+
+/* Gallery Title */
+
+position: absolute;
+width: 484px;
+height: 132px;
+left: 58px;
+top: 1200.89px;
+
+
+
+/* Gallery – Recommended Products Suggest bestsellers or new arrivals. */
+
+position: absolute;
+width: 484px;
+height: 132px;
+left: calc(50% - 484px/2);
+top: 1200.89px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 37px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #366170;
+
+
+
+/* Body */
+
+position: absolute;
+width: 381px;
+height: 266px;
+left: 109px;
+top: 856.89px;
+
+
+
+/* Body Message */
+
+position: absolute;
+width: 370px;
+height: 112px;
+left: calc(50% - 370px/2);
+top: 1010.89px;
+
+
+
+/* Remind them of the brand’s best features. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim. */
+
+position: absolute;
+width: 370px;
+height: 112px;
+left: calc(50% - 370px/2);
+top: 1010.89px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: justify;
+
+color: #366170;
+
+
+
+/* Body Title */
+
+position: absolute;
+width: 381px;
+height: 111px;
+left: 109px;
+top: 856.89px;
+
+
+
+/* Re-engage the customer with an inviting message. */
+
+position: absolute;
+width: 381px;
+height: 111px;
+left: calc(50% - 381px/2 - 0.5px);
+top: 856.89px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 37px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #366170;
+
+
+
+/* Header */
+
+position: absolute;
+width: 559px;
+height: 772px;
+left: 24px;
+top: 14.89px;
+
+
+
+/* INTRO IMAGE */
+
+position: absolute;
+width: 559px;
+height: 772px;
+left: 24px;
+top: 14.89px;
+
+
+
+/* Rectangle 12672 */
+
+position: absolute;
+width: 559px;
+height: 681px;
+left: 24px;
+top: 105.89px;
+
+background: #99C4D4;
+
+
+/* A warm, inviting visual with a call to return. */
+
+position: absolute;
+width: 388px;
+height: 89px;
+left: calc(50% - 388px/2 + 4px);
+top: calc(50% - 89px/2 - 1617.11px);
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 34px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #FCFAF0;
+
+
+
+/* LOGO */
+
+position: absolute;
+width: 332px;
+height: 52px;
+left: 138px;
+top: 29.89px;
+
+
+
+/* Copy + Paste png logo here */
+
+position: absolute;
+width: 266px;
+height: 52px;
+left: calc(50% - 266px/2 + 4px);
+top: 29.89px;
+
+background: #FCFAF0;
+
+
+/* YOUR LOGO HERE (HORIZONTAL VERSION PREFERABLY) */
+
+position: absolute;
+width: 332px;
+height: 17px;
+left: calc(50% - 332px/2 + 4px);
+top: 47.89px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 400;
+font-size: 15.873px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #366170;
+

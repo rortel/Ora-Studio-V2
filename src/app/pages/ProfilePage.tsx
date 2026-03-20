@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router";
 import { useAuth } from "../lib/auth-context";
+import { RouteGuard } from "../components/RouteGuard";
+import { API_BASE, publicAnonKey } from "../lib/supabase";
 import { motion, AnimatePresence } from "motion/react";
 import {
   User, Mail, Building2, Briefcase, Shield, CreditCard,
@@ -10,13 +12,14 @@ import {
   GitBranch, Zap, ChevronRight, Crown, AlertCircle,
   FolderOpen, Globe, Palette, BookOpen, Eye,
   Calendar, TrendingUp, Layers, PenTool,
+  Linkedin, Instagram, Facebook, Twitter, Plus, Loader2, Send, RefreshCw,
 } from "lucide-react";
 
 /* ═══════════════════════════════════
    TYPES
    ═══════════════════════════════════ */
 
-type PlanTier = "free" | "starter" | "agency" | "enterprise";
+type PlanTier = "free" | "pro" | "business";
 type ProfileTab = "overview" | "library" | "team" | "settings";
 
 interface UserProfile {
@@ -95,7 +98,7 @@ const agencyUser: UserProfile = {
   company: "Acme Corp",
   role: "CMO",
   initials: "AM",
-  plan: "agency",
+  plan: "business",
   joinedDate: "Nov 2025",
 };
 
@@ -108,7 +111,7 @@ const planData: Record<PlanTier, PlanDetails> = {
     agents: 1,
     maxAgents: 1,
     contentUsed: 3,
-    contentMax: 5,
+    contentMax: 50,
     vaults: 0,
     maxVaults: 0,
     campaigns: 0,
@@ -116,37 +119,37 @@ const planData: Record<PlanTier, PlanDetails> = {
     storageUsed: 0.02,
     storageMax: 0.1,
     renewalDate: "--",
-    features: ["AI Hub (3 generations)", "Basic text & image"],
-    lockedFeatures: ["Brand Vault", "Studio access", "Flows", "Remix", "Campaigns", "Analytics", "Team", "API access", "Priority support"],
+    features: ["50 credits, no card required", "3 AI models (GPT-4o, Claude, Gemini)", "Text and image generation", "Basic Arena (2 models)", "Credits never expire"],
+    lockedFeatures: ["All AI models (10+)", "Code, audio, video generation", "Full Arena", "Brand Vault", "Campaign Lab", "Canvas editor", "Priority support"],
   },
-  starter: {
-    name: "Starter",
-    price: "99",
+  pro: {
+    name: "Pro",
+    price: "39",
     period: "/mo",
     color: "var(--ora-signal)",
-    agents: 3,
-    maxAgents: 3,
-    contentUsed: 12,
-    contentMax: 20,
-    vaults: 1,
-    maxVaults: 1,
-    campaigns: 2,
-    maxCampaigns: 3,
-    storageUsed: 0.8,
-    storageMax: 5,
+    agents: 10,
+    maxAgents: 10,
+    contentUsed: 187,
+    contentMax: 500,
+    vaults: 0,
+    maxVaults: 0,
+    campaigns: 0,
+    maxCampaigns: 0,
+    storageUsed: 2.1,
+    storageMax: 10,
     renewalDate: "Apr 4, 2026",
-    features: ["1 Brand Vault", "3 agents", "20 pieces/mo", "AI Hub", "Remix (basic)", "Email support"],
-    lockedFeatures: ["Full 15-agent team", "Flows", "Campaign Multiplier (10+)", "Team access", "API access", "Priority support"],
+    features: ["500 credits/month included", "All AI models (10+)", "Text, image, code, audio, video", "Full Arena (unlimited models)", "Priority generation queue", "Credit packs available", "Credits roll over indefinitely"],
+    lockedFeatures: ["Brand Vault", "Campaign Lab", "Canvas editor", "Asset Builder", "Brand Score", "Content Calendar", "Priority support"],
   },
-  agency: {
-    name: "Agency",
-    price: "299",
+  business: {
+    name: "Business",
+    price: "149",
     period: "/mo",
     color: "var(--ora-signal)",
     agents: 15,
     maxAgents: 15,
-    contentUsed: 64,
-    contentMax: 100,
+    contentUsed: 1240,
+    contentMax: 2500,
     vaults: 3,
     maxVaults: 5,
     campaigns: 8,
@@ -154,26 +157,7 @@ const planData: Record<PlanTier, PlanDetails> = {
     storageUsed: 12.4,
     storageMax: 50,
     renewalDate: "Apr 4, 2026",
-    features: ["Full 15-agent team", "Command Center", "Unlimited campaigns", "AI Hub (unlimited)", "Remix", "Flows", "Weekly Strategic Brief", "Approval workflow", "Figma Connect", "Priority support"],
-    lockedFeatures: ["Multi-brand Vaults", "Crisis Shield", "API + SSO"],
-  },
-  enterprise: {
-    name: "Enterprise",
-    price: "Custom",
-    period: "",
-    color: "#d4a853",
-    agents: 15,
-    maxAgents: 15,
-    contentUsed: 312,
-    contentMax: -1,
-    vaults: 8,
-    maxVaults: -1,
-    campaigns: 24,
-    maxCampaigns: -1,
-    storageUsed: 48.2,
-    storageMax: -1,
-    renewalDate: "Annual — Jun 1, 2026",
-    features: ["Everything in Agency", "Multi-brand Vaults", "Private fine-tuning", "Crisis Shield", "Competitive War Room", "API + SSO", "Dedicated CSM"],
+    features: ["2,500 credits/month included", "Everything in Pro +", "Brand Vault (brand identity)", "Campaign Lab (multi-platform)", "Canvas editor (Canva-like)", "Complete Asset Builder", "Brand Score & compliance", "Content Calendar", "Priority support"],
     lockedFeatures: [],
   },
 };
@@ -241,9 +225,22 @@ const sourceLabels: Record<string, string> = {
    ═══════════════════════════════════ */
 
 export function ProfilePage() {
-  const { user: authCtxUser, profile, isAdmin, remainingCredits, signOut, isLoading: authLoading } = useAuth();
+  return (
+    <RouteGuard requireAuth>
+      <ProfilePageContent />
+    </RouteGuard>
+  );
+}
+
+function ProfilePageContent() {
+  const { user: authCtxUser, profile, isAdmin, plan: authPlan, remainingCredits, signOut, isLoading: authLoading, accessToken } = useAuth();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState<ProfileTab>("overview");
+  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
+  const [deleting, setDeleting] = useState(false);
+  const [realLibrary, setRealLibrary] = useState<LibraryAsset[]>([]);
+  const [realActivity, setRealActivity] = useState<ActivityItem[]>([]);
+  const [libraryLoading, setLibraryLoading] = useState(true);
 
   // Redirect to login if not authenticated
   useEffect(() => {
@@ -252,10 +249,74 @@ export function ProfilePage() {
     }
   }, [authLoading, authCtxUser, navigate]);
 
-  // Map real profile plan to legacy plan tiers for display
-  const realPlan = profile?.plan || "free";
-  const isSubscriber = realPlan !== "free";
-  const mappedPlan: PlanTier = realPlan === "studio" ? "agency" : realPlan === "generate" ? "starter" : "free";
+  // Fetch real library items for profile view
+  useEffect(() => {
+    if (!accessToken) { setLibraryLoading(false); return; }
+    (async () => {
+      try {
+        const headers: Record<string, string> = {
+          Authorization: `Bearer ${publicAnonKey}`,
+          "Content-Type": "text/plain",
+        };
+        const res = await fetch(`${API_BASE}/library/list`, {
+          method: "POST",
+          headers,
+          body: JSON.stringify({ _token: accessToken }),
+          signal: AbortSignal.timeout(8_000),
+        });
+        const data = await res.json();
+        if (data.success && data.items) {
+          const items: LibraryAsset[] = data.items.slice(0, 12).map((item: any) => {
+            const typeMap: Record<string, string> = { image: "image", text: "text", code: "code", film: "film", sound: "sound" };
+            const itemType = typeMap[item.type] || "text";
+            const name = item.customName || item.prompt?.slice(0, 60) || "Untitled";
+            const savedDate = item.savedAt ? new Date(item.savedAt) : new Date();
+            const now = new Date();
+            const diffMs = now.getTime() - savedDate.getTime();
+            const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+            let dateStr = "Today";
+            if (diffDays === 1) dateStr = "Yesterday";
+            else if (diffDays > 1 && diffDays < 7) dateStr = `${diffDays} days ago`;
+            else if (diffDays >= 7) dateStr = savedDate.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+
+            return { id: item.id, type: itemType as LibraryAsset["type"], name, date: dateStr, source: "hub" as const };
+          });
+          setRealLibrary(items);
+
+          // Build activity from most recent library items
+          const typeActions: Record<string, { action: string; icon: typeof Sparkles; iconColor: string }> = {
+            image: { action: "Generated image", icon: ImageIcon, iconColor: "var(--ora-signal)" },
+            text: { action: "Generated text", icon: FileText, iconColor: "#6b7ec9" },
+            code: { action: "Generated code", icon: Code2, iconColor: "#16a34a" },
+            film: { action: "Generated video", icon: Film, iconColor: "#d97706" },
+            sound: { action: "Generated audio", icon: Music, iconColor: "#c026d3" },
+          };
+          const acts: ActivityItem[] = items.slice(0, 8).map((item, i) => {
+            const cfg = typeActions[item.type] || typeActions.text;
+            return {
+              id: `act-${i}`,
+              action: cfg.action,
+              detail: item.name,
+              timestamp: item.date,
+              icon: cfg.icon,
+              iconColor: cfg.iconColor,
+            };
+          });
+          if (acts.length === 0) {
+            acts.push({ id: "act-signup", action: "Signed up", detail: "Welcome to ORA", timestamp: "Recently", icon: Sparkles, iconColor: "var(--ora-signal)" });
+          }
+          setRealActivity(acts);
+        }
+      } catch (err) {
+        console.error("[Profile] Library fetch error:", err);
+      }
+      setLibraryLoading(false);
+    })();
+  }, [accessToken]);
+
+  // Plan is now already mapped in auth-context (free/pro/business)
+  const isSubscriber = authPlan !== "free";
+  const mappedPlan: PlanTier = authPlan as PlanTier;
 
   const baseUser = isSubscriber ? agencyUser : freeUser;
   const user: UserProfile = authCtxUser ? {
@@ -269,8 +330,16 @@ export function ProfilePage() {
     role: profile?.jobTitle || baseUser.role,
   } : baseUser;
   const plan = planData[user.plan];
-  const library = isSubscriber ? mockLibraryAgency : mockLibraryFree;
-  const activity = isSubscriber ? mockActivityAgency : mockActivityFree;
+
+  // Use real library/activity data when available, fallback to mock
+  const library = realLibrary.length > 0 ? realLibrary : (isSubscriber ? mockLibraryAgency : mockLibraryFree);
+  const activity = realActivity.length > 0 ? realActivity : (isSubscriber ? mockActivityAgency : mockActivityFree);
+
+  // Update plan usage from real profile data
+  if (profile) {
+    plan.contentUsed = profile.creditsUsed || 0;
+    plan.contentMax = profile.credits || plan.contentMax;
+  }
 
   const tabs: { id: ProfileTab; label: string; icon: typeof User }[] = [
     { id: "overview", label: "Overview", icon: BarChart3 },
@@ -280,7 +349,7 @@ export function ProfilePage() {
   ];
 
   return (
-    <div className="min-h-[calc(100vh-56px)] bg-background">
+    <div className="min-h-screen bg-background">
       <div className="max-w-[1200px] mx-auto px-6 py-8">
 
         {/* Auth status + Credits */}
@@ -434,9 +503,8 @@ export function ProfilePage() {
 function PlanBadge({ plan }: { plan: PlanTier }) {
   const config = {
     free: { label: "Free", bg: "var(--secondary)", color: "var(--muted-foreground)", icon: null },
-    starter: { label: "Starter", bg: "var(--ora-signal-light)", color: "var(--ora-signal)", icon: null },
-    agency: { label: "Agency", bg: "var(--ora-signal-light)", color: "var(--ora-signal)", icon: Crown },
-    enterprise: { label: "Enterprise", bg: "rgba(212,168,83,0.1)", color: "#d4a853", icon: Crown },
+    pro: { label: "Pro", bg: "var(--ora-signal-light)", color: "var(--ora-signal)", icon: null },
+    business: { label: "Business", bg: "var(--ora-signal-light)", color: "var(--ora-signal)", icon: Crown },
   }[plan];
   return (
     <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full" style={{ background: config.bg, fontSize: "11px", fontWeight: 600, color: config.color }}>
@@ -560,11 +628,9 @@ function UsageMeter({ label, used, max, icon: Icon, unit }: { label: string; use
 function QuickAccess({ isSubscriber }: { isSubscriber: boolean }) {
   const items = [
     { label: "AI Hub", desc: "Generate with multiple models", href: "/hub", icon: Sparkles, locked: false },
-    { label: "Remix", desc: "Paste anything, get your version", href: "/remix", icon: RefreshCcw, locked: !isSubscriber },
-    { label: "Flows", desc: "Chain AI operations", href: "/flows", icon: GitBranch, locked: !isSubscriber },
-    { label: "Studio", desc: "Edit across all formats", href: "/studio", icon: Layers, locked: !isSubscriber },
-    { label: "Brand Vault", desc: "Your brand's DNA", href: "/studio/vault", icon: BookOpen, locked: !isSubscriber },
-    { label: "Campaigns", desc: "All your campaigns", href: "/studio/campaigns", icon: TrendingUp, locked: !isSubscriber },
+    { label: "Library", desc: "Your saved content", href: "/hub/library", icon: BookOpen, locked: false },
+    { label: "Brand Vault", desc: "Your brand's DNA", href: "/hub/vault", icon: BookOpen, locked: !isSubscriber },
+    { label: "Analytics", desc: "Track performance", href: "/hub/analytics", icon: GitBranch, locked: !isSubscriber },
   ];
   return (
     <div>
@@ -673,6 +739,146 @@ function TeamTab() {
           </div>
         ))}
       </div>
+    </div>
+  );
+}
+
+/* ═══════════════════════════════════
+   SOCIAL ACCOUNTS SECTION (transparent Zernio)
+   ═══════════════════════════════════ */
+
+const SOCIAL_PLATFORMS = [
+  { id: "linkedin", label: "LinkedIn", icon: Linkedin, color: "#0077B5" },
+  { id: "instagram", label: "Instagram", icon: Instagram, color: "#E1306C" },
+  { id: "facebook", label: "Facebook", icon: Facebook, color: "#1877F2" },
+  { id: "twitter", label: "Twitter/X", icon: Twitter, color: "#1DA1F2" },
+];
+
+function SocialAccountsSection() {
+  const auth = useAuth();
+  const [accounts, setAccounts] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [connecting, setConnecting] = useState<string | null>(null);
+  const [disconnecting, setDisconnecting] = useState<string | null>(null);
+
+  const makeHeaders = useCallback(() => {
+    return { Authorization: `Bearer ${publicAnonKey}` } as Record<string, string>;
+  }, []);
+
+  const fetchAccounts = useCallback(() => {
+    setLoading(true);
+    const token = auth.getAuthHeader();
+    const url = token ? `${API_BASE}/zernio/accounts?_token=${encodeURIComponent(token)}` : `${API_BASE}/zernio/accounts`;
+    fetch(url, { headers: makeHeaders() })
+      .then(res => res.json())
+      .then(data => { if (data.success && data.accounts) setAccounts(data.accounts); })
+      .catch(err => console.error("[SocialAccounts] Fetch error:", err))
+      .finally(() => setLoading(false));
+  }, [makeHeaders]);
+
+  useEffect(() => { fetchAccounts(); }, [fetchAccounts]);
+
+  const handleConnect = useCallback(async (platform: string) => {
+    setConnecting(platform);
+    try {
+      const res = await fetch(`${API_BASE}/zernio/connect/${platform}?redirectUrl=${encodeURIComponent(window.location.origin + "/profile")}`, {
+        headers: makeHeaders(),
+      });
+      const data = await res.json();
+      if (!data.success || !data.authUrl) {
+        setConnecting(null);
+        return;
+      }
+      const popup = window.open(data.authUrl, `connect_${platform}`, "width=600,height=700,left=200,top=100");
+      if (!popup) { setConnecting(null); return; }
+      const poll = setInterval(() => {
+        if (popup.closed) {
+          clearInterval(poll);
+          setConnecting(null);
+          setTimeout(() => fetchAccounts(), 1500);
+        }
+      }, 500);
+      setTimeout(() => { clearInterval(poll); if (!popup.closed) popup.close(); setConnecting(null); }, 300_000);
+    } catch { setConnecting(null); }
+  }, [makeHeaders, fetchAccounts]);
+
+  const handleDisconnect = useCallback(async (platform: string, accountId?: string) => {
+    setDisconnecting(platform);
+    try {
+      const res = await fetch(`${API_BASE}/zernio/disconnect`, {
+        method: "POST",
+        headers: { ...makeHeaders(), "Content-Type": "text/plain" },
+        body: JSON.stringify({ _token: auth.getAuthHeader(), platform, accountId }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setAccounts(prev => prev.filter((a: any) => a.platform !== platform));
+      }
+    } catch (err) { console.error("[SocialAccounts] Disconnect error:", err); }
+    finally { setDisconnecting(null); }
+  }, [makeHeaders, auth]);
+
+  return (
+    <div>
+      <div className="flex items-center justify-between mb-4">
+        <h3 style={{ fontSize: "14px", fontWeight: 500, color: "var(--foreground)" }}>Social Accounts</h3>
+        <button onClick={fetchAccounts} className="cursor-pointer p-1 rounded hover:bg-secondary transition-colors" title="Refresh">
+          <RefreshCw size={12} className={`text-muted-foreground ${loading ? "animate-spin" : ""}`} />
+        </button>
+      </div>
+      <div className="border rounded-xl bg-card overflow-hidden" style={{ borderColor: "var(--border)" }}>
+        {SOCIAL_PLATFORMS.map((p, i) => {
+          const connected = accounts.find((a: any) => a.platform === p.id);
+          const isConnecting = connecting === p.id;
+          const Icon = p.icon;
+          return (
+            <div key={p.id} className={`flex items-center justify-between px-5 py-3 ${i < SOCIAL_PLATFORMS.length - 1 ? "border-b" : ""}`} style={{ borderColor: "var(--border)" }}>
+              <div className="flex items-center gap-3">
+                <div className="w-7 h-7 rounded-md flex items-center justify-center" style={{ background: `${p.color}12` }}>
+                  <Icon size={14} style={{ color: p.color }} />
+                </div>
+                <div>
+                  <span style={{ fontSize: "13px", color: "var(--foreground)", fontWeight: 500 }}>{p.label}</span>
+                  {connected && (
+                    <span className="block" style={{ fontSize: "11px", color: "var(--muted-foreground)" }}>
+                      {connected.username ? `@${connected.username}` : "Connected"}
+                    </span>
+                  )}
+                </div>
+              </div>
+              {connected ? (
+                <div className="flex items-center gap-2">
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full" style={{ background: "rgba(16,185,129,0.08)", fontSize: "10px", fontWeight: 600, color: "#10b981" }}>
+                    <span className="w-1.5 h-1.5 rounded-full" style={{ background: "#10b981" }} />
+                    Connected
+                  </span>
+                  <button
+                    onClick={() => handleDisconnect(p.id, connected._id)}
+                    disabled={disconnecting === p.id}
+                    className="px-2 py-0.5 rounded text-destructive hover:bg-destructive/10 transition-colors cursor-pointer"
+                    style={{ fontSize: "10px", fontWeight: 500 }}
+                  >
+                    {disconnecting === p.id ? "..." : "Disconnect"}
+                  </button>
+                </div>
+              ) : (
+                <button
+                  onClick={() => handleConnect(p.id)}
+                  disabled={isConnecting || !!connecting}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md border cursor-pointer transition-all hover:bg-secondary"
+                  style={{ borderColor: "var(--border)", fontSize: "11px", fontWeight: 500, color: "var(--foreground)", opacity: connecting && !isConnecting ? 0.4 : 1 }}
+                >
+                  {isConnecting ? <Loader2 size={10} className="animate-spin" /> : <Plus size={10} />}
+                  {isConnecting ? "Connecting..." : "Connect"}
+                </button>
+              )}
+            </div>
+          );
+        })}
+      </div>
+      <p className="mt-2" style={{ fontSize: "11px", color: "var(--muted-foreground)" }}>
+        Connect your social accounts to publish content directly from Campaign Lab.
+      </p>
     </div>
   );
 }

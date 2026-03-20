@@ -1,9 +1,14 @@
-import { API_BASE, apiHeaders } from "../lib/supabase";
+import { API_BASE, apiUrl, publicAnonKey } from "../lib/supabase";
 import { useAuth } from "../lib/auth-context";
+import { RouteGuard } from "../components/RouteGuard";
 import { useState, useEffect, useCallback } from "react";
 import { motion } from "motion/react";
 import { Link } from "react-router";
-import { ArrowLeft, TrendingUp, TrendingDown, Minus, Loader2, RefreshCw } from "lucide-react";
+import {
+  ArrowLeft, TrendingUp, TrendingDown, Minus, Loader2, RefreshCw,
+  Send, Eye, MousePointer, MessageSquare, ExternalLink, CheckCircle2, Clock, AlertCircle,
+  Heart, Share2, Bookmark, ThumbsUp,
+} from "lucide-react";
 
 const defaultKpis = [
   { label: "Brand Health Score", value: "0", suffix: "/100", trend: "--", dir: "flat" },
@@ -44,19 +49,38 @@ interface AnalyticsData {
 }
 
 export function AnalyticsPage() {
+  return (
+    <RouteGuard requireAuth requireFeature="analytics">
+      <AnalyticsPageContent />
+    </RouteGuard>
+  );
+}
+
+function AnalyticsPageContent() {
   const [loading, setLoading] = useState(true);
   const [kpis, setKpis] = useState(defaultKpis);
   const [weeklyData, setWeeklyData] = useState(defaultWeeklyData);
   const [formatPerformance, setFormatPerformance] = useState(defaultFormatPerformance);
   const [campaignList, setCampaignList] = useState<any[]>([]);
   const [refreshing, setRefreshing] = useState(false);
+  const [socialData, setSocialData] = useState<any>(null);
+  const [socialLoading, setSocialLoading] = useState(false);
+  const [postMetrics, setPostMetrics] = useState<any>(null);
+  const [metricsLoading, setMetricsLoading] = useState(false);
 
   const { getAuthHeader } = useAuth();
 
   const loadAnalytics = useCallback(async () => {
     try {
       const token = getAuthHeader();
-      const res = await fetch(`${API_BASE}/analytics`, { headers: apiHeaders(token, false) });
+      const res = await fetch(apiUrl("/analytics"), {
+        method: "POST",
+        headers: {
+          "Authorization": `Bearer ${publicAnonKey}`,
+          "Content-Type": "text/plain",
+        },
+        body: JSON.stringify({ _token: token }),
+      });
       const data = await res.json();
       if (data.success) {
         const a: AnalyticsData = data.analytics;
@@ -116,27 +140,57 @@ export function AnalyticsPage() {
     }
   }, [getAuthHeader]);
 
-  useEffect(() => { loadAnalytics(); }, [loadAnalytics]);
+  const loadSocialAnalytics = useCallback(async () => {
+    setSocialLoading(true);
+    setMetricsLoading(true);
+    try {
+      const token = getAuthHeader();
+      // Fetch deploy summary
+      const res = await fetch(apiUrl("/analytics/social"), {
+        method: "POST",
+        headers: { "Authorization": `Bearer ${publicAnonKey}`, "Content-Type": "text/plain" },
+        body: JSON.stringify({ _token: token }),
+      });
+      const data = await res.json();
+      if (data.success) setSocialData(data);
 
-  const handleRefresh = () => { setRefreshing(true); loadAnalytics(); };
+      // Fetch detailed post metrics from Zernio
+      const metricsRes = await fetch(apiUrl("/analytics/all-posts-metrics"), {
+        method: "POST",
+        headers: { "Authorization": `Bearer ${publicAnonKey}`, "Content-Type": "text/plain" },
+        body: JSON.stringify({ _token: token }),
+      });
+      const metricsData = await metricsRes.json();
+      if (metricsData.success) setPostMetrics(metricsData);
+    } catch (err) {
+      console.error("Failed to load social analytics:", err);
+    } finally {
+      setSocialLoading(false);
+      setMetricsLoading(false);
+    }
+  }, [getAuthHeader]);
+
+  useEffect(() => { loadAnalytics(); loadSocialAnalytics(); }, [loadAnalytics, loadSocialAnalytics]);
+
+  const handleRefresh = () => { setRefreshing(true); loadAnalytics(); loadSocialAnalytics(); };
 
   const maxPieces = Math.max(...weeklyData.map((d) => d.pieces), 1);
   const maxFormatScore = Math.max(...formatPerformance.map((f) => f.avgScore), 1);
 
   if (loading) {
     return (
-      <div className="min-h-[calc(100vh-56px)] flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <Loader2 size={24} className="animate-spin text-ora-signal" />
       </div>
     );
   }
 
   return (
-    <div className="min-h-[calc(100vh-56px)]">
+    <div className="min-h-screen">
       <div className="border-b border-border bg-card">
         <div className="max-w-[1200px] mx-auto px-6 py-5">
-          <Link to="/studio" className="inline-flex items-center gap-1.5 text-muted-foreground hover:text-foreground transition-colors mb-4" style={{ fontSize: "13px" }}>
-            <ArrowLeft size={14} /> Back to Studio
+          <Link to="/hub" className="inline-flex items-center gap-1.5 text-muted-foreground hover:text-foreground transition-colors mb-4" style={{ fontSize: "13px" }}>
+            <ArrowLeft size={14} /> Back to Hub
           </Link>
           <div className="flex items-center justify-between">
             <div>
@@ -226,6 +280,245 @@ export function AnalyticsPage() {
           </motion.div>
         </div>
 
+        {/* Social Deployment Analytics */}
+        <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.28 }}
+          className="bg-card border border-border rounded-xl p-6 mb-10">
+          <h3 className="text-foreground mb-5" style={{ fontSize: "16px", fontWeight: 500 }}>Social Media Deployment</h3>
+          {socialLoading || metricsLoading ? (
+            <div className="flex items-center justify-center py-10"><Loader2 size={18} className="animate-spin text-ora-signal" /></div>
+          ) : socialData && (socialData.summary?.totalDeployed > 0 || socialData.summary?.totalScheduled > 0) ? (
+            <>
+              {/* Summary cards */}
+              <div className="grid grid-cols-3 gap-4 mb-6">
+                <div className="p-3 rounded-lg" style={{ background: "rgba(22,163,74,0.06)", border: "1px solid rgba(22,163,74,0.12)" }}>
+                  <div className="flex items-center gap-1.5 mb-1">
+                    <CheckCircle2 size={12} style={{ color: "#16a34a" }} />
+                    <span className="text-muted-foreground" style={{ fontSize: "11px" }}>Published</span>
+                  </div>
+                  <span className="text-foreground" style={{ fontSize: "22px", fontWeight: 500 }}>{socialData.summary.totalDeployed}</span>
+                </div>
+                <div className="p-3 rounded-lg" style={{ background: "var(--ora-signal-light)", border: "1px solid rgba(59,79,196,0.12)" }}>
+                  <div className="flex items-center gap-1.5 mb-1">
+                    <Clock size={12} className="text-ora-signal" />
+                    <span className="text-muted-foreground" style={{ fontSize: "11px" }}>Scheduled</span>
+                  </div>
+                  <span className="text-foreground" style={{ fontSize: "22px", fontWeight: 500 }}>{socialData.summary.totalScheduled}</span>
+                </div>
+                <div className="p-3 rounded-lg" style={{ background: "rgba(212,24,61,0.04)", border: "1px solid rgba(212,24,61,0.1)" }}>
+                  <div className="flex items-center gap-1.5 mb-1">
+                    <AlertCircle size={12} className="text-destructive" />
+                    <span className="text-muted-foreground" style={{ fontSize: "11px" }}>Failed</span>
+                  </div>
+                  <span className="text-foreground" style={{ fontSize: "22px", fontWeight: 500 }}>{socialData.summary.totalFailed}</span>
+                </div>
+              </div>
+
+              {/* Per-platform breakdown */}
+              {Object.keys(socialData.summary.platforms || {}).length > 0 && (
+                <div className="mb-6">
+                  <span className="text-muted-foreground uppercase tracking-wider block mb-3" style={{ fontSize: "10px", fontWeight: 600, letterSpacing: "0.08em" }}>By Platform</span>
+                  <div className="space-y-2.5">
+                    {Object.entries(socialData.summary.platforms).map(([platform, data]: [string, any]) => (
+                      <div key={platform} className="flex items-center gap-3 p-2.5 rounded-lg border border-border">
+                        <span className="text-foreground w-24 flex-shrink-0" style={{ fontSize: "13px", fontWeight: 500 }}>{platform}</span>
+                        <div className="flex items-center gap-4 flex-1">
+                          <span className="flex items-center gap-1" style={{ fontSize: "12px", color: "#16a34a" }}>
+                            <Send size={10} /> {data.deployed}
+                          </span>
+                          <span className="flex items-center gap-1" style={{ fontSize: "12px", color: "var(--ora-signal)" }}>
+                            <Clock size={10} /> {data.scheduled}
+                          </span>
+                          {data.impressions > 0 && (
+                            <span className="flex items-center gap-1 text-muted-foreground" style={{ fontSize: "12px" }}>
+                              <Eye size={10} /> {data.impressions.toLocaleString()}
+                            </span>
+                          )}
+                          {data.engagements > 0 && (
+                            <span className="flex items-center gap-1 text-muted-foreground" style={{ fontSize: "12px" }}>
+                              <MessageSquare size={10} /> {data.engagements.toLocaleString()}
+                            </span>
+                          )}
+                          {data.clicks > 0 && (
+                            <span className="flex items-center gap-1 text-muted-foreground" style={{ fontSize: "12px" }}>
+                              <MousePointer size={10} /> {data.clicks.toLocaleString()}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Recent posts */}
+              {socialData.posts?.length > 0 && (
+                <div>
+                  <span className="text-muted-foreground uppercase tracking-wider block mb-3" style={{ fontSize: "10px", fontWeight: 600, letterSpacing: "0.08em" }}>Recent Posts</span>
+                  <div className="space-y-2">
+                    {socialData.posts.slice(0, 8).map((post: any) => (
+                      <div key={post.id} className="flex items-center justify-between py-2 border-b border-border/50">
+                        <div className="flex items-center gap-2">
+                          <span className="text-foreground" style={{ fontSize: "13px" }}>{post.platform}</span>
+                          <span className="px-1.5 py-0.5 rounded" style={{
+                            fontSize: "10px", fontWeight: 600,
+                            background: post.status === "published" ? "rgba(22,163,74,0.08)" : post.status === "scheduled" ? "var(--ora-signal-light)" : "rgba(212,24,61,0.08)",
+                            color: post.status === "published" ? "#16a34a" : post.status === "scheduled" ? "var(--ora-signal)" : "#d4183d",
+                          }}>{post.status}</span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          {post.metrics && (
+                            <div className="flex items-center gap-2">
+                              {post.metrics.impressions > 0 && <span className="text-muted-foreground" style={{ fontSize: "11px" }}>{post.metrics.impressions} views</span>}
+                              {post.metrics.engagements > 0 && <span className="text-muted-foreground" style={{ fontSize: "11px" }}>{post.metrics.engagements} eng.</span>}
+                            </div>
+                          )}
+                          <span className="text-muted-foreground" style={{ fontSize: "11px" }}>{post.createdAt?.slice(0, 10)}</span>
+                          {post.zernioPostUrl && (
+                            <a href={post.zernioPostUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
+                              <ExternalLink size={11} />
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </>
+          ) : (
+            <div className="text-center py-10">
+              <Send size={22} className="mx-auto mb-3 text-muted-foreground/20" />
+              <p className="text-muted-foreground" style={{ fontSize: "13px" }}>No social deployments yet.</p>
+              <p className="text-muted-foreground/60 mt-1" style={{ fontSize: "12px" }}>Deploy content from Campaign Lab or Calendar to see platform metrics.</p>
+            </div>
+          )}
+        </motion.div>
+
+        {/* Post-Level Performance Metrics from Zernio */}
+        {postMetrics && postMetrics.posts?.length > 0 && (
+          <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.32 }}
+            className="bg-card border border-border rounded-xl p-6 mb-10">
+            <h3 className="text-foreground mb-2" style={{ fontSize: "16px", fontWeight: 500 }}>Post Performance</h3>
+            <p className="text-muted-foreground mb-5" style={{ fontSize: "13px" }}>Engagement metrics fetched from your connected social platforms via Zernio.</p>
+
+            {/* Totals KPIs */}
+            {postMetrics.totals && (postMetrics.totals.likes > 0 || postMetrics.totals.impressions > 0 || postMetrics.totals.comments > 0) && (
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3 mb-6">
+                {[
+                  { label: "Impressions", value: postMetrics.totals.impressions, icon: Eye },
+                  { label: "Likes", value: postMetrics.totals.likes, icon: Heart },
+                  { label: "Comments", value: postMetrics.totals.comments, icon: MessageSquare },
+                  { label: "Shares", value: postMetrics.totals.shares, icon: Share2 },
+                  { label: "Clicks", value: postMetrics.totals.clicks, icon: MousePointer },
+                  { label: "Saves", value: postMetrics.totals.saves, icon: Bookmark },
+                  { label: "Reach", value: postMetrics.totals.reach, icon: TrendingUp },
+                ].filter(m => m.value > 0).map((m) => {
+                  const Icon = m.icon;
+                  return (
+                    <div key={m.label} className="p-3 rounded-lg border border-border">
+                      <div className="flex items-center gap-1.5 mb-1">
+                        <Icon size={11} className="text-ora-signal" />
+                        <span className="text-muted-foreground" style={{ fontSize: "10px", fontWeight: 500 }}>{m.label}</span>
+                      </div>
+                      <span className="text-foreground" style={{ fontSize: "20px", fontWeight: 500 }}>{m.value.toLocaleString()}</span>
+                    </div>
+                  );
+                })}
+                {postMetrics.totals.engagementRate && (
+                  <div className="p-3 rounded-lg border border-ora-signal/20" style={{ background: "var(--ora-signal-light)" }}>
+                    <div className="flex items-center gap-1.5 mb-1">
+                      <ThumbsUp size={11} className="text-ora-signal" />
+                      <span className="text-muted-foreground" style={{ fontSize: "10px", fontWeight: 500 }}>Eng. Rate</span>
+                    </div>
+                    <span className="text-ora-signal" style={{ fontSize: "20px", fontWeight: 600 }}>{postMetrics.totals.engagementRate}</span>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Per-platform metrics */}
+            {postMetrics.byPlatform && Object.keys(postMetrics.byPlatform).length > 0 && (
+              <div className="mb-6">
+                <span className="text-muted-foreground uppercase tracking-wider block mb-3" style={{ fontSize: "10px", fontWeight: 600, letterSpacing: "0.08em" }}>Platform Breakdown</span>
+                <div className="overflow-x-auto">
+                  <table className="w-full">
+                    <thead>
+                      <tr className="border-b border-border">
+                        <th className="text-left py-2 text-muted-foreground" style={{ fontSize: "11px", fontWeight: 500 }}>Platform</th>
+                        <th className="text-right py-2 text-muted-foreground" style={{ fontSize: "11px", fontWeight: 500 }}>Posts</th>
+                        <th className="text-right py-2 text-muted-foreground" style={{ fontSize: "11px", fontWeight: 500 }}><Eye size={10} className="inline" /> Views</th>
+                        <th className="text-right py-2 text-muted-foreground" style={{ fontSize: "11px", fontWeight: 500 }}><Heart size={10} className="inline" /> Likes</th>
+                        <th className="text-right py-2 text-muted-foreground" style={{ fontSize: "11px", fontWeight: 500 }}><MessageSquare size={10} className="inline" /> Comments</th>
+                        <th className="text-right py-2 text-muted-foreground" style={{ fontSize: "11px", fontWeight: 500 }}><Share2 size={10} className="inline" /> Shares</th>
+                        <th className="text-right py-2 text-muted-foreground" style={{ fontSize: "11px", fontWeight: 500 }}><MousePointer size={10} className="inline" /> Clicks</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {Object.entries(postMetrics.byPlatform).map(([plat, data]: [string, any]) => (
+                        <tr key={plat} className="border-b border-border/50">
+                          <td className="py-2.5 text-foreground" style={{ fontSize: "13px", fontWeight: 500 }}>{plat}</td>
+                          <td className="py-2.5 text-right text-foreground" style={{ fontSize: "13px" }}>{data.count}</td>
+                          <td className="py-2.5 text-right text-muted-foreground" style={{ fontSize: "13px" }}>{data.impressions > 0 ? data.impressions.toLocaleString() : "--"}</td>
+                          <td className="py-2.5 text-right text-muted-foreground" style={{ fontSize: "13px" }}>{data.likes > 0 ? data.likes.toLocaleString() : "--"}</td>
+                          <td className="py-2.5 text-right text-muted-foreground" style={{ fontSize: "13px" }}>{data.comments > 0 ? data.comments.toLocaleString() : "--"}</td>
+                          <td className="py-2.5 text-right text-muted-foreground" style={{ fontSize: "13px" }}>{data.shares > 0 ? data.shares.toLocaleString() : "--"}</td>
+                          <td className="py-2.5 text-right text-muted-foreground" style={{ fontSize: "13px" }}>{data.clicks > 0 ? data.clicks.toLocaleString() : "--"}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {/* Individual post metrics */}
+            <div>
+              <span className="text-muted-foreground uppercase tracking-wider block mb-3" style={{ fontSize: "10px", fontWeight: 600, letterSpacing: "0.08em" }}>Individual Posts</span>
+              <div className="space-y-2">
+                {postMetrics.posts.slice(0, 15).map((post: any, idx: number) => {
+                  const m = post.metrics || {};
+                  const hasMetrics = m.likes || m.comments || m.shares || m.impressions;
+                  return (
+                    <div key={post.deployId || idx} className="flex items-center justify-between py-2.5 border-b border-border/50">
+                      <div className="flex items-center gap-2 flex-1 min-w-0">
+                        <span className="text-foreground flex-shrink-0" style={{ fontSize: "12px", fontWeight: 500 }}>{post.platform}</span>
+                        <span className="px-1.5 py-0.5 rounded flex-shrink-0" style={{
+                          fontSize: "9px", fontWeight: 600,
+                          background: post.status === "published" ? "rgba(22,163,74,0.08)" : "var(--ora-signal-light)",
+                          color: post.status === "published" ? "#16a34a" : "var(--ora-signal)",
+                        }}>{post.status}</span>
+                        {post.content && (
+                          <span className="text-muted-foreground truncate" style={{ fontSize: "11px" }}>{post.content}</span>
+                        )}
+                      </div>
+                      <div className="flex items-center gap-3 flex-shrink-0 ml-3">
+                        {hasMetrics ? (
+                          <>
+                            {m.impressions > 0 && <span className="flex items-center gap-0.5 text-muted-foreground" style={{ fontSize: "11px" }}><Eye size={9} /> {m.impressions.toLocaleString()}</span>}
+                            {m.likes > 0 && <span className="flex items-center gap-0.5 text-muted-foreground" style={{ fontSize: "11px" }}><Heart size={9} /> {m.likes}</span>}
+                            {m.comments > 0 && <span className="flex items-center gap-0.5 text-muted-foreground" style={{ fontSize: "11px" }}><MessageSquare size={9} /> {m.comments}</span>}
+                            {m.shares > 0 && <span className="flex items-center gap-0.5 text-muted-foreground" style={{ fontSize: "11px" }}><Share2 size={9} /> {m.shares}</span>}
+                            {m.clicks > 0 && <span className="flex items-center gap-0.5 text-muted-foreground" style={{ fontSize: "11px" }}><MousePointer size={9} /> {m.clicks}</span>}
+                            {m.saves > 0 && <span className="flex items-center gap-0.5 text-muted-foreground" style={{ fontSize: "11px" }}><Bookmark size={9} /> {m.saves}</span>}
+                          </>
+                        ) : (
+                          <span className="text-muted-foreground/50" style={{ fontSize: "10px" }}>
+                            {post._hasAnalytics === false ? "No analytics available yet" : "Pending..."}
+                          </span>
+                        )}
+                        <span className="text-muted-foreground" style={{ fontSize: "10px" }}>{(post.publishedAt || post.scheduledAt || "")?.slice(0, 10)}</span>
+                        {post.zernioPostUrl && (
+                          <a href={post.zernioPostUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground"><ExternalLink size={10} /></a>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </motion.div>
+        )}
+
         {/* Recent campaigns table */}
         <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
           className="bg-card border border-border rounded-xl p-6">
@@ -265,7 +558,7 @@ export function AnalyticsPage() {
           ) : (
             <div className="text-center py-10">
               <p className="text-muted-foreground" style={{ fontSize: "13px" }}>No campaign data yet.</p>
-              <Link to="/studio/campaigns" className="inline-flex items-center gap-1 mt-2 text-ora-signal" style={{ fontSize: "13px", fontWeight: 500 }}>
+              <Link to="/hub" className="inline-flex items-center gap-1 mt-2 text-ora-signal" style={{ fontSize: "13px", fontWeight: 500 }}>
                 Create your first campaign <TrendingUp size={12} />
               </Link>
             </div>

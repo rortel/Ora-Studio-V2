@@ -3,100 +3,76 @@ import { motion, AnimatePresence } from "motion/react";
 import { Plus, Minus } from "lucide-react";
 
 const faqs = [
-  {
-    q: "What makes ORA different from ChatGPT or Claude directly?",
-    a: "When you use ChatGPT, you only get GPT. When you use Claude, you only get Claude. ORA gives you every major model in one place — plus Arena to compare outputs, and Studio with Brand Vault when you need brand control. One account replaces multiple subscriptions.",
-  },
-  {
-    q: "Can I use ORA without Brand Vault?",
-    a: "Absolutely. The Free and Generate plans give you full access to all AI models and the Arena comparator. Brand Vault is a Studio feature — use it when you need brand consistency, skip it when you don't.",
-  },
-  {
-    q: "How does Arena work?",
-    a: "Write one prompt. Arena sends it to 2-4 models in parallel. You see all results side by side, pick the best, mix parts from different outputs, or refine. Text Arena costs 3-5 credits depending on the number of models.",
-  },
-  {
-    q: "What happens when I run out of credits?",
-    a: "You can buy credit packs anytime — they never expire. Unused monthly credits from Studio roll over indefinitely. No generation is lost, no data is deleted.",
-  },
-  {
-    q: "What does one credit get you?",
-    a: "Text (1 model): 1 credit. Arena comparison (3 models): 3 credits. Image: 4 credits. Audio: 4 credits. Code: 2 credits. Video (~10s): 100 credits. Simple, transparent.",
-  },
-  {
-    q: "Do unused monthly credits roll over?",
-    a: "Yes, always. Monthly credits and purchased credit packs roll over indefinitely. Nothing expires.",
-  },
-  {
-    q: "Can I switch plans?",
-    a: "Yes, upgrade or downgrade anytime. Changes take effect at the start of your next billing cycle. Your credits and Brand Vault data are always preserved.",
-  },
-  {
-    q: "Is my content private?",
-    a: "Yes. We don't train on your data. Content is processed in isolated environments. Full GDPR compliance. Enterprise offers dedicated infrastructure and SSO.",
-  },
+  { q: "What makes ORA different from ChatGPT or Midjourney?", a: "With ChatGPT you only get GPT. With Midjourney you only get Midjourney. ORA gives you 38+ models in one studio. Plus Arena to compare outputs side by side, Campaign Lab for multi-platform generation, and Brand Vault for automatic compliance." },
+  { q: "Which AI models are supported?", a: "GPT-5, GPT-4o, Claude 4.5, Gemini 2.5, DeepSeek V3, Mistral, Flux Pro 2, DALL-E 3, Photon 1, Leonardo AI, Luma Ray 2, Sora 2, Kling 2.1, Veo 3.1, Seedream V4, and many more. New models added monthly." },
+  { q: "How does Campaign Lab work?", a: "Write a brief. Choose your platforms. Campaign Lab generates images, videos, and copy adapted for each platform - all at once." },
+  { q: "What does one credit get?", a: "Text: 1 credit. Image: 4 credits. Audio: 4 credits. Code: 2 credits. Video (~10s): 100 credits. Credits never expire." },
+  { q: "Do unused credits roll over?", a: "Yes, always. Monthly credits and purchased packs roll over indefinitely." },
+  { q: "Is my content private?", a: "Yes. We don't train on your data. Full GDPR compliance." },
 ];
 
 export function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-20 md:py-28">
+    <section id="faq" className="py-20 md:py-28" style={{ background: "#1a1918" }}>
       <div className="max-w-[720px] mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-12"
+          className="mb-10"
         >
-          <span
-            className="inline-block mb-4 px-3 py-1 rounded-full"
+          <h2
             style={{
-              fontSize: "10px",
-              fontWeight: 600,
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              color: "var(--ora-signal)",
-              background: "var(--ora-signal-light)",
-              border: "1px solid rgba(59,79,196,0.1)",
+              fontSize: "clamp(1.75rem, 3.5vw, 2.5rem)",
+              fontWeight: 500,
+              lineHeight: 1.1,
+              letterSpacing: "-0.03em",
+              color: "#E8E4DF",
             }}
           >
             FAQ
-          </span>
-          <h2
-            className="text-foreground mb-4"
-            style={{
-              fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)',
-              fontWeight: 500,
-              letterSpacing: '-0.03em',
-              lineHeight: 1.15,
-            }}
-          >
-            Frequently asked questions
           </h2>
         </motion.div>
 
         <div>
-          {faqs.map((faq, i) => {
-            const isOpen = openIndex === i;
+          {faqs.map((f, i) => {
+            const isOpen = open === i;
             return (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 8 }}
+                style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}
+                initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.04 }}
-                className="border-b border-border"
               >
                 <button
-                  onClick={() => setOpenIndex(isOpen ? null : i)}
-                  className="w-full flex items-center justify-between py-5 text-left group cursor-pointer"
+                  onClick={() => setOpen(isOpen ? null : i)}
+                  className="w-full flex items-center justify-between py-5 text-left cursor-pointer"
                 >
-                  <span className="text-foreground pr-4" style={{ fontSize: '15px', fontWeight: 450 }}>
-                    {faq.q}
+                  <span
+                    style={{
+                      fontSize: "15px",
+                      fontWeight: 500,
+                      color: "#E8E4DF",
+                      paddingRight: "1rem",
+                    }}
+                  >
+                    {f.q}
                   </span>
-                  <span className="text-muted-foreground flex-shrink-0 group-hover:text-foreground transition-colors">
-                    {isOpen ? <Minus size={16} /> : <Plus size={16} />}
+                  <span
+                    className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center"
+                    style={{
+                      background: isOpen ? "rgba(255,255,255,0.10)" : "rgba(255,255,255,0.04)",
+                    }}
+                  >
+                    {isOpen ? (
+                      <Minus size={12} style={{ color: "#E8E4DF" }} />
+                    ) : (
+                      <Plus size={12} style={{ color: "#5C5856" }} />
+                    )}
                   </span>
                 </button>
                 <AnimatePresence initial={false}>
@@ -108,8 +84,11 @@ export function FAQ() {
                       transition={{ duration: 0.25, ease: "easeInOut" }}
                       className="overflow-hidden"
                     >
-                      <p className="pb-5 text-muted-foreground" style={{ fontSize: '14px', lineHeight: 1.65 }}>
-                        {faq.a}
+                      <p
+                        className="pb-5"
+                        style={{ fontSize: "14px", lineHeight: 1.65, color: "#9A9590" }}
+                      >
+                        {f.a}
                       </p>
                     </motion.div>
                   )}

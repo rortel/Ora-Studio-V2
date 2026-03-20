@@ -2,282 +2,318 @@ import { motion } from "motion/react";
 import { Link } from "react-router";
 import {
   ArrowRight,
-  Zap,
-  GitCompare,
   Shield,
-  Type,
-  Image,
-  Code,
-  Music,
+  Brain,
+  Paintbrush,
+  PenTool,
+  Camera,
   Video,
-  Check,
+  Target,
+  BarChart3,
   Layers,
+  Zap,
+  CheckCircle2,
+  ChevronRight,
+  Users,
+  Search,
+  Hash,
+  Share2,
+  Repeat,
 } from "lucide-react";
-import { ArenaDemo } from "../components/ArenaDemo";
+import { PulseMotif } from "../components/PulseMotif";
 
-/* ── Supported AI Models ── */
-const modelCategories = [
+/* ── Agent Data (from real codebase) ── */
+
+interface AgentDef {
+  name: string;
+  displayName: string;
+  role: string;
+  layer: "intelligence" | "creation" | "compliance" | "orchestration" | "optimization";
+  color: string;
+  expertise: string[];
+  description: string;
+  signature: string; // one-line quote that captures the agent's philosophy
+}
+
+const agents: AgentDef[] = [
   {
-    id: "text",
-    name: "Text & Reasoning",
-    icon: Type,
-    description: "Generate, analyze, and refine text with the world's leading language models.",
-    models: [
-      { name: "GPT-5", provider: "OpenAI", color: "#10a37f", capabilities: ["Text", "Reasoning", "Multimodal"] },
-      { name: "GPT-5.2", provider: "OpenAI", color: "#10a37f", capabilities: ["Text", "Vision", "Advanced"] },
-      { name: "GPT-4o", provider: "OpenAI", color: "#10a37f", capabilities: ["Text", "Vision", "Fast"] },
-      { name: "Claude Sonnet 4", provider: "Anthropic", color: "#d4a27f", capabilities: ["Text", "Analysis", "Code"] },
-      { name: "Claude Opus 4", provider: "Anthropic", color: "#d4a27f", capabilities: ["Deep reasoning", "Research"] },
-      { name: "Claude Haiku 4", provider: "Anthropic", color: "#d4a27f", capabilities: ["Fast", "Efficient", "Code"] },
-      { name: "Gemini 3", provider: "Google", color: "#4285f4", capabilities: ["Text", "Multimodal", "Reasoning"] },
-      { name: "Gemini 2.5 Flash", provider: "Google", color: "#4285f4", capabilities: ["Text", "Vision", "Fast"] },
-    ],
+    name: "brand-analyst",
+    displayName: "Brand Analyst",
+    role: "Builds and maintains the Brand Vault",
+    layer: "intelligence",
+    color: "#8B5CF6",
+    expertise: ["Brand audit", "Competitive analysis", "Identity mapping", "Tone analysis", "Visual extraction"],
+    description: "15 years at Wolff Olins, Pentagram, Landor. Deconstructs brands to DNA level. Extracts exact hex colors, exact font names, exact recurring phrases. Scores confidence 0-100 based on data depth.",
+    signature: "If data is missing, I leave it empty. I never fabricate.",
   },
   {
-    id: "image",
-    name: "Image Generation",
-    icon: Image,
-    description: "Create visuals from text prompts. Compare styles across generators instantly.",
-    models: [
-      { name: "Nano Banana", provider: "Google", color: "#4285f4", capabilities: ["Text-to-image", "Image-to-image"] },
-      { name: "Seedream V4.5", provider: "ByteDance", color: "#00d1b2", capabilities: ["Text-to-image", "Image-to-image"] },
-      { name: "Seedream 5.0 Lite", provider: "ByteDance", color: "#00d1b2", capabilities: ["Text-to-image", "Fast"] },
-      { name: "DALL-E 3", provider: "OpenAI", color: "#10a37f", capabilities: ["Text-to-image", "Editing"] },
-      { name: "Flux Pro", provider: "Black Forest Labs", color: "#059669", capabilities: ["Text-to-image", "Photorealistic"] },
-    ],
+    name: "strategic-planner",
+    displayName: "Strategic Planner",
+    role: "Content strategy aligned to business objectives",
+    layer: "intelligence",
+    color: "#EC4899",
+    expertise: ["Strategic planning", "Trend analysis", "Editorial calendar", "Competitive intelligence"],
+    description: "Ex BBDO strategy, Ogilvy consulting, McKinsey marketing practice. Designs content strategies using the Content Pyramid (10% thought leadership, 30% expertise, 60% presence) and Objective Matrix (awareness, authority, trust, conversion).",
+    signature: "Every piece of content must trace back to a reason it exists.",
   },
   {
-    id: "code",
-    name: "Code Generation",
-    icon: Code,
-    description: "Write, debug, and refactor code across every major language and framework.",
-    models: [
-      { name: "GPT-4o", provider: "OpenAI", color: "#10a37f", capabilities: ["Full-stack", "Debugging"] },
-      { name: "Claude Sonnet 4", provider: "Anthropic", color: "#d4a27f", capabilities: ["Full-stack", "Analysis"] },
-      { name: "Gemini 2.5 Flash", provider: "Google", color: "#4285f4", capabilities: ["Code", "Fast"] },
-    ],
+    name: "audience-analyst",
+    displayName: "Audience Analyst",
+    role: "Deep audience intelligence and engagement patterns",
+    layer: "intelligence",
+    color: "#06B6D4",
+    expertise: ["Audience research", "Persona development", "Behavioral analysis"],
+    description: "Ex Nielsen, Kantar. Goes beyond demographics into psychographics -- motivation, behavior, emotional triggers. Identifies content formats that drive engagement for each audience type and flags messaging-audience mismatches.",
+    signature: "Focus on motivation, behavior, emotional triggers. Demographics are just the start.",
   },
   {
-    id: "audio-video",
-    name: "Audio & Video",
-    icon: Video,
-    description: "Generate music, voiceovers, and video content from text descriptions.",
-    models: [
-      { name: "Veo 3.1", provider: "Google", color: "#4285f4", capabilities: ["Text-to-video", "HD", "Motion"] },
-      { name: "Sora 2", provider: "OpenAI", color: "#10a37f", capabilities: ["Text-to-video", "Cinematic"] },
-      { name: "Seedance 2.0", provider: "ByteDance", color: "#00d1b2", capabilities: ["Text-to-video", "Image-to-video"] },
-      { name: "Seedance 1.5 Pro", provider: "ByteDance", color: "#00d1b2", capabilities: ["Text-to-video", "Audio"] },
-      { name: "Suno v4", provider: "Suno", color: "#ef4444", capabilities: ["Text-to-music", "Vocals"] },
-      { name: "ElevenLabs", provider: "ElevenLabs", color: "#1a1a2e", capabilities: ["Text-to-speech", "Voice clone"] },
-    ],
+    name: "creative-director",
+    displayName: "Creative Director",
+    role: "Defines creative direction, supervises all creative output",
+    layer: "creation",
+    color: "#F97316",
+    expertise: ["Creative direction", "Concept development", "Campaign architecture", "Brand storytelling"],
+    description: "20 years at Wieden+Kennedy, Droga5, 72andSunny. Cannes Lions Grand Prix winner. Thinks in concepts, not executions. Always proposes 3 creative routes with tension analysis. Kills any idea a competitor could use.",
+    signature: "The best ideas feel like they could only exist for one brand.",
+  },
+  {
+    name: "copywriter",
+    displayName: "Copywriter",
+    role: "Writes all text content in the brand voice",
+    layer: "creation",
+    color: "#22C55E",
+    expertise: ["Copywriting", "Brand voice", "Storytelling", "Headlines", "CTAs", "Hooks"],
+    description: "15 years at Publicis, BETC, Wieden+Kennedy. Respects vault tone scores to the decimal -- formality, warmth, boldness, technicality, humor. Platform-native rules for LinkedIn, Instagram, Twitter, Email, Blog, Video.",
+    signature: "If a competitor could use this exact text, I rewrite.",
+  },
+  {
+    name: "art-director",
+    displayName: "Art Director",
+    role: "Visual direction and image generation within brand codes",
+    layer: "creation",
+    color: "#EAB308",
+    expertise: ["Art direction", "Visual storytelling", "Imagen 3", "Moodboards"],
+    description: "Ex Mother, Marcel, Sid Lee. Provides visual direction AND generates key visuals via Imagen 3. Never suggests colors outside the palette. Max 3 visuals per direction with typography treatment and layout direction.",
+    signature: "If it looks stock-photo-generic, I reject it.",
+  },
+  {
+    name: "photographer",
+    displayName: "Photographer",
+    role: "AI image generation within brand visual codes",
+    layer: "creation",
+    color: "#3B82F6",
+    expertise: ["AI image generation", "Photo direction", "Platform adaptation", "Imagen 3"],
+    description: "Expert in AI image generation prompt engineering. Weaves brand colors into lighting, includes vault mood keywords, excludes vault avoid keywords. Generates via Imagen 3 with automatic Supabase Storage upload.",
+    signature: "Specific beats generic. Camera angle, lighting, subject, action, colors.",
+  },
+  {
+    name: "video-maker",
+    displayName: "Video Maker",
+    role: "Video scripts + AI video/thumbnail generation",
+    layer: "creation",
+    color: "#EF4444",
+    expertise: ["Video scripting", "Storyboarding", "Short-form", "Veo 2", "AI video"],
+    description: "Ex Brut, Konbini, TikTok-first brands. Creates complete video briefs with hook/body/CTA timestamps, AI-ready prompts for Veo 2, and thumbnail generation. Each script includes short/medium/long versions.",
+    signature: "80% watch without sound. Captions are not optional.",
+  },
+  {
+    name: "seo-strategist",
+    displayName: "SEO Strategist",
+    role: "Search optimization preserving brand voice",
+    layer: "optimization",
+    color: "#22C55E",
+    expertise: ["SEO", "Keyword strategy", "Content gaps", "Search intent"],
+    description: "Ex Moz, Semrush. Optimizes for search WITHOUT killing brand voice. Outputs title tags, meta descriptions, H-structure, primary/secondary/semantic keywords, and content gaps vs competitors. Intent over volume.",
+    signature: "Keywords natural. Brand voice sacred. Search intent over volume.",
+  },
+  {
+    name: "social-optimizer",
+    displayName: "Social Optimizer",
+    role: "Platform-specific content adaptation",
+    layer: "optimization",
+    color: "#06B6D4",
+    expertise: ["Social media", "Platform algorithms", "Content adaptation"],
+    description: "Ex We Are Social, VaynerMedia. Same message, different expression. Adapts formality per platform (LinkedIn +1, Instagram -1, TikTok -2), respects character limits, hashtag counts, and platform-native conventions.",
+    signature: "Same message, different expression. Never copy-paste across platforms.",
+  },
+  {
+    name: "hashtag-specialist",
+    displayName: "Hashtag & Timing",
+    role: "Strategic hashtags and optimal publishing times",
+    layer: "optimization",
+    color: "#F97316",
+    expertise: ["Hashtag strategy", "Trend detection", "Publishing timing"],
+    description: "Generates 4-tier hashtag sets: brand-owned (1-2), niche-sector (5-10), trending-timely (2-3), and community-used (2-3). Per-platform counts (LinkedIn 3-5, Instagram 20-30, X 1-2). Optimal posting windows per platform.",
+    signature: "Relevance over reach. Platform-specific counts, not blanket hashtags.",
+  },
+  {
+    name: "campaign-multiplier",
+    displayName: "Campaign Multiplier",
+    role: "One content piece into full multi-channel campaign",
+    layer: "optimization",
+    color: "#EC4899",
+    expertise: ["Content repurposing", "Multi-channel", "Format adaptation", "Shockwave"],
+    description: "Creates a SHOCKWAVE from one piece: 1 newsletter, 5 LinkedIn posts (different angles), 3 Instagram formats (carousel/single/story), 3 tweets, 1 video script, 1 blog outline. Each piece stands alone. Each piece is brand-compliant.",
+    signature: "From 1 input, produce everything. Each piece stands alone.",
+  },
+  {
+    name: "compliance-guard",
+    displayName: "Compliance Guard",
+    role: "Validates ALL output -- nothing ships below 90/100",
+    layer: "compliance",
+    color: "#6D9B7E",
+    expertise: ["Brand compliance", "Quality assurance", "Tone validation", "Auto-fix"],
+    description: "The last checkpoint before content goes live. Scores on a 100-point rubric: Tone (30), Vocabulary (25), Structure (20), Brand (15), Platform (10). Auto-fixes below 90. Banned words = instant -5 penalty. Mathematically verifiable scores.",
+    signature: "The same content scored twice must get the same score, plus or minus 2 points.",
   },
 ];
 
-/* ── Key Capabilities ── */
-const capabilities = [
+const layers = [
   {
-    icon: GitCompare,
-    title: "Arena",
-    subtitle: "Side-by-side comparison",
-    description: "Send the same prompt to multiple models simultaneously. Compare outputs, pick the best, refine. No more switching between tabs and subscriptions.",
+    id: "intelligence",
+    name: "Intelligence",
+    subtitle: "Understand the brand DNA, map the audience, plan the strategy",
+    color: "#8B5CF6",
+    icon: Brain,
   },
   {
+    id: "creation",
+    name: "Creation",
+    subtitle: "Write, design, shoot, film -- every asset vault-calibrated",
+    color: "#F97316",
+    icon: Paintbrush,
+  },
+  {
+    id: "optimization",
+    name: "Optimization",
+    subtitle: "Adapt to platforms, optimize for search, multiply to every channel",
+    color: "#06B6D4",
+    icon: Repeat,
+  },
+  {
+    id: "compliance",
+    name: "Compliance",
+    subtitle: "Score, validate, auto-fix -- nothing ships below 90/100",
+    color: "#6D9B7E",
     icon: Shield,
-    title: "Brand Vault",
-    subtitle: "Studio plan",
-    description: "Upload your brand guidelines once. Every AI output is automatically checked against your tone, vocabulary, colors, and personas before you see it.",
-  },
-  {
-    icon: Layers,
-    title: "Canvas",
-    subtitle: "Studio plan",
-    description: "Compose publish-ready visuals with a Canva-like editor. AI-generated content lands directly on your canvas. Export in any ratio.",
-  },
-  {
-    icon: Zap,
-    title: "Flows",
-    subtitle: "Coming soon",
-    description: "Chain multiple AI steps into automated workflows. Brief to multi-channel campaign in one click. Repeatable, brand-safe pipelines.",
   },
 ];
+
+/* ── Orchestrator routing signals (simplified for display) ── */
+const routingExamples = [
+  { message: "Make this more casual and warm", agent: "Copywriter", confidence: 85 },
+  { message: "Try a completely different creative direction", agent: "Creative Director", confidence: 90 },
+  { message: "Generate a hero image for the campaign", agent: "Photographer", confidence: 95 },
+  { message: "Create a 15s reel script for Instagram", agent: "Video Maker", confidence: 95 },
+  { message: "Is this post on-brand?", agent: "Compliance Guard", confidence: 90 },
+  { message: "Cascade this to every platform", agent: "Campaign Multiplier", confidence: 95 },
+  { message: "What should we post this week?", agent: "Strategic Planner", confidence: 85 },
+  { message: "Adapt this for LinkedIn", agent: "Social Optimizer", confidence: 85 },
+  { message: "Optimize this blog post for SEO", agent: "SEO Strategist", confidence: 95 },
+  { message: "Who is our target audience really?", agent: "Audience Analyst", confidence: 85 },
+  { message: "Best hashtags and posting time?", agent: "Hashtag & Timing", confidence: 90 },
+];
+
+/* ── Compliance rubric ── */
+const rubricItems = [
+  { category: "Tone Alignment", points: 30, desc: "Formality, warmth, boldness, technicality, humor -- each measured against vault targets" },
+  { category: "Vocabulary", points: 25, desc: "Zero banned words, power words present, no AI cliches, jargon used correctly" },
+  { category: "Structure & Craft", points: 20, desc: "Sentence length, headline style, CTA style, hook quality" },
+  { category: "Brand Alignment", points: 15, desc: "Values match, audience fit, positioning consistency" },
+  { category: "Platform Fit", points: 10, desc: "Correct length, platform best practices, format rules" },
+];
+
+/* ── Component ── */
+
+const agentIcons: Record<string, any> = {
+  "brand-analyst": Brain,
+  "strategic-planner": Target,
+  "audience-analyst": Users,
+  "creative-director": Layers,
+  copywriter: PenTool,
+  "art-director": Paintbrush,
+  photographer: Camera,
+  "video-maker": Video,
+  "seo-strategist": Search,
+  "social-optimizer": Share2,
+  "hashtag-specialist": Hash,
+  "campaign-multiplier": Repeat,
+  "compliance-guard": Shield,
+};
 
 export function AgentsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-16 pb-12 md:pt-24 md:pb-16">
-        <div className="max-w-[1200px] mx-auto px-6">
+      <section className="pt-16 pb-12 md:pt-24 md:pb-16 relative overflow-hidden">
+        <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/4 opacity-[0.04] pointer-events-none">
+          <PulseMotif size={800} rings={8} animate={false} />
+        </div>
+        <div className="max-w-[1200px] mx-auto px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            className="max-w-[640px]"
+            className="max-w-[680px]"
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-card mb-8">
               <span className="w-1.5 h-1.5 rounded-full bg-ora-signal" />
-              <span style={{ fontSize: '14px', fontWeight: 400 }}>One account. Every AI model.</span>
+              <span style={{ fontSize: "14px", fontWeight: 400 }}>
+                13 specialized agents. One orchestrator.
+              </span>
             </div>
             <h1
               className="mb-5"
               style={{
-                fontSize: 'clamp(2rem, 4.5vw, 3.25rem)',
-                fontWeight: 500,
-                letterSpacing: '-0.035em',
+                fontSize: "clamp(2rem, 4.5vw, 3.25rem)",
+                fontWeight: 800,
+                letterSpacing: "-0.035em",
                 lineHeight: 1.1,
+                color: "#FFFFFF",
               }}
             >
-              Every model.
+              Brand Vault in.
               <br />
-              <span className="text-muted-foreground">One interface.</span>
+              <span className="text-muted-foreground">Compliant assets out.</span>
             </h1>
             <p
               className="text-muted-foreground mb-4"
-              style={{ fontSize: '17px', lineHeight: 1.55 }}
+              style={{ fontSize: "17px", lineHeight: 1.55 }}
             >
-              GPT-5, Claude Opus 4, Gemini 3, Nano Banana, Seedream, Veo 3.1, Sora 2, Seedance — all accessible from a single account. Compare outputs side-by-side. Pick the best. Ship it.
+              Every asset passes through a pipeline of specialized AI agents -- each with a distinct expertise, a vault-calibrated system prompt, and a compliance score they must beat. Nothing ships below 90/100.
             </p>
             <p
               className="text-muted-foreground/60 mb-8"
-              style={{ fontSize: '14px', lineHeight: 1.55 }}
+              style={{ fontSize: "14px", lineHeight: 1.55 }}
             >
-              No more managing 4 subscriptions. Pay only for what you use.
+              The orchestrator routes your message to the right agent automatically. You just talk.
             </p>
             <div className="flex items-center gap-3">
               <Link
                 to="/login?mode=signup"
-                className="inline-flex items-center gap-2 text-white px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
+                className="inline-flex items-center gap-2 text-white px-6 py-3 rounded-full hover:opacity-90 transition-opacity"
                 style={{
-                  background: 'linear-gradient(135deg, var(--ora-signal) 0%, #2a3ba8 100%)',
-                  fontSize: '15px',
-                  fontWeight: 500,
-                  boxShadow: '0 2px 12px rgba(59,79,196,0.3)',
+                  background: "var(--ora-signal)",
+                  fontSize: "15px",
+                  fontWeight: 600,
                 }}
               >
-                Try for free
+                Try Studio
                 <ArrowRight size={16} />
               </Link>
-              <Link
-                to="/pricing"
-                className="inline-flex items-center gap-2 border border-border-strong text-foreground px-6 py-3 rounded-lg hover:bg-secondary transition-colors"
-                style={{ fontSize: '15px', fontWeight: 500 }}
+              <a
+                href="#pipeline"
+                className="inline-flex items-center gap-2 border border-border-strong text-foreground px-6 py-3 rounded-full hover:bg-secondary transition-colors"
+                style={{ fontSize: "15px", fontWeight: 500 }}
               >
-                View pricing
-              </Link>
+                See the pipeline
+              </a>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Model Categories */}
-      {modelCategories.map((category, ci) => (
-        <section
-          key={category.id}
-          id={category.id}
-          className={`py-16 md:py-24 ${ci % 2 === 1 ? "bg-secondary/40" : ""}`}
-        >
-          <div className="max-w-[1200px] mx-auto px-6">
-            <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="mb-10"
-            >
-              <div className="flex items-center gap-2.5 mb-3">
-                <div
-                  className="w-8 h-8 rounded-lg flex items-center justify-center"
-                  style={{ background: 'var(--ora-signal-light)' }}
-                >
-                  <category.icon size={15} style={{ color: 'var(--ora-signal)' }} />
-                </div>
-                <span
-                  className="text-muted-foreground uppercase tracking-wider"
-                  style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.1em' }}
-                >
-                  {category.models.length} models
-                </span>
-              </div>
-              <h2
-                className="text-foreground mb-3"
-                style={{
-                  fontSize: 'clamp(1.5rem, 3vw, 2.25rem)',
-                  fontWeight: 500,
-                  letterSpacing: '-0.03em',
-                  lineHeight: 1.15,
-                }}
-              >
-                {category.name}
-              </h2>
-              <p
-                className="text-muted-foreground max-w-[560px]"
-                style={{ fontSize: '16px', lineHeight: 1.55 }}
-              >
-                {category.description}
-              </p>
-            </motion.div>
-
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {category.models.map((model, mi) => (
-                <motion.div
-                  key={model.name}
-                  initial={{ opacity: 0, y: 14 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: mi * 0.06 }}
-                  className="bg-card border border-border rounded-xl p-5 hover:border-border-strong transition-colors"
-                  style={{ boxShadow: '0 1px 2px rgba(0,0,0,0.02)' }}
-                >
-                  <div className="flex items-center gap-3 mb-3">
-                    <div
-                      className="w-8 h-8 rounded-lg flex items-center justify-center"
-                      style={{ background: model.color + '12' }}
-                    >
-                      <div
-                        className="w-2.5 h-2.5 rounded-full"
-                        style={{ background: model.color }}
-                      />
-                    </div>
-                    <div>
-                      <h3
-                        className="text-foreground"
-                        style={{ fontSize: '15px', fontWeight: 500, letterSpacing: '-0.01em' }}
-                      >
-                        {model.name}
-                      </h3>
-                      <span
-                        className="text-muted-foreground"
-                        style={{ fontSize: '11px' }}
-                      >
-                        {model.provider}
-                      </span>
-                    </div>
-                  </div>
-                  <div className="flex flex-wrap gap-1.5">
-                    {model.capabilities.map((cap) => (
-                      <span
-                        key={cap}
-                        className="px-2 py-0.5 rounded-md"
-                        style={{
-                          fontSize: '10px',
-                          fontWeight: 500,
-                          color: 'var(--muted-foreground)',
-                          background: 'var(--secondary)',
-                          border: '1px solid var(--border)',
-                        }}
-                      >
-                        {cap}
-                      </span>
-                    ))}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-      ))}
-
-      {/* Key Capabilities */}
-      <ArenaDemo />
-
-      <section className="py-20 md:py-28">
+      {/* ── Pipeline visual ── */}
+      <section id="pipeline" className="py-16 md:py-24 border-t border-border">
         <div className="max-w-[1200px] mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 12 }}
@@ -286,73 +322,529 @@ export function AgentsPage() {
             className="mb-14"
           >
             <h2
-              className="text-foreground mb-4"
+              className="text-foreground mb-3"
               style={{
-                fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)',
+                fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
                 fontWeight: 500,
-                letterSpacing: '-0.03em',
+                letterSpacing: "-0.03em",
                 lineHeight: 1.15,
               }}
             >
-              More than a model switcher
+              The compliance pipeline
             </h2>
             <p
-              className="text-muted-foreground max-w-[520px]"
-              style={{ fontSize: '16px', lineHeight: 1.55 }}
+              className="text-muted-foreground max-w-[560px]"
+              style={{ fontSize: "16px", lineHeight: 1.55 }}
             >
-              ORA wraps every model in a layer of intelligence: comparison, brand control, and visual production.
+              Your Brand Vault feeds every agent. The Compliance Guard validates every output. Nothing reaches Campaign Lab without passing.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {capabilities.map((cap, i) => {
-              const Icon = cap.icon;
-              return (
-                <motion.div
-                  key={cap.title}
-                  initial={{ opacity: 0, y: 14 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.08 }}
-                  className="bg-card border border-border rounded-xl p-7"
-                  style={{ boxShadow: '0 1px 3px rgba(0,0,0,0.03)' }}
-                >
-                  <div className="flex items-center gap-3 mb-4">
+          {/* Pipeline flow */}
+          <div className="flex flex-col md:flex-row items-stretch gap-4 mb-16">
+            {/* Vault */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="flex-shrink-0 md:w-48 bg-card border border-ora-signal/30 rounded-xl p-5 flex flex-col items-center justify-center text-center"
+              style={{ boxShadow: "0 1px 3px rgba(59,79,196,0.08)" }}
+            >
+              <div
+                className="w-10 h-10 rounded-xl flex items-center justify-center mb-3"
+                style={{ background: "var(--ora-signal-light)" }}
+              >
+                <Shield size={18} style={{ color: "var(--ora-signal)" }} />
+              </div>
+              <span style={{ fontSize: "14px", fontWeight: 500 }}>Brand Vault</span>
+              <span className="text-muted-foreground mt-1" style={{ fontSize: "11px" }}>
+                DNA, tone, colors, vocabulary
+              </span>
+            </motion.div>
+
+            {/* Arrow */}
+            <div className="hidden md:flex items-center px-2">
+              <ChevronRight size={20} className="text-muted-foreground/30" />
+            </div>
+
+            {/* Agents */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="flex-1 bg-card border border-border rounded-xl p-5"
+              style={{ boxShadow: "0 1px 2px rgba(0,0,0,0.02)" }}
+            >
+              <div className="flex items-center gap-2 mb-4">
+                <Zap size={14} className="text-muted-foreground" />
+                <span className="text-muted-foreground uppercase tracking-wider" style={{ fontSize: "10px", fontWeight: 600, letterSpacing: "0.1em" }}>
+                  Orchestrator routes to
+                </span>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {agents.map((a) => {
+                  const Icon = agentIcons[a.name] || Brain;
+                  return (
                     <div
-                      className="w-10 h-10 rounded-xl flex items-center justify-center"
-                      style={{ background: 'var(--ora-signal-light)' }}
+                      key={a.name}
+                      className="flex items-center gap-2 px-3 py-2 rounded-lg border border-border bg-background"
                     >
-                      <Icon size={18} style={{ color: 'var(--ora-signal)' }} />
-                    </div>
-                    <div>
-                      <h3
-                        className="text-foreground"
-                        style={{ fontSize: '17px', fontWeight: 500, letterSpacing: '-0.01em' }}
+                      <div
+                        className="w-6 h-6 rounded-md flex items-center justify-center"
+                        style={{ background: a.color + "15" }}
                       >
-                        {cap.title}
-                      </h3>
-                      <span
-                        className="text-muted-foreground"
-                        style={{ fontSize: '12px' }}
-                      >
-                        {cap.subtitle}
-                      </span>
+                        <Icon size={12} style={{ color: a.color }} />
+                      </div>
+                      <span style={{ fontSize: "12px", fontWeight: 500 }}>{a.displayName}</span>
                     </div>
-                  </div>
-                  <p
-                    className="text-muted-foreground"
-                    style={{ fontSize: '14px', lineHeight: 1.6 }}
-                  >
-                    {cap.description}
-                  </p>
-                </motion.div>
-              );
-            })}
+                  );
+                })}
+              </div>
+            </motion.div>
+
+            {/* Arrow */}
+            <div className="hidden md:flex items-center px-2">
+              <ChevronRight size={20} className="text-muted-foreground/30" />
+            </div>
+
+            {/* Compliance */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="flex-shrink-0 md:w-48 bg-card border border-green-500/20 rounded-xl p-5 flex flex-col items-center justify-center text-center"
+              style={{ boxShadow: "0 1px 3px rgba(16,185,129,0.06)" }}
+            >
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ background: "rgba(16,185,129,0.12)" }}>
+                <CheckCircle2 size={18} style={{ color: "#6D9B7E" }} />
+              </div>
+              <span style={{ fontSize: "14px", fontWeight: 500 }}>90+ / 100</span>
+              <span className="text-muted-foreground mt-1" style={{ fontSize: "11px" }}>
+                or auto-fixed then re-scored
+              </span>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Bottom CTA */}
+      {/* ── Agent Layers ── */}
+      {layers.map((layer, li) => {
+        const layerAgents = agents.filter((a) => a.layer === layer.id);
+        if (layerAgents.length === 0) return null;
+        const LayerIcon = layer.icon;
+        return (
+          <section
+            key={layer.id}
+            className={`py-16 md:py-24 ${li % 2 === 1 ? "bg-secondary/30" : ""}`}
+          >
+            <div className="max-w-[1200px] mx-auto px-6">
+              <motion.div
+                initial={{ opacity: 0, y: 12 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="mb-10"
+              >
+                <div className="flex items-center gap-2.5 mb-3">
+                  <div
+                    className="w-8 h-8 rounded-lg flex items-center justify-center"
+                    style={{ background: layer.color + "12" }}
+                  >
+                    <LayerIcon size={15} style={{ color: layer.color }} />
+                  </div>
+                  <span
+                    className="text-muted-foreground uppercase tracking-wider"
+                    style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.1em" }}
+                  >
+                    {layer.id} layer
+                  </span>
+                </div>
+                <h2
+                  className="text-foreground mb-3"
+                  style={{
+                    fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
+                    fontWeight: 500,
+                    letterSpacing: "-0.03em",
+                    lineHeight: 1.15,
+                  }}
+                >
+                  {layer.name}
+                </h2>
+                <p
+                  className="text-muted-foreground max-w-[560px]"
+                  style={{ fontSize: "16px", lineHeight: 1.55 }}
+                >
+                  {layer.subtitle}
+                </p>
+              </motion.div>
+
+              <div className={`grid gap-6 ${layerAgents.length === 1 ? "max-w-[600px]" : "md:grid-cols-2 lg:grid-cols-" + Math.min(layerAgents.length, 3)}`}>
+                {layerAgents.map((agent, ai) => {
+                  const Icon = agentIcons[agent.name] || Brain;
+                  return (
+                    <motion.div
+                      key={agent.name}
+                      initial={{ opacity: 0, y: 14 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: ai * 0.06 }}
+                      className="bg-card border border-border rounded-xl p-6 hover:border-border-strong transition-colors group"
+                      style={{ boxShadow: "0 1px 2px rgba(0,0,0,0.02)" }}
+                    >
+                      {/* Header */}
+                      <div className="flex items-center gap-3 mb-4">
+                        <div
+                          className="w-10 h-10 rounded-xl flex items-center justify-center transition-transform group-hover:scale-105"
+                          style={{ background: agent.color + "12" }}
+                        >
+                          <Icon size={18} style={{ color: agent.color }} />
+                        </div>
+                        <div>
+                          <h3
+                            className="text-foreground"
+                            style={{ fontSize: "16px", fontWeight: 500, letterSpacing: "-0.01em" }}
+                          >
+                            {agent.displayName}
+                          </h3>
+                          <span
+                            className="text-muted-foreground"
+                            style={{ fontSize: "12px" }}
+                          >
+                            {agent.role}
+                          </span>
+                        </div>
+                      </div>
+
+                      {/* Description */}
+                      <p
+                        className="text-muted-foreground mb-4"
+                        style={{ fontSize: "13px", lineHeight: 1.6 }}
+                      >
+                        {agent.description}
+                      </p>
+
+                      {/* Signature quote */}
+                      <div className="border-l-2 pl-3 mb-4" style={{ borderColor: agent.color + "40" }}>
+                        <p
+                          className="text-foreground/70 italic"
+                          style={{ fontSize: "12px", lineHeight: 1.5 }}
+                        >
+                          "{agent.signature}"
+                        </p>
+                      </div>
+
+                      {/* Expertise tags */}
+                      <div className="flex flex-wrap gap-1.5">
+                        {agent.expertise.map((exp) => (
+                          <span
+                            key={exp}
+                            className="px-2 py-0.5 rounded-md"
+                            style={{
+                              fontSize: "10px",
+                              fontWeight: 500,
+                              color: "var(--muted-foreground)",
+                              background: "var(--secondary)",
+                              border: "1px solid var(--border)",
+                            }}
+                          >
+                            {exp}
+                          </span>
+                        ))}
+                      </div>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+        );
+      })}
+
+      {/* ── Orchestrator Routing ── */}
+      <section className="py-16 md:py-24 border-t border-border">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-10"
+          >
+            <div className="flex items-center gap-2.5 mb-3">
+              <div
+                className="w-8 h-8 rounded-lg flex items-center justify-center"
+                style={{ background: "var(--ora-signal-light)" }}
+              >
+                <Zap size={15} style={{ color: "var(--ora-signal)" }} />
+              </div>
+              <span
+                className="text-muted-foreground uppercase tracking-wider"
+                style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.1em" }}
+              >
+                Smart routing
+              </span>
+            </div>
+            <h2
+              className="text-foreground mb-3"
+              style={{
+                fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
+                fontWeight: 500,
+                letterSpacing: "-0.03em",
+                lineHeight: 1.15,
+              }}
+            >
+              The Orchestrator
+            </h2>
+            <p
+              className="text-muted-foreground max-w-[560px]"
+              style={{ fontSize: "16px", lineHeight: 1.55 }}
+            >
+              You don't pick agents. You just type. The orchestrator scores every message against weighted keyword signals and routes to the best specialist.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Routing examples */}
+            <motion.div
+              initial={{ opacity: 0, y: 14 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-card border border-border rounded-xl p-6"
+              style={{ boxShadow: "0 1px 2px rgba(0,0,0,0.02)" }}
+            >
+              <h3
+                className="text-foreground mb-4"
+                style={{ fontSize: "14px", fontWeight: 500 }}
+              >
+                Example routing
+              </h3>
+              <div className="space-y-3">
+                {routingExamples.map((ex, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.05 }}
+                    className="flex items-center gap-3"
+                  >
+                    <div className="flex-1 min-w-0">
+                      <span
+                        className="text-foreground/80 block truncate"
+                        style={{ fontSize: "13px" }}
+                      >
+                        "{ex.message}"
+                      </span>
+                    </div>
+                    <ChevronRight size={12} className="text-muted-foreground/30 flex-shrink-0" />
+                    <div className="flex items-center gap-2 flex-shrink-0">
+                      <span
+                        className="px-2 py-0.5 rounded-md bg-secondary border border-border"
+                        style={{ fontSize: "11px", fontWeight: 500 }}
+                      >
+                        {ex.agent}
+                      </span>
+                      <span
+                        className="text-ora-signal"
+                        style={{ fontSize: "10px", fontWeight: 600 }}
+                      >
+                        {ex.confidence}%
+                      </span>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Generate + Validate pipeline */}
+            <motion.div
+              initial={{ opacity: 0, y: 14 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="bg-card border border-border rounded-xl p-6"
+              style={{ boxShadow: "0 1px 2px rgba(0,0,0,0.02)" }}
+            >
+              <h3
+                className="text-foreground mb-4"
+                style={{ fontSize: "14px", fontWeight: 500 }}
+              >
+                Generate + Validate loop
+              </h3>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 rounded-full bg-ora-signal-light flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-ora-signal" style={{ fontSize: "10px", fontWeight: 700 }}>1</span>
+                  </div>
+                  <div>
+                    <span style={{ fontSize: "13px", fontWeight: 500 }}>Agent generates content</span>
+                    <p className="text-muted-foreground" style={{ fontSize: "12px", lineHeight: 1.4 }}>
+                      Copywriter, Art Director, or Video Maker produces the asset using vault-calibrated prompts.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 rounded-full bg-ora-signal-light flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-ora-signal" style={{ fontSize: "10px", fontWeight: 700 }}>2</span>
+                  </div>
+                  <div>
+                    <span style={{ fontSize: "13px", fontWeight: 500 }}>Compliance Guard scores it</span>
+                    <p className="text-muted-foreground" style={{ fontSize: "12px", lineHeight: 1.4 }}>
+                      100-point rubric across 5 dimensions. Banned words = instant deduction. Every issue cites exact text.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style={{ background: "rgba(16,185,129,0.12)" }}>
+                    <CheckCircle2 size={12} style={{ color: "#6D9B7E" }} />
+                  </div>
+                  <div>
+                    <span style={{ fontSize: "13px", fontWeight: 500 }}>Score 90+ ? Ship it.</span>
+                    <p className="text-muted-foreground" style={{ fontSize: "12px", lineHeight: 1.4 }}>
+                      Below 80? Auto-fix round applied, re-scored. The client never sees non-compliant content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Compliance Rubric ── */}
+      <section className="py-16 md:py-24 bg-secondary/30">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-10"
+          >
+            <h2
+              className="text-foreground mb-3"
+              style={{
+                fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
+                fontWeight: 500,
+                letterSpacing: "-0.03em",
+                lineHeight: 1.15,
+              }}
+            >
+              The 100-point rubric
+            </h2>
+            <p
+              className="text-muted-foreground max-w-[560px]"
+              style={{ fontSize: "16px", lineHeight: 1.55 }}
+            >
+              Every piece of content is scored against this rubric. The math must add up. The score must be reproducible.
+            </p>
+          </motion.div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            {rubricItems.map((item, i) => (
+              <motion.div
+                key={item.category}
+                initial={{ opacity: 0, y: 14 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.06 }}
+                className="bg-card border border-border rounded-xl p-5"
+                style={{ boxShadow: "0 1px 2px rgba(0,0,0,0.02)" }}
+              >
+                <div className="flex items-center justify-between mb-3">
+                  <span
+                    className="text-foreground"
+                    style={{ fontSize: "13px", fontWeight: 500 }}
+                  >
+                    {item.category}
+                  </span>
+                  <span
+                    className="text-ora-signal"
+                    style={{ fontSize: "18px", fontWeight: 600, letterSpacing: "-0.02em" }}
+                  >
+                    {item.points}
+                  </span>
+                </div>
+                <p
+                  className="text-muted-foreground"
+                  style={{ fontSize: "12px", lineHeight: 1.5 }}
+                >
+                  {item.desc}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Grade scale */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+            className="mt-8 flex flex-wrap items-center justify-center gap-4"
+          >
+            {[
+              { grade: "A+", range: "95-100", color: "#6D9B7E" },
+              { grade: "A", range: "90-94", color: "#22C55E" },
+              { grade: "B", range: "80-89", color: "#EAB308" },
+              { grade: "C", range: "70-79", color: "#F97316" },
+              { grade: "D", range: "60-69", color: "#C45050" },
+              { grade: "F", range: "<60", color: "#DC2626" },
+            ].map((g) => (
+              <div
+                key={g.grade}
+                className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-card border border-border"
+              >
+                <span style={{ fontSize: "14px", fontWeight: 600, color: g.color }}>{g.grade}</span>
+                <span className="text-muted-foreground" style={{ fontSize: "11px" }}>{g.range}</span>
+              </div>
+            ))}
+            <span className="text-muted-foreground" style={{ fontSize: "12px" }}>
+              Nothing ships below A.
+            </span>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ── Learned Preferences ── */}
+      <section className="py-16 md:py-24 border-t border-border">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-[640px] mx-auto text-center"
+          >
+            <div
+              className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-5"
+              style={{ background: "var(--ora-signal-light)" }}
+            >
+              <BarChart3 size={20} style={{ color: "var(--ora-signal)" }} />
+            </div>
+            <h2
+              className="text-foreground mb-4"
+              style={{
+                fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
+                fontWeight: 500,
+                letterSpacing: "-0.03em",
+                lineHeight: 1.15,
+              }}
+            >
+              Agents that learn
+            </h2>
+            <p
+              className="text-muted-foreground mb-3"
+              style={{ fontSize: "16px", lineHeight: 1.55 }}
+            >
+              Every edit you make teaches the system. Rejection patterns, vocabulary additions, tone drift -- agents pre-apply your preferences so you stop repeating yourself.
+            </p>
+            <p className="text-muted-foreground/60" style={{ fontSize: "14px", lineHeight: 1.55 }}>
+              The Copywriter remembers you always shorten intros. The Art Director stops suggesting stock-photo lighting. The Compliance Guard tightens rules around terms you flagged. Your agents get sharper with every interaction.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ── Bottom CTA ── */}
       <section className="py-20 md:py-28 text-center border-t border-border">
         <div className="max-w-[1200px] mx-auto px-6">
           <motion.div
@@ -363,28 +855,27 @@ export function AgentsPage() {
             <h2
               className="text-foreground mb-4"
               style={{
-                fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)',
+                fontSize: "clamp(1.75rem, 3.5vw, 2.5rem)",
                 fontWeight: 500,
-                letterSpacing: '-0.03em',
+                letterSpacing: "-0.03em",
               }}
             >
-              Ready to try every AI model?
+              Your brand deserves more than a chatbot.
             </h2>
             <p
               className="text-muted-foreground mb-8"
-              style={{ fontSize: '16px' }}
+              style={{ fontSize: "16px" }}
             >
-              50 free credits. No credit card required.
+              13 agents. 100-point compliance. Zero off-brand surprises.
             </p>
             <div className="flex items-center justify-center gap-3">
               <Link
                 to="/login?mode=signup"
-                className="inline-flex items-center gap-2 text-white px-7 py-3.5 rounded-lg hover:opacity-90 transition-opacity"
+                className="inline-flex items-center gap-2 text-white px-7 py-3.5 rounded-full hover:opacity-90 transition-opacity"
                 style={{
-                  background: 'linear-gradient(135deg, var(--ora-signal) 0%, #2a3ba8 100%)',
-                  fontSize: '15px',
-                  fontWeight: 500,
-                  boxShadow: '0 2px 12px rgba(59,79,196,0.3)',
+                  background: "var(--ora-signal)",
+                  fontSize: "15px",
+                  fontWeight: 600,
                 }}
               >
                 Start for free
@@ -392,8 +883,8 @@ export function AgentsPage() {
               </Link>
               <Link
                 to="/pricing"
-                className="inline-flex items-center gap-2 border border-border-strong text-foreground px-7 py-3.5 rounded-lg hover:bg-secondary transition-colors"
-                style={{ fontSize: '15px', fontWeight: 500 }}
+                className="inline-flex items-center gap-2 border border-border-strong text-foreground px-7 py-3.5 rounded-full hover:bg-secondary transition-colors"
+                style={{ fontSize: "15px", fontWeight: 500 }}
               >
                 View pricing
               </Link>

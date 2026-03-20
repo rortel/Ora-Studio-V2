@@ -1,0 +1,117 @@
+[Auth] onAuthStateChange event: SIGNED_IN
+2code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [fetchProfile] trying auth-header...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [Auth] onAuthStateChange event: INITIAL_SESSION
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [fetchProfile] trying auth-header...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [fetchProfile] auth-header: status=200 authenticated=true (873ms)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [fetchProfile] auth-header: status=200 authenticated=true (728ms)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [fetchProfile] auth-header: status=200 authenticated=true (733ms)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [HubPage] Loading library from server...
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtidmtqYWZrenRic2V3dGFpanVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5MTk2ODksImV4cCI6MjA4NzQ5NTY4OX0.ty1aiV63wnINUkViZNzlNAHFzL0mdvSRjzRDd-lB-sk:1  Failed to load resource: the server responded with a status of 401 ()Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtidmtqYWZrenRic2V3dGFpanVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5MTk2ODksImV4cCI6MjA4NzQ5NTY4OX0.ty1aiV63wnINUkViZNzlNAHFzL0mdvSRjzRDd-lB-sk:1  Failed to load resource: the server responded with a status of 401 ()Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtidmtqYWZrenRic2V3dGFpanVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5MTk2ODksImV4cCI6MjA4NzQ5NTY4OX0.ty1aiV63wnINUkViZNzlNAHFzL0mdvSRjzRDd-lB-sk:1  Failed to load resource: the server responded with a status of 401 ()Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtidmtqYWZrenRic2V3dGFpanVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5MTk2ODksImV4cCI6MjA4NzQ5NTY4OX0.ty1aiV63wnINUkViZNzlNAHFzL0mdvSRjzRDd-lB-sk:1  Failed to load resource: the server responded with a status of 401 ()Understand this error
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Loading vault (authenticated)...
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/vault/load?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtidmtqYWZrenRic2V3dGFpanVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5MTk2ODksImV4cCI6MjA4NzQ5NTY4OX0.ty1aiV63wnINUkViZNzlNAHFzL0mdvSRjzRDd-lB-sk:1  Failed to load resource: the server responded with a status of 401 ()Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/vault/load?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtidmtqYWZrenRic2V3dGFpanVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5MTk2ODksImV4cCI6MjA4NzQ5NTY4OX0.ty1aiV63wnINUkViZNzlNAHFzL0mdvSRjzRDd-lB-sk:1  Failed to load resource: the server responded with a status of 401 ()Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/vault/load?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtidmtqYWZrenRic2V3dGFpanVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5MTk2ODksImV4cCI6MjA4NzQ5NTY4OX0.ty1aiV63wnINUkViZNzlNAHFzL0mdvSRjzRDd-lB-sk:1  Failed to load resource: the server responded with a status of 401 ()Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/vault/load?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtidmtqYWZrenRic2V3dGFpanVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5MTk2ODksImV4cCI6MjA4NzQ5NTY4OX0.ty1aiV63wnINUkViZNzlNAHFzL0mdvSRjzRDd-lB-sk:1  Failed to load resource: the server responded with a status of 401 ()Understand this error
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] No vault found
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [Auth] onAuthStateChange event: SIGNED_IN
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [fetchProfile] trying auth-header...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [fetchProfile] auth-header: status=200 authenticated=true (488ms)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [Auth] onAuthStateChange event: SIGNED_IN
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [fetchProfile] trying auth-header...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [fetchProfile] auth-header: status=200 authenticated=true (401ms)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Text generation starting...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Trying text model: gpt-4o
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Text [gpt-4o] response: 200, raw={"success":true,"results":[{"success":false,"error":"Error: APIPod timeout (8s) for gpt-5"}]}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Text [gpt-4o] failed: Error: APIPod timeout (8s) for gpt-5
+(anonymous) @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90
+r @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:17
+warn @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90
+handleGenerate @ CampaignLab.tsx:335Understand this warning
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Trying text model: claude-sonnet
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Text [claude-sonnet] response: 200, raw={"success":true,"results":[{"success":false,"error":"Error: APIPod timeout (8s) for gpt-5"}]}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Text [claude-sonnet] failed: Error: APIPod timeout (8s) for gpt-5
+(anonymous) @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90
+r @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:17
+warn @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90
+handleGenerate @ CampaignLab.tsx:335Understand this warning
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Trying text model: ora-writer
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Text [ora-writer] response: 200, raw={"success":true,"results":[{"success":false,"error":"Error: APIPod timeout (8s) for gpt-5"}]}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Text [ora-writer] failed: Error: APIPod timeout (8s) for gpt-5
+(anonymous) @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90
+r @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:17
+warn @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90
+handleGenerate @ CampaignLab.tsx:335Understand this warning
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] All text models failed, continuing with images only
+(anonymous) @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90
+r @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:17
+warn @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90
+handleGenerate @ CampaignLab.tsx:343Understand this warning
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] copyMap keys: [] sample: undefined
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Image generation: 4 formats
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Image GET [linkedin-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20LinkedIn%20post.%20MAN%20Logo%
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Image GET [instagram-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20Instagram%20post.%20MAN%20Logo
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Image GET [instagram-story]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20Instagram%20post.%20MAN%20Logo
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Image GET [facebook-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20Facebook%20post.%20MAN%20Logo%
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Image [instagram-story] response: 200, raw={"success":true,"results":[{"success":true,"result":{"model":"photon-1","provider":"luma/photon-1","imageUrl":"https://storage.cdn-luma.com/dream_machine/463dda25-335b-415b-a8c6-11b25066f58f/18e70442-
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Image [instagram-story] OK: https://storage.cdn-luma.com/dream_machine/463dda25-335b-415
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Image [facebook-post] response: 200, raw={"success":true,"results":[{"success":true,"result":{"model":"photon-1","provider":"luma/photon-1","imageUrl":"https://storage.cdn-luma.com/dream_machine/7b8d463a-b437-4feb-bc15-5a755d690c64/cae285a8-
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Image [facebook-post] OK: https://storage.cdn-luma.com/dream_machine/7b8d463a-b437-4fe
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Image [linkedin-post] response: 200, raw={"success":true,"results":[{"success":true,"result":{"model":"photon-1","provider":"luma/photon-1","imageUrl":"https://storage.cdn-luma.com/dream_machine/7676f92a-f104-4e2f-ae97-c12295f86ae7/acd28527-
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Image [linkedin-post] OK: https://storage.cdn-luma.com/dream_machine/7676f92a-f104-4e2
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Image [instagram-post] response: 200, raw={"success":true,"results":[{"success":true,"result":{"model":"photon-1","provider":"luma/photon-1","imageUrl":"https://storage.cdn-luma.com/dream_machine/a5761877-f7f1-4b8d-a946-005fa7a35c8b/4287673e-
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Image [instagram-post] OK: https://storage.cdn-luma.com/dream_machine/a5761877-f7f1-4b8
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Video generation: 2 formats (background)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Video START [instagram-reel]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=Cinematic+video.+MAN+Logo%0AMAN+Belgique%0ACami
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Video START [linkedin-video]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=Cinematic+video.+MAN+Logo%0AMAN+Belgique%0ACami
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Video [instagram-reel] submitted: 233cb098-79ce-458b-8afa-b865cde96e85
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Video [instagram-reel] poll #1: state=dreaming
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Video [linkedin-video] submitted: 5ac5bfa3-e318-45ee-b11c-c34bef94d86d
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Video [instagram-reel] poll #2: state=dreaming
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Video [linkedin-video] poll #1: state=dreaming
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Video [instagram-reel] poll #3: state=dreaming
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Video [linkedin-video] poll #2: state=dreaming
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Video [instagram-reel] poll #4: state=dreaming
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Video [linkedin-video] poll #3: state=dreaming
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Video [instagram-reel] poll #5: state=completed
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Video [linkedin-video] poll #4: state=dreaming
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [CampaignLab] Video [linkedin-video] poll #5: state=completed
+vendor-core-ade2edecaf4781c7.min.js.br:54  POST https://www.figma.com/api/cortex/foundry/keep-alive 500 (Internal Server Error)
+(anonymous) @ vendor-core-ade2edecaf4781c7.min.js.br:54
+h @ vendor-191557b646cc979f.min.js.br:3
+s @ figma_app-726b2563eb8cdce8.min.js.br:429
+l @ figma_app-726b2563eb8cdce8.min.js.br:429
+sendKeepAlive @ 4239-c4c06d09094e9c07.min.js.br:1377
+(anonymous) @ 4239-c4c06d09094e9c07.min.js.br:1377
+u @ vendor-core-ade2edecaf4781c7.min.js.br:54Understand this error
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [vite] server connection lost. Polling for restart...
+vendor-core-ade2edecaf4781c7.min.js.br:54 [Livegraph] Connection closed. Code: 1006, reason: 
+vendor-core-ade2edecaf4781c7.min.js.br:54 [MultiplayerSession] connecting to wss://www.figma.com/api/multiplayer/Cpu4nGRSqlaZeBhE1wINKa?role=editor&tracking_session_id=yiu7RTwUL6LTCi45&version=151&recentReload=0&file-load-streaming-compression=&user-id=1483479003784692390&client_release=107bbd51e86fce9a104f472597b3e63a6aa8ffa6&reconnect-key=8ae7d3ec034b45f822e4338a665c0943a8e63da4&reconnect-sequence-number=4836&initialFileVersion=106&previousLoadMode=full&incremental-loading-validation=0
+vendor-core-ade2edecaf4781c7.min.js.br:54 [MultiplayerSession] Joining file version 106 (skip_reload reconnect)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [Auth] onAuthStateChange event: SIGNED_IN
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [fetchProfile] trying auth-header...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [HubPage] Loading library from server...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [fetchProfile] trying auth-header...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [Auth] onAuthStateChange event: INITIAL_SESSION
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [fetchProfile] trying auth-header...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90  POST https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtidmtqYWZrenRic2V3dGFpanVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5MTk2ODksImV4cCI6MjA4NzQ5NTY4OX0.ty1aiV63wnINUkViZNzlNAHFzL0mdvSRjzRDd-lB-sk 401 (Unauthorized)
+(anonymous) @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90
+(anonymous) @ HubPage.tsx:866
+(anonymous) @ HubPage.tsx:885
+TN @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:37
+T8 @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:37
+T7 @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:37
+T6 @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:37
+T4 @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:37
+S1 @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:37
+SQ @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:37
+(anonymous) @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:37
+(anonymous) @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:65
+V @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:61
+B @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:61
+eo @ code_components_preview_iframe-f4fd20809e153e7b.min.js.br:61Understand this error
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [fetchProfile] auth-header: status=200 authenticated=true (485ms)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [fetchProfile] auth-header: status=200 authenticated=true (514ms)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [fetchProfile] auth-header: status=200 authenticated=true (634ms)

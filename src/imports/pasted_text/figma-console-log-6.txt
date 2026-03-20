@@ -1,0 +1,108 @@
+[vite] connecting...
+[vite] connected.
+[fetchProfile] trying POST /auth/me with Authorization header...
+[Auth] onAuthStateChange event: INITIAL_SESSION
+[fetchProfile] trying POST /auth/me with Authorization header...
+[fetchProfile] status=200 authenticated=true (967ms)
+[fetchProfile] status=200 authenticated=true (973ms)
+7
+⚠️ Warning: Internal React error: Expected static flag was missing. Please notify the React team.%s 
+    at https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-aee2937bf6889db9.min.js.br:290:12522
+    at FGCmp (https://app-2l5ncvp7a2gjz4hynx6wak55ytjc3tpnx4qw6uraw5nitkwgiymq.makeproxy-c.figma.site/@id/fginspector:3:55)
+    at main
+    at https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-aee2937bf6889db9.min.js.br:290:12522
+    at FGCmp (https://app-2l5ncvp7a2gjz4hynx6wak55ytjc3tpnx4qw6uraw5nitkwgiymq.makeproxy-c.figma.site/@id/fginspector:3:55)
+    at div
+    at https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-aee2937bf6889db9.min.js.br:290:12522
+    at FGCmp (https://app-2l5ncvp7a2gjz4hynx6wak55ytjc3tpnx4qw6uraw5nitkwgiymq.makeproxy-c.figma.site/@id/fginspector:3:55)
+    at RootLayout (https://app-2l5ncvp7a2gjz4hynx6wak55ytjc3tpnx4qw6uraw5nitkwgiymq.makeproxy-c.figma.site/src/app/pages/RootLayout.tsx:41:20)
+    at RenderedRoute (https://app-2l5ncvp7a2gjz4hynx6wak55ytjc3tpnx4qw6uraw5nitkwgiymq.makeproxy-c.figma.site/node_modules/.vite/deps/react-router.js?v=e17d79ab:6296:26)
+    at RenderErrorBoundary (https://app-2l5ncvp7a2gjz4hynx6wak55ytjc3tpnx4qw6uraw5nitkwgiymq.makeproxy-c.figma.site/node_modules/.vite/deps/react-router.js?v=e17d79ab:6206:5)
+    at DataRoutes (https://app-2l5ncvp7a2gjz4hynx6wak55ytjc3tpnx4qw6uraw5nitkwgiymq.makeproxy-c.figma.site/node_modules/.vite/deps/react-router.js?v=e17d79ab:6994:3)
+    at Router (https://app-2l5ncvp7a2gjz4hynx6wak55ytjc3tpnx4qw6uraw5nitkwgiymq.makeproxy-c.figma.site/node_modules/.vite/deps/react-router.js?v=e17d79ab:7086:13)
+    at RouterProvider (https://app-2l5ncvp7a2gjz4hynx6wak55ytjc3tpnx4qw6uraw5nitkwgiymq.makeproxy-c.figma.site/node_modules/.vite/deps/react-router.js?v=e17d79ab:6760:3)
+    at https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-aee2937bf6889db9.min.js.br:290:12522
+    at FGCmp (https://app-2l5ncvp7a2gjz4hynx6wak55ytjc3tpnx4qw6uraw5nitkwgiymq.makeproxy-c.figma.site/@id/fginspector:3:55)
+    at AuthProvider (https://app-2l5ncvp7a2gjz4hynx6wak55ytjc3tpnx4qw6uraw5nitkwgiymq.makeproxy-c.figma.site/src/app/lib/auth-context.tsx:62:32)
+    at https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-aee2937bf6889db9.min.js.br:290:12522
+    at FGCmp (https://app-2l5ncvp7a2gjz4hynx6wak55ytjc3tpnx4qw6uraw5nitkwgiymq.makeproxy-c.figma.site/@id/fginspector:3:55)
+    at App
+    at o2 (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-aee2937bf6889db9.min.js.br:117:4420)
+    at O (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-aee2937bf6889db9.min.js.br:572:13261)
+    at ri (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-aee2937bf6889db9.min.js.br:626:13959)
+    at b0 (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-aee2937bf6889db9.min.js.br:643:10321)
+    at div
+    at ai (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-aee2937bf6889db9.min.js.br:117:14008)
+    at T2 (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-aee2937bf6889db9.min.js.br:633:235143)
+    at yC (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-aee2937bf6889db9.min.js.br:633:246405)
+    at iA (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-aee2937bf6889db9.min.js.br:102:145753)
+    at ho (https://www.figma.com/webpack-artifacts/assets/code_components_preview_iframe-aee2937bf6889db9.min.js.br:436:8433)
+[HubPage] Loading library from server...
+[HubPage] Loaded 34 library items from server
+[CampaignLab] Loading vault via POST /user/init...
+❌ [CampaignLab] Vault fetch error (attempt 1): TypeError: Failed to fetch
+❌ [CampaignLab] Vault fetch error (attempt 2): TypeError: Failed to fetch
+[Auth] onAuthStateChange event: SIGNED_IN
+[fetchProfile] trying POST /auth/me with Authorization header...
+[fetchProfile] status=200 authenticated=true (546ms)
+[Auth] onAuthStateChange event: SIGNED_IN
+[fetchProfile] trying POST /auth/me with Authorization header...
+[fetchProfile] status=200 authenticated=true (515ms)
+[CampaignLab] Uploading 8 ref photos to Storage...
+❌ [CampaignLab] Upload refs attempt 1 failed: Failed to fetch
+❌ [CampaignLab] Upload refs attempt 2 failed: Failed to fetch
+[CampaignLab] 0 ref URLs obtained
+[CampaignLab] Pipeline: CLASSIC (text-only)
+[CampaignLab] POST texts: 9 formats, brief=2000c, body=3312c
+[CampaignLab] Text response: HTTP 200, 6296c, body={"success":true,"copyMap":{"linkedin-post":{"subject":"","headline":"","caption":"Plongez au cœur des 24 Heures du Mans Camions avec le MAN eTGX, le champion électrique des longues distances. Découvrez des animations inédites et vivez l’ambiance festive et conviviale au plus près de la piste. Entre compétitions palpitantes et moments de passion partagée, préparez-vous à une expérience unique. Fonc
+[CampaignLab] Text OK: 9 formats, provider=apipod/gpt-4o, 26953ms, keys=[linkedin-post,linkedin-video,instagram-post,instagram-story,instagram-reel,facebook-post,facebook-ad,tiktok-video,youtube-short]
+[CampaignLab] copyMap keys: [
+  "linkedin-post",
+  "linkedin-video",
+  "instagram-post",
+  "instagram-story",
+  "instagram-reel",
+  "facebook-post",
+  "facebook-ad",
+  "tiktok-video",
+  "youtube-short"
+]
+[CampaignLab] Image generation: 5 formats, v2=false
+[CampaignLab] Image GET [linkedin-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Un%20camion%20%C3%A9lectrique%20europ%C3%A9en
+[CampaignLab] Image GET [instagram-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Un%20camion%20%C3%A9lectrique%20moderne%20ave
+[CampaignLab] Image GET [instagram-story]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Un%20camion%20%C3%A9lectrique%20moderne%20ave
+[CampaignLab] Image GET [facebook-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Un%20camion%20%C3%A9lectrique%20moderne%20ave
+[CampaignLab] Image GET [facebook-ad]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Un%20camion%20%C3%A9lectrique%20moderne%20ave
+[CampaignLab] Classic Image [instagram-post] OK: https://storage.cdn-luma.com/dream_machine/8575cfe8-bc4a-458
+[CampaignLab] Classic Image [facebook-post] OK: https://storage.cdn-luma.com/dream_machine/1fd7b486-c508-490
+[CampaignLab] Classic Image [facebook-ad] OK: https://storage.cdn-luma.com/dream_machine/7ec03d1b-e990-479
+[CampaignLab] Classic Image [instagram-story] OK: https://storage.cdn-luma.com/dream_machine/13bd6f4a-5c88-4ef
+[CampaignLab] Classic Image [linkedin-post] OK: https://storage.cdn-luma.com/dream_machine/fbd6e647-fd7c-4ed
+[CampaignLab] Video generation: 4 formats (background)
+[CampaignLab] Video [linkedin-video]: using same-platform image as keyframe
+[CampaignLab] Video START [linkedin-video]: hasKeyframe=true https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=Un+camion+%C3%A9lectrique+moderne+avec+une+cabi
+[CampaignLab] Video [instagram-reel]: using same-platform image as keyframe
+[CampaignLab] Video START [instagram-reel]: hasKeyframe=true https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=Un+camion+%C3%A9lectrique+moderne+avec+une+cabi
+[CampaignLab] Video [tiktok-video]: using first available image as keyframe
+[CampaignLab] Video START [tiktok-video]: hasKeyframe=true https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=Un+camion+%C3%A9lectrique+moderne+avec+une+cabi
+[CampaignLab] Video [youtube-short]: using first available image as keyframe
+[CampaignLab] Video START [youtube-short]: hasKeyframe=true https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=Un+camion+%C3%A9lectrique+moderne+avec+une+cabi
+[CampaignLab] Zernio accounts fetch: TypeError: Failed to fetch
+[CampaignLab] Video [linkedin-video] submitted: cca818de-7009-4ea9-99b9-5e6a13bd546f
+[CampaignLab] Video [instagram-reel] submitted: 9cdb416c-c630-4161-8026-99bc12192059
+[CampaignLab] Video [tiktok-video] submitted: 41efaec5-8359-4396-b809-a89cc9ccecf0
+[CampaignLab] Video [youtube-short] submitted: 21c1db00-a507-4fef-a5e1-cdd2fae06c07
+[CampaignLab] Video [linkedin-video] poll #1: state=dreaming
+[CampaignLab] Video [instagram-reel] poll #1: state=dreaming
+[CampaignLab] Video [youtube-short] poll #1: state=dreaming
+[CampaignLab] Video [tiktok-video] poll #1: state=dreaming
+[CampaignLab] Video [linkedin-video] poll #2: state=dreaming
+[CampaignLab] Video [instagram-reel] poll #2: state=dreaming
+[CampaignLab] Video [youtube-short] poll #2: state=dreaming
+[CampaignLab] Video [tiktok-video] poll #2: state=dreaming
+[CampaignLab] Video [linkedin-video] poll #3: state=dreaming
+[CampaignLab] Video [instagram-reel] poll #3: state=dreaming
+[CampaignLab] Video [youtube-short] poll #3: state=dreaming
+[CampaignLab] Video [tiktok-video] poll #3: state=dreaming
+[CampaignLab] Video [linkedin-video] poll #4: state=dreaming
+[CampaignLab] Video [instagram-reel] poll #4: state=dreaming

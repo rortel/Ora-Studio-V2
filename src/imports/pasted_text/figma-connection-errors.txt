@@ -1,0 +1,249 @@
+[esbuild-wasm] Initializing from URL: /webpack-artifacts/assets/2b68f2d3d5e8b3d6.wasm
+devtools_worker-ca13ef76cbd352b1.min.js.br:1190 [esbuild-wasm] Initialized
+devtools_worker-ca13ef76cbd352b1.min.js.br:2001 [esbuild] Build error: Error: Build failed with 1 error:
+virtual-fs:file:///src/app/lib/supabase.ts:2:41: ERROR: Could not resolve "/utils/supabase/info"
+    at Z (devtools_worker-ca13ef76cbd352b1.min.js.br:8:5768)
+    at devtools_worker-ca13ef76cbd352b1.min.js.br:676:23008
+    at y (devtools_worker-ca13ef76cbd352b1.min.js.br:676:17720)
+    at G (devtools_worker-ca13ef76cbd352b1.min.js.br:676:22961)
+    at devtools_worker-ca13ef76cbd352b1.min.js.br:676:23116
+    at new Promise (<anonymous>)
+    at c.on-end (devtools_worker-ca13ef76cbd352b1.min.js.br:676:23100)
+    at devtools_worker-ca13ef76cbd352b1.min.js.br:676:10232
+    at Generator.next (<anonymous>)
+    at devtools_worker-ca13ef76cbd352b1.min.js.br:3:376
+(anonymous) @ devtools_worker-ca13ef76cbd352b1.min.js.br:2001Understand this error
+devtools_worker-ca13ef76cbd352b1.min.js.br:3237 Error: Build failed with 1 error:
+virtual-fs:file:///src/app/lib/supabase.ts:2:41: ERROR: Could not resolve "/utils/supabase/info"
+    at Z (devtools_worker-ca13ef76cbd352b1.min.js.br:8:5768)
+    at devtools_worker-ca13ef76cbd352b1.min.js.br:676:23008
+    at y (devtools_worker-ca13ef76cbd352b1.min.js.br:676:17720)
+    at G (devtools_worker-ca13ef76cbd352b1.min.js.br:676:22961)
+    at devtools_worker-ca13ef76cbd352b1.min.js.br:676:23116
+    at new Promise (<anonymous>)
+    at c.on-end (devtools_worker-ca13ef76cbd352b1.min.js.br:676:23100)
+    at devtools_worker-ca13ef76cbd352b1.min.js.br:676:10232
+    at Generator.next (<anonymous>)
+    at devtools_worker-ca13ef76cbd352b1.min.js.br:3:376
+m5 @ devtools_worker-ca13ef76cbd352b1.min.js.br:3237Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+vendor-core-83c17265f2588e9e.min.js.br:54 [MultiplayerSession] connecting to wss://www.figma.com/api/multiplayer/Cpu4nGRSqlaZeBhE1wINKa?role=editor&tracking_session_id=OJBqDwrEJ6TrIofd&version=151&recentReload=0&file-load-streaming-compression=&user-id=1483479003784692390&client_release=c8cf25fd40ec23e6d4f43316412edea9dd392484&reconnect-key=3a4d42d113f6222fe6e30da44a7f3accbe68c078&reconnect-sequence-number=5628&initialFileVersion=106&previousLoadMode=full&incremental-loading-validation=0
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+vendor-core-83c17265f2588e9e.min.js.br:54 [MultiplayerSession] Joining file version 106 (skip_reload reconnect)
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+ WebSocket connection to 'wss://app-2pdaw2tjc6s3iws2cllkuv3hitzg2c3ca36dpq2pi3cezent6ylq.makeproxy-c.figma.site/' failed: 
+ping @ app-2pdaw2tjc6s3iws2…e/@vite/client:1035Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/5589e04a0ad2aace295b074369c729f4d7b141763bfae8046627277084ac102f:1  Failed to load resource: the server responded with a status of 404 ()Understand this error
+vendor-core-83c17265f2588e9e.min.js.br:54 Failed to fetch snapshot files: E: XHR for "/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/5589e04a0ad2aace295b074369c729f4d7b141763bfae8046627277084ac102f" failed with status 404
+    at w (5606-1de0d45022ae32b0.min.js.br:1318:13965)
+    at async Object.k [as get] (5606-1de0d45022ae32b0.min.js.br:1318:14348)
+    at async 5860-52593e69470d76d1.min.js.br:3:647
+    at async 5860-52593e69470d76d1.min.js.br:3:49174
+    at async 5860-52593e69470d76d1.min.js.br:3:1078
+    at async y (5860-52593e69470d76d1.min.js.br:3:48682)
+    at async 5860-52593e69470d76d1.min.js.br:3:39522
+(anonymous) @ vendor-core-83c17265f2588e9e.min.js.br:54Understand this warning
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/6c46a7ffbdeab945a05c4e6244ddf5a94341e14e4fe7154ab1a558f0c9811020:1  Failed to load resource: the server responded with a status of 404 ()Understand this error
+vendor-core-83c17265f2588e9e.min.js.br:54 Failed to fetch snapshot files: E: XHR for "/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/6c46a7ffbdeab945a05c4e6244ddf5a94341e14e4fe7154ab1a558f0c9811020" failed with status 404
+    at w (5606-1de0d45022ae32b0.min.js.br:1318:13965)
+    at async Object.k [as get] (5606-1de0d45022ae32b0.min.js.br:1318:14348)
+    at async 5860-52593e69470d76d1.min.js.br:3:647
+    at async 5860-52593e69470d76d1.min.js.br:3:49174
+    at async 5860-52593e69470d76d1.min.js.br:3:1078
+    at async y (5860-52593e69470d76d1.min.js.br:3:48682)
+    at async 5860-52593e69470d76d1.min.js.br:3:39522
+(anonymous) @ vendor-core-83c17265f2588e9e.min.js.br:54Understand this warning
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/audio-multi' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/audio-multi' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/audio-multi' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/audio-multi:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/audio-multi:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/audio-multi:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/1e7ebf0700cb3227142484f887883d2cff4e348c3c1d12617f1ae64e52777ca3:1  Failed to load resource: the server responded with a status of 404 ()Understand this error
+vendor-core-83c17265f2588e9e.min.js.br:54 Failed to fetch snapshot files: E: XHR for "/api/rev/Cpu4nGRSqlaZeBhE1wINKa/code_snapshot/1e7ebf0700cb3227142484f887883d2cff4e348c3c1d12617f1ae64e52777ca3" failed with status 404
+    at w (5606-1de0d45022ae32b0.min.js.br:1318:13965)
+    at async Object.k [as get] (5606-1de0d45022ae32b0.min.js.br:1318:14348)
+    at async 5860-52593e69470d76d1.min.js.br:3:647
+    at async 5860-52593e69470d76d1.min.js.br:3:49174
+    at async 5860-52593e69470d76d1.min.js.br:3:1078
+    at async y (5860-52593e69470d76d1.min.js.br:3:48682)
+    at async 5860-52593e69470d76d1.min.js.br:3:39522
+(anonymous) @ vendor-core-83c17265f2588e9e.min.js.br:54Understand this warning
+ [fetchProfile] trying POST /auth/me with Authorization header...
+ [Auth] onAuthStateChange event: INITIAL_SESSION
+ [fetchProfile] trying POST /auth/me with Authorization header...
+ [fetchProfile] status=200 authenticated=true (800ms)
+ [fetchProfile] status=200 authenticated=true (808ms)
+ [HubPage] Loading library from server...
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/library/list:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+ [HubPage] Library load error (non-fatal): TypeError: Failed to fetch
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:90:9794
+    at HubPage.tsx:973:12
+    at HubPage.tsx:992:5
+    at TN (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:138396)
+    at T8 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:151856)
+    at T7 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:151634)
+    at T6 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:151542)
+    at T4 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:151420)
+    at S1 (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:163585)
+    at SQ (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:163247)
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:162379
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:65:74721
+    at V (code_components_preview_iframe-38049e48d7f0a436.min.js.br:61:1842)
+    at B (code_components_preview_iframe-38049e48d7f0a436.min.js.br:61:1559)
+    at MessagePort.eo (code_components_preview_iframe-38049e48d7f0a436.min.js.br:61:3433)
+(anonymous) @ code_components_prev…f0a436.min.js.br:90Understand this warning
+ [HubPage] handleGenerate called Object
+ [HubPage] Generate: ObjectcontentType: "sound"models: ['ora-audio']prompt: "crée musique épic pour film avec chevalier"[[Prototype]]: Object
+ [HubPage] Token type: user-jwt (eyJhbGciOiJFUzI1NiIs...)
+ [HubPage] API_BASE: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79
+ [HubPage] Start time: 2026-03-18T11:13:16.677Z
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/audio-multi' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/audio-multi' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/audio-multi' from origin 'https://a68bef01-0e39-44fa-9fe6-e5afa82277b0-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/audio-multi:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/audio-multi:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/audio-multi:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+ Audio generation request failed: TypeError: Failed to fetch
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:90:9794
+    at HubPage.tsx:919:27
+    at onKeyDown (HubPage.tsx:1606:95)
+    at HTMLUnknownElement.y (code_components_preview_iframe-38049e48d7f0a436.min.js.br:25:54006)
+    at HTMLUnknownElement.i (code_components_preview_iframe-38049e48d7f0a436.min.js.br:90:4861)
+    at Object.iG (code_components_preview_iframe-38049e48d7f0a436.min.js.br:25:54331)
+    at ij (code_components_preview_iframe-38049e48d7f0a436.min.js.br:25:55284)
+    at iz (code_components_preview_iframe-38049e48d7f0a436.min.js.br:25:55341)
+    at dP (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:10702)
+    at dM (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:11042)
+    at dk (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:11125)
+    at dG (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:11212)
+    at code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:12595
+    at SR (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:158583)
+    at iR (code_components_preview_iframe-38049e48d7f0a436.min.js.br:25:51978)
+    at d$ (code_components_preview_iframe-38049e48d7f0a436.min.js.br:37:12574)
+    at lO (code_components_preview_iframe-38049e48d7f0a436.min.js.br:25:72034)
+    at lN (code_components_preview_iframe-38049e48d7f0a436.min.js.br:25:71970)
+    at lv (code_components_preview_iframe-38049e48d7f0a436.min.js.br:25:71781)
+    at HTMLDivElement.i (code_components_preview_iframe-38049e48d7f0a436.min.js.br:90:4861)
+(anonymous) @ code_components_prev…f0a436.min.js.br:90Understand this error
+ [HubPage] Server health: Objectok: truets: 1773832396910v: 197[[Prototype]]: Object

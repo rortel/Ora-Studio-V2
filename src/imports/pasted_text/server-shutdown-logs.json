@@ -1,0 +1,175 @@
+Network error: Error: Server took too long to respond. It may be starting up -- please try again. shutdown. Aucune trace de firecrawl. Ce n'est pas appelé.  {
+  "event_message": "shutdown",
+  "id": "e6ac010e-d2ff-4772-a22a-1c706189e45a",
+  "metadata": [
+    {
+      "boot_time": null,
+      "cpu_time_used": 75,
+      "deployment_id": "kbvkjafkztbsewtaijuh_653507d1-b0de-4457-a545-9e5442c69100_155",
+      "event_type": "Shutdown",
+      "execution_id": "97bf5fb2-5266-4f6c-8f58-f8b85a129fac",
+      "function_id": "653507d1-b0de-4457-a545-9e5442c69100",
+      "level": "log",
+      "memory_used": [
+        {
+          "external": 3028224,
+          "heap": 10936872,
+          "mem_check_captured": null,
+          "total": 13965096
+        }
+      ],
+      "project_ref": "kbvkjafkztbsewtaijuh",
+      "reason": "EarlyDrop",
+      "region": "eu-west-3",
+      "served_by": "supabase-edge-runtime-1.71.0 (compatible with Deno v2.1.4)",
+      "timestamp": "2026-03-11T15:08:26.385Z",
+      "version": "155"
+    }
+  ],
+  "timestamp": 1773241706385000
+}{
+  "event_message": "shutdown",
+  "id": "3baaf274-e6a0-4732-b9ed-c933671f040f",
+  "metadata": [
+    {
+      "boot_time": null,
+      "cpu_time_used": 71,
+      "deployment_id": "kbvkjafkztbsewtaijuh_653507d1-b0de-4457-a545-9e5442c69100_155",
+      "event_type": "Shutdown",
+      "execution_id": "2c3d0027-8a56-446a-8654-27874d66f9c4",
+      "function_id": "653507d1-b0de-4457-a545-9e5442c69100",
+      "level": "log",
+      "memory_used": [
+        {
+          "external": 3028224,
+          "heap": 10966232,
+          "mem_check_captured": null,
+          "total": 13994456
+        }
+      ],
+      "project_ref": "kbvkjafkztbsewtaijuh",
+      "reason": "EarlyDrop",
+      "region": "eu-west-3",
+      "served_by": "supabase-edge-runtime-1.71.0 (compatible with Deno v2.1.4)",
+      "timestamp": "2026-03-11T15:08:26.163Z",
+      "version": "155"
+    }
+  ],
+  "timestamp": 1773241706163000
+} {
+  "event_message": "shutdown",
+  "id": "19e4f89e-bcc9-4188-a10a-b48d15881f4b",
+  "metadata": [
+    {
+      "boot_time": null,
+      "cpu_time_used": 68,
+      "deployment_id": "kbvkjafkztbsewtaijuh_653507d1-b0de-4457-a545-9e5442c69100_155",
+      "event_type": "Shutdown",
+      "execution_id": "33852d71-e21b-468e-b021-1f11affa2b33",
+      "function_id": "653507d1-b0de-4457-a545-9e5442c69100",
+      "level": "log",
+      "memory_used": [
+        {
+          "external": 3028224,
+          "heap": 10965672,
+          "mem_check_captured": null,
+          "total": 13993896
+        }
+      ],
+      "project_ref": "kbvkjafkztbsewtaijuh",
+      "reason": "EarlyDrop",
+      "region": "eu-west-3",
+      "served_by": "supabase-edge-runtime-1.71.0 (compatible with Deno v2.1.4)",
+      "timestamp": "2026-03-11T15:08:26.410Z",
+      "version": "155"
+    }
+  ],
+  "timestamp": 1773241706410000
+} {
+  "event_message": "shutdown",
+  "id": "45004847-9749-40be-b7dd-8bd87cdbbf5e",
+  "metadata": [
+    {
+      "boot_time": null,
+      "cpu_time_used": 54,
+      "deployment_id": "kbvkjafkztbsewtaijuh_653507d1-b0de-4457-a545-9e5442c69100_155",
+      "event_type": "Shutdown",
+      "execution_id": "5fef90e1-40af-4251-83f0-d85a3a326b4c",
+      "function_id": "653507d1-b0de-4457-a545-9e5442c69100",
+      "level": "log",
+      "memory_used": [
+        {
+          "external": 3028224,
+          "heap": 10952688,
+          "mem_check_captured": null,
+          "total": 13980912
+        }
+      ],
+      "project_ref": "kbvkjafkztbsewtaijuh",
+      "reason": "EarlyDrop",
+      "region": "eu-west-3",
+      "served_by": "supabase-edge-runtime-1.71.0 (compatible with Deno v2.1.4)",
+      "timestamp": "2026-03-11T15:08:26.603Z",
+      "version": "155"
+    }
+  ],
+  "timestamp": 1773241706603000
+} {
+  "event_message": "shutdown",
+  "id": "dd6c1070-96f1-4d2e-8215-c4738df9cb41",
+  "metadata": [
+    {
+      "boot_time": null,
+      "cpu_time_used": 72,
+      "deployment_id": "kbvkjafkztbsewtaijuh_653507d1-b0de-4457-a545-9e5442c69100_155",
+      "event_type": "Shutdown",
+      "execution_id": "403a9348-4b61-43ae-bb42-3fbc0649740b",
+      "function_id": "653507d1-b0de-4457-a545-9e5442c69100",
+      "level": "log",
+      "memory_used": [
+        {
+          "external": 3028224,
+          "heap": 10965672,
+          "mem_check_captured": null,
+          "total": 13993896
+        }
+      ],
+      "project_ref": "kbvkjafkztbsewtaijuh",
+      "reason": "EarlyDrop",
+      "region": "eu-west-3",
+      "served_by": "supabase-edge-runtime-1.71.0 (compatible with Deno v2.1.4)",
+      "timestamp": "2026-03-11T15:08:26.639Z",
+      "version": "155"
+    }
+  ],
+  "timestamp": 1773241706639000
+} {
+  "event_message": "shutdown",
+  "id": "557d3ea4-d93c-47c5-8983-65081e1674bc",
+  "metadata": [
+    {
+      "boot_time": null,
+      "cpu_time_used": 76,
+      "deployment_id": "kbvkjafkztbsewtaijuh_653507d1-b0de-4457-a545-9e5442c69100_155",
+      "event_type": "Shutdown",
+      "execution_id": "9c980184-2777-4fd9-adda-a3977f4d5f84",
+      "function_id": "653507d1-b0de-4457-a545-9e5442c69100",
+      "level": "log",
+      "memory_used": [
+        {
+          "external": 3028224,
+          "heap": 10949928,
+          "mem_check_captured": null,
+          "total": 13978152
+        }
+      ],
+      "project_ref": "kbvkjafkztbsewtaijuh",
+      "reason": "EarlyDrop",
+      "region": "eu-west-3",
+      "served_by": "supabase-edge-runtime-1.71.0 (compatible with Deno v2.1.4)",
+      "timestamp": "2026-03-11T15:08:26.863Z",
+      "version": "155"
+    }
+  ],
+  "timestamp": 1773241706863000
+}

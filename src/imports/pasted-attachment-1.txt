@@ -1,0 +1,214 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://docs.firecrawl.dev/llms.txt
+> Use this file to discover all available pages before exploring further.
+
+# Récupérer le statut d’un crawl
+
+> Remarque : une nouvelle [version v2 de cette API](/fr/api-reference/endpoint/crawl-get) est désormais disponible avec des fonctionnalités et des performances améliorées.
+
+
+## OpenAPI
+
+````yaml fr/api-reference/v1-openapi.json get /crawl/{id}
+openapi: 3.0.0
+info:
+  title: Firecrawl API
+  version: v1
+  description: >-
+    API permettant d’interagir avec les services Firecrawl pour réaliser des
+    tâches de scraping et de crawling web.
+  contact:
+    name: Firecrawl Support
+    url: https://firecrawl.dev/support
+    email: support@firecrawl.dev
+servers:
+  - url: https://api.firecrawl.dev/v1
+security:
+  - bearerAuth: []
+paths:
+  /crawl/{id}:
+    parameters:
+      - name: id
+        in: path
+        description: L’identifiant de la tâche de crawl
+        required: true
+        schema:
+          type: string
+          format: uuid
+    get:
+      tags:
+        - Crawling
+      summary: Récupérer l’état d’une tâche de crawl
+      operationId: getCrawlStatus
+      responses:
+        '200':
+          description: Réponse en cas de succès
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CrawlStatusResponseObj'
+        '402':
+          description: Paiement requis
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: Payment required to access this resource.
+        '429':
+          description: Trop de requêtes
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: >-
+                      Request rate limit exceeded. Please wait and try again
+                      later.
+        '500':
+          description: Erreur du serveur
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: An unexpected error occurred on the server.
+      security:
+        - bearerAuth: []
+components:
+  schemas:
+    CrawlStatusResponseObj:
+      type: object
+      properties:
+        status:
+          type: string
+          description: >-
+            L’état actuel du crawl. Peut avoir pour valeur `scraping`,
+            `completed` ou `failed`.
+        total:
+          type: integer
+          description: Nombre total de pages ayant fait l'objet d'une tentative de crawl.
+        completed:
+          type: integer
+          description: Le nombre de pages explorées avec succès.
+        creditsUsed:
+          type: integer
+          description: Le nombre de crédits utilisés pour l’opération de crawl.
+        expiresAt:
+          type: string
+          format: date-time
+          description: La date et l’heure d’expiration du crawl.
+        next:
+          type: string
+          nullable: true
+          description: >-
+            L’URL permettant de récupérer les 10 Mo de données suivants.
+            Retournée si l’exploration n’est pas terminée ou si la réponse
+            dépasse 10 Mo.
+        data:
+          type: array
+          description: Les données du crawl.
+          items:
+            type: object
+            properties:
+              markdown:
+                type: string
+              html:
+                type: string
+                nullable: true
+                description: Version HTML du contenu de la page si `includeHtml` vaut true
+              rawHtml:
+                type: string
+                nullable: true
+                description: Contenu HTML brut de la page si `includeRawHtml` est à true
+              links:
+                type: array
+                items:
+                  type: string
+                description: >-
+                  Liste des liens présents sur la page si `includeLinks` est
+                  défini sur `true`
+              screenshot:
+                type: string
+                nullable: true
+                description: >-
+                  Capture d’écran de la page si `includeScreenshot` est défini
+                  sur `true`
+              metadata:
+                type: object
+                properties:
+                  title:
+                    oneOf:
+                      - type: string
+                      - type: array
+                        items:
+                          type: string
+                    description: >-
+                      Titre extrait de la page, peut être une chaîne de
+                      caractères ou un tableau de chaînes de caractères
+                  description:
+                    oneOf:
+                      - type: string
+                      - type: array
+                        items:
+                          type: string
+                    description: >-
+                      Description extraite de la page, peut être une chaîne de
+                      caractères ou un tableau de chaînes de caractères
+                  language:
+                    oneOf:
+                      - type: string
+                      - type: array
+                        items:
+                          type: string
+                    nullable: true
+                    description: >-
+                      Langue extraite de la page, peut être une chaîne ou un
+                      tableau de chaînes de caractères
+                  sourceURL:
+                    type: string
+                    format: uri
+                  keywords:
+                    oneOf:
+                      - type: string
+                      - type: array
+                        items:
+                          type: string
+                    description: >-
+                      Mots-clés extraits de la page, pouvant être une chaîne de
+                      caractères ou un tableau de chaînes de caractères
+                  ogLocaleAlternate:
+                    type: array
+                    items:
+                      type: string
+                    description: Autres paramètres régionaux pour cette page
+                  '<any other metadata> ':
+                    oneOf:
+                      - type: string
+                      - type: array
+                        items:
+                          type: string
+                    description: >-
+                      Autres métadonnées extraites du HTML, pouvant être une
+                      chaîne ou un tableau de chaînes
+                  statusCode:
+                    type: integer
+                    description: Le code de statut de la page
+                  error:
+                    type: string
+                    nullable: true
+                    description: Le message d’erreur de la page
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+
+````
+
+Built with [Mintlify](https://mintlify.com).

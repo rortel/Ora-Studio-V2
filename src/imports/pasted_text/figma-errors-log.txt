@@ -1,0 +1,196 @@
+[vite] connecting...
+[vite] connected.
+❌ IframeMessageAbortError: Message aborted: message port was destroyed
+    at r.cleanup (https://www.figma.com/webpack-artifacts/assets/3312-6307ca20d3bd4683.min.js.br:1248:10946)
+    at s.cleanup (https://www.figma.com/webpack-artifacts/assets/3312-6307ca20d3bd4683.min.js.br:1248:13997)
+    at eT.setupMessageChannel (https://www.figma.com/webpack-artifacts/assets/figma_app-06d0392974a6c1b2.min.js.br:302:77150)
+    at e.onload (https://www.figma.com/webpack-artifacts/assets/figma_app-06d0392974a6c1b2.min.js.br:302:70072)
+[vite] connecting...
+[vite] connected.
+❌ TypeError: Failed to fetch dynamically imported module: https://app-tgd6u5ops3cjm5xxg465uknu75o6tpnr55soi5wky3xjwbpx44fq.makeproxy-c.figma.site/src/app/App.tsx
+❌ app/components/CampaignLab.tsx: Identifier 'serverPost' has already been declared. (442:8)
+
+  440 |
+  441 |   // ── POST helper: same pattern as Hub (Authorization + JSON) ──
+> 442 |   const serverPost = useCallback(async (path: string, bodyData: any, timeoutMs = 30_000) => {
+      |         ^
+  443 |     const res = await fetch(`${API_BASE}${path}`, {
+  444 |       method: "POST",
+  445 |       headers: makeHeaders(true),
+    at toParseError (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parse-error.ts:95:45)
+    at TypeScriptParserMixin.raise (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/tokenizer/index.ts:1503:19)
+    at TypeScriptScopeHandler.checkRedeclarationInScope (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/util/scope.ts:164:19)
+    at TypeScriptScopeHandler.declareName (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/util/scope.ts:118:12)
+    at TypeScriptScopeHandler.declareName (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/scope.ts:89:11)
+    at TypeScriptParserMixin.declareNameFromIdentifier (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/lval.ts:818:16)
+    at TypeScriptParserMixin.checkIdentifier (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/lval.ts:813:12)
+    at TypeScriptParserMixin.checkLVal (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/lval.ts:713:12)
+    at TypeScriptParserMixin.parseVarId (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1628:10)
+    at TypeScriptParserMixin.parseVarId (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/index.ts:3663:13)
+    at TypeScriptParserMixin.parseVar (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1577:12)
+    at TypeScriptParserMixin.parseVarStatement (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1246:10)
+    at TypeScriptParserMixin.parseVarStatement (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/index.ts:3126:33)
+    at TypeScriptParserMixin.parseStatementContent (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:607:21)
+    at TypeScriptParserMixin.parseStatementContent (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/index.ts:3185:20)
+    at TypeScriptParserMixin.parseStatementLike (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:477:17)
+    at TypeScriptParserMixin.parseStatementListItem (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:426:17)
+    at TypeScriptParserMixin.parseBlockOrModuleBlockBody (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1439:16)
+    at TypeScriptParserMixin.parseBlockBody (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1412:10)
+    at TypeScriptParserMixin.parseBlock (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1380:10)
+    at TypeScriptParserMixin.parseFunctionBody (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/expression.ts:2616:24)
+    at TypeScriptParserMixin.parseFunctionBodyAndFinish (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/expression.ts:2585:10)
+    at TypeScriptParserMixin.parseFunctionBodyAndFinish (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/index.ts:2646:20)
+    at callback (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1690:12)
+    at TypeScriptParserMixin.withSmartMixTopicForbiddingContext (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/expression.ts:3166:14)
+    at TypeScriptParserMixin.parseFunction (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1688:10)
+    at TypeScriptParserMixin.parseFunctionStatement (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1075:17)
+    at TypeScriptParserMixin.parseStatementContent (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:520:21)
+    at TypeScriptParserMixin.parseStatementContent (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/index.ts:3185:20)
+    at TypeScriptParserMixin.parseStatementLike (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:477:17)
+    at TypeScriptParserMixin.parseStatementListItem (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:426:17)
+    at TypeScriptParserMixin.parseExportDeclaration (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:2630:17)
+    at TypeScriptParserMixin.parseExportDeclaration (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/index.ts:3430:15)
+    at TypeScriptParserMixin.maybeParseExportDeclaration (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:2546:31)
+    at TypeScriptParserMixin.parseExport (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:2427:29)
+    at TypeScriptParserMixin.parseExport (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/index.ts:3087:22)
+    at TypeScriptParserMixin.parseStatementContent (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:644:25)
+    at TypeScriptParserMixin.parseStatementContent (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/index.ts:3185:20)
+    at TypeScriptParserMixin.parseStatementLike (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:477:17)
+    at TypeScriptParserMixin.parseModuleItem (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:414:17)
+    at TypeScriptParserMixin.parseBlockOrModuleBlockBody (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1438:16)
+    at TypeScriptParserMixin.parseBlockBody (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1412:10)
+    at TypeScriptParserMixin.parseProgram (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:229:10)
+    at TypeScriptParserMixin.parseTopLevel (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:203:25)
+    at TypeScriptParserMixin.parse (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/index.ts:93:10)
+    at TypeScriptParserMixin.parse (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/index.ts:4309:20)
+    at parse (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/index.ts:92:38)
+    at parser (node_modules/.pnpm/@babel+core@7.28.4/node_modules/@babel/core/src/parser/index.ts:28:19)
+    at parser.next (<anonymous>)
+    at normalizeFile (node_modules/.pnpm/@babel+core@7.28.4/node_modules/@babel/core/src/transformation/normalize-file.ts:49:24)
+❌ [vite] Internal Server Error
+app/components/CampaignLab.tsx: Identifier 'serverPost' has already been declared. (442:8)
+
+  440 |
+  441 |   // ── POST helper: same pattern as Hub (Authorization + JSON) ──
+> 442 |   const serverPost = useCallback(async (path: string, bodyData: any, timeoutMs = 30_000) => {
+      |         ^
+  443 |     const res = await fetch(`${API_BASE}${path}`, {
+  444 |       method: "POST",
+  445 |       headers: makeHeaders(true),
+    at toParseError (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parse-error.ts:95:45)
+    at TypeScriptParserMixin.raise (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/tokenizer/index.ts:1503:19)
+    at TypeScriptScopeHandler.checkRedeclarationInScope (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/util/scope.ts:164:19)
+    at TypeScriptScopeHandler.declareName (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/util/scope.ts:118:12)
+    at TypeScriptScopeHandler.declareName (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/scope.ts:89:11)
+    at TypeScriptParserMixin.declareNameFromIdentifier (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/lval.ts:818:16)
+    at TypeScriptParserMixin.checkIdentifier (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/lval.ts:813:12)
+    at TypeScriptParserMixin.checkLVal (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/lval.ts:713:12)
+    at TypeScriptParserMixin.parseVarId (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1628:10)
+    at TypeScriptParserMixin.parseVarId (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/index.ts:3663:13)
+    at TypeScriptParserMixin.parseVar (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1577:12)
+    at TypeScriptParserMixin.parseVarStatement (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1246:10)
+    at TypeScriptParserMixin.parseVarStatement (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/index.ts:3126:33)
+    at TypeScriptParserMixin.parseStatementContent (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:607:21)
+    at TypeScriptParserMixin.parseStatementContent (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/index.ts:3185:20)
+    at TypeScriptParserMixin.parseStatementLike (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:477:17)
+    at TypeScriptParserMixin.parseStatementListItem (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:426:17)
+    at TypeScriptParserMixin.parseBlockOrModuleBlockBody (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1439:16)
+    at TypeScriptParserMixin.parseBlockBody (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1412:10)
+    at TypeScriptParserMixin.parseBlock (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1380:10)
+    at TypeScriptParserMixin.parseFunctionBody (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/expression.ts:2616:24)
+    at TypeScriptParserMixin.parseFunctionBodyAndFinish (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/expression.ts:2585:10)
+    at TypeScriptParserMixin.parseFunctionBodyAndFinish (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/index.ts:2646:20)
+    at callback (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1690:12)
+    at TypeScriptParserMixin.withSmartMixTopicForbiddingContext (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/expression.ts:3166:14)
+    at TypeScriptParserMixin.parseFunction (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1688:10)
+    at TypeScriptParserMixin.parseFunctionStatement (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1075:17)
+    at TypeScriptParserMixin.parseStatementContent (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:520:21)
+    at TypeScriptParserMixin.parseStatementContent (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/index.ts:3185:20)
+    at TypeScriptParserMixin.parseStatementLike (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:477:17)
+    at TypeScriptParserMixin.parseStatementListItem (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:426:17)
+    at TypeScriptParserMixin.parseExportDeclaration (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:2630:17)
+    at TypeScriptParserMixin.parseExportDeclaration (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/index.ts:3430:15)
+    at TypeScriptParserMixin.maybeParseExportDeclaration (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:2546:31)
+    at TypeScriptParserMixin.parseExport (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:2427:29)
+    at TypeScriptParserMixin.parseExport (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/index.ts:3087:22)
+    at TypeScriptParserMixin.parseStatementContent (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:644:25)
+    at TypeScriptParserMixin.parseStatementContent (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/index.ts:3185:20)
+    at TypeScriptParserMixin.parseStatementLike (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:477:17)
+    at TypeScriptParserMixin.parseModuleItem (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:414:17)
+    at TypeScriptParserMixin.parseBlockOrModuleBlockBody (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1438:16)
+    at TypeScriptParserMixin.parseBlockBody (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:1412:10)
+    at TypeScriptParserMixin.parseProgram (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:229:10)
+    at TypeScriptParserMixin.parseTopLevel (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/statement.ts:203:25)
+    at TypeScriptParserMixin.parse (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/parser/index.ts:93:10)
+    at TypeScriptParserMixin.parse (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/plugins/typescript/index.ts:4309:20)
+    at parse (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/src/index.ts:92:38)
+    at parser (node_modules/.pnpm/@babel+core@7.28.4/node_modules/@babel/core/src/parser/index.ts:28:19)
+    at parser.next (<anonymous>)
+    at normalizeFile (node_modules/.pnpm/@babel+core@7.28.4/node_modules/@babel/core/src/transformation/normalize-file.ts:49:24)
+❌ 1:04:48 PM [vite] Internal server error: app/components/CampaignLab.tsx: Identifier 'serverPost' has already been declared. (442:8)
+
+  440 |
+  441 |   // ── POST helper: same pattern as Hub (Authorization + JSON) ──
+> 442 |   const serverPost = useCallback(async (path: string, bodyData: any, timeoutMs = 30_000) => {
+      |         ^
+  443 |     const res = await fetch(`${API_BASE}${path}`, {
+  444 |       method: "POST",
+  445 |       headers: makeHeaders(true),
+  Plugin: vite:react-babel
+  File: app/components/CampaignLab.tsx:441:8
+  440|  
+  441|    // ── POST helper: same pattern as Hub (Authorization + JSON) ──
+  442|    const serverPost = useCallback(async (path: string, bodyData: any, timeoutMs = 30_000) => {
+     |          ^
+  443|      const res = await fetch(`${API_BASE}${path}`, {
+  444|        method: "POST",
+      at toParseError (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parse-error.ts:95:45)
+      at TypeScriptParserMixin.raise (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/tokenizer/index.ts:1503:19)
+      at TypeScriptScopeHandler.checkRedeclarationInScope (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/util/scope.ts:164:19)
+      at TypeScriptScopeHandler.declareName (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/util/scope.ts:118:12)
+      at TypeScriptScopeHandler.declareName (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/plugins/typescript/scope.ts:89:11)
+      at TypeScriptParserMixin.declareNameFromIdentifier (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/lval.ts:818:16)
+      at TypeScriptParserMixin.checkIdentifier (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/lval.ts:813:12)
+      at TypeScriptParserMixin.checkLVal (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/lval.ts:713:12)
+      at TypeScriptParserMixin.parseVarId (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:1628:10)
+      at TypeScriptParserMixin.parseVarId (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/plugins/typescript/index.ts:3663:13)
+      at TypeScriptParserMixin.parseVar (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:1577:12)
+      at TypeScriptParserMixin.parseVarStatement (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:1246:10)
+      at TypeScriptParserMixin.parseVarStatement (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/plugins/typescript/index.ts:3126:33)
+      at TypeScriptParserMixin.parseStatementContent (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:607:21)
+      at TypeScriptParserMixin.parseStatementContent (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/plugins/typescript/index.ts:3185:20)
+      at TypeScriptParserMixin.parseStatementLike (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:477:17)
+      at TypeScriptParserMixin.parseStatementListItem (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:426:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:1439:16)
+      at TypeScriptParserMixin.parseBlockBody (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:1412:10)
+      at TypeScriptParserMixin.parseBlock (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:1380:10)
+      at TypeScriptParserMixin.parseFunctionBody (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/expression.ts:2616:24)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/expression.ts:2585:10)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/plugins/typescript/index.ts:2646:20)
+      at callback (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:1690:12)
+      at TypeScriptParserMixin.withSmartMixTopicForbiddingContext (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/expression.ts:3166:14)
+      at TypeScriptParserMixin.parseFunction (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:1688:10)
+      at TypeScriptParserMixin.parseFunctionStatement (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:1075:17)
+      at TypeScriptParserMixin.parseStatementContent (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:520:21)
+      at TypeScriptParserMixin.parseStatementContent (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/plugins/typescript/index.ts:3185:20)
+      at TypeScriptParserMixin.parseStatementLike (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:477:17)
+      at TypeScriptParserMixin.parseStatementListItem (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:426:17)
+      at TypeScriptParserMixin.parseExportDeclaration (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:2630:17)
+      at TypeScriptParserMixin.parseExportDeclaration (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/plugins/typescript/index.ts:3430:15)
+      at TypeScriptParserMixin.maybeParseExportDeclaration (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:2546:31)
+      at TypeScriptParserMixin.parseExport (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:2427:29)
+      at TypeScriptParserMixin.parseExport (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/plugins/typescript/index.ts:3087:22)
+      at TypeScriptParserMixin.parseStatementContent (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:644:25)
+      at TypeScriptParserMixin.parseStatementContent (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/plugins/typescript/index.ts:3185:20)
+      at TypeScriptParserMixin.parseStatementLike (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:477:17)
+      at TypeScriptParserMixin.parseModuleItem (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:414:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:1438:16)
+      at TypeScriptParserMixin.parseBlockBody (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:1412:10)
+      at TypeScriptParserMixin.parseProgram (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:229:10)
+      at TypeScriptParserMixin.parseTopLevel (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/statement.ts:203:25)
+      at TypeScriptParserMixin.parse (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/parser/index.ts:93:10)
+      at TypeScriptParserMixin.parse (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/plugins/typescript/index.ts:4309:20)
+      at parse (node_modules/.pnpm/@babel+parser@7.28.4/node_modules/@babel/parser/index.ts:92:38)
+      at parser (node_modules/.pnpm/@babel+core@7.28.4/node_modules/@babel/core/parser/index.ts:28:19)
+      at parser.next (<anonymous>)
+      at normalizeFile (node_modules/.pnpm/@babel+core@7.28.4/node_modules/@babel/core/transformation/normalize-file.ts:49:24)

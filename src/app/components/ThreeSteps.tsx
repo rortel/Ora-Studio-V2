@@ -1,140 +1,172 @@
 import { motion } from "motion/react";
-import { Sparkles, Columns2, CheckCircle2 } from "lucide-react";
+
+/**
+ * Screen 2 — "One prompt, all models" aggregator diagram
+ */
 
 const steps = [
   {
     num: "01",
-    title: "Generate with the right model",
-    desc: "Text, image, video, code — pick from the top models for each category, or let ORA route your prompt. No juggling tabs, no managing subscriptions.",
-    icon: Sparkles,
+    title: "One prompt",
+    desc: "Type once. ORA sends your brief to every AI model simultaneously. No switching tabs, no copy-pasting.",
   },
   {
     num: "02",
-    title: "Compare outputs in Arena",
-    desc: "One prompt to 2-4 models at once. Results side by side. Pick the best, mix parts from different outputs, or refine on the spot.",
-    icon: Columns2,
+    title: "All models",
+    desc: "38+ models across image, video, text, code, audio. Each returns its best interpretation. Side by side.",
   },
   {
     num: "03",
-    title: "Choose. Publish. Move on.",
-    desc: "Keep what works, discard the rest. Add Studio for brand consistency, the Canvas editor, and publish-ready assets — when the project calls for it.",
-    icon: CheckCircle2,
+    title: "Pick the best",
+    desc: "Compare quality, speed, cost instantly. Save to library. Iterate. Ship.",
   },
+];
+
+const modelNodes = [
+  { name: "GPT-5", x: 78, y: 8 },
+  { name: "Claude 4.5", x: 88, y: 22 },
+  { name: "Flux Pro", x: 92, y: 38 },
+  { name: "Luma Ray", x: 90, y: 54 },
+  { name: "DALL-E 3", x: 84, y: 68 },
+  { name: "Sora 2", x: 74, y: 82 },
+  { name: "Gemini", x: 62, y: 92 },
 ];
 
 export function ThreeSteps() {
   return (
-    <section id="how-it-works" className="py-20 md:py-28">
+    <section id="how-it-works" className="py-24 md:py-32" style={{ background: "#131211" }}>
       <div className="max-w-[1200px] mx-auto px-6">
+        {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 12 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-14"
+          className="mb-16"
         >
-          <span
-            className="inline-block mb-4 px-3 py-1 rounded-full"
-            style={{
-              fontSize: "10px",
-              fontWeight: 600,
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              color: "var(--ora-signal)",
-              background: "var(--ora-signal-light)",
-              border: "1px solid rgba(59,79,196,0.1)",
-            }}
-          >
-            How it works
-          </span>
           <h2
-            className="text-foreground mb-4"
             style={{
               fontSize: "clamp(1.75rem, 3.5vw, 2.5rem)",
               fontWeight: 500,
+              lineHeight: 1.1,
               letterSpacing: "-0.03em",
-              lineHeight: 1.15,
+              color: "#E8E4DF",
+              marginBottom: 12,
             }}
           >
-            Generate. Compare. Choose.
+            One prompt. All models.
           </h2>
-          <p
-            className="text-muted-foreground"
-            style={{ fontSize: "16px", lineHeight: 1.55 }}
-          >
-            A clear workflow for every type of generation. No complexity, no tool switching.
+          <p style={{ fontSize: "16px", lineHeight: 1.55, color: "#5C5856", maxWidth: 440 }}>
+            The aggregator pattern: your brief goes everywhere at once.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-5">
-          {steps.map((step, i) => {
-            const Icon = step.icon;
-            return (
+        {/* Diagram + steps side by side */}
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
+          {/* Aggregator diagram */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="relative"
+          >
+            <svg viewBox="0 0 100 100" className="w-full max-w-[480px]" fill="none">
+              {/* Source dot */}
+              <circle cx="8" cy="50" r="2" fill="#E8E4DF" />
+              <text x="8" y="58" textAnchor="middle" fill="#5C5856" fontSize="3" fontFamily="Inter">
+                prompt
+              </text>
+
+              {/* Lines to targets */}
+              {modelNodes.map((node, i) => (
+                <motion.line
+                  key={i}
+                  x1="10"
+                  y1="50"
+                  x2={node.x}
+                  y2={node.y}
+                  stroke="rgba(255,255,255,0.06)"
+                  strokeWidth="0.3"
+                  strokeDasharray="1 1"
+                  initial={{ pathLength: 0, opacity: 0 }}
+                  whileInView={{ pathLength: 1, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.2 + i * 0.1 }}
+                />
+              ))}
+
+              {/* Model nodes */}
+              {modelNodes.map((node, i) => (
+                <g key={`node-${i}`}>
+                  <motion.circle
+                    cx={node.x}
+                    cy={node.y}
+                    r="1.5"
+                    fill="#E8E4DF"
+                    opacity={0.4}
+                    initial={{ scale: 0, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 0.4 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.5 + i * 0.08 }}
+                  />
+                  <motion.text
+                    x={node.x + 3}
+                    y={node.y + 1}
+                    fill="#9A9590"
+                    fontSize="2.5"
+                    fontFamily="Inter"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.6 + i * 0.08 }}
+                  >
+                    {node.name}
+                  </motion.text>
+                </g>
+              ))}
+            </svg>
+          </motion.div>
+
+          {/* Steps */}
+          <div className="space-y-8">
+            {steps.map((s, i) => (
               <motion.div
-                key={step.num}
+                key={s.num}
                 initial={{ opacity: 0, y: 14 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="group relative bg-card border rounded-xl p-7 transition-all hover:border-ora-signal/30 cursor-default"
-                style={{
-                  borderColor: "var(--border)",
-                  boxShadow: "0 1px 3px rgba(0,0,0,0.03)",
-                }}
+                transition={{ delay: i * 0.08 }}
+                className="flex gap-5"
               >
                 <span
-                  className="absolute top-4 right-5 select-none pointer-events-none"
                   style={{
-                    fontSize: "72px",
-                    fontWeight: 600,
-                    color: "var(--ora-signal)",
-                    opacity: 0.04,
-                    lineHeight: 1,
-                    letterSpacing: "-0.04em",
-                  }}
-                >
-                  {step.num}
-                </span>
-
-                <div
-                  className="w-10 h-10 rounded-xl flex items-center justify-center mb-5"
-                  style={{
-                    background: "var(--ora-signal-light)",
-                    border: "1px solid rgba(59,79,196,0.1)",
-                  }}
-                >
-                  <Icon
-                    size={18}
-                    style={{ color: "var(--ora-signal)" }}
-                    strokeWidth={1.5}
-                  />
-                </div>
-
-                <span
-                  className="text-ora-signal mb-2 block"
-                  style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.06em" }}
-                >
-                  Step {step.num}
-                </span>
-                <h3
-                  className="text-foreground mb-3"
-                  style={{
-                    fontSize: "18px",
+                    fontSize: "13px",
                     fontWeight: 500,
-                    letterSpacing: "-0.02em",
-                    lineHeight: 1.3,
+                    color: "#5C5856",
+                    minWidth: 28,
+                    paddingTop: 2,
                   }}
                 >
-                  {step.title}
-                </h3>
-                <p
-                  className="text-muted-foreground"
-                  style={{ fontSize: "14px", lineHeight: 1.65 }}
-                >
-                  {step.desc}
-                </p>
+                  {s.num}
+                </span>
+                <div>
+                  <h3
+                    style={{
+                      fontSize: "17px",
+                      fontWeight: 500,
+                      color: "#E8E4DF",
+                      letterSpacing: "-0.02em",
+                      marginBottom: 6,
+                    }}
+                  >
+                    {s.title}
+                  </h3>
+                  <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#9A9590" }}>
+                    {s.desc}
+                  </p>
+                </div>
               </motion.div>
-            );
-          })}
+            ))}
+          </div>
         </div>
       </div>
     </section>

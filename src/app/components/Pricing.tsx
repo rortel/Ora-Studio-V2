@@ -2,290 +2,201 @@ import { Link } from "react-router";
 import { Check, ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 
+/**
+ * Screen 4 — Pricing: Free / Pro / Team
+ * Dark monochrome. No accent colors.
+ */
+
 const plans = [
   {
-    name: "Free",
-    price: "Free",
-    period: "",
-    audience: "Test ORA with no commitment and no credit card.",
-    credits: "50 free credits",
+    name: "Starter",
+    price: "29",
+    period: "/mo",
+    desc: "For individuals getting started.",
+    credits: "200 credits/mo",
     features: [
-      "50 credits, no card required",
-      "Multi-AI comparator (GPT-4o, Claude, Gemini)",
-      "Text, image, code generation",
-      "Unlimited credit rollover",
+      "200 credits/month",
+      "10 AI models",
+      "Text + image generation",
     ],
-    cta: "Start for free",
+    cta: "Start Starter",
     highlighted: false,
   },
   {
-    name: "Generate",
-    price: "\u20AC19",
-    period: "/month",
-    audience: "For creators and independents who generate regularly.",
-    credits: "200 credits at activation",
+    name: "Pro",
+    price: "79",
+    period: "/mo",
+    desc: "Every model. Every format.",
+    credits: "1,500 credits/mo",
     features: [
-      "200 credits at activation",
-      "Unlimited multi-AI comparator",
-      "Text, image, code, audio, video",
-      "Unlimited credit rollover",
-      "Credit packs available",
+      "1,500 credits/month",
+      "All 38+ models",
+      "Text, image, video, audio",
+      "Full Arena",
+      "Priority queue",
+      "Credit packs",
     ],
-    cta: "Start Generate",
-    highlighted: false,
-  },
-  {
-    name: "Studio",
-    price: "\u20AC49",
-    period: "/month",
-    audience: "For brands that want content aligned with their identity.",
-    credits: "500 credits/month included",
-    features: [
-      "500 credits/month included",
-      "Everything in Generate +",
-      "Brand Vault (brand identity)",
-      "1 product/service included",
-      "Canvas editor (Canva-like)",
-      "Complete Asset Builder",
-      "Unlimited credit rollover",
-    ],
-    cta: "Start Studio",
+    cta: "Start Pro",
     highlighted: true,
+  },
+  {
+    name: "Business",
+    price: "149",
+    period: "/mo",
+    desc: "Brand-safe content at scale.",
+    credits: "5,000 credits/mo",
+    features: [
+      "5,000 credits/month",
+      "Everything in Pro",
+      "Brand Vault",
+      "Campaign Lab",
+      "Auto Content Calendar",
+      "Auto-publish & scheduling",
+      "Brand Score",
+      "Priority support",
+    ],
+    cta: "Start Business",
+    highlighted: false,
   },
 ];
 
 export function Pricing() {
   return (
-    <section id="pricing" className="py-20 md:py-28">
-      <div className="max-w-[1200px] mx-auto px-6">
+    <section id="pricing" className="py-24 md:py-32" style={{ background: "#131211" }}>
+      <div className="max-w-[1080px] mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="mb-14"
         >
-          <span
-            className="inline-block mb-4 px-3 py-1 rounded-full"
-            style={{
-              fontSize: "10px",
-              fontWeight: 600,
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              color: "var(--ora-signal)",
-              background: "var(--ora-signal-light)",
-              border: "1px solid rgba(59,79,196,0.1)",
-            }}
-          >
-            Pricing
-          </span>
           <h2
-            className="text-foreground mb-4"
             style={{
               fontSize: "clamp(1.75rem, 3.5vw, 2.5rem)",
               fontWeight: 500,
+              lineHeight: 1.1,
               letterSpacing: "-0.03em",
-              lineHeight: 1.15,
+              color: "#E8E4DF",
+              marginBottom: 12,
             }}
           >
-            Transparent pricing. No surprises.
+            Pricing
           </h2>
-          <p
-            className="text-muted-foreground"
-            style={{ fontSize: "16px", lineHeight: 1.55 }}
-          >
-            Pay only for what you use. Credits never expire — unlimited rollover.
+          <p style={{ fontSize: "16px", lineHeight: 1.55, color: "#5C5856", maxWidth: 360 }}>
+            Pay for credits. Use any model. Credits never expire.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-5">
-          {plans.map((plan, i) => (
+        <div className="grid md:grid-cols-3 gap-4">
+          {plans.map((p, i) => (
             <motion.div
-              key={plan.name}
+              key={p.name}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className={`relative flex flex-col bg-card rounded-xl border ${
-                plan.highlighted ? "border-ora-signal" : "border-border"
-              }`}
+              transition={{ delay: i * 0.06 }}
+              className="rounded-xl p-6 flex flex-col relative"
               style={{
-                boxShadow: plan.highlighted
-                  ? "0 1px 3px rgba(0,0,0,0.04), 0 16px 48px rgba(59,79,196,0.12), 0 0 0 1px rgba(59,79,196,0.08)"
-                  : "0 1px 3px rgba(0,0,0,0.03)",
+                background: p.highlighted ? "#222120" : "#1a1918",
+                border: p.highlighted
+                  ? "1px solid rgba(255,255,255,0.16)"
+                  : "1px solid rgba(255,255,255,0.06)",
+                minHeight: 400,
               }}
             >
-              {plan.highlighted && (
-                <div className="absolute -top-3 left-6">
-                  <span
-                    className="text-white px-3 py-1 rounded-full"
-                    style={{
-                      background:
-                        "linear-gradient(135deg, var(--ora-signal) 0%, #2a3ba8 100%)",
-                      fontSize: "10px",
-                      fontWeight: 600,
-                      letterSpacing: "0.05em",
-                    }}
-                  >
-                    RECOMMENDED
-                  </span>
-                </div>
+              {p.highlighted && (
+                <span
+                  className="absolute top-4 right-4 px-2 py-0.5 rounded"
+                  style={{
+                    background: "rgba(255,255,255,0.10)",
+                    fontSize: "10px",
+                    fontWeight: 500,
+                    color: "#E8E4DF",
+                    letterSpacing: "0.04em",
+                  }}
+                >
+                  POPULAR
+                </span>
               )}
 
-              <div className="p-7 pb-0">
+              <div>
                 <h3
-                  className="text-foreground mb-1"
-                  style={{ fontSize: "18px", fontWeight: 500 }}
+                  style={{
+                    fontSize: "16px",
+                    fontWeight: 500,
+                    color: "#E8E4DF",
+                    marginBottom: 4,
+                  }}
                 >
-                  {plan.name}
+                  {p.name}
                 </h3>
                 <p
-                  className="text-muted-foreground mb-5"
-                  style={{ fontSize: "13px" }}
+                  style={{
+                    fontSize: "13px",
+                    color: "#5C5856",
+                    marginBottom: 16,
+                  }}
                 >
-                  {plan.audience}
+                  {p.desc}
                 </p>
-                <div
-                  className="flex items-baseline gap-1 mb-2"
-                >
+                <div className="flex items-baseline gap-1 mb-1">
+                  <span style={{ fontSize: "11px", color: "#5C5856" }}>EUR</span>
                   <span
-                    className="text-foreground"
                     style={{
                       fontSize: "40px",
                       fontWeight: 500,
-                      letterSpacing: "-0.03em",
+                      letterSpacing: "-0.035em",
                       lineHeight: 1,
+                      color: "#E8E4DF",
                     }}
                   >
-                    {plan.price}
+                    {p.price}
                   </span>
-                  {plan.period && (
-                    <span
-                      className="text-muted-foreground"
-                      style={{ fontSize: "15px" }}
-                    >
-                      {plan.period}
-                    </span>
+                  {p.period && (
+                    <span style={{ fontSize: "14px", color: "#5C5856" }}>{p.period}</span>
                   )}
                 </div>
                 <p
-                  className="mb-6 pb-6 border-b"
                   style={{
-                    borderColor: "var(--border)",
                     fontSize: "12px",
                     fontWeight: 500,
-                    color: "var(--ora-signal)",
+                    color: "#9A9590",
+                    marginBottom: 20,
                   }}
                 >
-                  {plan.credits}
+                  {p.credits}
                 </p>
               </div>
 
-              <ul className="px-7 space-y-2.5 flex-1">
-                {plan.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2.5">
-                    <div
-                      className="w-4 h-4 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0"
-                      style={{
-                        background: plan.highlighted
-                          ? "var(--ora-signal-light)"
-                          : "var(--secondary)",
-                      }}
-                    >
-                      <Check
-                        size={9}
-                        style={{
-                          color: plan.highlighted
-                            ? "var(--ora-signal)"
-                            : "var(--muted-foreground)",
-                        }}
-                        strokeWidth={2.5}
-                      />
-                    </div>
-                    <span
-                      className="text-foreground/75"
-                      style={{ fontSize: "13px", lineHeight: 1.5 }}
-                    >
-                      {f}
-                    </span>
+              <ul className="space-y-2.5 flex-1">
+                {p.features.map((f) => (
+                  <li key={f} className="flex items-center gap-2.5">
+                    <Check size={12} style={{ color: "#5C5856" }} strokeWidth={2} />
+                    <span style={{ fontSize: "13px", color: "#9A9590" }}>{f}</span>
                   </li>
                 ))}
               </ul>
 
-              <div className="p-7 pt-8">
-                <Link
-                  to="/pricing"
-                  className={`group flex items-center justify-center gap-2 w-full py-3 rounded-xl transition-all ${
-                    plan.highlighted
-                      ? "text-white hover:opacity-90"
-                      : "bg-secondary text-foreground hover:bg-muted border border-border"
-                  }`}
-                  style={{
-                    background: plan.highlighted
-                      ? "linear-gradient(135deg, var(--ora-signal) 0%, #2a3ba8 100%)"
-                      : undefined,
-                    boxShadow: plan.highlighted
-                      ? "0 2px 12px rgba(59,79,196,0.3)"
-                      : undefined,
-                    fontSize: "14px",
-                    fontWeight: 500,
-                  }}
-                >
-                  {plan.cta}
-                  {plan.highlighted && (
-                    <ArrowRight
-                      size={14}
-                      className="group-hover:translate-x-0.5 transition-transform"
-                    />
-                  )}
-                </Link>
-              </div>
+              <Link
+                to="/login?mode=signup"
+                className="group mt-6 flex items-center justify-center gap-2 py-3 rounded-lg transition-all hover:opacity-90"
+                style={{
+                  background: p.highlighted ? "#E8E4DF" : "rgba(255,255,255,0.06)",
+                  color: p.highlighted ? "#131211" : "#E8E4DF",
+                  fontSize: "13px",
+                  fontWeight: 500,
+                  border: p.highlighted ? "none" : "1px solid rgba(255,255,255,0.06)",
+                }}
+              >
+                {p.cta}
+                <ArrowRight
+                  size={13}
+                  className="group-hover:translate-x-0.5 transition-transform"
+                />
+              </Link>
             </motion.div>
           ))}
         </div>
-
-        {/* Credit packs strip */}
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-10 grid sm:grid-cols-3 gap-4"
-        >
-          {[
-            { name: "Pack S", price: "\u20AC10", credits: "1,000 credits", rate: "\u20AC0.01/cr" },
-            { name: "Pack M", price: "\u20AC45", credits: "5,000 credits", rate: "\u20AC0.009/cr" },
-            { name: "Pack L", price: "\u20AC160", credits: "20,000 credits", rate: "\u20AC0.008/cr" },
-          ].map((pack) => (
-            <div
-              key={pack.name}
-              className="bg-card border rounded-xl px-5 py-4 flex items-center justify-between"
-              style={{
-                borderColor: "var(--border)",
-                boxShadow: "0 1px 2px rgba(0,0,0,0.02)",
-              }}
-            >
-              <div>
-                <span style={{ fontSize: "14px", fontWeight: 500, color: "var(--foreground)" }}>
-                  {pack.name}
-                </span>
-                <span
-                  className="block"
-                  style={{ fontSize: "12px", color: "var(--muted-foreground)" }}
-                >
-                  {pack.credits} — {pack.rate}
-                </span>
-              </div>
-              <span style={{ fontSize: "20px", fontWeight: 500, color: "var(--foreground)", letterSpacing: "-0.02em" }}>
-                {pack.price}
-              </span>
-            </div>
-          ))}
-        </motion.div>
-        <p
-          className="text-center mt-6"
-          style={{ fontSize: "12px", color: "var(--muted-foreground)" }}
-        >
-          ORA is an AI aggregator — you only pay for actual API calls. No hidden costs, unlimited rollover.
-        </p>
       </div>
     </section>
   );

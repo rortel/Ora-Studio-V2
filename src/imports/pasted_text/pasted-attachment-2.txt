@@ -1,0 +1,345 @@
+
+
+
+Voilà le MJML complet de ce template Adidas avec tous les placeholders systématisés.
+
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Helvetica Neue, Helvetica, Arial, sans-serif" />
+      <mj-text font-size="14px" line-height="1.6" color="#111111" />
+      <mj-button font-size="13px" font-weight="700" letter-spacing="1px" border-radius="0" />
+    </mj-attributes>
+
+    <mj-preview>{{PREHEADER_TEXT}}</mj-preview>
+
+    <mj-style>
+      .nav-link { color: #ffffff !important; text-decoration: none; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+      .footer-link { color: #111111 !important; text-decoration: underline; font-size: 12px; }
+      .social-icon { display: inline-block; margin: 0 8px; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f4f4f4">
+
+    <!-- ─── PREHEADER VIEW ONLINE ──────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="8px 20px">
+      <mj-column>
+        <mj-text font-size="12px" color="#666666" align="left">
+          {{PREHEADER_TEXT}}
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="12px" color="#666666" align="right">
+          <a href="{{VIEW_ONLINE_URL}}" style="color:#666666;">View this email online</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── NAV BAR ───────────────────────────────────────────── -->
+    <mj-section background-color="#000000" padding="14px 20px">
+      <mj-column width="30%">
+        <mj-image
+          src="{{LOGO_URL}}"
+          alt="{{BRAND_NAME}}"
+          width="40px"
+          align="left"
+          href="{{LOGO_LINK_URL}}"
+        />
+      </mj-column>
+      <mj-column width="70%">
+        <mj-text align="right">
+          <a href="{{NAV_LINK_1_URL}}" class="nav-link">{{NAV_LINK_1_LABEL}}</a>
+          &nbsp;&nbsp;
+          <a href="{{NAV_LINK_2_URL}}" class="nav-link">{{NAV_LINK_2_LABEL}}</a>
+          &nbsp;&nbsp;
+          <a href="{{NAV_LINK_3_URL}}" class="nav-link">{{NAV_LINK_3_LABEL}}</a>
+          &nbsp;&nbsp;
+          <a href="{{NAV_LINK_4_URL}}" class="nav-link">{{NAV_LINK_4_LABEL}}</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── HERO IMAGE ────────────────────────────────────────── -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image
+          src="{{HERO_IMAGE_URL}}"
+          alt="{{HERO_IMAGE_ALT}}"
+          width="600px"
+          href="{{HERO_IMAGE_LINK_URL}}"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── SECTION 1 : TITRE + CORPS + CTAs ─────────────────── -->
+    <mj-section background-color="#ffffff" padding="32px 24px 16px">
+      <mj-column>
+        <mj-text font-size="28px" font-weight="900" letter-spacing="1px" text-transform="uppercase" padding-bottom="12px">
+          {{SECTION_1_TITLE}}
+        </mj-text>
+        <mj-text font-size="14px" color="#444444" padding-bottom="24px">
+          {{SECTION_1_BODY}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="0 24px 8px">
+      <mj-column>
+        <mj-button
+          background-color="#000000"
+          color="#ffffff"
+          href="{{CTA_1_URL}}"
+          align="left"
+          padding-bottom="8px"
+          width="180px"
+        >
+          {{CTA_1_LABEL}} →
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="0 24px 8px">
+      <mj-column>
+        <mj-button
+          background-color="#000000"
+          color="#ffffff"
+          href="{{CTA_2_URL}}"
+          align="left"
+          padding-bottom="8px"
+          width="180px"
+        >
+          {{CTA_2_LABEL}} →
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="0 24px 32px">
+      <mj-column>
+        <mj-button
+          background-color="#000000"
+          color="#ffffff"
+          href="{{CTA_3_URL}}"
+          align="left"
+          width="180px"
+        >
+          {{CTA_3_LABEL}} →
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── SECTION 2 : IMAGE + TITRE + CORPS + CTAs ─────────── -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image
+          src="{{SECTION_2_IMAGE_URL}}"
+          alt="{{SECTION_2_IMAGE_ALT}}"
+          width="600px"
+          href="{{SECTION_2_IMAGE_LINK_URL}}"
+        />
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="32px 24px 8px">
+      <mj-column>
+        <mj-text font-size="26px" font-weight="900" letter-spacing="1px" text-transform="uppercase" padding-bottom="12px">
+          {{SECTION_2_TITLE}}
+        </mj-text>
+        <mj-text font-size="14px" color="#444444" padding-bottom="12px">
+          {{SECTION_2_BODY_1}}
+        </mj-text>
+        <mj-text font-size="14px" color="#444444" padding-bottom="24px">
+          {{SECTION_2_BODY_2}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="0 24px 8px">
+      <mj-column>
+        <mj-button
+          background-color="#000000"
+          color="#ffffff"
+          href="{{CTA_4_URL}}"
+          align="left"
+          padding-bottom="8px"
+          width="180px"
+        >
+          {{CTA_4_LABEL}} →
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="0 24px 32px">
+      <mj-column>
+        <mj-button
+          background-color="#000000"
+          color="#ffffff"
+          href="{{CTA_5_URL}}"
+          align="left"
+          width="180px"
+        >
+          {{CTA_5_LABEL}} →
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── APP / PROMO BLOCK ─────────────────────────────────── -->
+    <mj-section background-color="#f5f5f5" padding="24px">
+      <mj-column width="20%">
+        <mj-image
+          src="{{APP_ICON_URL}}"
+          alt="{{APP_NAME}}"
+          width="60px"
+          border-radius="14px"
+        />
+      </mj-column>
+      <mj-column width="80%">
+        <mj-text font-size="16px" font-weight="900" text-transform="uppercase" letter-spacing="1px" padding-bottom="4px">
+          {{APP_PROMO_TITLE}}
+        </mj-text>
+        <mj-text font-size="14px" font-weight="700" text-decoration="underline" padding="0">
+          <a href="{{APP_PROMO_URL}}" style="color:#111111;">{{APP_PROMO_CTA}}</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── RÉSEAUX SOCIAUX ───────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="24px">
+      <mj-column>
+        <mj-social font-size="12px" icon-size="28px" mode="horizontal" align="center" padding="0">
+          <mj-social-element
+            name="instagram"
+            src="{{SOCIAL_ICON_INSTAGRAM_URL}}"
+            href="{{SOCIAL_LINK_INSTAGRAM}}"
+            background-color="transparent"
+            icon-size="28px"
+            padding="0 8px"
+          />
+          <mj-social-element
+            name="youtube"
+            src="{{SOCIAL_ICON_YOUTUBE_URL}}"
+            href="{{SOCIAL_LINK_YOUTUBE}}"
+            background-color="transparent"
+            icon-size="28px"
+            padding="0 8px"
+          />
+          <mj-social-element
+            name="twitter"
+            src="{{SOCIAL_ICON_X_URL}}"
+            href="{{SOCIAL_LINK_X}}"
+            background-color="transparent"
+            icon-size="28px"
+            padding="0 8px"
+          />
+          <mj-social-element
+            name="pinterest"
+            src="{{SOCIAL_ICON_PINTEREST_URL}}"
+            href="{{SOCIAL_LINK_PINTEREST}}"
+            background-color="transparent"
+            icon-size="28px"
+            padding="0 8px"
+          />
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <!-- ─── FOOTER LÉGAL ──────────────────────────────────────── -->
+    <mj-section background-color="#ffffff" padding="8px 24px 24px">
+      <mj-column>
+        <mj-text font-size="12px" color="#666666" align="center" padding-bottom="12px">
+          <a href="{{UNSUBSCRIBE_URL}}" class="footer-link">Unsubscribe</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="{{VIEW_ONLINE_URL}}" class="footer-link">View in the browser</a>
+        </mj-text>
+
+        <mj-text font-size="11px" color="#999999" align="left" line-height="1.5">
+          {{LEGAL_DISCLAIMER}}
+        </mj-text>
+
+        <mj-text font-size="11px" color="#999999" align="left" padding-top="8px">
+          {{COMPANY_NAME}}, {{COMPANY_ADDRESS}}, {{COMPANY_CITY_STATE_ZIP}}<br />
+          © {{CURRENT_YEAR}} {{BRAND_NAME}}. {{LEGAL_TRADEMARK_TEXT}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
+
+Map des placeholders
+GLOBALS
+  {{PREHEADER_TEXT}}          Texte prévisualisation boîte mail
+  {{VIEW_ONLINE_URL}}         Lien "voir en ligne"
+  {{CURRENT_YEAR}}            Année auto
+
+BRAND
+  {{BRAND_NAME}}              Nom de la marque
+  {{LOGO_URL}}                URL du logo
+  {{LOGO_LINK_URL}}           Lien du logo
+
+NAVIGATION
+  {{NAV_LINK_1_LABEL}}        ex: "MEN"
+  {{NAV_LINK_1_URL}}
+  ... (x4)
+
+IMAGES
+  {{HERO_IMAGE_URL}}
+  {{HERO_IMAGE_ALT}}
+  {{HERO_IMAGE_LINK_URL}}
+  {{SECTION_2_IMAGE_URL}}
+  ... etc.
+
+CONTENU
+  {{SECTION_1_TITLE}}
+  {{SECTION_1_BODY}}
+  {{SECTION_2_TITLE}}
+  {{SECTION_2_BODY_1}}
+  {{SECTION_2_BODY_2}}
+
+CTAs
+  {{CTA_1_LABEL}} / {{CTA_1_URL}}
+  ... (x5)
+
+APP BLOCK
+  {{APP_ICON_URL}}
+  {{APP_NAME}}
+  {{APP_PROMO_TITLE}}
+  {{APP_PROMO_CTA}}
+  {{APP_PROMO_URL}}
+
+RÉSEAUX SOCIAUX
+  {{SOCIAL_ICON_INSTAGRAM_URL}}
+  {{SOCIAL_LINK_INSTAGRAM}}
+  ... (x4)
+
+LÉGAL
+  {{UNSUBSCRIBE_URL}}
+  {{LEGAL_DISCLAIMER}}
+  {{COMPANY_NAME}}
+  {{COMPANY_ADDRESS}}
+  {{COMPANY_CITY_STATE_ZIP}}
+  {{LEGAL_TRADEMARK_TEXT}}
+
+Compiler le MJML en HTML
+# Install
+npm install -g mjml
+
+# Compile
+mjml template.mjml -o template.html
+
+Le HTML compilé va directement dans Figma Make.
+
+
+main
+
+claude/review-github-repo-jU36w
+
++51
+-3
+
+Voir la PR
+
+
+
+Ora
+

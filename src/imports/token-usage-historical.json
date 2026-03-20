@@ -1,0 +1,109 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://docs.firecrawl.dev/llms.txt
+> Use this file to discover all available pages before exploring further.
+
+# Historique d’utilisation des jetons
+
+Retourne l’utilisation des jetons, mois par mois. Ce point de terminaison peut également ventiler l’usage par clé d’API, en option.
+
+
+## OpenAPI
+
+````yaml fr/api-reference/v1-openapi.json get /team/token-usage/historical
+openapi: 3.0.0
+info:
+  title: Firecrawl API
+  version: v1
+  description: >-
+    API permettant d’interagir avec les services Firecrawl pour réaliser des
+    tâches de scraping et de crawling web.
+  contact:
+    name: Firecrawl Support
+    url: https://firecrawl.dev/support
+    email: support@firecrawl.dev
+servers:
+  - url: https://api.firecrawl.dev/v1
+security:
+  - bearerAuth: []
+paths:
+  /team/token-usage/historical:
+    get:
+      tags:
+        - Billing
+      summary: >-
+        Récupérer l’historique d’utilisation des tokens de l’équipe authentifiée
+        (Extract uniquement)
+      operationId: getHistoricalTokenUsage
+      parameters:
+        - name: byApiKey
+          in: query
+          description: Récupérer l’historique d’utilisation des jetons par clé API
+          required: false
+          schema:
+            type: boolean
+            default: false
+      responses:
+        '200':
+          description: Réponse en cas de succès
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  periods:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        startDate:
+                          type: string
+                          format: date-time
+                          description: Date de début de la période de facturation
+                          example: '2025-01-01T00:00:00Z'
+                        endDate:
+                          type: string
+                          format: date-time
+                          description: Date de fin de la période de facturation
+                          example: '2025-01-31T23:59:59Z'
+                        apiKey:
+                          type: string
+                          description: >-
+                            Nom de la clé API utilisée pour la période de
+                            facturation. null si byApiKey est false (valeur par
+                            défaut)
+                          nullable: true
+                        totalTokens:
+                          type: integer
+                          description: >-
+                            Nombre total de jetons utilisés au cours de la
+                            période de facturation
+                          example: 1000
+        '500':
+          description: Erreur du serveur
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: false
+                  error:
+                    type: string
+                    example: >-
+                      Internal server error while fetching historical token
+                      usage
+      security:
+        - bearerAuth: []
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+
+````
+
+Built with [Mintlify](https://mintlify.com).

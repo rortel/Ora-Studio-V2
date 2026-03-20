@@ -1,0 +1,122 @@
+[fetchProfile] status=200 authenticated=true (1821ms)
+[vite] hot updated: /src/app/components/CampaignLab.tsx
+[vite] hot updated: /src/styles/index.css
+8:45:06 AM [vite] (client) hmr update /src/app/components/CampaignLab.tsx, /src/styles/index.css
+[CampaignLab] Loading vault via POST /user/init...
+❌ [CampaignLab] Vault fetch error (attempt 1): TypeError: Failed to fetch
+❌ [CampaignLab] Vault fetch error (attempt 2): TypeError: Failed to fetch
+[Auth] onAuthStateChange event: SIGNED_IN
+[fetchProfile] trying POST /auth/me with Authorization header...
+[fetchProfile] status=200 authenticated=true (2079ms)
+[Auth] onAuthStateChange event: SIGNED_IN
+[fetchProfile] trying POST /auth/me with Authorization header...
+[fetchProfile] status=200 authenticated=true (515ms)
+[Auth] onAuthStateChange event: SIGNED_IN
+[fetchProfile] trying POST /auth/me with Authorization header...
+[fetchProfile] status=200 authenticated=true (575ms)
+[Auth] onAuthStateChange event: SIGNED_IN
+[fetchProfile] trying POST /auth/me with Authorization header...
+[fetchProfile] status=200 authenticated=true (569ms)
+[Auth] onAuthStateChange event: SIGNED_IN
+[fetchProfile] trying POST /auth/me with Authorization header...
+[fetchProfile] status=200 authenticated=true (470ms)
+[Auth] onAuthStateChange event: SIGNED_IN
+[fetchProfile] trying POST /auth/me with Authorization header...
+[fetchProfile] status=200 authenticated=true (1001ms)
+[Auth] onAuthStateChange event: SIGNED_IN
+[fetchProfile] trying POST /auth/me with Authorization header...
+[fetchProfile] status=200 authenticated=true (466ms)
+[Auth] onAuthStateChange event: SIGNED_IN
+[fetchProfile] trying POST /auth/me with Authorization header...
+[fetchProfile] status=200 authenticated=true (666ms)
+[Auth] onAuthStateChange event: SIGNED_IN
+[fetchProfile] trying POST /auth/me with Authorization header...
+[fetchProfile] status=200 authenticated=true (446ms)
+[Auth] onAuthStateChange event: SIGNED_IN
+[fetchProfile] trying POST /auth/me with Authorization header...
+[fetchProfile] status=200 authenticated=true (522ms)
+[CampaignLab] Uploading 10 ref photos to Storage...
+❌ [CampaignLab] Upload refs attempt 1 failed: Failed to fetch
+❌ [CampaignLab] Upload refs attempt 2 failed: Failed to fetch
+[CampaignLab] 0 ref URLs obtained
+[CampaignLab] Pipeline: CLASSIC (text-only)
+[CampaignLab] POST texts: 6 formats, brief=2000c, body=2263c
+[CampaignLab] Text response: HTTP 200, 4158c, body={"success":true,"copyMap":{"linkedin-video":{"subject":"","headline":"","caption":"Découvrez l'avenir du transport longue distance avec le MAN eTGX. Puissant, écologique et doté d'une autonomie impressionnante jusqu'à 700 km, il redéfinit la performance et le confort. Avec 5 millions de kilomètres parcourus en conditions réelles, nos camions électriques démontrent leur fiabilité. Prêt à électrifie
+[CampaignLab] Text OK: 6 formats, provider=apipod/gpt-4o, 9920ms, keys=[linkedin-video,instagram-carousel,facebook-post,tiktok-video,twitter-post,youtube-thumbnail]
+[CampaignLab] copyMap keys: [
+  "linkedin-video",
+  "instagram-carousel",
+  "facebook-post",
+  "tiktok-video",
+  "twitter-post",
+  "youtube-thumbnail"
+]
+[CampaignLab] Image generation: 4 formats, v2=false
+[CampaignLab] Carousel [instagram-carousel]: 7 slides to illustrate
+[CampaignLab] Image GET [instagram-carousel]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Slide%201%20for%20Instagram%20carousel%3A%20%
+[CampaignLab] Image GET [instagram-carousel]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Slide%202%20for%20Instagram%20carousel%3A%20J
+[CampaignLab] Image GET [instagram-carousel]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Slide%203%20for%20Instagram%20carousel%3A%20R
+[CampaignLab] Image GET [facebook-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=close-up%20of%20MAN%20eTGX%20electric%20truck
+[CampaignLab] Image GET [twitter-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=sleek%20and%20futuristic%20MAN%20eTGX%20elect
+[CampaignLab] Image GET [youtube-thumbnail]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=bold%2C%20attention-grabbing%20image%20of%20M
+[CampaignLab] Carousel [instagram-carousel] slide 2/7 OK
+[CampaignLab] Classic Image [twitter-post] OK: https://storage.cdn-luma.com/dream_machine/ee81a584-3dbb-477
+[CampaignLab] Classic Image [youtube-thumbnail] OK: https://storage.cdn-luma.com/dream_machine/46f71816-0996-427
+[CampaignLab] Carousel [instagram-carousel] slide 1/7 OK
+[CampaignLab] Classic Image [facebook-post] OK: https://storage.cdn-luma.com/dream_machine/e457679e-5277-43e
+[CampaignLab] Carousel [instagram-carousel] slide 3/7 OK
+[CampaignLab] Image GET [instagram-carousel]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Slide%204%20for%20Instagram%20carousel%3A%20C
+[CampaignLab] Image GET [instagram-carousel]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Slide%205%20for%20Instagram%20carousel%3A%20P
+[CampaignLab] Image GET [instagram-carousel]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Slide%206%20for%20Instagram%20carousel%3A%20P
+[CampaignLab] Carousel [instagram-carousel] slide 6/7 OK
+[CampaignLab] Carousel [instagram-carousel] slide 4/7 OK
+[CampaignLab] Carousel [instagram-carousel] slide 5/7 OK
+[CampaignLab] Image GET [instagram-carousel]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Slide%207%20for%20Instagram%20carousel%3A%20D
+[CampaignLab] Carousel [instagram-carousel] slide 7/7 OK
+[CampaignLab] Carousel [instagram-carousel] complete: 7/7 slides
+[CampaignLab] Video generation: 2 formats (background)
+[CampaignLab] Video [linkedin-video]: using first available image as keyframe
+[CampaignLab] Video START [linkedin-video]: hasKeyframe=true https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=smooth+tracking+shot+of+MAN+eTGX+driving+on+a+s
+[CampaignLab] Video [tiktok-video]: using first available image as keyframe
+[CampaignLab] Video START [tiktok-video]: hasKeyframe=true https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=dynamic+shots+of+MAN+eTGX+on+the+road%2C+showca
+[CampaignLab] Zernio accounts fetch: TypeError: Failed to fetch
+[CampaignLab] Video [tiktok-video] submitted: e0476075-a698-4758-9d00-0c50845457a4
+[CampaignLab] Video [linkedin-video] submitted: 4d6c882a-1a09-4b4f-a3c2-a8297ef90fdf
+[CampaignLab] Video [tiktok-video] poll #1: state=dreaming
+[CampaignLab] Video [linkedin-video] poll #1: state=dreaming
+[CampaignLab] Video [tiktok-video] poll #2: state=dreaming
+[CampaignLab] Video [linkedin-video] poll #2: state=dreaming
+[CampaignLab] Video [tiktok-video] poll #3: state=dreaming
+[CampaignLab] Video [linkedin-video] poll #3: state=dreaming
+[CampaignLab] Video [tiktok-video] poll #4: state=dreaming
+[CampaignLab] Video [linkedin-video] poll #4: state=dreaming
+[CampaignLab] Video [tiktok-video] poll #5: state=dreaming
+[CampaignLab] Video [linkedin-video] poll #5: state=dreaming
+[CampaignLab] Video [tiktok-video] poll #6: state=dreaming
+[CampaignLab] Video [linkedin-video] poll #6: state=dreaming
+[CampaignLab] Video [tiktok-video] poll #7: state=dreaming
+[CampaignLab] Video [linkedin-video] poll #7: state=dreaming
+[CampaignLab] Video [tiktok-video] poll #8: state=dreaming
+[CampaignLab] Video [linkedin-video] poll #8: state=dreaming
+[CampaignLab] Video [tiktok-video] poll #9: state=dreaming
+[CampaignLab] Video [linkedin-video] poll #9: state=dreaming
+[CampaignLab] Video [tiktok-video] poll #10: state=dreaming
+[CampaignLab] Video [linkedin-video] poll #10: state=dreaming
+[CampaignLab] Video [tiktok-video] poll #11: state=dreaming
+[CampaignLab] Video [linkedin-video] poll #11: state=dreaming
+[CampaignLab] Video [tiktok-video] poll #12: state=dreaming
+[CampaignLab] Video [linkedin-video] poll #12: state=dreaming
+[CampaignLab] Video [tiktok-video] poll #13: state=dreaming
+[CampaignLab] Video [linkedin-video] poll #13: state=dreaming
+[CampaignLab] Video [linkedin-video] poll #14: state=dreaming
+[CampaignLab] Video [tiktok-video] poll #14: state=dreaming
+[CampaignLab] Video [tiktok-video] poll #15: state=dreaming
+[CampaignLab] Video [linkedin-video] poll #15: state=dreaming
+[CampaignLab] Video [tiktok-video] poll #16: state=dreaming
+[CampaignLab] Video [linkedin-video] poll #16: state=dreaming
+[CampaignLab] Video [tiktok-video] poll #17: state=completed
+[CampaignLab] Soundtrack START [tiktok-video]...
+❌ [CampaignLab] Soundtrack/SmartMerge [tiktok-video] error: Failed to fetch
+[CampaignLab] Video [linkedin-video] poll #17: state=completed
+[CampaignLab] Soundtrack START [linkedin-video]...
+❌ [CampaignLab] Soundtrack/SmartMerge [linkedin-video] error: Failed to fetch

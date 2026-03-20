@@ -8,7 +8,8 @@ import {
   DollarSign, BarChart3, Eye, Edit3, Check, X,
 } from "lucide-react";
 import { useAuth } from "../lib/auth-context";
-import { API_BASE, publicAnonKey } from "../lib/supabase";
+import { API_BASE, publicAnonKey, supabase } from "../lib/supabase";
+import { RouteGuard } from "../components/RouteGuard";
 
 /* ═══════════════════════════════════
    TYPES
@@ -55,27 +56,82 @@ type AdminTab = "overview" | "users" | "logs" | "financial" | "costs" | "diagnos
 const ADMIN_EMAIL = "romainortel@gmail.com";
 
 export function AdminPage() {
+  return (
+    <RouteGuard requireAuth requireAdmin>
+      <AdminPageContent />
+    </RouteGuard>
+  );
+}
+
+function AdminPageContent() {
   const { isAdmin, isLoading, accessToken, user, profile } = useAuth();
   const navigate = useNavigate();
   const [tab, setTab] = useState<AdminTab>("overview");
   const [overview, setOverview] = useState<AdminOverview | null>(null);
   const [users, setUsers] = useState<AdminUser[]>([]);
   const [logs, setLogs] = useState<SystemLog[]>([]);
+  const [costsData, setCostsData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [editingUser, setEditingUser] = useState<string | null>(null);
   const [editPlan, setEditPlan] = useState("");
   const [error, setError] = useState("");
 
-  // FIX: Use same pattern as HubPage — send publicAnonKey in Authorization (for gateway),
-  // send user JWT in X-User-Token (for server-side auth). Prevents JWT validation hang in gateway.
-  const headers = useCallback(() => {
-    const h: Record<string, string> = {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${publicAnonKey}`,
+  /**
+   * POST-based admin fetch with Authorization header.
+   * _token in body is extracted by server body-parser middleware for user auth.
+   */
+  const adminPost = useCallback(async (
+    path: string,
+    extraBody?: Record<string, any>,
+    timeout = 30000,
+  ): Promise<any> => {
+    // Always get the freshest token from Supabase session
+    let token = accessToken;
+    try {
+      const { data: sess } = await supabase.auth.getSession();
+      if (sess?.session?.access_token) {
+        token = sess.session.access_token;
+      }
+    } catch { /* use existing token */ }
+    if (!token) throw new Error("No auth token available");
+    console.log("[Admin] adminPost token length:", token.length, "preview:", token.slice(0, 20) + "...");
+
+    const url = `${API_BASE}${path}`;
+    const body = JSON.stringify({ _token: token, ...extraBody });
+
+    const attempt = async (label: string): Promise<any> => {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), timeout);
+      try {
+        console.log(`[Admin] ${label} POST ${path}`);
+        const res = await fetch(url, {
+          method: "POST",
+          headers: {
+            "Authorization": `Bearer ${publicAnonKey}`,
+            "Content-Type": "text/plain",
+          },
+          body,
+          signal: controller.signal,
+        });
+        clearTimeout(timer);
+        const data = await res.json();
+        if (res.status === 403) throw new Error("Access denied");
+        if (res.status === 401) throw new Error("Unauthorized");
+        return data;
+      } catch (err) {
+        clearTimeout(timer);
+        throw err;
+      }
     };
-    if (accessToken) h["X-User-Token"] = accessToken;
-    return h;
+
+    try {
+      return await attempt("try1");
+    } catch (err1) {
+      console.warn(`[Admin] ${path} attempt 1 failed:`, err1);
+      await new Promise((r) => setTimeout(r, 2500));
+      return await attempt("try2");
+    }
   }, [accessToken]);
 
   const isAdminUser = isAdmin || (user?.email?.toLowerCase() === ADMIN_EMAIL);
@@ -94,74 +150,66 @@ export function AdminPage() {
       console.log("[Admin] No accessToken yet, skipping fetch");
       return;
     }
+    console.log("[Admin] accessToken present, length:", accessToken.length, "preview:", accessToken.slice(0, 20) + "...");
+
+    // Refresh session to ensure token is not expired
+    let freshToken = accessToken;
+    try {
+      const { data: sessionData } = await supabase.auth.getSession();
+      if (sessionData?.session?.access_token) {
+        freshToken = sessionData.session.access_token;
+        if (freshToken !== accessToken) {
+          console.log("[Admin] Using refreshed session token");
+        }
+      }
+    } catch (refreshErr) {
+      console.warn("[Admin] Session refresh check failed:", refreshErr);
+    }
+
     setLoading(true);
     setError("");
-    console.log("[Admin] Fetching admin data...");
+
+    const emptyOverview: AdminOverview = {
+      totalUsers: 0,
+      planCounts: { free: 0, generate: 0, studio: 0 },
+      totalCreditsUsed: 0,
+      totalCreditsAllocated: 0,
+      mrr: 0,
+      generateRevenue: 0,
+      studioRevenue: 0,
+      recentLogs: [],
+      serverTime: new Date().toISOString(),
+    };
+
     try {
-      const h = headers();
-      const [ovRes, usRes, lgRes] = await Promise.all([
-        fetch(`${API_BASE}/admin/overview`, { headers: h }),
-        fetch(`${API_BASE}/admin/users`, { headers: h }),
-        fetch(`${API_BASE}/admin/logs`, { headers: h }),
-      ]);
-      console.log("[Admin] Responses:", ovRes.status, usRes.status, lgRes.status);
-      if (ovRes.status === 403) {
-        setError("Access denied. This page is restricted to the admin account (romainortel@gmail.com).");
-        setLoading(false);
-        return;
-      }
-      const ovData = await ovRes.json();
-      const usData = await usRes.json();
-      const lgData = await lgRes.json();
-      console.log("[Admin] overview:", ovData.success, "users:", usData.users?.length, "logs:", lgData.logs?.length);
-      if (ovData.overview) setOverview(ovData.overview);
-      else {
-        console.warn("[Admin] No overview in response:", ovData);
-        setOverview({
-          totalUsers: 0,
-          planCounts: { free: 0, generate: 0, studio: 0 },
-          totalCreditsUsed: 0,
-          totalCreditsAllocated: 0,
-          mrr: 0,
-          generateRevenue: 0,
-          studioRevenue: 0,
-          recentLogs: [],
-          serverTime: new Date().toISOString(),
-        });
-        if (ovData.error) setError(ovData.error);
-      }
-      if (usData.users) setUsers(usData.users);
-      if (lgData.logs) setLogs(lgData.logs);
+      // Single POST request — no CORS preflight, all admin data at once
+      console.log("[Admin] Fetching all admin data via POST /admin/data...");
+      const data = await adminPost("/admin/data");
+
+      if (data.overview) setOverview(data.overview);
+      else setOverview(emptyOverview);
+
+      if (data.users) setUsers(data.users);
+      if (data.logs) setLogs(data.logs);
+      if (data.costs) setCostsData(data.costs);
+
+      if (data.error) setError(data.error);
+      else console.log("[Admin] All data loaded:", data.overview?.totalUsers, "users");
     } catch (err) {
       console.error("[Admin] Fetch error:", err);
-      setError(`Failed to load admin data: ${err}`);
-      if (!overview) {
-        setOverview({
-          totalUsers: 0,
-          planCounts: { free: 0, generate: 0, studio: 0 },
-          totalCreditsUsed: 0,
-          totalCreditsAllocated: 0,
-          mrr: 0,
-          generateRevenue: 0,
-          studioRevenue: 0,
-          recentLogs: [],
-          serverTime: new Date().toISOString(),
-        });
-      }
+      const msg = err instanceof Error ? err.message : String(err);
+      setError(`Admin data: ${msg}`);
+      if (!overview) setOverview(emptyOverview);
     }
     setLoading(false);
-  }, [accessToken, headers]);
+  }, [accessToken, adminPost]);
 
   useEffect(() => { fetchData(); }, [fetchData]);
 
   const handlePlanChange = async (userId: string) => {
     if (!editPlan) return;
     try {
-      await fetch(`${API_BASE}/admin/users/${userId}/plan`, {
-        method: "PUT",
-        headers: headers(),
-        body: JSON.stringify({ plan: editPlan }),
-      });
+      await adminPost(`/admin/users/${userId}/plan`, { plan: editPlan });
       setEditingUser(null);
       fetchData();
     } catch (err) {
@@ -171,7 +219,7 @@ export function AdminPage() {
 
   if (isLoading) {
     return (
-      <div className="min-h-[calc(100vh-56px)] flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <Loader2 size={24} className="animate-spin text-muted-foreground" />
       </div>
     );
@@ -179,7 +227,7 @@ export function AdminPage() {
 
   if (!user) {
     return (
-      <div className="min-h-[calc(100vh-56px)] flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <Loader2 size={24} className="animate-spin text-muted-foreground" />
       </div>
     );
@@ -187,7 +235,7 @@ export function AdminPage() {
 
   if (!profile && !isAdminUser) {
     return (
-      <div className="min-h-[calc(100vh-56px)] flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <Loader2 size={24} className="animate-spin text-muted-foreground" />
       </div>
     );
@@ -195,7 +243,7 @@ export function AdminPage() {
 
   if (!isAdminUser) {
     return (
-      <div className="min-h-[calc(100vh-56px)] flex items-center justify-center px-6">
+      <div className="min-h-screen flex items-center justify-center px-6">
         <div className="text-center max-w-[400px]">
           <div className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-5" style={{ background: "rgba(212,24,61,0.08)" }}>
             <Shield size={22} style={{ color: "var(--destructive)" }} />
@@ -234,12 +282,12 @@ export function AdminPage() {
   );
 
   return (
-    <div className="min-h-[calc(100vh-56px)]">
+    <div className="min-h-screen">
       <div className="max-w-[1200px] mx-auto px-6 py-8">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ background: "var(--ora-signal)", color: "#fff" }}>
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ background: "var(--primary)", color: "var(--primary-foreground)" }}>
               <Shield size={18} />
             </div>
             <div>
@@ -306,7 +354,7 @@ export function AdminPage() {
           />
         )}
         {tab === "financial" && overview && <FinancialTab overview={overview} users={users} />}
-        {tab === "costs" && overview && <CostsTab overview={overview} users={users} />}
+        {tab === "costs" && overview && <CostsTab overview={overview} users={users} preloadedCosts={costsData} onRefresh={fetchData} />}
         {tab === "logs" && <LogsTab logs={logs} />}
         {tab === "diagnostics" && <DiagnosticsTab authToken={accessToken || publicAnonKey} />}
 
@@ -376,11 +424,12 @@ function OverviewTab({ overview }: { overview: AdminOverview }) {
 
       <div className="bg-card border border-border rounded-xl p-6" style={{ boxShadow: "0 1px 2px rgba(0,0,0,0.02)" }}>
         <h3 style={{ fontSize: "14px", fontWeight: 500, color: "var(--foreground)", marginBottom: "16px" }}>Plan Distribution</h3>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-4 gap-4">
           {[
-            { plan: "Free", count: overview.planCounts.free, color: "var(--muted-foreground)" },
-            { plan: "Generate", count: overview.planCounts.generate, color: "var(--ora-signal)" },
-            { plan: "Studio", count: overview.planCounts.studio, color: "#16a34a" },
+            { plan: "Free (legacy)", count: overview.planCounts.free, color: "var(--muted-foreground)" },
+            { plan: "Starter", count: overview.planCounts.starter || 0, color: "#f59e0b" },
+            { plan: "Pro", count: overview.planCounts.generate, color: "var(--ora-signal)" },
+            { plan: "Business", count: overview.planCounts.studio, color: "#16a34a" },
           ].map((p) => (
             <div key={p.plan} className="text-center">
               <span style={{ fontSize: "32px", fontWeight: 500, color: p.color }}>{p.count}</span>
@@ -391,6 +440,7 @@ function OverviewTab({ overview }: { overview: AdminOverview }) {
         {overview.totalUsers > 0 && (
           <div className="mt-4 h-2 rounded-full bg-secondary overflow-hidden flex">
             {overview.planCounts.free > 0 && <div style={{ width: `${(overview.planCounts.free / overview.totalUsers) * 100}%`, background: "var(--muted-foreground)" }} />}
+            {(overview.planCounts as any).starter > 0 && <div style={{ width: `${((overview.planCounts as any).starter / overview.totalUsers) * 100}%`, background: "#f59e0b" }} />}
             {overview.planCounts.generate > 0 && <div style={{ width: `${(overview.planCounts.generate / overview.totalUsers) * 100}%`, background: "var(--ora-signal)" }} />}
             {overview.planCounts.studio > 0 && <div style={{ width: `${(overview.planCounts.studio / overview.totalUsers) * 100}%`, background: "#16a34a" }} />}
           </div>
@@ -419,7 +469,7 @@ function UsersTab({ users, search, setSearch, editingUser, setEditingUser, editP
   editingUser: string | null; setEditingUser: (id: string | null) => void;
   editPlan: string; setEditPlan: (p: string) => void; onPlanChange: (userId: string) => void;
 }) {
-  const planBadgeColor: Record<string, string> = { free: "var(--muted-foreground)", generate: "var(--ora-signal)", studio: "#16a34a" };
+  const planBadgeColor: Record<string, string> = { free: "var(--muted-foreground)", starter: "#f59e0b", generate: "var(--ora-signal)", studio: "#16a34a" };
 
   return (
     <div className="space-y-4">
@@ -451,9 +501,10 @@ function UsersTab({ users, search, setSearch, editingUser, setEditingUser, editP
                     {editingUser === u.userId ? (
                       <div className="flex items-center gap-1">
                         <select value={editPlan} onChange={(e) => setEditPlan(e.target.value)} className="bg-input-background border border-border rounded px-2 py-1 text-foreground" style={{ fontSize: "12px" }}>
-                          <option value="free">Free</option>
-                          <option value="generate">Generate</option>
-                          <option value="studio">Studio</option>
+                          <option value="free">Free (legacy)</option>
+                          <option value="starter">Starter</option>
+                          <option value="generate">Pro</option>
+                          <option value="studio">Business</option>
                         </select>
                         <button onClick={() => onPlanChange(u.userId)} className="text-ora-signal hover:opacity-80 cursor-pointer"><Check size={14} /></button>
                         <button onClick={() => setEditingUser(null)} className="text-muted-foreground hover:text-foreground cursor-pointer"><X size={14} /></button>
@@ -527,11 +578,15 @@ function FinancialTab({ overview, users }: { overview: AdminOverview; users: Adm
         <h3 style={{ fontSize: "14px", fontWeight: 500, color: "var(--foreground)", marginBottom: "16px" }}>Revenue Breakdown</h3>
         <div className="space-y-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3"><div className="w-3 h-3 rounded-sm" style={{ background: "var(--ora-signal)" }} /><span style={{ fontSize: "13px", color: "var(--foreground)" }}>Generate (EUR 19/mo)</span></div>
+            <div className="flex items-center gap-3"><div className="w-3 h-3 rounded-sm" style={{ background: "#f59e0b" }} /><span style={{ fontSize: "13px", color: "var(--foreground)" }}>Starter (EUR 29/mo)</span></div>
+            <div className="flex items-center gap-4"><span style={{ fontSize: "13px", color: "var(--muted-foreground)" }}>{(overview.planCounts as any).starter || 0} users</span><span style={{ fontSize: "14px", fontWeight: 500, color: "var(--foreground)" }}>EUR {(overview as any).starterRevenue || 0}</span></div>
+          </div>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3"><div className="w-3 h-3 rounded-sm" style={{ background: "var(--ora-signal)" }} /><span style={{ fontSize: "13px", color: "var(--foreground)" }}>Pro (EUR 79/mo)</span></div>
             <div className="flex items-center gap-4"><span style={{ fontSize: "13px", color: "var(--muted-foreground)" }}>{overview.planCounts.generate} users</span><span style={{ fontSize: "14px", fontWeight: 500, color: "var(--foreground)" }}>EUR {overview.generateRevenue}</span></div>
           </div>
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3"><div className="w-3 h-3 rounded-sm" style={{ background: "#16a34a" }} /><span style={{ fontSize: "13px", color: "var(--foreground)" }}>Studio (EUR 49/mo)</span></div>
+            <div className="flex items-center gap-3"><div className="w-3 h-3 rounded-sm" style={{ background: "#16a34a" }} /><span style={{ fontSize: "13px", color: "var(--foreground)" }}>Business (EUR 149/mo)</span></div>
             <div className="flex items-center gap-4"><span style={{ fontSize: "13px", color: "var(--muted-foreground)" }}>{overview.planCounts.studio} users</span><span style={{ fontSize: "14px", fontWeight: 500, color: "var(--foreground)" }}>EUR {overview.studioRevenue}</span></div>
           </div>
           <div className="border-t border-border pt-3 flex items-center justify-between">
@@ -562,46 +617,23 @@ function FinancialTab({ overview, users }: { overview: AdminOverview; users: Adm
 /* ─── COSTS TAB (API Cost Tracking) ─── */
 
 const PROVIDER_COLORS: Record<string, string> = {
-  runware: "#10b981", apipod: "#3b4fc4", fal: "#f59e0b", replicate: "#8b5cf6", unknown: "#6b7280",
+  runware: "#10b981", apipod: "#3b4fc4", fal: "#f59e0b", replicate: "#8b5cf6",
+  luma: "#06b6d4", higgsfield: "#ec4899", kling: "#f97316", unknown: "#6b7280",
 };
 const TYPE_COLORS: Record<string, string> = {
   text: "#3b4fc4", image: "#10b981", video: "#f59e0b", audio: "#8b5cf6",
 };
 
-function CostsTab({ overview, users }: { overview: AdminOverview; users: AdminUser[] }) {
-  const { accessToken } = useAuth();
-  const [costsData, setCostsData] = useState<any>(null);
-  const [costsLoading, setCostsLoading] = useState(false);
-  const [costsError, setCostsError] = useState("");
+// Fixed infrastructure costs (EUR/month)
+const FIXED_COSTS = [
+  { name: "Figma Make", cost: 350, status: "confirmed" as const },
+  { name: "Supabase Pro", cost: 23, status: "confirmed" as const },
+  { name: "Domain + misc", cost: 5, status: "confirmed" as const },
+];
+const TOTAL_FIXED = FIXED_COSTS.reduce((s, c) => s + c.cost, 0);
 
-  const fetchCosts = useCallback(async () => {
-    setCostsLoading(true);
-    setCostsError("");
-    try {
-      const h: Record<string, string> = {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${publicAnonKey}`,
-      };
-      if (accessToken) h["X-User-Token"] = accessToken;
-      const res = await fetch(`${API_BASE}/admin/costs`, { headers: h });
-      const data = await res.json();
-      if (data.costs) setCostsData(data.costs);
-      else setCostsError(data.error || "No cost data returned");
-    } catch (err) {
-      setCostsError(`Failed to load costs: ${err}`);
-    }
-    setCostsLoading(false);
-  }, [accessToken]);
-
-  useEffect(() => { fetchCosts(); }, [fetchCosts]);
-
-  if (costsLoading && !costsData) {
-    return (
-      <div className="flex items-center justify-center py-20">
-        <Loader2 size={20} className="animate-spin text-muted-foreground" />
-      </div>
-    );
-  }
+function CostsTab({ overview, users, preloadedCosts, onRefresh }: { overview: AdminOverview; users: AdminUser[]; preloadedCosts?: any; onRefresh?: () => void }) {
+  const costsData = preloadedCosts;
 
   const total = costsData?.total || { count: 0, costEur: 0, revenueEur: 0, marginEur: 0 };
   const byProvider = costsData?.byProvider || {};
@@ -609,6 +641,8 @@ function CostsTab({ overview, users }: { overview: AdminOverview; users: AdminUs
   const byDay = costsData?.byDay || {};
   const recentEntries = costsData?.recentEntries || [];
   const marginPct = total.revenueEur > 0 ? ((total.marginEur / total.revenueEur) * 100).toFixed(1) : "0";
+  const totalMonthlyBurn = TOTAL_FIXED + total.costEur;
+  const netAfterFixed = overview.mrr - totalMonthlyBurn;
 
   // Chart data
   const dayChartData = Object.entries(byDay)
@@ -630,10 +664,10 @@ function CostsTab({ overview, users }: { overview: AdminOverview; users: AdminUs
 
   return (
     <div className="space-y-6">
-      {costsError && (
+      {!costsData && (
         <div className="p-4 rounded-xl border flex items-start gap-3" style={{ borderColor: "rgba(212,24,61,0.15)", background: "rgba(212,24,61,0.04)" }}>
           <AlertTriangle size={16} className="flex-shrink-0 mt-0.5" style={{ color: "var(--destructive)" }} />
-          <p style={{ fontSize: "13px", color: "var(--destructive)", lineHeight: 1.5 }}>{costsError}</p>
+          <p style={{ fontSize: "13px", color: "var(--destructive)", lineHeight: 1.5 }}>No cost data loaded. Click Refresh to reload.</p>
         </div>
       )}
 
@@ -653,6 +687,61 @@ function CostsTab({ overview, users }: { overview: AdminOverview; users: AdminUs
             <p style={{ fontSize: "11px", color: "var(--muted-foreground)", marginTop: "4px" }}>{kpi.sub}</p>
           </motion.div>
         ))}
+      </div>
+
+      {/* Monthly Burn Summary + Fixed Costs */}
+      <div className="grid md:grid-cols-2 gap-6">
+        <div className="bg-card border border-border rounded-xl p-6" style={{ boxShadow: "0 1px 2px rgba(0,0,0,0.02)" }}>
+          <h3 style={{ fontSize: "14px", fontWeight: 500, color: "var(--foreground)", marginBottom: "16px" }}>Monthly Burn Summary</h3>
+          <div className="space-y-3">
+            <div className="flex items-center justify-between">
+              <span style={{ fontSize: "13px", color: "var(--muted-foreground)" }}>Fixed infrastructure</span>
+              <span style={{ fontSize: "13px", fontWeight: 500, color: "var(--destructive)" }}>-EUR {TOTAL_FIXED}</span>
+            </div>
+            <div className="flex items-center justify-between">
+              <span style={{ fontSize: "13px", color: "var(--muted-foreground)" }}>Variable API costs (this period)</span>
+              <span style={{ fontSize: "13px", fontWeight: 500, color: "var(--destructive)" }}>-EUR {total.costEur.toFixed(2)}</span>
+            </div>
+            <div className="border-t border-border pt-3 flex items-center justify-between">
+              <span style={{ fontSize: "13px", fontWeight: 500, color: "var(--foreground)" }}>Total monthly burn</span>
+              <span style={{ fontSize: "16px", fontWeight: 600, color: "var(--destructive)" }}>EUR {totalMonthlyBurn.toFixed(2)}</span>
+            </div>
+            <div className="flex items-center justify-between">
+              <span style={{ fontSize: "13px", color: "var(--muted-foreground)" }}>MRR</span>
+              <span style={{ fontSize: "13px", fontWeight: 500, color: "#16a34a" }}>+EUR {overview.mrr}</span>
+            </div>
+            <div className="border-t border-border pt-3 flex items-center justify-between">
+              <span style={{ fontSize: "13px", fontWeight: 500, color: "var(--foreground)" }}>Net P&L</span>
+              <span style={{ fontSize: "16px", fontWeight: 600, color: netAfterFixed >= 0 ? "#16a34a" : "var(--destructive)" }}>
+                {netAfterFixed >= 0 ? "+" : ""}EUR {netAfterFixed.toFixed(2)}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-card border border-border rounded-xl p-6" style={{ boxShadow: "0 1px 2px rgba(0,0,0,0.02)" }}>
+          <h3 style={{ fontSize: "14px", fontWeight: 500, color: "var(--foreground)", marginBottom: "16px" }}>Fixed Infrastructure (EUR/mo)</h3>
+          <div className="space-y-3">
+            {FIXED_COSTS.map((c) => (
+              <div key={c.name} className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full" style={{ background: "#16a34a" }} />
+                  <span style={{ fontSize: "13px", color: "var(--foreground)" }}>{c.name}</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span style={{ fontSize: "13px", fontWeight: 500, color: "var(--foreground)" }}>EUR {c.cost}</span>
+                  <span className="px-1.5 py-0.5 rounded" style={{ fontSize: "9px", fontWeight: 600, color: "#16a34a", background: "rgba(22,163,74,0.08)" }}>
+                    CONFIRMED
+                  </span>
+                </div>
+              </div>
+            ))}
+            <div className="border-t border-border pt-3 flex items-center justify-between">
+              <span style={{ fontSize: "13px", fontWeight: 500, color: "var(--foreground)" }}>Total fixed</span>
+              <span style={{ fontSize: "16px", fontWeight: 600, color: "var(--foreground)" }}>EUR {TOTAL_FIXED}/mo</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Provider Breakdown + Pie */}
@@ -820,10 +909,13 @@ function CostsTab({ overview, users }: { overview: AdminOverview; users: AdminUs
                 </tr>
               </thead>
               <tbody>
-                {Object.entries(costsData.providerCostTable).map(([key, costUsd]: [string, any]) => {
+                {Object.entries(costsData.providerCostTable).sort(([a], [b]) => a.localeCompare(b)).map(([key, costUsd]: [string, any]) => {
                   const prefix = key.split("/")[0];
-                  const isVideo = key.includes(":video");
-                  const type = isVideo ? "video" : prefix === "apipod" ? "text" : key.includes("musicgen") ? "audio" : prefix === "runware" || prefix === "fal" || prefix === "replicate" ? "image" : "?";
+                  const k = key.toLowerCase();
+                  const type = prefix === "apipod" ? "text"
+                    : k.includes("musicgen") ? "audio"
+                    : k.includes("video") || k.includes("ray") || k.includes("ltx") || k.includes("minimax") || k.includes("soul") || k.includes("kling") || k.includes("seedance") || k.includes("dop") ? "video"
+                    : "image";
                   return (
                     <tr key={key} className="border-b border-border last:border-0 hover:bg-secondary/30 transition-colors">
                       <td className="px-3 py-2" style={{ fontSize: "12px", fontFamily: "monospace", color: "var(--foreground)" }}>{key}</td>
@@ -847,10 +939,10 @@ function CostsTab({ overview, users }: { overview: AdminOverview; users: AdminUs
       <div className="bg-card border border-border rounded-xl p-6" style={{ boxShadow: "0 1px 2px rgba(0,0,0,0.02)" }}>
         <div className="flex items-center justify-between mb-4">
           <h3 style={{ fontSize: "14px", fontWeight: 500, color: "var(--foreground)" }}>Recent Generations ({recentEntries.length})</h3>
-          <button onClick={fetchCosts} disabled={costsLoading}
-            className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors cursor-pointer disabled:opacity-50"
+          <button onClick={onRefresh}
+            className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors cursor-pointer"
             style={{ fontSize: "11px", fontWeight: 500 }}>
-            <RefreshCw size={12} className={costsLoading ? "animate-spin" : ""} /> Refresh Costs
+            <RefreshCw size={12} /> Refresh Costs
           </button>
         </div>
         <div className="overflow-x-auto max-h-[400px] overflow-y-auto">
@@ -943,63 +1035,36 @@ function DiagnosticsTab({ authToken }: { authToken: string }) {
   const [genTest, setGenTest] = useState<{ type: string; model?: string; result: any } | null>(null);
   const [genTesting, setGenTesting] = useState(false);
 
-  const authHeaders = (extra?: Record<string, string>) => ({
-    Authorization: `Bearer ${authToken}`,
-    ...extra,
-  });
+  // No Authorization header — use apikey query param to avoid CORS preflight
+  const authH: Record<string, string> = {};
 
   // Step 1: Health check
   const runHealthCheck = async () => {
     setHealthStatus("loading");
     setHealthError("");
     const start = Date.now();
-    
-    // Try 3 methods: anon key, user token, no auth
-    const attempts = [
-      { label: "anon-key", headers: { Authorization: `Bearer ${publicAnonKey}` } },
-      { label: "user-token", headers: authHeaders() },
-      { label: "no-auth", headers: {} as Record<string, string> },
-    ];
-    
-    const results: string[] = [];
-    
-    for (const attempt of attempts) {
-      const t0 = Date.now();
-      try {
-        const controller = new AbortController();
-        const timeout = setTimeout(() => controller.abort(), 15000);
-        const url = `${API_BASE}/health`;
-        console.log(`[Health] Trying ${attempt.label}: ${url}`);
-        const res = await fetch(url, {
-          headers: attempt.headers,
-          signal: controller.signal,
-        });
-        clearTimeout(timeout);
-        const ms = Date.now() - t0;
-        const text = await res.text();
-        const msg = `${attempt.label}: HTTP ${res.status} (${ms}ms) — ${text.slice(0, 200)}`;
-        results.push(msg);
-        console.log(`[Health] ${msg}`);
-        
-        if (res.ok) {
-          setHealthMs(ms);
-          setHealthBody(`[${attempt.label}] ${text}`);
-          setHealthStatus("ok");
-          setHealthError(results.join("\n"));
-          return; // success!
-        }
-      } catch (err) {
-        const ms = Date.now() - t0;
-        const msg = `${attempt.label}: ERROR (${ms}ms) — ${String(err)}`;
-        results.push(msg);
-        console.error(`[Health] ${msg}`);
+    try {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 15000);
+      const res = await fetch(`${API_BASE}/health`, { headers: authH, signal: controller.signal });
+      clearTimeout(timeout);
+      const ms = Date.now() - start;
+      const text = await res.text();
+      console.log(`[Health] HTTP ${res.status} (${ms}ms)`);
+      if (res.ok) {
+        setHealthMs(ms);
+        setHealthBody(text);
+        setHealthStatus("ok");
+      } else {
+        setHealthError(`HTTP ${res.status}: ${text.slice(0, 300)}`);
+        setHealthStatus("fail");
       }
+    } catch (err) {
+      const ms = Date.now() - start;
+      setHealthMs(ms);
+      setHealthError(`Network error (${ms}ms): ${err instanceof Error ? err.message : err}\n\nURL: ${API_BASE}/health`);
+      setHealthStatus("fail");
     }
-    
-    // All attempts failed
-    setHealthMs(Date.now() - start);
-    setHealthError(`All 3 attempts failed:\n${results.join("\n")}\n\nURL: ${API_BASE}/health`);
-    setHealthStatus("fail");
   };
 
   // Step 2: Load config (no auth needed — debug route is public)
@@ -1011,7 +1076,7 @@ function DiagnosticsTab({ authToken }: { authToken: string }) {
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), 25000);
       const res = await fetch(`${API_BASE}/debug/ai-config`, {
-        headers: { Authorization: `Bearer ${publicAnonKey}` },
+        headers: authH,
         signal: controller.signal,
       });
       clearTimeout(timeout);
@@ -1037,7 +1102,7 @@ function DiagnosticsTab({ authToken }: { authToken: string }) {
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), 60000); // 60s — FAL/Replicate can be slow
       const res = await fetch(`${API_BASE}/debug/test-single/${provider}`, {
-        headers: { Authorization: `Bearer ${publicAnonKey}` },
+        headers: authH,
         signal: controller.signal,
       });
       clearTimeout(timeout);
@@ -1059,11 +1124,11 @@ function DiagnosticsTab({ authToken }: { authToken: string }) {
     setGenTest(null);
     try {
       const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 30000);
+      const timeout = setTimeout(() => controller.abort(), 60000); // 60s — race pattern + fallback needs time
       const res = await fetch(`${API_BASE}/debug/generate-test`, {
         method: "POST",
-        headers: authHeaders({ "Content-Type": "application/json" }),
-        body: JSON.stringify({ type, prompt: "A simple blue circle on a white background", model }),
+        headers: { ...authH, "Content-Type": "text/plain" },
+        body: JSON.stringify({ type, prompt: "A simple blue circle on a white background", model, _token: authToken }),
         signal: controller.signal,
       });
       clearTimeout(timeout);
@@ -1276,6 +1341,8 @@ function DiagnosticsTab({ authToken }: { authToken: string }) {
             { label: "Image (ORA Vision)", type: "image", model: "ora-vision" },
             { label: "Image (DALL-E)", type: "image", model: "dall-e" },
             { label: "Image (Flux Pro)", type: "image", model: "flux-pro" },
+            { label: "Video (ORA Motion)", type: "video", model: "ora-motion" },
+            { label: "Audio (ORA Audio)", type: "audio", model: "ora-audio" },
           ].map((t) => (
             <button key={`${t.type}-${t.model}`} onClick={() => runGenTest(t.type, t.model)} disabled={genTesting}
               className="px-4 py-2 rounded-lg border border-border text-foreground hover:bg-secondary transition-colors cursor-pointer disabled:opacity-50"

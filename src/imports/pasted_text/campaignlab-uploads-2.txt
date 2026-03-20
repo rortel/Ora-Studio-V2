@@ -1,0 +1,194 @@
+fetchProfile] trying auth-header...
+ [Auth] onAuthStateChange event: INITIAL_SESSION
+ [fetchProfile] trying auth-header...
+ [fetchProfile] auth-header: status=200 authenticated=true (337ms)
+ [fetchProfile] auth-header: status=200 authenticated=true (352ms)
+ [fetchProfile] auth-header: status=200 authenticated=true (381ms)
+ [Auth] onAuthStateChange event: SIGNED_IN
+ [fetchProfile] trying auth-header...
+ [fetchProfile] auth-header: status=200 authenticated=true (426ms)
+ [CampaignLab] Vault loaded: Relais Christine
+ [CampaignLab] Upload starting: man_etgx_ils_teaser-4x3.webp (42KB, image/webp)
+ [CampaignLab] Upload starting: man-etrucks-transporter-solutions-4x3.webp (450KB, image/webp)
+ [CampaignLab] Upload starting: man-lkw-etgx-battery-4x3.webp (120KB, image/webp)
+ [CampaignLab] Upload starting: man-lkw-etgx-maintenance-4x3.webp (198KB, image/webp)
+ [CampaignLab] Upload starting: man-elektro-lkw-stage-16x9.webp (276KB, image/webp)
+ [CampaignLab] Upload starting: man-lkw-etgx-teaser.webp (202KB, image/webp)
+ [CampaignLab] Upload starting: 1920_2020_-_TGS_35-510__newTG_-_1-868710.jpg (895KB, image/jpeg)
+ [CampaignLab] Upload starting: man-tgx_schwerlast_stage-16x9.webp (92KB, image/webp)
+ [CampaignLab] Upload OK: man-lkw-etgx-teaser.webp -> signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (432 chars)
+ [CampaignLab] Upload OK: man-elektro-lkw-stage-16x9.webp -> signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (432 chars)
+ [CampaignLab] Upload OK: man-lkw-etgx-maintenance-4x3.webp -> signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (432 chars)
+ [CampaignLab] Upload OK: man-lkw-etgx-battery-4x3.webp -> signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (432 chars)
+ [CampaignLab] Upload OK: 1920_2020_-_TGS_35-510__newTG_-_1-868710.jpg -> signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (429 chars)
+ [CampaignLab] Upload OK: man_etgx_ils_teaser-4x3.webp -> signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (432 chars)
+ [CampaignLab] Upload OK: man-tgx_schwerlast_stage-16x9.webp -> signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (432 chars)
+ [CampaignLab] Upload OK: man-etrucks-transporter-solutions-4x3.webp -> signedUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/sign/make-cad57f79-me... (432 chars)
+ [Auth] onAuthStateChange event: SIGNED_IN
+ [fetchProfile] trying auth-header...
+ [fetchProfile] auth-header: status=200 authenticated=true (401ms)
+ [CampaignLab] Generate: 7 total uploads, 7 ready, 0 still uploading, 0 errored
+ [CampaignLab] Ready upload URLs: [0] https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s..., [1] https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s..., [2] https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s..., [3] https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s..., [4] https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s..., [5] https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s..., [6] https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s...
+ [CampaignLab] Fetching plan via POST (server-side brand context)...
+ [CampaignLab] Visual directive received: 601 chars
+ [CampaignLab] Brand ref images received: 5 images
+ [CampaignLab] Server confirmed 7 uploaded ref URLs received
+ [CampaignLab] Plan ready for review: 6 assets
+ [CampaignLab] Launching generation: 6 assets, 7 uploaded refs
+ [CampaignLab] Asset [0] linkedin-post: userRef=YES (https://kbvkjafkztbsewtaijuh.supabase.co/storage/v...)
+ [CampaignLab] Using USER UPLOADED photo for linkedin-post: https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s...
+ [CampaignLab] cl-image-start linkedin-post (16:9) ref=true refUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s brandVisual=601 chars, URL length=1826
+ [CampaignLab] Asset [1] instagram-post: userRef=YES (https://kbvkjafkztbsewtaijuh.supabase.co/storage/v...)
+ [CampaignLab] Using USER UPLOADED photo for instagram-post: https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s...
+ [CampaignLab] cl-image-start instagram-post (1:1) ref=true refUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s brandVisual=601 chars, URL length=1801
+ [CampaignLab] Asset [2] instagram-story: userRef=YES (https://kbvkjafkztbsewtaijuh.supabase.co/storage/v...)
+ [CampaignLab] Using USER UPLOADED photo for instagram-story: https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s...
+ [CampaignLab] cl-image-start instagram-story (9:16) ref=true refUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s brandVisual=601 chars, URL length=1760
+ [CampaignLab] Asset [3] facebook-post: userRef=YES (https://kbvkjafkztbsewtaijuh.supabase.co/storage/v...)
+ [CampaignLab] Using USER UPLOADED photo for facebook-post: https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s...
+ [CampaignLab] cl-image-start facebook-post (16:9) ref=true refUrl=https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s brandVisual=601 chars, URL length=1773
+ [CampaignLab] Asset [4] instagram-reel: userRef=YES (https://kbvkjafkztbsewtaijuh.supabase.co/storage/v...)
+ [CampaignLab] Using USER UPLOADED photo for instagram-reel: https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s...
+ [CampaignLab] Video instagram-reel: generating branded first frame via Luma Photon...
+ [CampaignLab] cl-image-start response: {"success":true,"generationId":"7470b1db-0582-4f18-8373-b263db1490db","state":"queued","provider":"luma","model":"photon-1","_debug":{"imageRefUsed":true,"refType":"upload-modify","model":"photon-1"}}
+ [CampaignLab] IMAGE-REF DIAGNOSTIC: {"imageRefUsed":true,"refType":"upload-modify","model":"photon-1"}
+ [CampaignLab] cl-image-start response: {"success":true,"generationId":"5f5d10c5-7d3c-4644-8cd7-37026e324f37","state":"queued","provider":"luma","model":"photon-1","_debug":{"imageRefUsed":true,"refType":"upload-modify","model":"photon-1"}}
+ [CampaignLab] IMAGE-REF DIAGNOSTIC: {"imageRefUsed":true,"refType":"upload-modify","model":"photon-1"}
+ [CampaignLab] Asset [5] linkedin-video: userRef=YES (https://kbvkjafkztbsewtaijuh.supabase.co/storage/v...)
+ [CampaignLab] Using USER UPLOADED photo for linkedin-video: https://kbvkjafkztbsewtaijuh.supabase.co/storage/v1/object/s...
+ [CampaignLab] Video linkedin-video: generating branded first frame via Luma Photon...
+ [CampaignLab] cl-image-start response: {"success":true,"generationId":"900db181-4c3a-4ead-a940-411c5eb09041","state":"queued","provider":"luma","model":"photon-1","_debug":{"imageRefUsed":true,"refType":"upload-modify","model":"photon-1"}}
+ [CampaignLab] IMAGE-REF DIAGNOSTIC: {"imageRefUsed":true,"refType":"upload-modify","model":"photon-1"}
+ [CampaignLab] cl-image-start response: {"success":true,"generationId":"db7f201f-45b7-4eaf-a3dc-c5213e4bc3fb","state":"queued","provider":"luma","model":"photon-1","_debug":{"imageRefUsed":true,"refType":"upload-modify","model":"photon-1"}}
+ [CampaignLab] IMAGE-REF DIAGNOSTIC: {"imageRefUsed":true,"refType":"upload-modify","model":"photon-1"}
+ [CampaignLab] Video linkedin-video: first frame submitted (genId=10ba5958-7a09-4916-b33a-9cbded6549da), waiting...
+ [CampaignLab] Video instagram-reel: first frame submitted (genId=9aadcc38-b8d9-4878-b7d3-39b981acf72b), waiting...
+ [CampaignLab] Poll #1 image linkedin-post: state=queued
+ [CampaignLab] Poll #1 image instagram-post: state=queued
+ [CampaignLab] Poll #1 image instagram-story: state=queued
+ [CampaignLab] Poll #1 image facebook-post: state=queued
+ [CampaignLab] Poll #2 image linkedin-post: state=dreaming
+ [CampaignLab] Poll #2 image instagram-post: state=queued
+ [CampaignLab] Poll #2 image instagram-story: state=queued
+ [CampaignLab] Poll #2 image facebook-post: state=queued
+ [CampaignLab] Poll #3 image linkedin-post: state=completed
+ [CampaignLab] Poll #3 image instagram-post: state=dreaming
+ [CampaignLab] Poll #3 image instagram-story: state=dreaming
+ [CampaignLab] image linkedin-post COMPLETED, url=yes
+ Warning: Cannot update a component (`HubPageContent`) while rendering a different component (`CampaignLab`). To locate the bad setState() call inside `CampaignLab`, follow the stack trace as described in https://reactjs.org/link/setstate-in-render Component Stack
+    at CampaignLab (ta-01kks07qc9pp1461qazg01ps0d-1380-jwhbncojt8e1vvnf9bmvzoaux.makeproxy-m.figma.site/src/app/components/CampaignLab.tsx?t=1773590611524:89:29)
+    at code_components_preview_iframe-f4fd20809e153e7b.min.js.br:290:12522
+    at FGCmp (ta-01kks07qc9pp1461qazg01ps0d-1380-jwhbncojt8e1vvnf9bmvzoaux.makeproxy-m.figma.site/@id/fginspector:3:55)
+    at fa540488-f1e0-4f87-a7b1-581c012242fa-v2-figmaiframepreview.figma.site/div
+    at MotionDOMComponent (motion_react.js:5414:10)
+    at PresenceChild (motion_react.js:4390:24)
+    at AnimatePresence (motion_react.js:4469:26)
+    at code_components_preview_iframe-f4fd20809e153e7b.min.js.br:290:12522
+    at FGCmp (ta-01kks07qc9pp1461qazg01ps0d-1380-jwhbncojt8e1vvnf9bmvzoaux.makeproxy-m.figma.site/@id/fginspector:3:55)
+    at fa540488-f1e0-4f87-a7b1-581c012242fa-v2-figmaiframepreview.figma.site/div
+    at code_components_preview_iframe-f4fd20809e153e7b.min.js.br:290:12522
+    at FGCmp (ta-01kks07qc9pp1461qazg01ps0d-1380-jwhbncojt8e1vvnf9bmvzoaux.makeproxy-m.figma.site/@id/fginspector:3:55)
+    at fa540488-f1e0-4f87-a7b1-581c012242fa-v2-figmaiframepreview.figma.site/div
+    at code_components_preview_iframe-f4fd20809e153e7b.min.js.br:290:12522
+    at FGCmp (ta-01kks07qc9pp1461qazg01ps0d-1380-jwhbncojt8e1vvnf9bmvzoaux.makeproxy-m.figma.site/@id/fginspector:3:55)
+    at HubPageContent (ta-01kks07qc9pp1461qazg01ps0d-1380-jwhbncojt8e1vvnf9bmvzoaux.makeproxy-m.figma.site/src/app/pages/HubPage.tsx?t=1773590949723:235:44)
+    at code_components_preview_iframe-f4fd20809e153e7b.min.js.br:290:12522
+    at FGCmp (ta-01kks07qc9pp1461qazg01ps0d-1380-jwhbncojt8e1vvnf9bmvzoaux.makeproxy-m.figma.site/@id/fginspector:3:55)
+    at RouteGuard (ta-01kks07qc9pp1461qazg01ps0d-1380-jwhbncojt8e1vvnf9bmvzoaux.makeproxy-m.figma.site/src/app/components/RouteGuard.tsx:24:30)
+    at code_components_preview_iframe-f4fd20809e153e7b.min.js.br:290:12522
+    at FGCmp (ta-01kks07qc9pp1461qazg01ps0d-1380-jwhbncojt8e1vvnf9bmvzoaux.makeproxy-m.figma.site/@id/fginspector:3:55)
+    at fa540488-f1e0-4f87-a7b1-581c012242fa-v2-figmaiframepreview.figma.site/HubPage
+    at RenderedRoute (react-router.js:6296:26)
+    at Outlet (react-router.js:7077:26)
+    at fa540488-f1e0-4f87-a7b1-581c012242fa-v2-figmaiframepreview.figma.site/div
+    at MotionDOMComponent (motion_react.js:5414:10)
+    at PresenceChild (motion_react.js:4390:24)
+    at AnimatePresence (motion_react.js:4469:26)
+    at code_components_preview_iframe-f4fd20809e153e7b.min.js.br:290:12522
+    at FGCmp (ta-01kks07qc9pp1461qazg01ps0d-1380-jwhbncojt8e1vvnf9bmvzoaux.makeproxy-m.figma.site/@id/fginspector:3:55)
+    at fa540488-f1e0-4f87-a7b1-581c012242fa-v2-figmaiframepreview.figma.site/main
+    at code_components_preview_iframe-f4fd20809e153e7b.min.js.br:290:12522
+    at FGCmp (ta-01kks07qc9pp1461qazg01ps0d-1380-jwhbncojt8e1vvnf9bmvzoaux.makeproxy-m.figma.site/@id/fginspector:3:55)
+    at fa540488-f1e0-4f87-a7b1-581c012242fa-v2-figmaiframepreview.figma.site/div
+    at code_components_preview_iframe-f4fd20809e153e7b.min.js.br:290:12522
+    at FGCmp (ta-01kks07qc9pp1461qazg01ps0d-1380-jwhbncojt8e1vvnf9bmvzoaux.makeproxy-m.figma.site/@id/fginspector:3:55)
+    at RootLayout (ta-01kks07qc9pp1461qazg01ps0d-1380-jwhbncojt8e1vvnf9bmvzoaux.makeproxy-m.figma.site/src/app/pages/RootLayout.tsx?t=1773589631442:28:20)
+    at RenderedRoute (react-router.js:6296:26)
+    at RenderErrorBoundary (react-router.js:6206:5)
+    at DataRoutes (react-router.js:6994:3)
+    at Router (react-router.js:7086:13)
+    at RouterProvider (react-router.js:6760:3)
+    at code_components_preview_iframe-f4fd20809e153e7b.min.js.br:290:12522
+    at FGCmp (ta-01kks07qc9pp1461qazg01ps0d-1380-jwhbncojt8e1vvnf9bmvzoaux.makeproxy-m.figma.site/@id/fginspector:3:55)
+    at AuthProvider (ta-01kks07qc9pp1461qazg01ps0d-1380-jwhbncojt8e1vvnf9bmvzoaux.makeproxy-m.figma.site/src/app/lib/auth-context.tsx:62:32)
+    at code_components_preview_iframe-f4fd20809e153e7b.min.js.br:290:12522
+    at FGCmp (ta-01kks07qc9pp1461qazg01ps0d-1380-jwhbncojt8e1vvnf9bmvzoaux.makeproxy-m.figma.site/@id/fginspector:3:55)
+    at fa540488-f1e0-4f87-a7b1-581c012242fa-v2-figmaiframepreview.figma.site/App
+    at sm (code_components_preview_iframe-f4fd20809e153e7b.min.js.br:117:4420)
+    at O (code_components_preview_iframe-f4fd20809e153e7b.min.js.br:572:13253)
+    at ri (code_components_preview_iframe-f4fd20809e153e7b.min.js.br:626:13959)
+    at bJ (code_components_preview_iframe-f4fd20809e153e7b.min.js.br:643:10311)
+    at fa540488-f1e0-4f87-a7b1-581c012242fa-v2-figmaiframepreview.figma.site/div
+    at sC (code_components_preview_iframe-f4fd20809e153e7b.min.js.br:117:13984)
+    at T1 (code_components_preview_iframe-f4fd20809e153e7b.min.js.br:633:234768)
+    at yN (code_components_preview_iframe-f4fd20809e153e7b.min.js.br:633:245893)
+    at oX (code_components_preview_iframe-f4fd20809e153e7b.min.js.br:102:154139)
+    at hi (code_components_preview_iframe-f4fd20809e153e7b.min.js.br:436:8433)
+(anonymous) @ code_components_prev…153e7b.min.js.br:90Understand this error
+ [CampaignLab] Poll #3 image facebook-post: state=dreaming
+ [CampaignLab] Poll #4 image instagram-post: state=completed
+ [CampaignLab] Video instagram-reel: first frame ready, proceeding to video generation
+ [CampaignLab] cl-video-start instagram-reel (9:16) firstFrame=true brandVisual=601 chars
+ [CampaignLab] Poll #4 image instagram-story: state=completed
+ [CampaignLab] image instagram-post COMPLETED, url=yes
+ [CampaignLab] Poll #4 image facebook-post: state=completed
+ [CampaignLab] image instagram-story COMPLETED, url=yes
+ [CampaignLab] image facebook-post COMPLETED, url=yes
+ [CampaignLab] cl-video-start response: {"success":true,"generationId":"bbdf06dc-c845-4032-9edf-c0a332200865","state":"queued","provider":"luma","model":"ray-2"}
+ [CampaignLab] Video linkedin-video: first frame ready, proceeding to video generation
+ [CampaignLab] cl-video-start linkedin-video (16:9) firstFrame=true brandVisual=601 chars
+ [CampaignLab] Compliance check linkedin-post: {"success":true,"score":90,"breakdown":{"overall":90,"text":100,"tone":90,"visual":85},"details":{"textIssues":[],"textStrengths":["No forbidden terms used","Good vocabulary alignment (5 approved terms used)","Key messages referenced (2/5)"],"toneIssues":[],"toneStrengths":["Professional and confide
+ [CampaignLab] Poll #1 video instagram-reel: state=dreaming
+ [CampaignLab] Compliance check facebook-post: {"success":true,"score":92,"breakdown":{"overall":92,"text":100,"tone":92,"visual":88},"details":{"textIssues":[],"textStrengths":["No forbidden terms used","Good vocabulary alignment (2 approved terms used)","Key messages referenced (1/5)"],"toneIssues":[],"toneStrengths":["Professional and confide
+ [CampaignLab] cl-video-start response: {"success":true,"generationId":"4df9c793-731e-4224-8337-eacfceeb03da","state":"queued","provider":"luma","model":"ray-2"}
+ [CampaignLab] Compliance check instagram-post: {"success":true,"score":91,"breakdown":{"overall":91,"text":100,"tone":85,"visual":90},"details":{"textIssues":[],"textStrengths":["No forbidden terms used","Good vocabulary alignment (6 approved terms used)","Key messages referenced (2/5)"],"toneIssues":["The tone could be slightly more formal to a
+ [CampaignLab] Compliance check instagram-story: {"success":true,"score":92,"breakdown":{"overall":92,"text":100,"tone":85,"visual":92},"details":{"textIssues":[],"textStrengths":["No forbidden terms used"],"toneIssues":["Slightly lacking in warmth, could use a more engaging call-to-action."],"toneStrengths":["Professional and confident tone, alig
+ [CampaignLab] Poll #2 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #1 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #3 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #2 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #4 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #3 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #5 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #4 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #6 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #5 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #7 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #6 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #8 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #7 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #9 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #8 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #10 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #9 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #11 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #10 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #12 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #11 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #13 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #12 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #14 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #13 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #15 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #14 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #16 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #15 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #17 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #16 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #18 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #17 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #19 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #18 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #20 video instagram-reel: state=dreaming
+ [CampaignLab] Poll #19 video linkedin-video: state=dreaming
+ [CampaignLab] Poll #21 video instagram-reel: state=dreaming

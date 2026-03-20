@@ -1,0 +1,323 @@
+Supabase
+Sowego
+PRO
+
+StudioOra
+
+main
+PRODUCTION
+
+
+Connect
+Feedback
+
+Search...
+K
+
+
+
+
+
+
+Edge Functions
+MANAGE
+Functions
+Secrets
+Edge Functions
+make-server-cad57f79
+make-server-cad57f79
+Docs
+
+Download
+
+Test
+Overview
+Invocations
+Logs
+Details
+Code
+
+
+
+Last hour
+
+Status
+
+Chart
+
+Explore via query
+Mar 12, 2026, 09:37am
+Mar 12, 2026, 10:27am
+POST
+d24f152c-f89b-4bb5-b729-ebec4a511fe4
+POST
+57c74d9d-783c-4ca2-92a9-00ce477dacb8
+POST
+d3122235-9e7d-4462-a36e-ff372c2732bf
+POST
+24a0a5b1-b682-4730-aea8-6e10ad615d75
+POST
+df96ff03-8dae-40a4-b2eb-2c96cbedb67b
+POST
+e3d0022c-c903-4f1a-bf9d-99aa15858d5b
+POST
+3fb9b262-a1f1-4b31-bcbe-ba6c0f8617a5
+POST
+089cb208-2a46-4d84-aff2-09284449f840
+POST
+e49fc8df-aaad-4bbe-b652-1b4e9adae835
+POST
+27851239-69c2-4052-a999-bc29a88c969b
+POST
+785bf280-6226-4bf8-bbf4-db6117330a21
+POST
+fdca617c-3764-4987-afc6-dd1f869e0786
+POST
+909a6f2d-aaae-4b21-b667-1275a1b9d538
+POST
+d78e9238-f430-4506-acad-6e33311479f7
+POST
+7fcd6032-6fe0-434a-af76-83ccfb590d48
+POST
+5b639950-f2fd-40fb-851e-ac6736e6d89a
+POST
+4995641c-5f19-46f8-acd3-80ddb51dee85
+POST
+736a7f76-ec4d-4307-9979-997cc35439db
+POST
+aaee90ba-8c6e-43f9-b729-19159a19bc61
+POST
+9a4a7489-31a4-4f14-8cc6-68284483773b
+POST
+3645522e-4718-486e-93ff-5134aaa2f4b4
+POST
+37b55a71-c60a-4079-b492-40d99742524d
+POST
+72eaddc8-b939-4054-9a20-c933ac2a6095
+POST
+e83fec4d-c44d-47b6-9509-2183ea752ca4
+POST
+35731a4b-b040-49f1-a3a8-94a53007e2ad
+POST
+61f3448b-5c07-4464-8f60-c29fe8e4f69e
+POST
+c2b7da29-44e8-4f39-8997-117baa1ddc95
+POST
+25e73e34-a296-499e-8f5d-b5466b4a78f0
+POST
+c6ae086a-3307-4ca0-90f2-c5a2ae57f31c
+POST
+0f1393fa-9db3-4ad1-8097-8cd1fa041a45
+POST
+aa768424-dfd4-4d03-8f96-0a11c5eb7433
+POST
+a7a08375-30b4-46c8-a24f-8c3f0303fd51
+POST
+ccd289f3-bcbe-4441-9a6d-a96301e5eb24
+POST
+318e9db3-d50e-4441-8a51-464a8cb83d37
+POST
+61a01b98-d317-4668-b556-ebe38d6dff03
+POST
+339a2c10-7f36-4df1-9627-f3b908c444ff
+POST
+0e4f5535-7132-47e6-b1a6-15042cfa937b
+POST
+6e364125-3222-4421-a4a6-09b8f8031402
+POST
+a671232d-e80d-4c3e-9175-d241812ed0d3
+POST
+dc03d40c-aad0-49a9-9d97-9b86f89cce54
+POST
+39444965-8854-4841-be28-f3853cb4d462
+POST
+c941d64b-5d7f-4fdb-a416-728f16f40a98
+POST
+c0496566-a1e5-4429-ac47-05b06f4a1ad5
+POST
+ece3000d-9110-46aa-a604-397b3fb84447
+POST
+aa3ece2a-1ef1-4b55-a527-b148c8adbd45
+POST
+6ac5577b-a56a-435b-b5d9-b67613b55862
+POST
+e7943581-1805-4eda-b826-6025ed199912
+POST
+00e3713f-2837-4da0-bb30-1a0849cf5e73
+POST
+c30d9b8f-adc1-4ba7-a977-d947da8a2510
+POST
+1b703aff-bd7c-4ea3-9185-605d984d3184
+POST
+8fc267f0-ed7a-4a40-8e2a-3073889737f1
+POST
+e82b08d0-54c5-41ec-9393-4453b07a6257
+POST
+2966b0e8-e259-4979-a9ed-3595d0e9e283
+POST
+2df143dd-fb26-4d47-bc38-2f6e1ca7dbbf
+POST
+33a0ac6b-116f-4e53-9791-a08787d69bac
+POST
+8312e84f-84df-4e5c-a7f6-99c697ad88f7
+POST
+5dfc13d1-93ca-475a-9602-e10bfacbf9d9
+POST
+e475926b-6619-4078-b159-7d94323e4d89
+POST
+c2576191-75f8-490e-8919-62074c5d6c95
+POST
+64308c78-81df-4243-b70e-86cae056918b
+POST
+6370983e-8c61-4eaf-809e-c969336f1879
+POST
+83fedee2-30d2-448c-9567-cfadcf9aa9f6
+POST
+ba3f8717-85a1-4d19-b238-39b471d95f00
+POST
+b1744c31-9b9d-4bb5-a3f5-a00b1fe0ea3b
+POST
+e302193b-90e7-4e50-b981-67566e602ac7
+POST
+1ec6ced4-d2e2-45da-95de-3de3d92579a5
+POST
+414f27bc-f5d7-435a-b158-6c0aa9a35c46
+POST
+9ae6759b-0a06-452b-8947-b72c89f46125
+POST
+8ec3cd8d-1d12-4e9c-98e6-fbeed8224ae6
+POST
+1795b074-0226-40b5-830e-52fdb7ad6d5c
+POST
+a3668f8f-bd76-4109-a0d4-bf2172b6a878
+POST
+1731348d-0c4f-4b63-a374-471554f95c7a
+POST
+076e88f2-400d-4f80-bece-563e85e5a171
+POST
+a520052b-ab30-4e31-8e0f-b9c36049927a
+POST
+7c1701a3-adb0-4616-9eb6-2376d55a720e
+POST
+b9b02c0e-2041-4f3b-bb88-2979c8099ceb
+POST
+b1a815ba-b3f5-4139-8bd4-0e4d73089246
+POST
+9105b74e-602c-46df-af73-57ae4b2235f7
+POST
+0a4db966-ec6b-4c90-a932-424a6658e381
+POST
+eb0bdd67-e8e0-479f-9a99-734b61fbdfa1
+POST
+fa0e41ef-bbb2-4a6a-8d46-02f02dee7161
+POST
+b991fe59-dcfa-48ca-86bb-5f083d76e58b
+POST
+cb1a6ca9-b35e-4a49-86a4-0c451a376ab9
+POST
+06a0cd4a-4332-49e6-9496-6a4b48ea5443
+POST
+67351137-6100-4a45-b88f-46d08c3376f6
+POST
+73fbc364-bbc7-4710-934c-bc6c99d5ee80
+POST
+4180f73a-527f-4abb-8d53-3a8d9cf2251d
+POST
+3c0d0310-ad59-46d0-a811-437e154feb8e
+POST
+8fba23d2-5b5a-44ca-bd44-973b87e99b94
+POST
+9bca64f7-5d83-4d2b-b326-625d7f1db967
+POST
+883f9a04-f29a-4845-a811-e213ecdc9d12
+POST
+0452c9bf-dd76-42ff-ab5f-9821d53104f9
+POST
+533981ad-e251-4e24-8eb0-42d364f9e02b
+POST
+f2a7c547-5569-4180-8256-f417eb1d45e7
+POST
+8e879196-5254-4964-8acc-c757923587eb
+POST
+648df991-b340-4015-b163-4083adfcd01d
+POST
+0bc378db-797d-419a-b47d-970cbcdbfd44
+POST
+9b442b77-cdb4-40b8-a453-cf69ae5fdf75
+POST
+65e52a32-65aa-470f-89a8-908cb9ef9836
+POST
+73b7a14e-84ab-4c8a-8c79-87ef7eb00297
+Details
+Raw
+
+
+
+id
+d24f152c-f89b-4bb5-b729-ebec4a511fe4
+
+timestamp
+12 Mar 26 10:27:12
+event_message
+"POST | 401 | https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/auth/me?apikey=REDACTED"
+metadata
+[
+  {
+    "deployment_id": "kbvkjafkztbsewtaijuh_653507d1-b0de-4457-a545-9e5442c69100_196",
+    "execution_id": null,
+    "execution_time_ms": 102,
+    "function_id": "653507d1-b0de-4457-a545-9e5442c69100",
+    "project_ref": "kbvkjafkztbsewtaijuh",
+    "request": [
+      {
+        "headers": [
+          {
+            "accept": "*/*",
+            "accept_encoding": "gzip, br",
+            "connection": "Keep-Alive",
+            "content_length": "32916",
+            "cookie": null,
+            "host": "kbvkjafkztbsewtaijuh.supabase.co",
+            "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+            "x_client_info": null
+          }
+        ],
+        "host": "kbvkjafkztbsewtaijuh.supabase.co",
+        "method": "POST",
+        "pathname": "/functions/v1/make-server-cad57f79/auth/me",
+        "port": null,
+        "protocol": "https:",
+        "sb": [],
+        "search": "?apikey=REDACTED",
+        "url": "https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/auth/me?apikey=REDACTED"
+      }
+    ],
+    "response": [
+      {
+        "headers": [
+          {
+            "content_length": "73",
+            "content_type": "application/json",
+            "date": "Thu, 12 Mar 2026 09:27:12 GMT",
+            "sb_request_id": "019ce15f-1c00-7934-aba1-b6506651ef48",
+            "server": "cloudflare",
+            "vary": "Accept-Encoding",
+            "x_envoy_upstream_service_time": null,
+            "x_sb_compute_multiplier": null,
+            "x_sb_edge_region": "eu-west-3",
+            "x_sb_resource_multiplier": null,
+            "x_served_by": "supabase-edge-runtime"
+          }
+        ],
+        "status_code": 401
+      }
+    ],
+    "version": "196"
+  }
+]
+
+Collapse
+
+Load older
+Showing 100 results
+make-server-cad57f79 | Invocations | Edge Functions | StudioOra | Sowego | Supabase

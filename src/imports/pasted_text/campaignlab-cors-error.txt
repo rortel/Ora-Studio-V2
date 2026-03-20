@@ -1,0 +1,58 @@
+[CampaignLab] 0 ref URLs obtained
+ [CampaignLab] Pipeline: CLASSIC (text-only)
+ [CampaignLab] Trying text model: gpt-4o
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/text-multi' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/text-multi' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/text-multi' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/text-multi:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/text-multi:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/text-multi:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+ [CampaignLab] Text [gpt-4o] exception: Failed to fetch
+(anonymous) @ code_components_prev…153e7b.min.js.br:90Understand this warning
+ [CampaignLab] Trying text model: claude-sonnet
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/text-multi' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/text-multi' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/text-multi' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/text-multi:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/text-multi:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/text-multi:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+ [CampaignLab] Text [claude-sonnet] exception: Failed to fetch
+(anonymous) @ code_components_prev…153e7b.min.js.br:90Understand this warning
+ [CampaignLab] Trying text model: ora-writer
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/text-multi' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/text-multi' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+hub:1 Access to fetch at 'https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/text-multi' from origin 'https://1fe9d396-c4f8-4eb0-a8e9-a1b1f28c8dd5-v2-figmaiframepreview.figma.site' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/text-multi:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/text-multi:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/text-multi:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+ [CampaignLab] Text [ora-writer] exception: Failed to fetch
+(anonymous) @ code_components_prev…153e7b.min.js.br:90Understand this warning
+ [CampaignLab] copyMap keys: Array(0)
+ [CampaignLab] Image generation: 4 formats, v2=false
+ [CampaignLab] Image GET [linkedin-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20LinkedIn%20post.%20campagne%20
+ [CampaignLab] Image GET [instagram-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20Instagram%20post.%20campagne%2
+ [CampaignLab] Image GET [instagram-story]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20Instagram%20post.%20campagne%2
+ [CampaignLab] Image GET [facebook-post]: https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/image-via-get?prompt=Professional%20Facebook%20post.%20campagne%20
+ [CampaignLab] Classic Image [instagram-post] OK: https://storage.cdn-luma.com/dream_machine/504a708c-b22b-41b
+ [CampaignLab] Classic Image [instagram-story] OK: https://storage.cdn-luma.com/dream_machine/acd4c677-3f01-46f
+ [CampaignLab] Classic Image [linkedin-post] OK: https://storage.cdn-luma.com/dream_machine/6aee6c22-97b4-432
+ [CampaignLab] Classic Image [facebook-post] OK: https://storage.cdn-luma.com/dream_machine/ec6bfa3c-bcfb-4ff
+ [CampaignLab] Video generation: 2 formats (background)
+ [CampaignLab] Video [instagram-reel]: using same-platform image as keyframe
+ [CampaignLab] Video START [instagram-reel]: hasKeyframe=true https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=Cinematic+video.+campagne+pour+les+24h+du+mans+
+ [CampaignLab] Video [linkedin-video]: using same-platform image as keyframe
+ [CampaignLab] Video START [linkedin-video]: hasKeyframe=true https://kbvkjafkztbsewtaijuh.supabase.co/functions/v1/make-server-cad57f79/generate/video-start?prompt=Cinematic+video.+campagne+pour+les+24h+du+mans+
+ [CampaignLab] Video [linkedin-video] submitted: 264b1e11-4890-414a-bf4f-288171821712
+ [CampaignLab] Video [instagram-reel] submitted: b870fe45-c4f3-4e92-8371-1601ab645c16
+ [CampaignLab] Video [linkedin-video] poll #1: state=dreaming
+ [CampaignLab] Video [instagram-reel] poll #1: state=dreaming
+ [CampaignLab] Video [linkedin-video] poll #2: state=dreaming
+ [CampaignLab] Video [instagram-reel] poll #2: state=dreaming
+ [CampaignLab] Video [linkedin-video] poll #3: state=dreaming
+ [CampaignLab] Video [instagram-reel] poll #3: state=dreaming
+ [CampaignLab] Video [linkedin-video] poll #4: state=dreaming
+ [CampaignLab] Video [instagram-reel] poll #4: state=dreaming
+ [CampaignLab] Video [linkedin-video] poll #5: state=dreaming
+ [CampaignLab] Video [instagram-reel] poll #5: state=dreaming
+ [CampaignLab] Video [linkedin-video] poll #6: state=completed
+ [CampaignLab] Video [instagram-reel] poll #6: state=completed
