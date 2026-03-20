@@ -415,6 +415,129 @@ async function generateImage(req: { prompt: string; model: string }) {
   throw lastErr || new Error(`All image strategies failed for ${req.model}`);
 }
 
+// ─ PRODUCT IMAGE ANALYSIS via GPT-4o Vision ─────────────────
+async function analyzeProductImage(imageDataUrl: string): Promise<string> {
+  console.log("[Vision] Analyzing product image...");
+  try {
+    const res = await fetch(`${APIPOD_BASE}/chat/completions`, {
+      method: "POST",
+      headers: apipodHeaders(),
+      body: JSON.stringify({
+        model: "gpt-4o",
+        messages: [{
+          role: "user",
+          content: [
+            { type: "image_url", image_url: { url: imageDataUrl } },
+            { type: "text", text: "Describe this product very precisely for an AI image generator. Cover: exact shape, colors, materials, finish, texture, proportions, any distinctive design details, patterns. Output a dense technical description in 80-100 words. Start with the product type." },
+          ],
+        }],
+        max_tokens: 200,
+      }),
+    });
+    if (!res.ok) throw new Error(`APIPod Vision ${res.status}: ${await res.text()}`);
+    const data = await res.json();
+    return data.choices?.[0]?.message?.content || "";
+  } catch (e) {
+    console.log(`[Vision] analysis failed: ${e}`);
+    return "";
+  }
+}
+
+// ─ IMAGE-TO-IMAGE: Runware (seedImage = base64) ───────────────
+async function callRunwareImageWithRef(rwModel: string, prompt: string, seedImageBase64: string): Promise<string> {
+  const key = Deno.env.get("RUNWARE_IMAGE_API_KEY");
+  if (!key) throw new Error("RUNWARE_IMAGE_API_KEY not configured");
+  console.log(`[Runware img2img] model=${rwModel}, strength=0.30`);
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 40_000);
+  try {
+    const res = await fetch("https://api.runware.ai/v1", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
+      body: JSON.stringify([{
+        taskType: "imageInference",
+        taskUUID: crypto.randomUUID(),
+        positivePrompt: prompt,
+        model: rwModel,
+        width: 1024,
+        height: 1024,
+        numberResults: 1,
+        outputFormat: "WEBP",
+        seedImage: seedImageBase64,
+        strength: 0.30,
+      }]),
+      signal: controller.signal,
+    });
+    if (!res.ok) { const b = await res.text(); throw new Error(`Runware img2img ${res.status}: ${b}`); }
+    const data = await res.json();
+    const url = data.data?.[0]?.imageURL || data.data?.[0]?.imageUrl;
+    if (!url) throw new Error(`Runware img2img: no URL: ${JSON.stringify(data).slice(0, 200)}`);
+    return url;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+// ─ IMAGE-TO-IMAGE: FAL flux-dev (image_url = data URL) ────────
+async function callFalImageWithRef(prompt: string, imageDataUrl: string): Promise<string> {
+  const key = Deno.env.get("FAL_API_KEY");
+  if (!key) throw new Error("FAL_API_KEY not configured");
+  console.log("[FAL img2img] fal-ai/flux/dev/image-to-image, strength=0.35");
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 40_000);
+  try {
+    const res = await fetch("https://fal.run/fal-ai/flux/dev/image-to-image", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Key ${key}` },
+      body: JSON.stringify({ image_url: imageDataUrl, prompt, strength: 0.35, num_images: 1, enable_safety_checker: true }),
+      signal: controller.signal,
+    });
+    if (!res.ok) { const b = await res.text(); throw new Error(`FAL img2img ${res.status}: ${b}`); }
+    const data = await res.json();
+    const url = data.images?.[0]?.url;
+    if (!url) throw new Error(`FAL img2img: no URL`);
+    return url;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+// ─ GENERATE IMAGE WITH PRODUCT REFERENCE ─────────────────────
+// Pipeline: Vision analyze → build enhanced prompt → Runware img2img → FAL img2img → text-to-image fallback
+async function generateImageWithRef(req: { prompt: string; model: string; productImageBase64: string }) {
+  const start = Date.now();
+
+  // 1. Vision: analyze the product
+  const productDesc = await analyzeProductImage(req.productImageBase64);
+
+  // 2. Build enhanced prompt: product description anchors identity, user prompt adds scene
+  const enhancedPrompt = productDesc
+    ? `Photorealistic commercial product photography. PRODUCT TO REPRODUCE EXACTLY (preserve shape, colors, materials, proportions, every detail): ${productDesc}. NEW SCENE/STAGING: ${req.prompt}. Ultra-realistic 8K, professional lighting. No extra text, no logos added.`
+    : `Photorealistic commercial product photography. Preserve the product from the reference image exactly — same shape, colors, materials, proportions. NEW SCENE: ${req.prompt}. Ultra-realistic 8K, professional lighting.`;
+
+  console.log(`[img2img] enhanced prompt (${enhancedPrompt.length} chars): "${enhancedPrompt.slice(0, 120)}..."`);
+
+  // 3. Try Runware img2img (primary — sends base64 seedImage directly)
+  const strats = imageStrategies[req.model] || imageStrategies["ora-vision"];
+  for (const s of strats) {
+    try {
+      if (s.type === "runware") {
+        const url = await callRunwareImageWithRef(s.model, enhancedPrompt, req.productImageBase64);
+        return { model: req.model, provider: `runware-img2img/${s.model}`, imageUrl: url, latencyMs: Date.now() - start };
+      } else if (s.type === "fal") {
+        const url = await callFalImageWithRef(enhancedPrompt, req.productImageBase64);
+        return { model: req.model, provider: "fal-img2img/flux-dev", imageUrl: url, latencyMs: Date.now() - start };
+      }
+    } catch (err) {
+      console.log(`[img2img] ${s.type} failed: ${err}`);
+    }
+  }
+
+  // 4. Final fallback: text-to-image with enriched prompt (product description in prompt)
+  console.log("[img2img] img2img providers failed → falling back to text-to-image with enriched prompt");
+  return generateImage({ prompt: enhancedPrompt, model: req.model });
+}
+
 // ── VIDEO: Runware call (primary provider for video) ─────────
 async function callRunwareVideo(rwModel: string, prompt: string): Promise<string> {
   const key = Deno.env.get("RUNWARE_VIDEO_API_KEY");
@@ -768,6 +891,46 @@ app.post("/generate/image-multi", async (c) => {
     return c.json({ success: true, results });
   } catch (err) {
     console.log(`[image-multi] error (${Date.now() - t0}ms):`, err);
+    return c.json({ success: false, error: `Image generation error: ${err}` }, 500);
+  }
+});
+
+// ─── IMAGE WITH PRODUCT REFERENCE ─────────────────────────────
+app.post("/generate/image-with-ref", async (c) => {
+  const t0 = Date.now();
+  try {
+    let user: AuthUser | null = null;
+    try { user = await getUser(c); } catch {}
+    const body = await c.req.json();
+    const { prompt, models, productImageBase64 } = body;
+    if (!prompt || !models?.length || !productImageBase64) {
+      return c.json({ error: "prompt, models, and productImageBase64 required" }, 400);
+    }
+    console.log(`[image-with-ref] user=${user?.id || "guest"}, models=${models.join(",")}, prompt="${prompt.slice(0, 60)}"`);
+
+    const MODEL_TIMEOUT = 55_000;
+    const results = await Promise.all(
+      models.map(async (model: string) => {
+        try {
+          const result = await Promise.race([
+            generateImageWithRef({ prompt, model, productImageBase64 }),
+            new Promise<never>((_, reject) => setTimeout(() => reject(new Error(`Timeout >${MODEL_TIMEOUT}ms for ${model}`)), MODEL_TIMEOUT)),
+          ]);
+          if (user) logEvent("generation", { userId: user.id, type: "image-with-ref", model }).catch(() => {});
+          const r = result as any;
+          logCost({ type: "image", model, provider: r.provider || "unknown", costUsd: getProviderCost(r.provider || "", "image"), revenueEur: REVENUE_PER_TYPE.image, latencyMs: r.latencyMs || (Date.now() - t0), userId: user?.id || "guest", success: true }).catch(() => {});
+          return { success: true, result };
+        } catch (err) {
+          console.log(`[image-with-ref] ${model} FAIL: ${err}`);
+          return { success: false, error: String(err) };
+        }
+      })
+    );
+
+    console.log(`[image-with-ref] done (${Date.now() - t0}ms), results: ${results.length}`);
+    return c.json({ success: true, results });
+  } catch (err) {
+    console.log(`[image-with-ref] error (${Date.now() - t0}ms):`, err);
     return c.json({ success: false, error: `Image generation error: ${err}` }, 500);
   }
 });

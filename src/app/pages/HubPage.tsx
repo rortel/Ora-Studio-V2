@@ -5,7 +5,7 @@ import {
   Columns2, BookOpen, Download, Trash2,
   Check, Copy, ExternalLink, Search, ChevronDown,
   RotateCcw, SlidersHorizontal, Zap, Clock, Heart, FolderOpen,
-  Eye, X, Plus, ArrowRight,
+  Eye, X, Plus, ArrowRight, Paperclip,
 } from "lucide-react";
 import { Link, useSearchParams, useNavigate } from "react-router";
 import { API_BASE, publicAnonKey } from "../lib/supabase";
@@ -214,6 +214,34 @@ const mockLibrary: LibraryItem[] = [
 ];
 
 /* ═══════════════════════════════════
+   IMAGE RESIZE HELPER
+   Resize to max 1024px before base64 encoding (keep payload <1MB)
+   ═══════════════════════════════════ */
+
+function resizeImageToBase64(file: File, maxPx = 1024): Promise<{ base64: string; mimeType: string }> {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    const url = URL.createObjectURL(file);
+    img.onload = () => {
+      const scale = Math.min(1, maxPx / Math.max(img.width, img.height));
+      const w = Math.round(img.width * scale);
+      const h = Math.round(img.height * scale);
+      const canvas = document.createElement("canvas");
+      canvas.width = w;
+      canvas.height = h;
+      const ctx = canvas.getContext("2d")!;
+      ctx.drawImage(img, 0, 0, w, h);
+      URL.revokeObjectURL(url);
+      const mimeType = file.type.startsWith("image/") ? file.type : "image/jpeg";
+      const base64 = canvas.toDataURL(mimeType, 0.85);
+      resolve({ base64, mimeType });
+    };
+    img.onerror = reject;
+    img.src = url;
+  });
+}
+
+/* ═══════════════════════════════════
    MAIN HUB COMPONENT
    ═══════════════════════════════════ */
 
@@ -242,8 +270,12 @@ export function HubPage() {
   const [librarySearch, setLibrarySearch] = useState("");
   const [showModelPicker, setShowModelPicker] = useState(false);
   const [previewItem, setPreviewItem] = useState<GeneratedItem | null>(null);
+  const [productImageBase64, setProductImageBase64] = useState<string | null>(null);
+  const [productMimeType, setProductMimeType] = useState<string>("image/jpeg");
+  const [productImagePreview, setProductImagePreview] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const resultsRef = useRef<HTMLDivElement>(null);
+  const productInputRef = useRef<HTMLInputElement>(null);
 
   // Clear URL params after reading them
   useEffect(() => {
@@ -278,6 +310,27 @@ export function HubPage() {
     if (contentType) h["Content-Type"] = "application/json";
     return h;
   }, [getAuthToken]);
+
+  const handleProductImageSelect = useCallback(async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    try {
+      const { base64, mimeType } = await resizeImageToBase64(file);
+      setProductImageBase64(base64);
+      setProductMimeType(mimeType);
+      setProductImagePreview(base64);
+    } catch (err) {
+      console.error("[HubPage] Product image resize failed:", err);
+    }
+    // Reset input so the same file can be re-selected
+    e.target.value = "";
+  }, []);
+
+  const handleProductImageClear = useCallback(() => {
+    setProductImageBase64(null);
+    setProductImagePreview(null);
+    setProductMimeType("image/jpeg");
+  }, []);
 
   const handleGenerate = useCallback(async () => {
     console.log("[HubPage] handleGenerate called", { prompt: prompt.slice(0, 60), isGenerating, activeModelsCount: activeModels.length, contentType });
@@ -402,13 +455,18 @@ export function HubPage() {
         let lastFetchErr: any = null;
         for (let attempt = 0; attempt < 2; attempt++) {
           try {
-            console.log(`[HubPage] Image POST attempt ${attempt + 1} ->`, `${API_BASE}/generate/image-multi`, "at", new Date().toISOString());
+            const hasProductRef = !!productImageBase64;
+            const endpoint = hasProductRef ? `${API_BASE}/generate/image-with-ref` : `${API_BASE}/generate/image-multi`;
+            const bodyData = hasProductRef
+              ? { prompt: currentPrompt, models: modelIds, productImageBase64, mimeType: productMimeType }
+              : { prompt: currentPrompt, models: modelIds };
+            console.log(`[HubPage] Image POST attempt ${attempt + 1} -> ${endpoint}${hasProductRef ? " (with product ref)" : ""}`, "at", new Date().toISOString());
             const fetchStartMs = Date.now();
-            res = await fetch(`${API_BASE}/generate/image-multi`, {
+            res = await fetch(endpoint, {
               method: "POST",
               headers: makeHeaders(),
-              body: JSON.stringify({ prompt: currentPrompt, models: modelIds }),
-              signal: AbortSignal.timeout(45_000),
+              body: JSON.stringify(bodyData),
+              signal: AbortSignal.timeout(65_000),
             });
             console.log(`[HubPage] Image response (attempt ${attempt + 1}):`, res.status, `(${Date.now() - fetchStartMs}ms)`);
             lastFetchErr = null;
@@ -792,10 +850,50 @@ export function HubPage() {
 
         {/* SMS Input bar */}
         <div className="px-5 pb-4 pt-1">
+          {/* Product image thumbnail (only when set) */}
+          {productImagePreview && contentType === "image" && (
+            <div className="flex items-center gap-2 mb-2 px-1">
+              <div className="relative flex-shrink-0">
+                <img
+                  src={productImagePreview}
+                  alt="Product reference"
+                  className="w-12 h-12 rounded-lg object-cover border"
+                  style={{ borderColor: "var(--ora-signal)", borderWidth: 1.5 }}
+                />
+                <button
+                  onClick={handleProductImageClear}
+                  className="absolute -top-1.5 -right-1.5 w-4 h-4 rounded-full bg-foreground text-background flex items-center justify-center cursor-pointer"
+                >
+                  <X size={9} />
+                </button>
+              </div>
+              <span style={{ fontSize: "11px", color: "var(--ora-signal)", fontWeight: 500 }}>
+                Produit de référence actif — le produit sera préservé dans la génération
+              </span>
+            </div>
+          )}
+          {/* Hidden file input */}
+          <input
+            ref={productInputRef}
+            type="file"
+            accept="image/*"
+            className="hidden"
+            onChange={handleProductImageSelect}
+          />
           <div
             className="flex items-center gap-3 rounded-xl border bg-background px-4 py-3 transition-all focus-within:border-ora-signal/40 focus-within:ring-2 focus-within:ring-ora-signal/10"
-            style={{ borderColor: "var(--border)" }}
+            style={{ borderColor: productImagePreview && contentType === "image" ? "var(--ora-signal)" : "var(--border)", ...(productImagePreview && contentType === "image" ? { boxShadow: "0 0 0 2px color-mix(in srgb, var(--ora-signal) 15%, transparent)" } : {}) }}
           >
+            {contentType === "image" && (
+              <button
+                onClick={() => productInputRef.current?.click()}
+                title={productImagePreview ? "Changer le produit de référence" : "Ajouter un produit de référence"}
+                className="flex-shrink-0 transition-opacity hover:opacity-70 cursor-pointer"
+                style={{ color: productImagePreview ? "var(--ora-signal)" : "var(--muted-foreground)" }}
+              >
+                <Paperclip size={16} />
+              </button>
+            )}
             <Sparkles size={16} className="text-ora-signal flex-shrink-0" />
             <input
               ref={inputRef}
@@ -826,7 +924,11 @@ export function HubPage() {
           </div>
           <div className="flex items-center justify-between mt-1.5 px-1">
             <span style={{ fontSize: "10px", color: "var(--muted-foreground)" }}>
-              Press Enter — {activeModels.length} AI model{activeModels.length > 1 ? "s" : ""} generate simultaneously, you pick the best
+              {contentType === "image" && productImagePreview
+                ? "Produit préservé — décris la mise en scène souhaitée"
+                : contentType === "image"
+                  ? "Entrée — ou clique sur 🖇 pour ajouter un produit de référence"
+                  : `Press Enter — ${activeModels.length} AI model${activeModels.length > 1 ? "s" : ""} generate simultaneously, you pick the best`}
             </span>
             <span style={{ fontSize: "10px", color: "var(--muted-foreground)" }}>
               Results auto-saved to your library
